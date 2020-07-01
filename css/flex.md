@@ -31,7 +31,7 @@ item의 주 축\(main-axis\)을 설정한다.
 
 | Title | Content |
 | :--- | :--- |
-| row ****\(**defalut**\) | item를 수평축, 왼쪽에서 오른쪽으로 표 |
+| row ****\(**defalut**\) | item를 수평축, 왼쪽에서 오른쪽으로 표시 |
 | row-reverse | item `row`의 반대축으로 표시 |
 |  column | item 수직축, 위에서 아래로 표시 |
 | column-reverse | item `column`의 반대축으로 표시 |
@@ -115,7 +115,7 @@ item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
 
 | Title | Content |
 | :--- | :--- |
-| auto \(**defalut : auto**\) |  container의 `align-item` 속성을 상속 받음음 |
+| auto \(**defalut : auto**\) |  container의 `align-item` 속성을 상속 받음 |
 | stretch | container의 교차 축을 채우기 위해 Item을 늘림 |
 | flex-start | item를 각 줄의 시작점으로 정렬 |
 | flex-end | item를 각 줄의 끝점으로 설정 |
