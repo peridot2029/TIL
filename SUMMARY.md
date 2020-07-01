@@ -12,7 +12,7 @@
 
 ## CSS
 
-* [📄 Flex](css/untitled.md)
+* [📄 Flex](css/flex.md)
 
 ## JavaScript
 
