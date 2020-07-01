@@ -10,7 +10,7 @@
 
 `this, arguments, super` 또는 `new.target`을 바인딩\(`bind`\) 하지 않는다.
 
-```text
+```javascript
 // 다음과 동일:  => { return expression; }
 (param1, param2, …, paramN) => { statements }
 (param1, param2, …, paramN) => expression

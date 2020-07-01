@@ -12,7 +12,7 @@
 
 클로저는 **외부 함수에서 생성된 변수들에 접근할 수 있는 권한**을 가지고 있다.
 
-```text
+```javascript
 const base = "hello";
 function sayHello(name) {
   const text = base + name;
