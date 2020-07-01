@@ -34,3 +34,16 @@ hello(); // hello song
 
 `let, const` 변수 선언과 함수 표현식에서는 호이스팅이 일어나지 않는다.
 
+```javascript
+firstfun();
+firstfun2(); // error
+
+function firstfun() {
+    console.log("first fun");
+}
+
+var firstfun2 = function() {
+    console.log("firstfun2");
+}
+```
+
