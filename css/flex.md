@@ -32,7 +32,7 @@ item의 주 축\(main-axis\)을 설정한다.
 | Title | Content |
 | :--- | :--- |
 | row ****\(**defalut**\) | item를 수평축, 왼쪽에서 오른쪽으로 표 |
-| row-reverse | item `row`의 반대축으로 표 |
+| row-reverse | item `row`의 반대축으로 표시 |
 |  column | item 수직축, 위에서 아래로 표 |
 | column-reverse | item `column`의 반대축으로 표시 |
 
@@ -54,7 +54,7 @@ item 여러 줄 묶음, 줄 바꿈 설정한다.
 | :--- | :--- |
 | flex-start \(**defalut**\) | item를 시작점으로 정 |
 | flex-end | item를끝점으로 정 |
-| center | item를 가운데 정 |
+| center | item를 가운데 정렬 |
 | space-between | item를 시작점 끝점에 정렬하고, 나머지 item은 사이에 고르게 정 |
 | space-around | item를 균등한 여백을 포함하여 정 |
 
@@ -85,7 +85,7 @@ item이 한 줄이 경우 많이 사용한다.
 | flex-start | item를 시작점으로 설정 |
 | flex-end | item를 끝점으로 설정 |
 | center | item를 가운데 설정 |
-| baseline | item를 문자 기준선에 정 |
+| baseline | item를 문자 기준선에 정렬 |
 
 ### 3. item 정렬
 
@@ -120,5 +120,5 @@ item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
 | flex-start | item를 각 줄의 시작점으로 정렬 |
 | flex-end | item를 각 줄의 끝점으로 설정 |
 | center | item를 가운데 설정 |
-| baseline | item를 문자 기준선에 정 |
+| baseline | item를 문자 기준선에 정렬 |
 
