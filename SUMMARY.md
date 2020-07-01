@@ -18,7 +18,7 @@
 
 * [📄 Arrow function expression](javascript/untitled.md)
 * [📄 Closure, Hoisting](javascript/closure-hoisting.md)
-* [📄Destructuring assignment](javascript/destructuring-assignment.md)
+* [📄 Destructuring assignment](javascript/destructuring-assignment.md)
 
 ## React
 
