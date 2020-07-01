@@ -12,11 +12,13 @@
 
 ## CSS
 
-* [Untitled](css/untitled.md)
+* [📄 Flex](css/untitled.md)
 
 ## JavaScript
 
-* [Untitled](javascript/untitled.md)
+* [📄 Arrow function expression](javascript/untitled.md)
+* [📄 Closure, Hoisting](javascript/closure-hoisting.md)
+* [📄Destructuring assignment](javascript/destructuring-assignment.md)
 
 ## React
 
