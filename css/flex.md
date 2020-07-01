@@ -82,7 +82,7 @@ item이 한 줄이 경우 많이 사용한다.
 | Title | Content |
 | :--- | :--- |
 | stretch \(**defalut**\) | container의 교차축을 채우기 위해 item 를 늘림 |
-| flex-start | item를 시작점으로 정 |
+| flex-start | item를 시작점으로 정렬 |
 | flex-end | item를 끝점으로 정렬 |
 | center | item를 가운데 정렬 |
 | baseline | item를 문자 기준선에 정렬 |
@@ -119,6 +119,6 @@ item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
 | stretch | container의 교차 축을 채우기 위해 Item을 늘림 |
 | flex-start | item를 각 줄의 시작점으로 정렬 |
 | flex-end | item를 각 줄의 끝점으로 정렬 |
-| center | item를 가운데 정 |
+| center | item를 가운데 정렬 |
 | baseline | item를 문자 기준선에 정렬 |
 
