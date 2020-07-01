@@ -18,8 +18,8 @@ block 또는 lnline이 아닌  `display: flex`, `display: inline-flex`설정한�
 
 | Title | Content |
 | :--- | :--- |
-| flex | Block 요소 처럼 수직 쌓임 |
-| inline-flex | lnline\(Inline block\) 요소 처럼 수평 쌓임 |
+| flex | Block 요소 처럼 수직 정렬 |
+| inline-flex | lnline\(Inline block\) 요소 처럼 수평 정렬 |
 
 #### 2-2. flex-flow
 
@@ -31,10 +31,10 @@ item의 주 축\(main-axis\)을 설정한다.
 
 | Title | Content |
 | :--- | :--- |
-| row ****\(**defalut**\) | item를 수평축, 왼쪽에서 오른쪽으로 표시 |
-| row-reverse | item `row`의 반대축으로 표시 |
-|  column | item 수직축, 위에서 아래로 표시 |
-| column-reverse | item `column`의 반대축으로 표시 |
+| row ****\(**defalut**\) | item를 수평축, 왼쪽에서 오른쪽으로 정렬 |
+| row-reverse | item `row`의 반대축으로 정렬 |
+|  column | item 수직축, 위에서 아래로 정렬 |
+| column-reverse | item `column`의 반대축으로 정렬 |
 
 #### 2-4. flex-wrap
 
@@ -56,7 +56,7 @@ item 여러 줄 묶음, 줄 바꿈 설정한다.
 | flex-end | item를 끝점으로 정렬 |
 | center | item를 가운데 정렬 |
 | space-between | item를 시작점 끝점에 정렬하고, 나머지 item은 사이에 고르게 정렬 |
-| space-around | item를 균등한 여백을 포함하여 정 |
+| space-around | item를 균등한 여백을 포함하여 정렬 |
 
 #### 2-6. align-content 
 
@@ -68,7 +68,7 @@ align-content를 사용하기 위해서 `flex-wrap : wrap;` 이어야 한다.
 | :--- | :--- |
 | stretch \(**defalut**\) | container의 교차축을 채우기 위해 item 를 늘림 |
 | flex-start | item를 시작점으로 정렬 |
-| flex-end | item를 끝점으로 설정 |
+| flex-end | item를 끝점으로 정렬 |
 | center | item를 가운데 정렬 |
 | space-between | item를 시작점 끝점에 정렬하고, 나머지 item은 사이에 고르게 정렬 |
 | space-around | item를 군등한 여백을 포함하여 정렬 |
@@ -82,9 +82,9 @@ item이 한 줄이 경우 많이 사용한다.
 | Title | Content |
 | :--- | :--- |
 | stretch \(**defalut**\) | container의 교차축을 채우기 위해 item 를 늘림 |
-| flex-start | item를 시작점으로 설정 |
-| flex-end | item를 끝점으로 설정 |
-| center | item를 가운데 설정 |
+| flex-start | item를 시작점으로 정 |
+| flex-end | item를 끝점으로 정렬 |
+| center | item를 가운데 정렬 |
 | baseline | item를 문자 기준선에 정렬 |
 
 ### 3. item 정렬
@@ -97,7 +97,7 @@ item 순서를 설정, 숫자를 지정하고 숫자가 클수록 순서가 밀�
 
 | Title | Content |
 | :--- | :--- |
-| Number | item의 순서 설정 |
+| Number | item의 순서 정렬 |
 
 #### 3-2. flex
 
@@ -118,7 +118,7 @@ item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
 | auto \(**defalut : auto**\) |  container의 `align-item` 속성을 상속 받음 |
 | stretch | container의 교차 축을 채우기 위해 Item을 늘림 |
 | flex-start | item를 각 줄의 시작점으로 정렬 |
-| flex-end | item를 각 줄의 끝점으로 설정 |
-| center | item를 가운데 설정 |
+| flex-end | item를 각 줄의 끝점으로 정렬 |
+| center | item를 가운데 정 |
 | baseline | item를 문자 기준선에 정렬 |
 
