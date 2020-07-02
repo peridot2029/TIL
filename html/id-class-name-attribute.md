@@ -1,7 +1,3 @@
----
-description: 'HTML ID, Class, Name attribute simple theorem'
----
-
 # 📄 ID, Class, Name attribute
 
 ### 1. ID attribute 정의

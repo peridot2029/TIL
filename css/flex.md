@@ -1,7 +1,3 @@
----
-description: css flex  simple theorem
----
-
 # 📄 Flex
 
 ### 1. Flex 정의
