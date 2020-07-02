@@ -27,7 +27,7 @@ block 또는 lnline이 아닌  `display: flex`, `display: inline-flex`설정한�
 
 #### 2-2. flex-flow
 
-item의 주 축\(main-axis\)을 설정, item의 여러 줄 묶음\(줄 바꿈\)도 설정한다.
+Item의 주 축\(main-axis\)을 설정, item의 여러 줄 묶음\(줄 바꿈\)도 설정한다.
 
 #### 2-3. flex-direction 
 

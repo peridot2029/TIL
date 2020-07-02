@@ -12,6 +12,7 @@
 
 ## CSS
 
+* [📄 Type Selector, Class Selector](css/type-selector-class-selector.md)
 * [📄 Flex](css/flex.md)
 
 ## JavaScript
