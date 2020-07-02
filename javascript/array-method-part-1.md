@@ -32,7 +32,7 @@ const result = alpha.concat(numeric); // ['a','b','c', 1, 2, 3]
 const result2 = numeric.concat(2, [44, 55]); // [1, 2, 3, 2, 44, 55]
 ```
 
-#### 3. array.copyWithin\(\)
+### 3. array.copyWithin\(\)
 
 * 배열의 일부를 얕게 복사한 뒤, 동일한 배열의 다른 위치에 덮어쓰고 , 그 배열을 반환한다.
 * 이 때 배열의 크기\(배열의 길이\)를 수정하지 않고 반환한다.
