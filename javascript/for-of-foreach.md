@@ -1,4 +1,4 @@
-# 📄 for~of,forEach
+# 📄 for~of, forEach
 
 ### 1. for~in 정의
 

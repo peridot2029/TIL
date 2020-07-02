@@ -22,7 +22,8 @@
 * [📄 Destructuring assignment](javascript/destructuring-assignment.md)
 * [📄 Iteration protocol part 1](javascript/iteration-protocol-part-1.md)
 * [📄 Iteration protocol part2](javascript/iteration-protocol-part2.md)
-* [📄 for~of,forEach](javascript/for-of-foreach.md)
+* [📄 for~of, forEach](javascript/for-of-foreach.md)
+* [📄 Array method part 1](javascript/array-method-part-1.md)
 
 ## React
 
