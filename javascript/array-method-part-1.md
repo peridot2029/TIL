@@ -6,7 +6,7 @@
 
 ✍ **Syntax**
 
-```text
+```javascript
 Array.from(arrayLike[, mapFn[, thisArg]])
 ```
 
@@ -45,7 +45,7 @@ array.copyWithin(target[, start[, end]])
 
 📄 **target**
 
-* 복사한 시퀀스\(값\)를 넣을 위치 가리키는 0 index ,이때 음수를 지정하면 배열의 끝에서 부터 계산
+* **복사한** 시퀀스\(값\)를 넣을 위치 가리키는 0 index ,이때 음수를 지정하면 배열의 끝에서 부터 계산
 * `target`이 `array.length` 보다 크거나 같으면 **아무것도 복사하지 않는다**.
 * `target`이 `start` 이후라면 복사한 시퀀스를`array.length`에 맞춰 짜른다.
 
@@ -65,7 +65,7 @@ array.copyWithin(target[, start[, end]])
 
 ✍ **Syntax**
 
-```text
+```javascript
 array.slice([begin[, end]])
 ```
 
