@@ -1,3 +1,7 @@
+---
+description: 'css simple selector, attribute selector simple cleanup'
+---
+
 # 📄 Type Selector, Class Selector
 
 ### 1. X
