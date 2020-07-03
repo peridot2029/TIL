@@ -139,7 +139,7 @@ const product = arr.reduce((x,y) => {
 ```javascript
 arr.fill(value[, start[, end]])
 ```
-
+✍ **Exmple**
 ```javascript
 
 let list = ["css", "html", "react"];
@@ -152,7 +152,7 @@ arr.fill("change");
 // List after result 
 console.log(list); // ["change", "change", "change"];
 ```
-
+✍ **Exmple**
 ```javascript
 let list = ["css", "html", "react"];
 
