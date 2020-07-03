@@ -27,7 +27,7 @@ Array.from(arrayLike[, mapFn[, thisArg]])
 ```javascript
 array.concat([value1[, value2[, ...[, valueN]]]])
 ```
-
+✍ **Exmple**
 ```javascript
 const alpha = ['a', 'b', 'c'];
 const numeric = [1, 2, 3];
