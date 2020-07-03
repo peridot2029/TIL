@@ -29,9 +29,8 @@ for (const item of myArray) {
 	console.log(item); // 1 2 3
 }
 ```
-
+✍ **Exmple -  Compliant iterable protocol**
 ```javascript
-// Compliant iterable protocol
 
 const myArray = [1, 2, 3];
 
@@ -53,7 +52,7 @@ for(const item of myObject) {
 	console.log(item);
 }
 ```
-
+✍ **Exmple**
 ```javascript
 // Noncompliant iterable protocol
 const myObject = { name: "firstObject", value: null };
@@ -74,6 +73,7 @@ for(const item of myObject) {
 
 **Iterator**의 **next method**를 호출하면 **value, done property**를 갖는**Iterator Iresult object**를 반환한다.
 
+✍ **Exmple**
 ```javascript
 // Compliant iterable protocol
 const myArray = [1, 2, 3];
@@ -89,7 +89,7 @@ console.log(iterator.next()); // {value : 2, done : false}
 console.log(iterator.next()); // {value : 3, done : false}
 console.log(iterator.next()); // {value : undefined, done : true}
 ```
-
+✍ **Exmple**
 ```javascript
 // Compliant iterable protocol
 const myArray = [1, 2, 3];
