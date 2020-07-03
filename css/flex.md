@@ -1,4 +1,4 @@
-# 📄 Flex
+# 📄 CSS Flex
 
 ### 1. Flex 정의
 

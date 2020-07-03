@@ -1,4 +1,4 @@
-# 📄 Destructuring assignment
+# 📄 JavaScript Destructuring assignment
 
 ### 1. Destructuring assignment 정의
 

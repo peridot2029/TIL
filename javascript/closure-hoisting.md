@@ -1,4 +1,4 @@
-# 📄 Closure, Hoisting
+# 📄 JavaScript Closure, Hoisting
 
 ### 1. Closure 정의
 

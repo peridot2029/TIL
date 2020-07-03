@@ -1,4 +1,4 @@
-# 📄 Iteration protocol part 1
+# 📄 JavaScript Iteration protocol part 1
 
 ### 1. Iteration protocol 정의
 

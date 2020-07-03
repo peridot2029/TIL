@@ -1,4 +1,4 @@
-# 📄 Array method part 1
+# 📄 JavaScript Array method part 1
 
 ### 1. Array.from\(\)
 

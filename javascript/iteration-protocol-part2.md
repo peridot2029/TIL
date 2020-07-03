@@ -1,4 +1,4 @@
-# 📄 Iteration protocol part2
+# 📄 JavaScript Iteration protocol part2
 
 **ES6**에서 도입된 **이터레이션 프로토콜\(Iteration protocol\)**은 데이터 컬렉션을 순회하기 위한 **프로트콜\(미리 약속된 규칙\)**이다. 이터레이션 프로트콜은 준수한 객체는 `for ~ of` 문으로 순회가 가능하다.
 

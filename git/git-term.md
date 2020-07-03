@@ -2,7 +2,7 @@
 
 ### 1. Git term
 
-#### Working space
+### Working space
 
 개인 컴퓨터 환경에서 소스 코드를 편집하는 일반적인 프로젝트 폴더
 
@@ -40,4 +40,20 @@ Local  Repository, Remote  Repository 두 가지의 저장소를 나뉜다.
 
 * `master` : 기본 설정된 브랜치
 * `origin` : 기본 설정된 원격 저장소 주소에 붙는 별명
+
+#### Log
+
+최신순으로 커밋 로그를 조회한다.
+
+* `git log --oneline` : 옵션을 적용해서,  커밋에 대한 내용을 한 줄로 표시
+
+#### HEAD
+
+브랜치는 브랜치에 담긴 커밋 중 마지막 커밋을 가리킨다. `HEAD`는 현재 브랜치 마지막의 커밋의 스냅
+
+
+
+
+
+
 
