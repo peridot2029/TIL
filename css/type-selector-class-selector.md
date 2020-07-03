@@ -26,6 +26,8 @@
 
 자손 선택자 \(Descendent Selector\), 문서 구조에서 특정 요소의 자손을 대상으로 삼는다. 
 
+✍ **Exmple**
+
 ```css
 a {
  color : blue;
@@ -42,6 +44,8 @@ a {
 
 예를 들면, `class`가 `container`인 `div`의 직계 자손 `ul`만을 대상으로 삼는다.
 
+✍ **Exmple**
+
 ```markup
 <div class="container">
     <ul>
@@ -57,6 +61,8 @@ a {
 
 `ul`안에 모든 `p`요소를 대상으로 삼는다.
 
+✍ **Exmple**
+
 ```css
 ul ~ p {
    color: red;
@@ -66,6 +72,8 @@ ul ~ p {
 ### 9. .X .Y
 
 멀티 클래스 선택자 \(Mutil Class Selector\), 점\(.\)을 사용해서 두 개 요소를 연결하여 대상으로 삼는다.
+
+✍ **Exmple**
 
 ```css
 // 하나의 요소가 두개를 가졌을 경

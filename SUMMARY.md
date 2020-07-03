@@ -24,6 +24,8 @@
 * [📄 JavaScript Iteration protocol part2](javascript/iteration-protocol-part2.md)
 * [📄 JavaScript for~of, forEach](javascript/for-of-foreach.md)
 * [📄 JavaScript Array method part 1](javascript/array-method-part-1.md)
+* [📄 JavaScript Array method part 2](javascript/javascript-array-method-part-2.md)
+* [📄 JavaScript Array method part 3](javascript/javascript-array-method-part-3.md)
 
 ## React
 

@@ -10,6 +10,8 @@
 
 **Iterator Iresult object**의 **done** 프로퍼티 값이 `false`이면 **Iterable**의 순회를 계속하고 , `true`이면 **Iterable**의 순회를 중단한다.
 
+✍ **Exmple**
+
 ```javascript
 for (const item of ['a', 'b', 'c']) {
   console.log(item);

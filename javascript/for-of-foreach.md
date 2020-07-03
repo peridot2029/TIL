@@ -6,6 +6,8 @@
 
 단, **key** 값에 접근할 수 있지만, **value** 값에 **접근할 수 있는 방법은 제공하지 않는다.**
 
+✍ **Exmple**
+
 ```javascript
 const cafeMenu = {
     name: "Green_Grape_Slush",

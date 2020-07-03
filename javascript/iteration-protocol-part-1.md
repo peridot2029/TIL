@@ -18,9 +18,9 @@
 
 Object\(일반 객체\)는 **Symbol.iterator** **method 소유하지 않는다.**
 
-```javascript
-// Compliant iterable protocol
+✍ **Exmple - Compliant iterable protocol**
 
+```javascript
 const myArray = [1, 2, 3];
 
 console.log(Symbol.iterator in myArray); // true

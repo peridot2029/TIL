@@ -110,6 +110,8 @@ array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
 
 배열에 추가할 요소, 아무 요소도 지정하지 않으면 `splice()`는 요소를 제거하기만 한다
 
+✍ **Exmple**
+
 ```javascript
 const arr =[1,2,3,4,5];
 
@@ -139,6 +141,7 @@ arr.fill(value[, start[, end]])
 ```
 
 ```javascript
+
 let list = ["css", "html", "react"];
 
 // List before result
