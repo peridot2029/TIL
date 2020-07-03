@@ -31,6 +31,30 @@ for (const item of myArray) {
 ```
 
 ```javascript
+// Compliant iterable protocol
+
+const myArray = [1, 2, 3];
+
+console.log(Symbol.iterator in myArray); // true
+
+for (const item of myArray) {
+	console.log(item); // 1 2 3
+}
+```
+
+```javascript
+// Noncompliant iterable protocol
+const myObject = { name: "firstObject", value: null };
+
+console.log(Symbol.iterator in myObject); // false
+
+// Uncaught TypeError: myObject is not iterable
+for(const item of myObject) {
+	console.log(item);
+}
+```
+
+```javascript
 // Noncompliant iterable protocol
 const myObject = { name: "firstObject", value: null };
 
@@ -49,6 +73,22 @@ for(const item of myObject) {
 **Iterator protocol** 을 준수한 **Iterator**는 **next method**를 가진다.
 
 **Iterator**의 **next method**를 호출하면 **value, done property**를 갖는**Iterator Iresult object**를 반환한다.
+
+```javascript
+// Compliant iterable protocol
+const myArray = [1, 2, 3];
+
+const iterator = myArray[Symbol.iterator]();
+
+console.log("next" in iterator); // true
+
+const iteratorResult = iterator.next();
+
+console.log(iteratorResult);  // {value : 1, done : false }
+console.log(iterator.next()); // {value : 2, done : false}
+console.log(iterator.next()); // {value : 3, done : false}
+console.log(iterator.next()); // {value : undefined, done : true}
+```
 
 ```javascript
 // Compliant iterable protocol

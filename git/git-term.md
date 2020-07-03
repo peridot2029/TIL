@@ -1,7 +1,3 @@
----
-description: a basic term for dealing with git.
----
-
 # 📄 Git term
 
 ### 1. Git term
