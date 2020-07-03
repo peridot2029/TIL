@@ -76,6 +76,8 @@ reduce 호출한 배열
 
 **빈 배열**에서 초기값 없이 `reduce()`를 호출 하면 오류가 발생
 
+✍ **Exmple**
+
 ```javascript
 const arr =[1,2,3,4,5];
 
