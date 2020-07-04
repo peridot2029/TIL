@@ -20,8 +20,8 @@ Set 객체는 for ~ of를 사용해서 요소를 순회할 수 있다.
 
 ✍ **Syntax**
 
-```text
-new Set([iterable]);
+```javascript
+new Set([iterable])
 ```
 
 ### 3. Set의 사용
@@ -97,7 +97,7 @@ Set 객체와 유사하다.Set 객체와 다르게 객체\(Object\)만 수집할
 
 ✍ **Exmple**
 
-```text
+```javascript
 let myMap = new Map([
 	["name", "songsong"],
 	["surname", "Lee"],
@@ -128,7 +128,7 @@ for (let [key, value] of myMap) {
 
 ✍**Syntax**
 
-```text
+```javascript
 new WeakMap([iterable])
 ```
 
