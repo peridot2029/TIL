@@ -1,6 +1,6 @@
 # 📄 JavaScript Array method part 1
 
-### 1. Array.from\(\)
+## 1. Array.from\(\)
 
 **유사 배열 객체 \(array-like object\)** 또는 **반복 가능한 객체**를 얕게 복사해 **새로운 Array** 객체를 만든다.
 
@@ -10,7 +10,7 @@
 Array.from(arrayLike[, mapFn[, thisArg]])
 ```
 
-### 2. array.concat\(\)
+## 2. array.concat\(\)
 
 기존 배열에 `concat()`를 사용하게 되면 **전달 인자**를 추가한 **새로운 배열**을 반환한다.
 
@@ -27,7 +27,9 @@ Array.from(arrayLike[, mapFn[, thisArg]])
 ```javascript
 array.concat([value1[, value2[, ...[, valueN]]]])
 ```
+
 ✍ **Exmple**
+
 ```javascript
 const alpha = ['a', 'b', 'c'];
 const numeric = [1, 2, 3];
@@ -36,7 +38,7 @@ const result = alpha.concat(numeric); // ['a','b','c', 1, 2, 3]
 const result2 = numeric.concat(2, [44, 55]); // [1, 2, 3, 2, 44, 55]
 ```
 
-### 3. array.copyWithin\(\)
+## 3. array.copyWithin\(\)
 
 배열의 일부를 얕게 복사한 뒤, 동일한 배열의 다른 위치에 덮어쓰고 , 그 배열을 반환한다.
 
@@ -66,7 +68,7 @@ array.copyWithin(target[, start[, end]])
 
 `copyWithin`은 `end` 인덱스 이전까지 복사하므로 `end`인덱스가 가리키는 요소는 제외한다.
 
-### 4. array.slice\(\)
+## 4. array.slice\(\)
 
 어떤 배열의 **begin** 부터 **end** 까지에 대한 얕은 복사본을 **새로운 배열 객체**로 반환한다.
 
@@ -88,7 +90,7 @@ array.slice([begin[, end]])
 
 추출을 종료 할 0 기준 인덱스, `slice`는 `end` 인덱스를 제외하고 추출한다.
 
-### 4. array.splice\(\)
+## 4. array.splice\(\)
 
 배열의 기존 요소를 **삭제** 또는 **교체**하거나 새 요소를 **추가**하여, **배열의 내용**을 변경한다.
 
@@ -116,7 +118,7 @@ array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
 const arr =[1,2,3,4,5];
 
 const product = arr.reduce((x,y) => {
-	return x * y;
+    return x * y;
 },2);
 
 // x(2)  * y(1) = 2
@@ -126,7 +128,7 @@ const product = arr.reduce((x,y) => {
 // x(48) * y(5) = 240
 ```
 
-### 5. array.fill\(\)
+## 5. array.fill\(\)
 
 배열의 시작 인덱스 부터 끝 인덱스의 이전까지 정적인 값 하나로 채운다.
 
@@ -139,9 +141,10 @@ const product = arr.reduce((x,y) => {
 ```javascript
 arr.fill(value[, start[, end]])
 ```
-✍ **Exmple**
-```javascript
 
+✍ **Exmple**
+
+```javascript
 let list = ["css", "html", "react"];
 
 // List before result
@@ -152,7 +155,9 @@ arr.fill("change");
 // List after result 
 console.log(list); // ["change", "change", "change"];
 ```
+
 ✍ **Exmple**
+
 ```javascript
 let list = ["css", "html", "react"];
 
@@ -163,7 +168,7 @@ arr = arr.map(() => {
     return {
       name: "change",
       profession: "Software Developer",
-	};
+    };
 });
 
 arr[0].name = "song";

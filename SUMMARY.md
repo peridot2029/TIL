@@ -26,6 +26,8 @@
 * [📄 JavaScript Array method part 1](javascript/array-method-part-1.md)
 * [📄 JavaScript Array method part 2](javascript/javascript-array-method-part-2.md)
 * [📄 JavaScript Array method part 3](javascript/javascript-array-method-part-3.md)
+* [📄 JavaScript Primitive value - Symbol](javascript/javascript-primitive-value-symbol.md)
+* [📄 JavaScript Reference value - Set, Map](javascript/javascript-reference-value-set-map.md)
 
 ## React
 

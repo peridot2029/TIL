@@ -1,12 +1,12 @@
 # 📄 JavaScript Iteration protocol part 1
 
-### 1. Iteration protocol 정의
+## 1. Iteration protocol 정의
 
 **ES6**에서 도입된 **이터레이션 프로토콜\(Iteration protocol\)**은 데이터 컬렉션을 순회하기 위한 **프로트콜\(미리 약속된 규칙\)**이다. 이터레이션 프로트콜은 준수한 객체는 `for ~ of`문으로 순회가 가능하다.
 
 **이터레이션 프로토콜**에는 **이터러블 프로토콜\(Iterable protocol\)과 이터레이터 프로토콜\(Iterator protocol\)**이 있다.
 
-### 2. It**erable 정의**
+## 2. It**erable 정의**
 
 **Iterable protocol** 을 준수한 객체를 부르는 명칭이다.
 
@@ -26,18 +26,19 @@ const myArray = [1, 2, 3];
 console.log(Symbol.iterator in myArray); // true
 
 for (const item of myArray) {
-	console.log(item); // 1 2 3
+    console.log(item); // 1 2 3
 }
 ```
-✍ **Exmple -  Compliant iterable protocol**
-```javascript
 
+✍ **Exmple - Compliant iterable protocol**
+
+```javascript
 const myArray = [1, 2, 3];
 
 console.log(Symbol.iterator in myArray); // true
 
 for (const item of myArray) {
-	console.log(item); // 1 2 3
+    console.log(item); // 1 2 3
 }
 ```
 
@@ -49,10 +50,12 @@ console.log(Symbol.iterator in myObject); // false
 
 // Uncaught TypeError: myObject is not iterable
 for(const item of myObject) {
-	console.log(item);
+    console.log(item);
 }
 ```
+
 ✍ **Exmple**
+
 ```javascript
 // Noncompliant iterable protocol
 const myObject = { name: "firstObject", value: null };
@@ -61,11 +64,11 @@ console.log(Symbol.iterator in myObject); // false
 
 // Uncaught TypeError: myObject is not iterable
 for(const item of myObject) {
-	console.log(item);
+    console.log(item);
 }
 ```
 
-### 3. I**terator 정의**
+## 3. I**terator 정의**
 
 **Iterable protocol** 을 준수한 **Iterable**은 **Symbol.iterator method를 소유한다.**
 
@@ -74,6 +77,7 @@ for(const item of myObject) {
 **Iterator**의 **next method**를 호출하면 **value, done property**를 갖는**Iterator Iresult object**를 반환한다.
 
 ✍ **Exmple**
+
 ```javascript
 // Compliant iterable protocol
 const myArray = [1, 2, 3];
@@ -89,7 +93,9 @@ console.log(iterator.next()); // {value : 2, done : false}
 console.log(iterator.next()); // {value : 3, done : false}
 console.log(iterator.next()); // {value : undefined, done : true}
 ```
+
 ✍ **Exmple**
+
 ```javascript
 // Compliant iterable protocol
 const myArray = [1, 2, 3];
@@ -106,7 +112,7 @@ console.log(iterator.next()); // {value : 3, done : false}
 console.log(iterator.next()); // {value : undefined, done : true}
 ```
 
-### 4 . ES6 에서 제공되는 Bulit in **Iterable**
+## 4 . ES6 에서 제공되는 Bulit in **Iterable**
 
 `Array, String, Map, Set, Arguments`
 
@@ -114,7 +120,7 @@ console.log(iterator.next()); // {value : undefined, done : true}
 
 `TypedArray`
 
-### 5. Iteration protocol 필요성
+## 5. Iteration protocol 필요성
 
 **데이터 소비자 \(Data consumer\)**인 `for ~ of`문 , spread 문법 등은 다양한 데이터 소스를 사용한다.
 
