@@ -28,7 +28,7 @@
 * [📄 JavaScript Array method part 3](javascript/javascript-array-method-part-3.md)
 * [📄 JavaScript Primitive value - Symbol](javascript/javascript-primitive-value-symbol.md)
 * [📄 JavaScript Reference value - Set, Map](javascript/javascript-reference-value-set-map.md)
-* [📄 JavaScript Classes The Basics part 1](javascript/untitled.md)
+* [📄 JavaScript Classes The Basics part 1](javascript/javascript-classes-the-basics-part-1.md)
 * [📄 JavaScript Classes getter, setter part 2](javascript/javascript-classes-getter-setter-part-2.md)
 
 ## React
