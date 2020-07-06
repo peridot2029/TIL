@@ -30,6 +30,8 @@
 * [📄 JavaScript Reference value - Set, Map](javascript/javascript-reference-value-set-map.md)
 * [📄 JavaScript Classes The Basics part 1](javascript/javascript-classes-the-basics-part-1.md)
 * [📄 JavaScript Classes getter, setter part 2](javascript/javascript-classes-getter-setter-part-2.md)
+* [📄 JavaScript OOP term](javascript/javascript-oop-term.md)
+* [📄 JavaScript Modules](javascript/javascript-modules.md)
 
 ## React
 
