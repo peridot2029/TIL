@@ -19,6 +19,7 @@
 
 * [📄 JavaScript Arrow function expression](javascript/arrow-function-expression.md)
 * [📄 JavaScript Closure, Hoisting](javascript/closure-hoisting.md)
+* [📄 JavaScript Function - call, apply, bind](javascript/javascript-function-call-apply-bind.md)
 * [📄 JavaScript Destructuring assignment](javascript/destructuring-assignment.md)
 * [📄 JavaScript Iteration protocol part 1](javascript/iteration-protocol-part-1.md)
 * [📄 JavaScript Iteration protocol part2](javascript/iteration-protocol-part2.md)
