@@ -36,7 +36,7 @@
 
 ## React
 
-* [Untitled](react/untitled.md)
+* [📄 React Component](react/untitled.md)
 
 ## SCSS
 
