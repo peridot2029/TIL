@@ -8,23 +8,41 @@
 >
 > 객체 지향 프로그래밍 특징은 다음 같은 용어로 정리 할 수 있다.
 
-📄 **Class** 객체 속성\(Properites\)을 정의한다. \(ex : 설계 도면\)
+📄 **Class** 
 
-📄 **Object** Class의 인스턴스\(Instance\)이다. \(ex : 설계 도면을 통해 구현된 실제 제품\)
+객체 속성\(Properites\)을 정의한다. \(ex : 설계 도면\)
 
-📄 **Property** 객체의 속성을 의미한다. \(ex : color 등과 같은 명사 형태\)
+📄 **Object** 
 
-📄 **Method** 객체의 기능을 의미한다. \(ex : walk\(\)등과 같은 동사 형태\)
+Class의 인스턴스\(Instance\)이다. \(ex : 설계 도면을 통해 구현된 실제 제품\)
 
-📄 **Constructor** 인스턴스 생성 순간에 호출 실행되는 메서드 이다.
+📄 **Property** 
 
-📄 **Inheritance** Class는 다른 Class로 부터 속성들을 상속 받을 수 있다. \(Super Class → Sub Class\)
+객체의 속성을 의미한다. \(ex : color 등과 같은 명사 형태\)
 
-📄 **Encapsulation** Class는 해당 객체의 속성, 메서드 만 정의할 수 있다. \(외부 접근 불가\)
+📄 **Method** 
 
-📄 **Abstraction** 복잡한 상속, 메서드, 객체의 속성의 결합은 반드시 현실 모델을 시물레이션 할 수 있어야 한다.
+객체의 기능을 의미한다. \(ex : walk\(\)등과 같은 동사 형태\)
 
-📄 **Polymorphism** 다른 Class들이 같은 메서드나 속성으로 정의될 수 있다.
+📄 **Constructor** 
+
+인스턴스 생성 순간에 호출 실행되는 메서드 이다.
+
+📄 **Inheritance** 
+
+Class는 다른 Class로 부터 속성들을 상속 받을 수 있다. \(Super Class → Sub Class\)
+
+📄 **Encapsulation** 
+
+Class는 해당 객체의 속성, 메서드 만 정의할 수 있다. \(외부 접근 불가\)
+
+📄 **Abstraction** 
+
+복잡한 상속, 메서드, 객체의 속성의 결합은 반드시 현실 모델을 시물레이션 할 수 있어야 한다.
+
+📄 **Polymorphism** 
+
+다른 Class들이 같은 메서드나 속성으로 정의될 수 있다.
 
 ### 2. 프로타입 기반 프로그래밍
 
