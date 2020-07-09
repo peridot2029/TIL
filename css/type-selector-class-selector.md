@@ -26,13 +26,7 @@
 
 자손 선택자 \(Descendent Selector\), 문서 구조에서 특정 요소의 자손을 대상으로 삼는다. 
 
-✍ **Exmple**
 
-```css
-a {
- color : blue;
-}
-```
 
 ### 6. X + Y
 
@@ -40,7 +34,7 @@ a {
 
 ### 7. X &gt; Y
 
-자식 선택자 \(Child Selector\),  특정 요소의 직계 자식만을 대상으로 삼는다.
+자식 선택자 \(Child Selector\),  특정 요소의 **직계 자식만**을 대상으로 삼는다.
 
 예를 들면, `class`가 `container`인 `div`의 직계 자손 `ul`만을 대상으로 삼는다.
 

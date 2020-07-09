@@ -1,4 +1,4 @@
-# 📄 HTML ID, Class, Name attribute
+# 📄 HTML ID, class, name attribute
 
 ### 1. ID attribute 정의
 

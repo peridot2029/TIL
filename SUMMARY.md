@@ -8,7 +8,7 @@
 
 ## HTML
 
-* [📄 HTML ID, Class, Name attribute](html/id-class-name-attribute.md)
+* [📄 HTML ID, class, name attribute](html/id-class-name-attribute.md)
 
 ## CSS
 
