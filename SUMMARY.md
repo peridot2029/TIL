@@ -17,9 +17,9 @@
 
 ## JavaScript
 
-* [📄 JavaScript Arrow function expression](javascript/arrow-function-expression.md)
 * [📄 JavaScript Closure, Hoisting](javascript/closure-hoisting.md)
 * [📄 JavaScript Function - call, apply, bind](javascript/javascript-function-call-apply-bind.md)
+* [📄 JavaScript Arrow function expression](javascript/arrow-function-expression.md)
 * [📄 JavaScript Destructuring assignment](javascript/destructuring-assignment.md)
 * [📄 JavaScript Iteration protocol part 1](javascript/iteration-protocol-part-1.md)
 * [📄 JavaScript Iteration protocol part2](javascript/iteration-protocol-part2.md)
@@ -38,6 +38,7 @@
 
 * [📄 React Component](react/untitled.md)
 * [📄 React State and Lifecycle part 01](react/react-state-and-lifecycle-part-01.md)
+* [📄React State and Lifecycle part02](react/react-state-and-lifecycle-part02.md)
 
 ## SCSS
 

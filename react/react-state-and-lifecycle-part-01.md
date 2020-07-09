@@ -32,7 +32,7 @@ React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
 **component**가 새롭게 생성되는 시점
 
-결과물로 나온 elements가 Virital DOM에 삽입되고 실제 DOM 업데이트 하기 과정
+결과물로 나온 elements가 **Virital DOM**에 삽입되고 실제 DOM 업데이트 하기 과정
 
 `ComponentDidMount()`를 제외한 나머지는 **Virital DOM**을 조작한다.
 
@@ -48,7 +48,7 @@ React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
 최종적으로 component에서 작업한 결과물 return method
 
-결과물로 나온 element들이 가상 DOM에 mount 되고 실제 DOM 업데이트 된다
+결과물로 나온 elements를 **Virital DOM**에 mount 되고 실제 DOM 업데이트 된다
 
 배열 또는 여러개의 elements를 return 하고 싶을 때, Fragments를 사용할 수 있다
 
