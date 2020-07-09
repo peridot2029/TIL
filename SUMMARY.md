@@ -38,7 +38,7 @@
 
 * [📄 React Component](react/react-component.md)
 * [📄 React State and Lifecycle part 01](react/react-state-and-lifecycle-part-01.md)
-* [📄React State and Lifecycle part02](react/react-state-and-lifecycle-part02.md)
+* [📄 React State and Lifecycle part02](react/react-state-and-lifecycle-part02.md)
 
 ## SCSS
 

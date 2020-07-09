@@ -1,4 +1,4 @@
-# 📄React State and Lifecycle part02
+# 📄 React State and Lifecycle part02
 
 ### 1. Lifecycle 정의
 
