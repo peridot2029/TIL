@@ -6,8 +6,6 @@
 Key는 React가 어떤 항목을 변경, 추가 또는 삭제할지 식별하는 것을 돕는다.
 {% endhint %}
 
-
-
 **Key Element**에 안정적인 고유성 부여하기 위해 배열 내부의 **Element**에 지정해야 한다.
 
 key를 다른 항목들 사이에서 해당 항목을 **고유하게 식별하기 할 수 있는 문자열**을 사용하는게 좋다
@@ -28,13 +26,13 @@ key를 다른 항목들 사이에서 해당 항목을 **고유하게 식별하�
 ```javascript
 function ListItem(props) {
   const value = props.value;
-	// Not key - 여기에는 key 지정한 필요가 없다.
+	// Not key - There is no need to specify a key here.
   return <li key={value.toString()}>{value}</li>;
 }
 
 function NumberList(props) {
   const numbers = props.numbers;
-	// Assign a key here - 여기에 key를 지정해야된다.
+	// Assign a key here - The key must be specified here.
   const listItems = numbers.map((number) => <ListItem value={number} />);
   return <ul>{listItems}</ul>;
 }

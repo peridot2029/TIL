@@ -2,7 +2,7 @@
 
 ### 1. Life Cycle 정의
 
-> **component는 프로세스의 특정 시간에 코드를 실행하는 다양한 LifeCycle Hook 제공되고 크게 3단계로 진행한다.**
+> **component는 프로세스의 특정 시간에 코드를 실행하는 다양한 Life Cycle Hook 제공되고 크게 3단계로 진행한다.**
 
 > **생성 \(Mounting\) → 갱신\(Updating\) → 제거 \(Unmounting\)**
 

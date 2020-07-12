@@ -1,6 +1,6 @@
 # 📄 JavaScript Classes The Basics part 01
 
-### 1. class 정의
+### 1. Class 정의
 
 JavaScript **프로토타입 기반\(prototype-based\)** 객체지향 언어다.
 

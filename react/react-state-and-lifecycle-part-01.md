@@ -26,7 +26,7 @@ React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
 ### 3. Life Cycle 정의
 
-> **component는 프로세스의 특정 시간에 코드를 실행하는 다양한 LifeCycle Hook 제공되고 크게 3단계로 진행한다.**
+> **Component는 프로세스의 특정 시간에 코드를 실행하는 다양한 Life Cycle Hook 제공되고 크게 3단계로 진행한다.**
 
 > **생성 \(Mounting\) → 갱신\(Updating\) → 제거 \(Unmounting\)**
 
@@ -44,9 +44,7 @@ React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
 ### 4-1. constructor\(\)
 
-최초에 Component가 Mount 되기 전에 실행
-
-주된 역할은 state 값을 선언 및 초기화
+최초에 Component가 mount 되기 전에 실행, 주된 역할은 state 값을 선언 및 초기화
 
 각종 Event Binding 처리
 
@@ -78,5 +76,5 @@ DOM Node를 확인하고, 초기화 해야 하는 작업이 있는 경우 사용
 
 외부의 데이터를 불러오거나, 네트워크 요청을 보내야 하는 경우 사용한다.
 
-\`\`
+
 

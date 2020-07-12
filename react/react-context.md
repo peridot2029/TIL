@@ -113,7 +113,7 @@ const SignIn = () => (
  ContextType은 Context Object를 클래스 컴포넌트의 **Context Type Static** 속성으로 지정해 활용하는 방법이다. 이 방법을 사용하면 `this.context`를 통해 Context Object에 접근해 값을 읽고 사용할 수 있다.  
 
 
-Function Componet에서는 `useContext()` **Hook**를 사용한다.
+Functional Componet에서는 `useContext()` **Hook**를 사용한다.
 
  **✍ Exmple - ContextType  application**
 
