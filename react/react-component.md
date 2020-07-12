@@ -17,36 +17,34 @@ componets는 개별적인 파일로 분리되어 관리한다.
 ### 2 . Controlled Component 정의
 
 {% hint style="info" %}
-**Uncontrolled component**  :  사용자가 상태를 제어하지 않는 컴포넌트
+**Uncontrolled Component**  :  사용자가 상태를 제어하지 않는 컴포넌트
 {% endhint %}
 
-HTML 에서`<input>,<select>`와 같은 **form element**를  사용자 입력을 기반을 state를 관리 및 갱신한다.
+HTML 에서`<input>,<select>`와 같은 **Form Element**를  사용자 입력을 기반을 state를 관리 및 갱신한다.
 
 state는 일반적으로 component의 state 속성에 유지 되고, `setState()`에 의해 갱신한다.
 
-react component는 form에 발생하는 사용자가 입력값을 제어 한다.  이러한 방식으로 react에 의해 값이 제어되어는 **form element**를 **제어 컴포넌트 \(Controlled Component\)** 라고 부른다.
+react component는 form에 발생하는 사용자가 입력값을 제어 한다.  이러한 방식으로 react에 의해 값이 제어되어는 **Form Element**를 **제어 컴포넌트 \(Controlled Component\)** 라고 부른다.
 
 ### 3. PureComponent 정의
 
 PureComponent는 일반 컴포넌트와 유사하지만, react 생명주기 `shouldComponentUpdate()`를 다루는 방식이 다르다.
 
-PureComponent는 `shouldComponentUpdate()` 가 이미 구현되어 있기 때문에, props와 state를 얕은 비교 \(shallow comparison\) 를 통해 변경된 것이 있을 때만 리렌더링 한다.
+PureComponent는 `shouldComponentUpdate()` 가 이미 구현되어 있기 때문에, props와 state를 얕은 비교 \(Shallow comparison\) 를 통해 변경된 것이 있을 때만 리렌더링 한다.
 
 PureComponent는 `shouldComponentUpdate()`는 컴포넌트의 하위 트리에 대한 props 갱신 작업을 수행하지 않는다.
 
-✍ **Exmple - inline 함수를 render 메서드 에서 사용하면, render 실행시 마다 함수 인스턴스가 새로 생성**
+✍ **Exmple - When used in the inline function render method, a new function instance is created every time a render is run.**
 
 ```javascript
 (() => null) === (() => null); // false
 ```
 
-### 
-
 ### 4.  Functional Component 정의
 
 react 16.8 버전이 릴리즈 되면서 **Hooks** 라는 기능으로 react 추가되었다.
 
-Hooks는 Class component 없이, **functional componen**t로만 App을 구성할 수 있다.
+Hooks는 Class Component 없이, **Functional Componen**t로만 App을 구성할 수 있다.
 
 ### 5. React.memo\(\) 정의
 
