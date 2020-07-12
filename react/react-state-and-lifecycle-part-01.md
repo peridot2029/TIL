@@ -16,23 +16,21 @@
 
 {% hint style="info" %}
 `setState()`는 **component**를 갱신하는데 있어 **즉각적인 명령이 아니라 요청**이다.
+
+즉, **compoent**는 항상 즉각적으로 갱신되지 않는다.
 {% endhint %}
 
 **인지 성능 \(perceived performance\)**의 향상을 위해 React는 method의 실행을 지연 시키고 여러 **components**를 한 번에 갱신 시킬 수 있다.
 
 React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
-즉, **component는 항상 즉각적으로 갱신되지 않는다는 의미이다.**
-
-### 3. Life Cycle 정의
+### 3. Lifecycle 정의
 
 {% hint style="info" %}
 **component는 프로세스의 특정 시간에 코드를 실행하는 다양한 Lifecycle Hooks 제공되고 크게 3단계로 진행한다.**
 
 **생성 \(Mounting\) → 갱신\(Updating\) → 제거 \(Unmounting\)**
 {% endhint %}
-
-\*\*\*\*
 
 ![](../.gitbook/assets/screenshot-from-2016-12-10-00-21-26-1.png)
 
