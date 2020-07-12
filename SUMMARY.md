@@ -4,7 +4,7 @@
 
 ## Git
 
-* [📄 Git term](git/git-term.md)
+* [📄 Git Term](git/git-term.md)
 
 ## HTML
 
@@ -31,7 +31,7 @@
 * [📄 JavaScript Reference value - Set, Map](javascript/javascript-reference-value-set-map.md)
 * [📄 JavaScript Classes The Basics part 01](javascript/javascript-classes-the-basics-part-1.md)
 * [📄 JavaScript Classes getter, setter part 02](javascript/javascript-classes-getter-setter-part-2.md)
-* [📄 JavaScript OOP Term](javascript/javascript-oop-term.md)
+* [📄 JavaScript Object-Oriented Programming Term](javascript/javascript-oop-term.md)
 * [📄 JavaScript Modules](javascript/javascript-modules.md)
 
 ## React

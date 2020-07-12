@@ -70,10 +70,10 @@ ul ~ p {
 ✍ **Exmple**
 
 ```css
-// 하나의 요소가 두개를 가졌을 경
+// When one element has two elements
 .class1.class2{...}
 
-// class1 가진 요소가 내부에서 class2를 찾을 경우
+// When element with class1 finds class2 inside
 .class1 .class2{...}
 ```
 

@@ -117,7 +117,7 @@ Item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
 | :--- | :--- |
 | auto \(**defalut : auto**\) |  container의 `align-item` 속성을 상속 받음 |
 | stretch | container의 교차 축을 채우기 위해 Item을 늘림 |
-| flex-start | item를 각 줄의 시작점으로 정렬 |
+| flex-start | Item를 각 줄의 시작점으로 정렬 |
 | flex-end | item를 각 줄의 끝점으로 정렬 |
 | center | item를 가운데 정렬 |
 | baseline | item를 문자 기준선에 정렬 |

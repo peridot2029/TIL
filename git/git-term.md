@@ -1,6 +1,6 @@
-# 📄 Git term
+# 📄 Git Term
 
-### 1. Git term
+### 1. Git Term
 
 ### Working space
 
@@ -12,7 +12,7 @@
 
 Local  Repository, Remote  Repository 두 가지의 저장소를 나뉜다.
 
-### Remote  r**epository**
+### Remote r**epository**
 
 다른 어딘가의 서버에 위치에 있는 원격 저장소
 
