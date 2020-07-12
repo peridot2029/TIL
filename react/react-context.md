@@ -105,15 +105,15 @@ const SignIn = () => (
 {% hint style="warning" %}
  컨텍스트 타입을 사용하면 단 하나의 컨텍스트 객체만 사용 가능하다. 
 
-하나 이상의 context object 사용 하려면  위에서 언급한 `context.sonsumer`를 중첩해 사용해야 한다.  
+하나 이상의 context object 사용 하려면, 위에서 언급한 `context.sonsumer`를 중첩해 사용해야 한다.  
 
 자세한 내용은 [여러 cotext 구독하기](https://ko.reactjs.org/docs/context.html#consuming-multiple-contexts) 참고하기를...
 {% endhint %}
 
- ContextType은 Context Object를 클래스 컴포넌트의 **Context Type Static** 속성으로 지정해 활용하는 방법이다. 이 방법을 사용하면 `this.context`를 통해 Context Object에 접근해 값을 읽고 사용할 수 있다.  
+ ContextType은 Context Object를 클래스 컴포넌트의 **Context Type Static** 속성으로 지정해 활용하는 방법이다. 이 방법을 사용하면 `this.context`를 통해 Context object에 접근해 값을 읽고 사용할 수 있다.  
 
 
-Functional Componet에서는 `useContext()` **Hook**를 사용한다.
+Functional componet에서는 `useContext()` **Hook**를 사용한다.
 
  **✍ Exmple - ContextType  application**
 

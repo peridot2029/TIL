@@ -16,11 +16,11 @@ App을 React로 만든다는 것은 곧 작고 단단한 component 만들고 이
 **Uncontrolled Component**  :  사용자가 상태를 제어하지 않는 컴포넌트
 {% endhint %}
 
-HTML 에서`<input>,<select>`와 같은 **Form Element**를  사용자 입력을 기반을 state를 관리 및 갱신한다.
+HTML 에서`<input>,<select>`와 같은 **form element**를  사용자 입력을 기반을 state를 관리 및 갱신한다.
 
 state는 일반적으로 component의 state 속성에 유지 되고, `setState()`에 의해 갱신한다.
 
-react component는 form에 발생하는 사용자가 입력값을 제어 한다.  이러한 방식으로 react에 의해 값이 제어되어는 **Form Element**를 **제어 컴포넌트 \(Controlled Component\)** 라고 부른다.
+react component는 form에 발생하는 사용자가 입력값을 제어 한다.  이러한 방식으로 react에 의해 값이 제어되어는 **form element**를 **제어 컴포넌트 \(Controlled Component\)** 라고 부른다.
 
 ### 3. PureComponent 정의
 
@@ -40,9 +40,9 @@ PureComponent는 `shouldComponentUpdate()`는 컴포넌트의 하위 트리에 �
 
 React 16.8 버전이 릴리즈 되면서 **Hooks** 라는 기능으로 React 추가되었다.
 
-Hooks는 Class Component 없이, **Functional Componen**t로만 App을 구성할 수 있다.
+Hooks는 Class Component 없이, **Functional componen**t로만 App을 구성할 수 있다.
 
-### 5. React.memo\(\) 정의
+### 5. react.memo\(\) 정의
 
 component가  react.memo\(\)로 래핑 될 때, react는 component를 렌더링 하고, 결과를 모아서 메모이징 \(memoizing\)한다. 
 
@@ -50,7 +50,7 @@ component가  react.memo\(\)로 래핑 될 때, react는 component를 렌더링 
 
 react.memo\(\)는 props 혹은 props의 객체를 비교할 때 **얕은\(Shallow\) 비교**를 한다.
 
-즉, React는 Componet를 렌더링 하지 않고 마지막으로 렌더링된 결과를 재사용 한다.
+즉, React는 componet를 렌더링 하지 않고 마지막으로 렌더링된 결과를 재사용 한다.
 
 비교 방식을 수정할 때에는 두 번째 매개 변수로 비교함수를 만들어 넘겨주면 된다.
 
@@ -64,16 +64,6 @@ react.memo\(\)는 props 혹은 props의 객체를 비교할 때 **얕은\(Shallo
 ```javascript
 react.memo(Component, [areEqual(prevProps, nextProps)])
 ```
-
-
-
-
-
-
-
-
-
-
 
 
 

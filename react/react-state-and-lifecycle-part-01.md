@@ -10,7 +10,7 @@
 
 새롭게 교체하는 방법은 `setState()`를 사용해서 업데이트및 교체한다.
 
-`state`는 **sub Component**에 `props`로 전달할 수 있다.
+`state`는 **sub component**에 `props`로 전달할 수 있다.
 
 ### 2. setState\(\) 정의
 

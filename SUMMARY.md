@@ -37,7 +37,7 @@
 
 * [📄 React Component](react/react-component.md)
 * [📄 React State and Lifecycle part 01](react/react-state-and-lifecycle-part-01.md)
-* [📄 React State and Lifecycle Part 02](react/react-state-and-lifecycle-part02.md)
+* [📄 React State and Lifecycle part 02](react/react-state-and-lifecycle-part02.md)
 * [📄 React List and Key](react/react-list-and-key.md)
 * [📄 React Context](react/react-context.md)
 * [📄 React Hooks](react/react-hooks.md)

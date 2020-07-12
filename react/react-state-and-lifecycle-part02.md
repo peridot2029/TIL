@@ -1,4 +1,4 @@
-# 📄 React State and Lifecycle Part 02
+# 📄 React State and Lifecycle part 02
 
 ### 1. Life Cycle 정의
 
@@ -46,7 +46,7 @@ componentDidUpdate(prevProps, prevState, snapshot)
 
 최종적으로 제거될 때, 실행된다
 
-Component 내에서 이루어지는 네트워크 요청, 타이머 이벤트 등 지속적으로 이루어지는 이벤트를 해제하는데 유용하다.
+component 내에서 이루어지는 네트워크 요청, 타이머 이벤트 등 지속적으로 이루어지는 이벤트를 해제하는데 유용하다.
 
 ### 4. Error 정의
 
