@@ -29,17 +29,18 @@
 * [📄 JavaScript Array method part 3](javascript/javascript-array-method-part-3.md)
 * [📄 JavaScript Primitive value - Symbol](javascript/javascript-primitive-value-symbol.md)
 * [📄 JavaScript Reference value - Set, Map](javascript/javascript-reference-value-set-map.md)
-* [📄 JavaScript Classes The Basics part 1](javascript/javascript-classes-the-basics-part-1.md)
-* [📄 JavaScript Classes getter, setter part 2](javascript/javascript-classes-getter-setter-part-2.md)
-* [📄 JavaScript OOP term](javascript/javascript-oop-term.md)
+* [📄 JavaScript Classes The Basics part 01](javascript/javascript-classes-the-basics-part-1.md)
+* [📄 JavaScript Classes getter, setter part 02](javascript/javascript-classes-getter-setter-part-2.md)
+* [📄 JavaScript OOP Term](javascript/javascript-oop-term.md)
 * [📄 JavaScript Modules](javascript/javascript-modules.md)
 
 ## React
 
 * [📄 React Component](react/react-component.md)
-* [📄 React State and Lifecycle part 01](react/react-state-and-lifecycle-part-01.md)
-* [📄 React State and Lifecycle part02](react/react-state-and-lifecycle-part02.md)
+* [📄 React State and Life Cycle part 01](react/react-state-and-lifecycle-part-01.md)
+* [📄 React State and Life Cycle Part 02](react/react-state-and-lifecycle-part02.md)
 * [📄 React List and Key](react/react-list-and-key.md)
+* [📄 React Context](react/react-context.md)
 * [📄 React Hooks](react/react-hooks.md)
 
 ## SCSS

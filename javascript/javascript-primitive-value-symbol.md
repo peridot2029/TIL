@@ -20,13 +20,10 @@ JavaScript primitive value
 Symbol([description])
 ```
 
-### 3. Symbol의 생성
-
-* **Symbol\(\[string\]**\) - 문자열이 아닌 타입은 자동으로 `toString()` 처리.
-
-✍ **Exmple**
+✍ **Exmple - Symbol generating**
 
 ```javascript
+// Symbol([string]) - Type other than string automatically handles toString()
 const sb1 = Symbol();
 const sb2 = Symbol();
 const sb3 = Symbol(33);
@@ -64,13 +61,11 @@ console.log(keys); // ["10", "02"]
 ```javascript
 const sym3 = Symbol();
 
-// Uncaught TypeError: Cannot convert a Symbol value to a string
+// Uncaught TypeError : Cannot convert a Symbol value to a string
 console.log(sym3 + "a");
 ```
 
-### 4. Symbol 객체 프로퍼티 활용
-
-✍ **Exmple**
+✍ **Exmple - Utilize Symbol Object Properties**
 
 ```javascript
 const x = () => {
@@ -90,8 +85,8 @@ console.log(y[Symbol("a")]; // undefined
 ```
 
 ```javascript
-const NAME = Symbol("이름");
-const GENDER = Symbol("성별");
+const NAME = Symbol("name");
+const GENDER = Symbol("gender");
 
 const songs = {
 	[NAME]: "song",
@@ -105,17 +100,17 @@ const juns = {
 	age: 2,
 };
 
-console.log(songs); // {age: 29, Symbol(이름): "song", Symbol(성별): "female"}
-console.log(juns); // {age: 2, Symbol(이름): "jun", Symbol(성별): "male"}
+console.log(songs); // {age: 29, Symbol(name): "song", Symbol(gender): "female"}
+console.log(juns); // {age: 2, Symbol(name): "jun", Symbol(gender): "male"}
 
 console.log(songs[NAME], juns[NAME]); //song, jun 
 ```
 
-### 5. Symbol 프로퍼티 키로 할당한 심볼 탐색\(접근\)
+✍**Exmple - Symbol navigation assigned with symbol Property key**
 
 ```javascript
-const NAME = Symbol("이름");
-const GENDER = Symbol("성별");
+const NAME = Symbol("name");
+const GENDER = Symbol("gender");
 
 const songs = {
 	[NAME]: "song",
@@ -129,8 +124,8 @@ const juns = {
 	age: 2,
 };
 
-console.log(songs); // {age: 29, Symbol(이름): "song", Symbol(성별): "female"}
-console.log(juns); // {age: 2, Symbol(이름): "jun", Symbol(성별): "male"}
+console.log(songs); // {age: 29, Symbol(name): "song", Symbol(gender): "female"}
+console.log(juns); // {age: 2, Symbol(name): "jun", Symbol(gender): "male"}
 
 console.log(songs[NAME], juns[NAME]); //song, jun 
 
@@ -147,15 +142,15 @@ Object.getOwnPropertyNames(juns).forEach((key) => {
 });
 
 Object.getOwnPropertySymbols(juns).forEach((key) => {
-	console.log(key, jun[key]); // Symbol(이름) "jun", Symbol(성별) "male"
+	console.log(key, jun[key]); // Symbol(name) "jun", Symbol(gender) "male"
 });
 
 Reflect.ownKeys(jun).forEach((key) => {
-	console.log(key, jun[key]); // age 2, Symbol(이름) "jun", Symbol(성별) "male"
+	console.log(key, jun[key]); // age 2, Symbol(name) "jun", Symbol(gender) "male"
 });
 ```
 
-### 6. Symbol.for\(\)
+### 4. Symbol.for\(\)
 
 `Symbol.for()` 사용하는 이유는 어떤 한 곳에서 `Symbo()`을 만들고 다른 곳 에서 `Symbol()`에 접근하기 위함이다.
 

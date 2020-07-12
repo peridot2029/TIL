@@ -8,13 +8,13 @@ Flex는 `container, item` 두 가지 개념으로 나뉜다.
 
 ### 2. container 정렬
 
-container는 item를 감싸는 부모 역할
+Container는 Item를 감싸는 부모 역할
 
 `display, flex-direction, justify-content`등의 속성을 사용할 수 있다.
 
 #### 2-1. display
 
-block 또는 lnline이 아닌  `display: flex`, `display: inline-flex`설정한다.
+Block 또는 lnline이 아닌  `display: flex`, `display: inline-flex`설정한다.
 
 | Title | Content |
 | :--- | :--- |
@@ -27,7 +27,7 @@ Item의 주 축\(main-axis\)을 설정, item의 여러 줄 묶음\(줄 바꿈\)�
 
 #### 2-3. flex-direction 
 
-item의 주 축\(main-axis\)을 설정한다.
+Item의 주 축\(main-axis\)을 설정한다.
 
 | Title | Content |
 | :--- | :--- |
@@ -38,7 +38,7 @@ item의 주 축\(main-axis\)을 설정한다.
 
 #### 2-4. flex-wrap
 
-item 여러 줄 묶음, 줄 바꿈 설정한다.
+Item 여러 줄 묶음, 줄 바꿈 설정한다.
 
 | Title | Content |
 | :--- | :--- |
@@ -62,7 +62,7 @@ item 여러 줄 묶음, 줄 바꿈 설정한다.
 
 align-content를 사용하기 위해서 `flex-wrap : wrap;` 이어야 한다.
 
-교차죽\(cross-axis\)의 정렬 방법, item 여러 줄 \(두 줄\) 이상 이고 여백이 있을 경우 사용 가능하다.
+교차죽\(cross-axis\)의 정렬 방법, Item 여러 줄 \(두 줄\) 이상 이고 여백이 있을 경우 사용 가능하다.
 
 | Title | Content |
 | :--- | :--- |
@@ -75,7 +75,7 @@ align-content를 사용하기 위해서 `flex-wrap : wrap;` 이어야 한다.
 
 ####  2-7. alin-item
 
-교차축\(cross-axis\)에서 item를 정렬 방법 설정한다.
+교차축\(cross-axis\)에서 Item를 정렬 방법 설정한다.
 
 item이 한 줄이 경우 많이 사용한다.
 
@@ -93,7 +93,7 @@ item이 한 줄이 경우 많이 사용한다.
 
 #### 3-1. order
 
-item 순서를 설정, 숫자를 지정하고 숫자가 클수록 순서가 밀린다.
+Item 순서를 설정, 숫자를 지정하고 숫자가 클수록 순서가 밀린다.
 
 | Title | Content |
 | :--- | :--- |
@@ -101,7 +101,7 @@ item 순서를 설정, 숫자를 지정하고 숫자가 클수록 순서가 밀�
 
 #### 3-2. flex
 
-item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
+Item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
 
 | Title | Content |
 | :--- | :--- |
@@ -111,7 +111,7 @@ item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
 
 #### 3-2. align-self
 
-교차축\(cross-axis\)에서 개별 item의 정렬 방법 설정한다.
+교차축\(cross-axis\)에서 개별 Item의 정렬 방법 설정한다.
 
 | Title | Content |
 | :--- | :--- |

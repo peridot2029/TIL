@@ -16,7 +16,7 @@ array.every(callback[, thisArg])
 
 ```javascript
 const arr = [1,2,3,4,5];
-const product = arr.every((x,y) => x < 10); // true, 모든 값이 10 보다 작음
+const product = arr.every((x,y) => x < 10); // true, All values less than 10
 ```
 
 ### 2. array.some\(\)
@@ -35,7 +35,7 @@ array.some(callback[, thisArg])
 
 ```javascript
 const arr = [1,2,3,4,5];
-const product = arr.some((x) => x % 2 === 0); // true, 원소 중에 짝수가 있음
+const product = arr.some((x) => x % 2 === 0); // true, There is an even number in the element.
 ```
 
 ### 3. array.includes\(\)
@@ -94,9 +94,9 @@ array.lastIndexOf(searchElement[, fromIndex])
 
 ### 5. array.findIndex\(\)
 
-주어진 판별 함수를 만족하는 배열의 첫 번째 요소에 대한 인덱스를 반환한다.
+주어진 판별 함수를 만족하는 배열의 첫 번째 요소에 대한 index를 반환한다.
 
-* 만약 존재하지 않으면 -1를 반환한다.
+만약 존재하지 않으면 -1를 반환한다.
 
 ✍ **Syntax**
 

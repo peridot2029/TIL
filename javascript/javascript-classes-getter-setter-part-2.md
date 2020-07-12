@@ -1,4 +1,4 @@
-# 📄 JavaScript Classes getter, setter part 2
+# 📄 JavaScript Classes getter, setter part 02
 
 ### 1. getter 정의
 

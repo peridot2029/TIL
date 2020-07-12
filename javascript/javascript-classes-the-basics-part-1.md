@@ -1,4 +1,4 @@
-# 📄 JavaScript Classes The Basics part 1
+# 📄 JavaScript Classes The Basics part 01
 
 ### 1. class 정의
 

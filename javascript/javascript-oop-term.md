@@ -1,4 +1,4 @@
-# 📄 JavaScript OOP term
+# 📄 JavaScript OOP Term
 
 ### 1. JavaScript OOP 용어
 

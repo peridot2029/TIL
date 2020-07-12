@@ -16,17 +16,13 @@ Set 객체는 key, value 모두 값은 의미이다.
 
 Set 객체는 for ~ of를 사용해서 요소를 순회할 수 있다.
 
-**Set의 사용 목적**
-
 ✍ **Syntax**
 
 ```javascript
 new Set([iterable])
 ```
 
-### 3. Set의 사용
-
-✍ **Exmple**
+✍ **Exmple - Using Set**
 
 ```javascript
 let myArray = [1, 2, 3, 4, 5, 5, 1];
@@ -57,27 +53,25 @@ console.log(myArray[3]); // 4
 console.log(mySet[3]); // undefined
 ```
 
-### 4. WeakSet\(\)
+### 3. WeakSet\(\)
 
-Set 객체와 유사하다.Set 객체와 다르게 객체\(Object\)만 수집할 수 있다.
+Set 객체와 유사하다. Set Object와 다르게 객체\(Object\)만 수집할 수 있다.
 
 약한 참조 이루어져 메모리 누수를 예방할 수 있다.
 
-### 5. Map 정의
+### 4. Map 정의
 
 **반복 가능한 객체\(Iterator Object\)**
 
-**Map Object**는 **\[key, value\]** 형식이루어진 리스트 이다
+**Map Object**는 **key/value** 형식 이루어진 리스트 이다.
 
-**Map Object**는 **string, Symbol\(\)** 외에 다른 타입을 **key**로 사용할 수 있다.
+**Map Object**는 **String, Symbol\(\)** 외에 다른 타입을 **key**로 사용할 수 있다.
 
 **Map Object**는 기본적으로 Symbol.iterator 을 가지고 있다.
 
 **Map Object**는 `for ~ of` 를 사용해서 순회할 수 있다.
 
-### 6. Map VS Object
-
-#### Map
+### 5. Map VS Object
 
 **Map Object**와 다르게 **삽입 순으로 순서가 보장**된다.
 
@@ -87,15 +81,11 @@ Set 객체와 유사하다.Set 객체와 다르게 객체\(Object\)만 수집할
 
 **Map**은 **Iterable protocol** 지원해서 바로 순회가 가능하다.
 
-#### Object
+**Object**는 **size**를 기본으 하지 못하고, 따로 함수를 만들어야 한다.
 
-**Object**는 **size**를 기본 하지 못하고, 따로 함수를 만들어야 한다.
+**Object**는 **Key**로 `Symbol, string`만 가능하다.
 
-**Object**는 **key**로 `Symbol, string`만 가능하다.
-
-### 7. Map 사용
-
-✍ **Exmple**
+✍ **Exmple - Using Map**
 
 ```javascript
 let myMap = new Map([
@@ -120,11 +110,11 @@ for (let [key, value] of myMap) {
 }
 ```
 
-### 8. WeakMap 정의
+### 6. WeakMap 정의
 
-**WeakMap Object**는 **key**가 약하게 참조되는 **key/value** 쌍의 컬렉션 이다.
+**WeakMap Object**는 **Key**가 약하게 참조되는 **key/value** 쌍의 컬렉션 이다.
 
-**key Object** 여야만 하나 값은 임의 값이 될 수 있다.
+**Key Object** 여야만 하나 값은 임의 값이 될 수 있다.
 
 ✍**Syntax**
 
@@ -132,7 +122,7 @@ for (let [key, value] of myMap) {
 new WeakMap([iterable])
 ```
 
-### 9. Garbage Collector 정의
+### 7. Garbage Collector 정의
 
 메모리 생존주기, 필요할 때 할당 한다.
 
