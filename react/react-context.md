@@ -14,8 +14,6 @@ Context를 사용하여 Components Tree에 데이터를 **공급 \(Provider\)** 
 
 ### 3. Conext API
 
-###  
-
  **✍ Exmple - Context application**
 
 ```javascript
@@ -106,7 +104,7 @@ const SignIn = () => (
 );
 ```
 
-### **3. ContextType 정**
+### **4. ContextType 정의**
 
 {% hint style="warning" %}
  컨텍스트 타입을 사용하면 단 하나의 컨텍스트 객체만 사용 가능하다. 
