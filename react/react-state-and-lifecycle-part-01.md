@@ -1,24 +1,24 @@
-# 📄 React State and Life Cycle part 01
+# 📄 React State and Lifecycle part 01
 
 ### 1. state 정의
 
 {% hint style="info" %}
-**Class component**의 상태 정보, `state`는 **class** 안에서만 접근 가능하다.
+**class component**의 상태 정보, `state`는 **class** 안에서만 접근 가능하다.
 {% endhint %}
 
-`state`는 **불변 객체\(Immutable Object\)**이다.
+`state`는 **불변 객체\(Immutable object\)**이다.
 
 새롭게 교체하는 방법은 `setState()`를 사용해서 업데이트및 교체한다.
 
-`state`는 **Sub Component**에 `props`로 전달할 수 있다.
+`state`는 **sub Component**에 `props`로 전달할 수 있다.
 
 ### 2. setState\(\) 정의
 
 {% hint style="info" %}
-`setState()`는 **Component**를 갱신하는데 있어 **즉각적인 명령이 아니라 요청**이다.
+`setState()`는 **component**를 갱신하는데 있어 **즉각적인 명령이 아니라 요청**이다.
 {% endhint %}
 
-**인지 성능 \(Perceived Performance\)**의 향상을 위해 React는 method의 실행을 지연 시키고 여러 **components**를 한 번에 갱신 시킬 수 있다.
+**인지 성능 \(perceived performance\)**의 향상을 위해 React는 method의 실행을 지연 시키고 여러 **components**를 한 번에 갱신 시킬 수 있다.
 
 React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
@@ -26,9 +26,13 @@ React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
 ### 3. Life Cycle 정의
 
-> **Component는 프로세스의 특정 시간에 코드를 실행하는 다양한 Life Cycle Hook 제공되고 크게 3단계로 진행한다.**
+{% hint style="info" %}
+**component는 프로세스의 특정 시간에 코드를 실행하는 다양한 Lifecycle Hooks 제공되고 크게 3단계로 진행한다.**
 
-> **생성 \(Mounting\) → 갱신\(Updating\) → 제거 \(Unmounting\)**
+**생성 \(Mounting\) → 갱신\(Updating\) → 제거 \(Unmounting\)**
+{% endhint %}
+
+\*\*\*\*
 
 ![](../.gitbook/assets/screenshot-from-2016-12-10-00-21-26-1.png)
 
@@ -44,21 +48,21 @@ React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
 ### 4-1. constructor\(\)
 
-최초에 Component가 mount 되기 전에 실행, 주된 역할은 state 값을 선언 및 초기화
+최초에 component가 mount 되기 전에 실행, 주된 역할은 state 값을 선언 및 초기화
 
 각종 Event Binding 처리
 
 ### 4-2. render\(\)
 
 {% hint style="warning" %}
-render method 안에서 setState를 작업해서는 안된다.
+render method 안에서 setState\(\)를 작업해서는 안된다.
 {% endhint %}
 
-최종적으로 Component에서 작업한 결과물 return method
+최종적으로 component에서 작업한 결과물 return method
 
-결과물로 나온 Elements를 **Virital DOM**에 mount 되고 실제 DOM 업데이트 된다
+결과물로 나온 elements를 **Virital DOM**에 mount 되고 실제 DOM 업데이트 된다
 
-배열 또는 여러개의 Elements를 return 하고 싶을 때, Fragments를 사용할 수 있다
+배열 또는 여러개의 elements를 반환 하고 싶을 때는, **Fragments**를 사용할 수 있다
 
 
 

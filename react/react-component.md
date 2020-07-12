@@ -3,16 +3,12 @@
 ### 1. Component 정의
 
 {% hint style="info" %}
-react 에서 component가 갖는 의미란 데이터를 입력 받아 DOM Node를 출력하고 하는 함수 
-
-입력 받는 데이터는 [props, state](https://reactjs.org/docs/components-and-props.html) 같은 것들을 의미한다.
+React App에서 component가 갖는 의미란 데이터를 입력 받아, DOM Node를 출력하고 하는 함수, 입력 받는 데이터는 [props, state](https://reactjs.org/docs/components-and-props.html) 같은 것들을 의미한다.
 {% endhint %}
 
-React App 구성하는 가장 최소한의 단위이다.
+React App 구성하는 가장 최소한의 단위이다, componets는 개별적인 파일로 분리되어 관리한다.
 
 App을 React로 만든다는 것은 곧 작고 단단한 component 만들고 이 components 유기적으로 연결한다는 것을 뜻한다.
-
-componets는 개별적인 파일로 분리되어 관리한다.
 
 ### 2 . Controlled Component 정의
 
@@ -42,7 +38,7 @@ PureComponent는 `shouldComponentUpdate()`는 컴포넌트의 하위 트리에 �
 
 ### 4.  Functional Component 정의
 
-react 16.8 버전이 릴리즈 되면서 **Hooks** 라는 기능으로 react 추가되었다.
+React 16.8 버전이 릴리즈 되면서 **Hooks** 라는 기능으로 React 추가되었다.
 
 Hooks는 Class Component 없이, **Functional Componen**t로만 App을 구성할 수 있다.
 
@@ -52,9 +48,9 @@ component가  react.memo\(\)로 래핑 될 때, react는 component를 렌더링 
 
 그리고 다음 렌더링이 일어날 때 props가 같다면, react는 메모이징 된 내용을 재사용한다.
 
-react.memo\(\)는 props 혹은 props의 객체를 비교할 때 얕은\(Shallow\) 비교를 한다.
+react.memo\(\)는 props 혹은 props의 객체를 비교할 때 **얕은\(Shallow\) 비교**를 한다.
 
-즉, react는 Componet를 렌더링 하지 않고 마지막으로 렌더링된 결과를 재사용 한다.
+즉, React는 Componet를 렌더링 하지 않고 마지막으로 렌더링된 결과를 재사용 한다.
 
 비교 방식을 수정할 때에는 두 번째 매개 변수로 비교함수를 만들어 넘겨주면 된다.
 

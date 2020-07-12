@@ -1,16 +1,18 @@
-# 📄 React State and Life Cycle Part 02
+# 📄 React State and Lifecycle Part 02
 
 ### 1. Life Cycle 정의
 
-> **component는 프로세스의 특정 시간에 코드를 실행하는 다양한 Life Cycle Hook 제공되고 크게 3단계로 진행한다.**
+{% hint style="info" %}
+**component는 프로세스의 특정 시간에 코드를 실행하는 다양한 Lifecycle Hooks 제공되고 크게 3단계로 진행한다.**
 
-> **생성 \(Mounting\) → 갱신\(Updating\) → 제거 \(Unmounting\)**
+**생성 \(Mounting\) → 갱신\(Updating\) → 제거 \(Unmounting\)**
+{% endhint %}
 
 ![](../.gitbook/assets/screenshot-from-2016-12-10-00-21-26-1%20%281%29.png)
 
 ### 2. Update 정의
 
-Component state, props가 변경되면 Update 진행된다.
+component state, props가 변경되면 Update 진행된다.
 
 상위 컴포넌트가 렌더링 되면 하위 컴포넌트도 다시 렌더링 된다.
 

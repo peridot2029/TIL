@@ -1,4 +1,4 @@
-# 📄 JavaScript Iteration protocol part 1
+# 📄 JavaScript Iteration protocol
 
 ### 1. Iteration protocol 정의
 
@@ -8,11 +8,9 @@
 
 **ES6**에서 도입된 **이터레이션 프로토콜\(Iteration protocol\)**은 데이터 컬렉션을 순회하기 위한 **프로트콜\(미리 약속된 규칙\)**이다. 이터레이션 프로트콜은 준수한 객체는 `for ~ of`문으로 순회가 가능하다.
 
-
-
 ### 2. It**erable 정의**
 
-**Iterable Protocol** 을 준수한 객체를 부르는 명칭이다.
+**Iterable protocol** 을 준수한 객체를 부르는 명칭이다.
 
 **Symbol.iterator** **method** 구현, **Prototype chain**에 의해 **상속한 객체**를 말한다.
 
@@ -92,4 +90,8 @@ console.log(iterator.next()); // {value : undefined, done : true}
 다양한 데이터 소스가 **Iteration Protocol**을 준수하도록 규정하면 데이터 소비자는 **Iteration protocol** 만을 지원하도록 구현하면 된다.
 
 즉, **Iteration protocol**은 다양한 데이터 소스가 하나의 순회 방식을 갖도록 규정하여 **데이터 소비자가 효율적으로 다양한 데이터 소스를 연결하는 인터페이스 역할을 한다.**
+
+\*\*\*\*
+
+\*\*\*\*
 
