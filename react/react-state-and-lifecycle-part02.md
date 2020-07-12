@@ -1,6 +1,6 @@
 # 📄 React State and Lifecycle part 02
 
-### 1. Life Cycle 정의
+### 1. Lifecycle 정의
 
 {% hint style="info" %}
 **component는 프로세스의 특정 시간에 코드를 실행하는 다양한 Lifecycle Hooks 제공되고 크게 3단계로 진행한다.**
