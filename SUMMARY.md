@@ -5,6 +5,7 @@
 ## Git
 
 * [📄 Git Term](git/git-term.md)
+* [📄 Git Branch](git/git-branch.md)
 
 ## HTML
 
