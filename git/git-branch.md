@@ -7,7 +7,7 @@
 `$ git branch`:  옵션 지정하지 않고, branch 명령어를 실행하면 브랜치 목록 전체를 확인 가능하다.
 
 ```text
-$ git branch lesson-01
+$ git branch issue1
 
 $ git branch
 
@@ -22,7 +22,7 @@ lesson-01
 `$ git checkout -b <branch>`: checkout 명령에 옵션 -b를 넣으면 브랜치 작성 및 체크아웃 한번에 실
 
 ```text
-$ git checkout lesson-01
+$ git checkout issue1
 ```
 
 ### 3. Branch 병합
@@ -34,12 +34,14 @@ $ git checkout lesson-01
 `$ git branch -d <branchname>` : 브랜치를 삭제하면 branch 명령에 -d 옵션을 지정하여 실
 
 ```text
-$ git branch -d lesson-01
+$ git branch -d issue1
 
 $ git branch
 
 * master
 ```
+
+### 5. 동시에 여러 작업 하기
 
 
 
