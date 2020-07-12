@@ -1,8 +1,8 @@
-# 📄 JavaScript Reference value - Set, Map
+# 📄 JavaScript Reference Value - Set, Map
 
-### 1. Reference value
+### 1. JavaScript Reference Value
 
-JavaScript reference value
+`object, array, function, Map (es6+), Set (es6+),  WeakMap (es6+), WeakSet (es6+)`
 
 ### 2. Set 정의
 
@@ -12,9 +12,9 @@ Set 객체는 값을 콜렉션으로, 삽입을 순서대로 한다.
 
 Set 객체는 배열\(array\)와 다르게 index 가 없다.
 
-Set 객체는 key, value 모두 값은 의미이다.
+Set 객체는 **key/value** 모두 값은 의미이다.
 
-Set 객체는 for ~ of를 사용해서 요소를 순회할 수 있다.
+Set 객체는`for ~ of`를 사용해서 요소를 순회할 수 있다.
 
 ✍ **Syntax**
 
@@ -61,11 +61,11 @@ Set 객체와 유사하다. Set Object와 다르게 객체\(Object\)만 수집�
 
 ### 4. Map 정의
 
-**반복 가능한 객체\(Iterator Object\)**
+**반복 가능한 객체\(Iterator object\)**
 
 **Map Object**는 **key/value** 형식 이루어진 리스트 이다.
 
-**Map Object**는 **String, Symbol\(\)** 외에 다른 타입을 **key**로 사용할 수 있다.
+**Map Object**는 **String, Symbol\(\)** 외에 다른 타입을 **Key**로 사용할 수 있다.
 
 **Map Object**는 기본적으로 Symbol.iterator 을 가지고 있다.
 
@@ -96,7 +96,7 @@ let myMap = new Map([
 let key = {};
 
 myMap.set("a1", "Hello");
-myMap.set(keyObj, "keyObj 관련된 값");
+myMap.set(keyObj, "keyObj associated value");
 myMap.set(NaN, "not a number");
 
 myMap.delete("a1");
@@ -124,9 +124,7 @@ new WeakMap([iterable])
 
 ### 7. Garbage Collector 정의
 
-메모리 생존주기, 필요할 때 할당 한다.
+메모리 생존주기, 필요할 때 할당 한다. 사용한다. \(읽기, 쓰기\)
 
-사용한다. \(읽기, 쓰기\)
-
-필요없어지면 해제한다. 즉, 할당된 메모리가 더 이상 필요없을 때 해체하기.
+필요 없어지면 해제한다. 즉, 할당된 메모리가 더 이상 필요없을 때 해체하기.
 

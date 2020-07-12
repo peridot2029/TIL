@@ -10,13 +10,13 @@
 const cafeMenu = {
     name: "Green_Grape_Slush",
     kcal: 224.51,
-    text: "트로피칼 레볼루션 청포도 슬러쉬",
+    text: "Tropic Revolution Green Grape Slush",
   };
 
   let { name, kcal, text } = cafeMenu;
 
   console.log(name); // Green_Grape_Slush
   console.log(kcal); // 224.51
-  console.log(text); // 트로피칼 레볼루션 청포도 슬러쉬
+  console.log(text); // Tropic Revolution Green Grape Slush
 ```
 

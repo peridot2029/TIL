@@ -1,8 +1,8 @@
-# 📄 JavaScript Array method part 1
+# 📄 JavaScript Array method part 01
 
 ## 1. Array.from\(\)
 
-**유사 배열 객체 \(array-like object\)** 또는 **반복 가능한 객체**를 얕게 복사해 **새로운 Array** 객체를 만든다.
+**유사 배열 객체 \(Array-like object\)** 또는 **반복 가능한 객체**를 얕게 복사해 새로운 배열 객체를 만든다.
 
 ✍ **Syntax**
 
@@ -12,6 +12,12 @@ Array.from(arrayLike[, mapFn[, thisArg]])
 
 ## 2. array.concat\(\)
 
+{% hint style="warning" %}
+실제 객체가 아닌 참조 객체
+
+`concat()`은 새로운 배열에 참조를 복사한다. **원본 배열과 새로운 배열에서 같은 객체를 가리킨다**. 즉, 참조하는 객체를 수정하면 그 내용이 새로운 배열과 원본 배열에서 둘 다 나타난다.
+{% endhint %}
+
 기존 배열에 `concat()`를 사용하게 되면 **전달 인자**를 추가한 **새로운 배열**을 반환한다.
 
 전달인자로 **배열을 전달**하게 되면, 배열 안의 원소들을 꺼내어 반환하는 배열에 추가한다.
@@ -19,8 +25,6 @@ Array.from(arrayLike[, mapFn[, thisArg]])
 `concat()`은 `this`나 전달인자로 넘겨진 배열의 내용은 변경하지 않는다.
 
 대신 주어진 배열을 합친 뒤, 그 얕은 복사본을 반환한다.
-
-**실제 객체가 아닌 참조 객체**
 
 ✍ **Syntax**
 

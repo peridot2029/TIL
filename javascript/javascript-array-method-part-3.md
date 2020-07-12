@@ -1,4 +1,4 @@
-# 📄 JavaScript Array method part 3
+# 📄 JavaScript Array method part 03
 
 ### 1. array.every\(\)
 

@@ -1,4 +1,4 @@
-# 📄 JavaScript Array method part 2
+# 📄 JavaScript Array method part 02
 
 ### 1. array.forEach\(\)
 

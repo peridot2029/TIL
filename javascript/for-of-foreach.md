@@ -12,23 +12,21 @@
 const cafeMenu = {
     name: "Green_Grape_Slush",
     kcal: 224.51,
-    text: "트로피칼 레볼루션 청포도 슬러쉬",
+    text: "Tropic Revolution Green Grape Slush",
   };
 
   let { name, kcal, text } = cafeMenu;
 
   console.log(name); // Green_Grape_Slush
   console.log(kcal); // 224.51
-  console.log(text); // 트로피칼 레볼루션 청포도 슬러쉬
+  console.log(text); // Tropic Revolution Green Grape Slush
 ```
 
 ### 2. for~of
 
-Symbol.iterator 속성을 가지는 컬렉션 전용
+`Symbol.iterator`속성을 가지는 컬렉션 전용
 
 ### 3. forEach
 
-오직 Array 객체에서만 사용 가능한 method
-
-배열의 요소들을 반복항여 작업을 수행할 수 있다.
+오직 Array 객체에서만 사용 가능한 method, 배열의 요소들을 반복하 작업을 수행할 수 있다.
 

@@ -1,8 +1,8 @@
-# 📄 JavaScript Primitive value - Symbol
+# 📄 JavaScript Primitive Value - Symbol
 
-### 1. Primitive Value
+### 1. JavaScript Primitive Value
 
-JavaScript primitive value
+`number, string, boolean, null, undefined, Symbol(es 6+)`
 
 ### 2. Symbol의 정의
 
@@ -152,7 +152,7 @@ Reflect.ownKeys(jun).forEach((key) => {
 
 ### 4. Symbol.for\(\)
 
-`Symbol.for()` 사용하는 이유는 어떤 한 곳에서 `Symbo()`을 만들고 다른 곳 에서 `Symbol()`에 접근하기 위함이다.
+`Symbol.for()` 사용하는 이유는 어떤 한 곳에서 `Symbol()`을 만들고 다른 곳 에서 `Symbol()`에 접근하기 위함이다.
 
 `Symbol()`과 다르게 , **심볼 레지스트리 리스트**에 심볼을 만든다.
 
