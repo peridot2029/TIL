@@ -2,9 +2,9 @@
 
 ### 1. Class 정의
 
-JavaScript **프로토타입 기반\(prototype-based\)** 객체지향 언어다.
+JavaScript **프로토타입 기반 프로그래밍 \(Prototype-Based Programming\)이다.**
 
-**class-free** 객체지향에서는 **Prototype chain, Closure** 등으로 객체 지향 언어의 **상속, 캡슐화\(정보 은닉\)** 등의 개념을 구현할 수 있다.
+**class-free** 객체지향에서는 **Prototype chain, Closure** 등으로 객체 지향 언어의 **상속,  캡슐화\(=정보 은닉\)** 등의 개념을 구현할 수 있다.
 
 ES6 class는 `class`키워드를 사용하여 정의한다.
 
