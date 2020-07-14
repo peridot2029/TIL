@@ -30,6 +30,8 @@ func.apply(thisArg, [argsArray])
 func.bind(thisArg[, arg1[, arg2[, ...]]])
 ```
 
+###  <a id="reference"></a>
+
 ### Reference <a id="reference"></a>
 
 bind [→\(MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)\)

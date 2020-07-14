@@ -18,6 +18,7 @@
 
 ## JavaScript
 
+* [📄 JavaScript Function Expression](javascript/javascript-function-expression.md)
 * [📄 JavaScript Closure, Hoisting](javascript/closure-hoisting.md)
 * [📄 JavaScript Function - call, apply, bind](javascript/javascript-function-call-apply-bind.md)
 * [📄 JavaScript Arrow function expression](javascript/arrow-function-expression.md)
