@@ -22,6 +22,106 @@ state는 일반적으로 component의 state 속성에 유지 되고, `setState()
 
 react component는 form에 발생하는 사용자가 입력값을 제어 한다.  이러한 방식으로 react에 의해 값이 제어되어는 **form element**를 **제어 컴포넌트 \(Controlled Component\)** 라고 부른다.
 
+**✍ Example - single input**
+
+```jsx
+class NameForm extends Component {
+  state = { value: "" };
+  handleChange = (e) => {
+    this.setState({ value: e.target.value });
+  };
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("A name was submitted : ", this.state.value);
+  };
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input
+            type="text"
+            value={this.state.value}
+            onChange={this.handleChange}
+          />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
+
+```
+
+✍ **Example - Multi input**
+
+`<input>` 여러 개 일 때는, **name** 값을 통하여 각 `<input>`을 구분.
+
+`setState()`내부에는 [**Computed property names**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) 문법을 사용
+
+```jsx
+import React, { Component } from "react";
+
+class PhoneForm extends Component {
+  state = {
+    name: "",
+    phone: "",
+  };
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.onCreate(this.state);
+
+    this.setState({
+      name: "",
+      phone: "",
+    });
+  };
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          <input
+            type="text"
+						name="name"
+            placeholder="name"
+            value={this.state.name}
+            onChange={this.handleChange}
+          />
+        </label>
+        <label>
+          <input
+            type="text"
+            name="phone"
+            placeholder="phone"
+            value={this.state.phone}
+            onChange={this.handleChange}
+          />
+        </label>
+        <button type="submit">add</button>
+      </form>
+    );
+  }
+}
+
+class App extends Component {
+  handleCreate = (data) => {
+    console.log(data);
+  }
+  render() {
+    return (
+      <div>
+        <PhoneForm
+          onCreate={this.handleCreate}
+        />
+      </div>
+    );
+  }
+}
+```
+
 ### 3. PureComponent 정의
 
 PureComponent는 일반 컴포넌트와 유사하지만, react 생명주기 `shouldComponentUpdate()`를 다루는 방식이 다르다.
@@ -64,14 +164,6 @@ react.memo\(\)는 props 혹은 props의 객체를 비교할 때 **얕은\(Shallo
 ```javascript
 react.memo(Component, [areEqual(prevProps, nextProps)])
 ```
-
-
-
-
-
-
-
-
 
 
 

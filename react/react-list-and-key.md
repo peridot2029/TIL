@@ -23,7 +23,7 @@ key를 다른 항목들 사이에서 해당 항목을 **고유하게 식별하�
 
 ✍ **Example - Not List and Key**
 
-```javascript
+```jsx
 function ListItem(props) {
   const value = props.value;
 	// Not key - There is no need to specify a key here.
@@ -43,7 +43,7 @@ ReactDOM.render( <NumberList numbers={numbers} />, document.getElementById("root
 
 ✍ **Example - Goog List and Key**
 
-```javascript
+```jsx
 function ListItem(props) {
   return <li>{props.value}</li>;
 }

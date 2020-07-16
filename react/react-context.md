@@ -16,7 +16,7 @@ Context를 사용하여 Components Tree에 데이터를 **공급 \(Provider\)** 
 
  **✍ Exmple - Context application**
 
-```javascript
+```jsx
 // Create context with credential value and set initial value
 const AuthContext = React.createContext(false);
 
@@ -54,7 +54,7 @@ const SignIn = () => (
   
  **✍ Exmple - Context separation and application of individual components**
 
-```javascript
+```jsx
 // Create as an "AuthContext" individual file with credentials and change methods
 export const authContext = {
   isAuth: false
@@ -66,7 +66,7 @@ export default React.createContext(authContext);
 
  **✍ Exmple - Component tree start point Set provider in parent component and forward to value**
 
-```javascript
+```jsx
 import AuthContext from "./context/AuthContext";
 
 class App extends React.Component {
@@ -90,7 +90,7 @@ class App extends React.Component {
 
 **✍ Exmple - To receive the data supplied from the parent component, the "AuthContext" file is called up, and the data is received and processed by the Consumer.**
 
-```javascript
+```jsx
 import AuthContext from "../context/AuthContext";
 
 const SignIn = () => (
@@ -124,7 +124,7 @@ Functional componet 에서 `useContext()` **Hook**를 사용한다.
 
  **✍ Exmple - ContextType  application**
 
-```javascript
+```jsx
 import AuthContext from "../context/AuthContext";
 
 class SignIn extends Component {
