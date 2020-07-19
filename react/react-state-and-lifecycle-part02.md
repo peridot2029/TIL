@@ -54,9 +54,9 @@ render\(\) 함수에서 오류가 났을 때 실행할 수 있다.
 
 ### 4-1. componentDidCatch\(\)
 
-오류가 발생하면 componentDidCatch\(\) 실행되게 하고, state.error를 true로 설정하게 한다.
+오류가 발생하면 componentDidCatch\(\) 실행되게 하고, `state.error()`를 true로 설정하게 한다.
 
-render\(\) 에서 state.error의 따라서 오류를 띄어주면 된다.
+render\(\) 에서 `state.error()`의 따라서 오류를 띄어주면 된다.
 
 Component는 자신의 함수 안에서 오류가 발생하면 잡을 수 없지만, 그 대신에 자식 컴포넌트 내부에서 발생하는 오류들을 잡을 수 있다.
 
