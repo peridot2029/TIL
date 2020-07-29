@@ -14,6 +14,7 @@
 ## CSS
 
 * [📄CSS Type Selector, Class Selector](css/type-selector-class-selector.md)
+* [📄 CSS Pseudo Class, Pseudo element](css/css-pseudo-class-pseudo-element.md)
 * [📄 CSS Flex](css/flex.md)
 
 ## JavaScript
@@ -43,6 +44,7 @@
 * [📄 React List and Key](react/react-list-and-key.md)
 * [📄 React Context](react/react-context.md)
 * [📄 React Hooks](react/react-hooks.md)
+* [📄 React Redux](react/react-redux.md)
 
 ## SCSS
 
