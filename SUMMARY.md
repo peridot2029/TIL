@@ -44,9 +44,14 @@
 * [📄 React List and Key](react/react-list-and-key.md)
 * [📄 React Context](react/react-context.md)
 * [📄 React Hooks](react/react-hooks.md)
-* [📄 React Redux](react/react-redux.md)
 
 ## SCSS
 
 * [Untitled](scss/untitled.md)
+
+## Redux
+
+* [Untitled](redux/untitled/README.md)
+  * [📄 Redux Introduction and Conceptual theorem](redux/untitled/react-redux.md)
+  * [📄 Redux Using](redux/untitled/redux-using.md)
 
