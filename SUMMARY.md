@@ -47,7 +47,7 @@
 
 ## SCSS
 
-* [Untitled](scss/untitled.md)
+* [📄 Introduction and theorem of SCSS](scss/untitled.md)
 
 ## Redux
 
