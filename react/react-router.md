@@ -14,6 +14,10 @@ react router는 v3과는 다르다고 봐야한다.
 
 yarn를 이용해서 **react-rouer-dom** 설치
 
+
+
+✍ **setting** 
+
 ```bash
 $ yarn add react-router-dom
 ```
@@ -26,6 +30,8 @@ $ yarn add react-router-dom
 
 `<Router>`에는 여러 종류가 있는데, 일반적인 라우팅을 위해 사용되는 `<BrowserRouter>`를 사용한다.
 
+✍ **Syntax**
+
 ```jsx
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 ```
@@ -33,6 +39,8 @@ import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 ### \(2\) Link Component
 
 HTML `<a/>`tag 와 유사하다. 실제로 동작은 페이지 전체를 리로드 하지 않고 필요한 부분만을 리로드 하게 된다.
+
+✍ **Syntax**
 
 ```jsx
 <Link to="/abuout">About</Link>
@@ -43,6 +51,8 @@ HTML `<a/>`tag 와 유사하다. 실제로 동작은 페이지 전체를 리로�
 현재 주소창의 경로와 매치될 경우 보여줄 컴포넌트를 지정하는데 사용한다.
 
 `path`prop를 통해서 매치시킬 경로를 지정하고, `component`prop를 통해서 매치되었을 때 보여줄 컴포넌트를 할당한다.
+
+✍ **Syntax**
 
 ```jsx
 <Route path="/about" component={About} />
@@ -57,6 +67,10 @@ React Router는 path prop 경로와 현재 브라우저의 주소창 URL 경로\
 `exact`prop이 없으면, 의도치 않게 prop Home 컴포넌트 URL 경로와 상관없이 항상 보여지게 된다.
 
 `exact`prop를 사용하면,  붙여주면 URL 경로 값이 `<Route>`의 path 값과 완벽히 전체가 일치해야 매치되는 것을 처리한다.
+
+
+
+✍ **Example** 
 
 ```jsx
 import React from "react"
