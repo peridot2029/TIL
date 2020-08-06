@@ -1,6 +1,6 @@
 # 📄 React State and Lifecycle part 02
 
-### 1. Lifecycle 정의
+## 1. Lifecycle 정의
 
 {% hint style="info" %}
 **component는 프로세스의 특정 시간에 코드를 실행하는 다양한 Lifecycle Hooks 제공되고 크게 3단계로 진행한다.**
@@ -10,13 +10,13 @@
 
 ![](../.gitbook/assets/screenshot-from-2016-12-10-00-21-26-1%20%281%29.png)
 
-### 2. Update 정의
+## 2. Update 정의
 
 component state, props가 변경되면 Update 진행된다.
 
 상위 컴포넌트가 렌더링 되면 하위 컴포넌트도 다시 렌더링 된다.
 
-### 2-1. componentDidUpdate\(\)
+### \(1\) componentDidUpdate\(\)
 
 Update가 이루어지고 render\(\)가 완료된 후, 실행되는 method
 
@@ -38,21 +38,21 @@ componentDidUpdate(prevProps, prevState, snapshot)
 
 `getSnapshotBeforeUpdate()` 구현시, 세번째 인자로 받을 수 있다
 
-### 3. Umount 정의
+## 3. Umount 정의
 
 해당 되는 Compoent DOM 상에서 제거될 때 실행되는 method
 
-### 3-1. componentWillUnmount\(\)
+### \(1\) componentWillUnmount\(\)
 
 최종적으로 제거될 때, 실행된다
 
 component 내에서 이루어지는 네트워크 요청, 타이머 이벤트 등 지속적으로 이루어지는 이벤트를 해제하는데 유용하다.
 
-### 4. Error 정의
+## 4. Error 정의
 
 render\(\) 함수에서 오류가 났을 때 실행할 수 있다.
 
-### 4-1. componentDidCatch\(\)
+### \(1\) componentDidCatch\(\)
 
 오류가 발생하면 componentDidCatch\(\) 실행되게 하고, `state.error()`를 true로 설정하게 한다.
 

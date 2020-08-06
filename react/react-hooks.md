@@ -1,10 +1,10 @@
 # 📄 React Hooks
 
-### 2. useEffect\(\) 정의
+## 2. useEffect\(\) 정의
 
 functional componet의 Lifecycle, class component의 Lifecycle 와 동일한 의미이다.
 
-### 2-1. useEffect\(\) - Mount, Unmount 관리
+### \(1\)Mount, Unmount 관리
 
 \[deps\] 의존 값이 들어이는 배열을 넣는다.
 
@@ -24,7 +24,7 @@ useEffect(() => {
   }, []);
 ```
 
-### 2-2. useEffect\(\) - \[deps\] 특정 값 삽입
+### \(2\) \[deps\] 특정 값 삽입
 
 deps에 특정 값을 넣게 된다면, component가 처음 mount 될 때 호출되고, 지정한 값이 바뀔 때도 호출된다.
 
@@ -34,13 +34,13 @@ useEffect 안에서 사용하는 상태 또는 prop가 있다면, useEffect에 �
 
 만약 useEffect 안에서 상태 또는 prop를 넣지 않게 된다면, useEffect에 등록한 함수가 실행될 때 최신 prop,state를 가르키지 않게 된다.
 
-### 2-3. useEffect\(\) - 매개변수 생략
+### \(3\) 매개변수 생략
 
 deps를 생략하면, component 리렌더링 될 때 마다 호출된다.
 
 참고로 부모 컴포넌트가 리렌더링 되면 자식 컴포넌트 또한 리렌더링 된다.
 
-### 2-4. useEffect 축약 정리
+### \(4\) useEffect 축약 정리
 
 > 1. 화면이 처음 떴을 때 실행.
 >    * deps\[ \] 빈 배열을 넣을 때

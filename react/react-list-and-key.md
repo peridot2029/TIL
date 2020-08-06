@@ -1,6 +1,6 @@
 # 📄 React List and Key
 
-### 1. List and Key 정의
+## 1. List and Key 정의
 
 {% hint style="info" %}
 Key는 React가 어떤 항목을 변경, 추가 또는 삭제할지 식별하는 것을 돕는다.
@@ -14,7 +14,7 @@ key를 다른 항목들 사이에서 해당 항목을 **고유하게 식별하�
 
 렌더링 한 항목에 대한 안정적인 **ID**가 없다면 [최후의 수단](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318)으로 항목의 인덱스를 **key**로 사용.
 
-### 2. List and Key 만들기
+## 2. List and Key 만들기
 
 **List Item component**를 추출한 경우 **List Item** 안에 있는 `<li>` **element**가 아니라 배열의 `<ListItem/>` **element**가 **key**를 가져와야 한다.
 

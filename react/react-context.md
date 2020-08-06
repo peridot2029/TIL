@@ -1,10 +1,10 @@
 # 📄 React Context
 
-### 1. Props 전달의 문제점
+## 1. Props 전달의 문제점
 
  React App의 일반적인 데이터 송/수신 구조는 '**위에서 아래로 prop를 전달**'하도록 구성되어 있다. 문제는Componet 중첩 단계가 복잡해지면 **props ⇌ callback 문제**가 발생하므로 React app 관리가 매우 어려워진다.
 
-### 2.  [Context](https://ko.reactjs.org/docs/context.html)를 사용한 데이터 공유
+## 2.  [Context](https://ko.reactjs.org/docs/context.html)를 사용한 데이터 공유
 
  Context는 React Components Tree 안에서 데이터를 **글로벌\(Global\)**하게 공유할 수 있도록 고안된 방법.
 
@@ -12,7 +12,7 @@ Context를 사용하여 Components Tree에 데이터를 **공급 \(Provider\)** 
 
  Context를 사용하면 중간에 있는 elements에게 props를 넘겨주지 않아도 된다.
 
-### 3. Conext API
+## 3. Conext API
 
  **✍ Exmple - Context application**
 
@@ -104,7 +104,7 @@ const SignIn = () => (
 );
 ```
 
-### **4. ContextType 정의**
+## **4. ContextType 정의**
 
 {% hint style="warning" %}
  컨텍스트 타입을 사용하면 단 하나의 컨텍스트 객체만 사용 가능하다. 
@@ -141,8 +141,6 @@ class SignIn extends Component {
   }
 }
 ```
-
-
 
 
 

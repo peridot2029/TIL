@@ -1,6 +1,6 @@
 # 📄 React Component
 
-### 1. Component 정의
+## 1. Component 정의
 
 {% hint style="info" %}
 React App에서 component가 갖는 의미란 데이터를 입력 받아, DOM Node를 출력하고 하는 함수, 입력 받는 데이터는 [props, state](https://reactjs.org/docs/components-and-props.html) 같은 것들을 의미한다.
@@ -10,7 +10,7 @@ React App 구성하는 가장 최소한의 단위이다, componets는 개별적�
 
 App을 React로 만든다는 것은 곧 작고 단단한 component 만들고 이 components 유기적으로 연결한다는 것을 뜻한다.
 
-### 2 . Controlled Component 정의
+## 2 . Controlled Component 정의
 
 {% hint style="info" %}
 **Uncontrolled Component**  :  사용자가 상태를 제어하지 않는 컴포넌트
@@ -122,7 +122,7 @@ class App extends Component {
 }
 ```
 
-### 3. PureComponent 정의
+## 3. Pure Component 정의
 
 PureComponent는 일반 컴포넌트와 유사하지만, react 생명주기 `shouldComponentUpdate()`를 다루는 방식이 다르다.
 
@@ -136,13 +136,13 @@ PureComponent는 `shouldComponentUpdate()`는 컴포넌트의 하위 트리에 �
 (() => null) === (() => null); // false
 ```
 
-### 4.  Functional Component 정의
+## 4.  Functional Component 정의
 
 React 16.8 버전이 릴리즈 되면서 **Hooks** 라는 기능으로 React 추가되었다.
 
 Hooks는 Class Component 없이, **Functional componen**t로만 App을 구성할 수 있다.
 
-### 5. react.memo\(\) 정의
+## 5. react.memo\(\) 정의
 
 component가  react.memo\(\)로 래핑 될 때, react는 component를 렌더링 하고, 결과를 모아서 메모이징 \(memoizing\)한다. 
 
