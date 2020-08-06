@@ -12,9 +12,13 @@ react router는 v3과는 다르다고 봐야한다.
 
 ## 2.  React Project - Router 설치 및 적용
 
-yarn를 이용해서 **react-rouer-dom** 설치
+react-router 프로젝트 설치 후, react-rouer-dom 설치
 
+✍ **setting** 
 
+```bash
+$ create-react-app react-router
+```
 
 ✍ **setting** 
 
@@ -109,4 +113,8 @@ function App() {
 ### Reference <a id="reference"></a>
 
  React Router 라우팅 하기 [→\(SITE\)﻿](https://www.daleseo.com/react-router-basic/)
+
+React Router Project [→\(StackBlitz\)﻿](https://stackblitz.com/edit/react-router-routings)
+
+
 

@@ -46,9 +46,7 @@ $ yarn add redux react-redux
 
 특정 기능을 구현하기 위하여 필요한 액션, 액션 생성 함수, 초기값, 리듀서 함수가 들어가 있는 파일을
 
-모듈\(Module\)이라고 부른다.
-
-
+**모듈\(Module\)**이라고 부른다.
 
 ✍ **store/modules/counter.js**
 
@@ -81,8 +79,7 @@ function counter(state = initialState, action) {
       return state;
   }
 }
-
-export defalut counter;
+export default counter;
 ```
 
 ### \(2\) combineReducers 로 리듀서 합치기
@@ -92,8 +89,6 @@ reducer가 여러개 일때 redux 내장 함수 중 `combineReducers`  를 사�
 여러개로 나뉘어진 reducers를 **Sub Reducer** 라고 부른다.
 
 하나로 합쳐진 reducers를 **Root Reducer** 라고 부른다.
-
-
 
 ✍ **store/modules/index.js** 
 
@@ -122,8 +117,8 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import rootReducer from './store/modules';
 import { Provider } from 'react-redux';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import App from './App';
 
 const devTools =
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
@@ -139,9 +134,101 @@ ReactDOM.render(
 registerServiceWorker();
 ```
 
+### \(4\) connect function 를 사용해서 component store 연동
 
+컨테이너 컴포넌트를 만들때, react-redux 라이브러리에서 connect 함수를 사용한다.
 
+함수의 파라미터에 전달해주는  `mapStateToProps` 는 store 안에 들어있는 값을 prop로 전달해준다.
 
+ `mapDispatchToProps` 함수는 액션을 생성 함수들을 props로 전달해준다.
 
+ **`mapDispatchToProps` 액션 생성 함수는 호출한다고 해서, 상태에 변화가 일어나지는 않는다.** 
 
+**그 대신에 액센 객체를 생성한다. 생성한 액션 객체를 store에게 전달 해주어야 상태에 변화가 발생한다.**
+
+✍ **containers/CounterContainer.js**
+
+```jsx
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Counter from '../components/Counter';
+import { increment, decrement } from '../store/modules/counter';
+
+class CounterContainer extends Component {
+  handleIncrement = () => {
+    this.props.increment();
+  };
+  handleDecrement = () => {
+    this.props.decrement();
+  };
+  render() {
+    const { number } = this.props;
+    return (
+      <Counter
+        value={number}
+        onIncrement={this.handleIncrement}
+        onDecrement={this.handleDecrement}
+      />
+    );
+  }
+}
+
+// props - store state value
+const mapStateToProps = ({ counter }) => ({
+  number: counter.number,
+});
+
+// props - action creatorfunction
+const mapDispatchToProps = { increment, decrement };
+
+// component redux connect function
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CounterContainer);
+```
+
+✍ **components/Counter.js**
+
+```jsx
+import React from 'react';
+
+const Counter = ({ value, color, onIncrement, onDecrement }) => {
+  return (
+    <div className='Counter'>
+      <h1 style={{ color }}>{value}</h1>
+      <button onClick={onIncrement}>+</button>
+      <button onClick={onDecrement}>-</button>
+    </div>
+  );
+};
+
+export default Counter;
+```
+
+✍ **App.js**
+
+```jsx
+import React from 'react';
+import CounterContainer from './containers/CounterContainer';
+
+function App() {
+  return (
+    <>
+      <h2>Counter</h2>
+      <CounterContainer/>
+    </>
+  );
+}
+
+export default App;
+```
+
+###  <a id="reference"></a>
+
+### Reference <a id="reference"></a>
+
+Redux React 함께 사용하 [→\(SITE\)﻿](https://velog.io/@velopert/Redux-3-%EB%A6%AC%EB%8D%95%EC%8A%A4%EB%A5%BC-%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%99%80-%ED%95%A8%EA%BB%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-nvjltahf5e)
+
+React Counter Project [→\(StackBlitz\)﻿](https://stackblitz.com/edit/react-conuter)
 
