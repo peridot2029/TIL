@@ -44,14 +44,10 @@
 * [📄 React List and Key](react/react-list-and-key.md)
 * [📄 React Context](react/react-context.md)
 * [📄 React Hooks](react/react-hooks.md)
+* [📄 React Router](react/react-router.md)
 
-## SCSS
+## REDUX <a id="redux-1"></a>
 
-* [📄 Introduction and theorem of SCSS](scss/untitled.md)
-
-## Redux
-
-* [Untitled](redux/untitled/README.md)
-  * [📄 Redux Introduction and Conceptual theorem](redux/untitled/react-redux.md)
-  * [📄 Redux Using](redux/untitled/redux-using.md)
+* [📄 Redux Introduction and Conceptual theorem](redux-1/redux-introduction-and-conceptual-theorem.md)
+* [📄 Redux Using](redux-1/redux-using.md)
 

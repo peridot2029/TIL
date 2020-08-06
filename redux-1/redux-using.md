@@ -26,7 +26,7 @@ reducer 함수는 이전 상태와, 액션 객체를 파라미터로 받는다.
 
 똑같은 파라미터로 호출된 리듀서 함수는 언제나 똑같은 결과값을 반환해야 한다.
 
-## 2. React Project - Redux 사
+## 2. React Project - Redux 설
 
 react project 에서 redux를 사용하기 위한,  react-redux 라이브러리 설치.
 
