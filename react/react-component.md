@@ -25,6 +25,8 @@ react component는 form에 발생하는 사용자가 입력값을 제어 한다.
 **✍ Example - single input**
 
 ```jsx
+import React, { Component } from "react";
+
 class NameForm extends Component {
   state = { value: "" };
   handleChange = (e) => {

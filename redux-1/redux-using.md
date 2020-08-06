@@ -136,15 +136,17 @@ registerServiceWorker();
 
 ### \(4\) connect function 를 사용해서 component store 연동
 
+{% hint style="warning" %}
+**`mapDispatchToProps` 액션 생성 함수는 호출한다고 해서, 상태에 변화가 일어나지는 않는다.** 
+
+**그 대신에 액센 객체를 생성한다. 생성한 액션 객체를 store에게 전달 해주어야 상태에 변화가 발생한다.**
+{% endhint %}
+
 컨테이너 컴포넌트를 만들때, react-redux 라이브러리에서 connect 함수를 사용한다.
 
 함수의 파라미터에 전달해주는  `mapStateToProps` 는 store 안에 들어있는 값을 prop로 전달해준다.
 
  `mapDispatchToProps` 함수는 액션을 생성 함수들을 props로 전달해준다.
-
- **`mapDispatchToProps` 액션 생성 함수는 호출한다고 해서, 상태에 변화가 일어나지는 않는다.** 
-
-**그 대신에 액센 객체를 생성한다. 생성한 액션 객체를 store에게 전달 해주어야 상태에 변화가 발생한다.**
 
 ✍ **containers/CounterContainer.js**
 
@@ -178,7 +180,7 @@ const mapStateToProps = ({ counter }) => ({
   number: counter.number,
 });
 
-// props - action creatorfunction
+// props - action creator function
 const mapDispatchToProps = { increment, decrement };
 
 // component redux connect function
