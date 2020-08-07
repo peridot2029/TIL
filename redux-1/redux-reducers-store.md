@@ -29,9 +29,9 @@ Store 안에는 state와 reducer 가 들어가 있다.
 
 ### \(1\) Store method - dispatch\(action\)
 
-state를 업데이트 하기 위한 방법으,  dispath method는 매개변수로 action를 받는다.
+state를 업데이트 하기 위한 방법,  dispath method는 매개변수로 action를 받는다.
 
-action creater로 return 해준 action를 매개변수로 받아와서 store의 reducer에게 넘겨주는 역할이다.
+action creater로 return 해준 action 객체를 매개변수로 받아와서 store의 reducer에게 넘겨주는 역할이다.
 
 ✍ **Syntax**
 
@@ -45,15 +45,15 @@ dispatch(action)
 리스너\(lister\)는  사용자 액션에 응답하기 위해서 특정 조건 안에서만 dispatch\(\)를 호출해야 한다.  아무런 조건 없이 리스너를 사용하면 무한 루프에 빠질수도 있다. 
 {% endhint %}
 
-액션이 보내져서 상태의 값이 바뀔 때 마다, 호출할 콜백 함수 이다.  store의 리듀서는 순수 함수 이므로 상태 트리의 값이 변경되었는지 확인하기 위해, 레퍼런스를 비교할 수 있다.
-
 변경사항에 대한 리스너\(listener\)를 추가한다. 리스너는 액션이 보내져서 상태의 일부가 변경 될 수 있때 마다 호출된다.  이 안에서 현재 상태의 값을 읽으려면  `getState()`를 사용한다.
+
+액션이 보내져서 상태의 값이 바뀔 때 마다, 호출할 콜백 함수 이다.  store의 리듀서는 순수 함수 이므로 상태 트리의 값이 변경되었는지 확인하기 위해, 레퍼런스를 비교할 수 있다.
 
 
 
 ### \(3\) Store method - getState\(\)
 
-
+애플리케이션의 현재 상태 트리를 반환한다. store의 리듀서가 마지막으로 반환값과 동일하다.
 
 
 
