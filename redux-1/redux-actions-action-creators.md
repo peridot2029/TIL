@@ -20,7 +20,7 @@
 
 ## 2. Action Creators 정의
 
-action creators는 redux의 기능은 아니고, 액션을 만드는 순수 함수 이다. 
+**action creators는 redux의 기능은 아니고, 액션을 만드는 순수 함수 이다.** 
 
  dispatach에게 action를 전달해줘야 하기 보내야하는데, dispath에 inline으로 action을 사용하는 것은 불편해서,  action 객체를 return 해주는 함수로 만든다.
 

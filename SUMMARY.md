@@ -10,8 +10,8 @@
 
 ## HTML
 
-* [📄 HTML ID, class, name attribute](html/id-class-name-attribute.md)
-* [HTML Section, Matin Element](html/html-section-matin-element.md)
+* [📄 HTML ID, class, name Attribute](html/id-class-name-attribute.md)
+* [📄 HTML Section, Matin Element](html/html-section-matin-element.md)
 
 ## CSS
 
