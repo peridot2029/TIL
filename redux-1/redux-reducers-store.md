@@ -27,11 +27,9 @@ function reducer(state, action){
 
 Store 안에는 state와 reducer 가 들어가 있다.
 
-Store의 API로는 \(dispath, subscribe, getState\)가 있다.
+### \(1\) Store method - dispatch\(action\)
 
-### \(1\) Store API - dispatch\(action\)
-
-store API 중 하나로,  state를 업데이트 하기 위해서, dispath method는 매개변수로 action를 받는다.
+state를 업데이트 하기 위한 방법으,  dispath method는 매개변수로 action를 받는다.
 
 action creater로 return 해준 action를 매개변수로 받아와서 store의 reducer에게 넘겨주는 역할이다.
 
@@ -41,17 +39,21 @@ action creater로 return 해준 action를 매개변수로 받아와서 store의 
 dispatch(action)
 ```
 
-### \(2\) Store API - subscribe\(listener\)
+### \(2\) Store method - subscribe\(listener\)
 
-store API 중 하나로,  함수 형태의 값을 파라미터로 받아온다.
+{% hint style="warning" %}
+리스너\(lister\)는  사용자 액션에 응답하기 위해서 특정 조건 안에서만 dispatch\(\)를 호출해야 한다.  아무런 조건 없이 리스너를 사용하면 무한 루프에 빠질수도 있다. 
+{% endhint %}
 
-subscribe 함수에 특정 함수를 전달해주면, 액션이 디스패치 되었을 때 마다 전달해준 함수가 호출된다.
+액션이 보내져서 상태의 값이 바뀔 때 마다, 호출할 콜백 함수 이다.  store의 리듀서는 순수 함수 이므로 상태 트리의 값이 변경되었는지 확인하기 위해, 레퍼런스를 비교할 수 있다.
 
-react app에서 redux를 사용하게 될 때, 보통은 이 함수를 직접 사용하는 일은 별로 없다.
+변경사항에 대한 리스너\(listener\)를 추가한다. 리스너는 액션이 보내져서 상태의 일부가 변경 될 수 있때 마다 호출된다.  이 안에서 현재 상태의 값을 읽으려면  `getState()`를 사용한다.
 
-그 대신 react-redux 라이브러리에서 제공되는 `connect`함수또는 `useSelector`Hook를 사용하여 redux store의 상태를 구독한다.
 
-### \(3\) Store API - getState\(\)
+
+### \(3\) Store method - getState\(\)
+
+
 
 
 
@@ -63,7 +65,7 @@ react app에서 redux를 사용하게 될 때, 보통은 이 함수를 직접 �
 
 Redux\(reducers\) [→\(SITE\)](https://redux.js.org/recipes/reducing-boilerplate#actions)
 
-Redux\(store\) [→\(SITE\)](https://redux.js.org/recipes/configuring-your-store#creating-the-store)
+Redux\(store\) [→\(SITE\)](https://lunit.gitbook.io/redux-in-korean/api/store#undefined-5)
 
 [﻿](https://redux.js.org/recipes/reducing-boilerplate#actions)
 
