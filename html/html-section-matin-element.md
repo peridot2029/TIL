@@ -2,7 +2,7 @@
 
 ## 1. Root setion Element 정의
 
-`<body/>` 문서 안에서 단 한 번만 사용 가능하다.
+`<body>` 문서 안에서 단 한 번만 사용 가능하다.
 
 ## 2.  Section Elements 정의
 
