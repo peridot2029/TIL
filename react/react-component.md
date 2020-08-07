@@ -163,7 +163,7 @@ react.memo\(\)는 props 혹은 props의 객체를 비교할 때 **얕은\(Shallo
   
 ✍ **Syntax**
 
-```javascript
+```jsx
 react.memo(Component, [areEqual(prevProps, nextProps)])
 ```
 

@@ -4,7 +4,7 @@
 
 functional componet의 Lifecycle, class component의 Lifecycle 와 동일한 의미이다.
 
-### \(1\)Mount, Unmount 관리
+### \(1\) Mount, Unmount 관리
 
 \[deps\] 의존 값이 들어이는 배열을 넣는다.
 

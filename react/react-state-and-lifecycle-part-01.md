@@ -15,7 +15,7 @@
 ## 2. setState\(\) 정의
 
 {% hint style="info" %}
-`setState()`는 **component**를 갱신하는데 있어 **즉각적인 명령이 아니라 요청**이다.
+`setState()`는 **component**를 갱신하는데 있어, **즉각적인 명령이 아니라 요청**이다.
 
 즉, **compoent**는 항상 즉각적으로 갱신되지 않는다.
 {% endhint %}
@@ -44,6 +44,8 @@ React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
 결과물로 나온 elements가 **Virital DOM**에 삽입되고 실제 DOM 업데이트 하기 과정.
 
+
+
 ### \(1\) constructor\(\)
 
 최초에 component가 mount 되기 전에 실행, 주된 역할은 state 값을 선언 및 초기화
@@ -61,8 +63,6 @@ render method 안에서 setState\(\)를 작업해서는 안된다.
 결과물로 나온 elements를 **Virital DOM**에 mount 되고 실제 DOM 업데이트 된다
 
 배열 또는 여러개의 elements를 반환 하고 싶을 때는, **Fragments**를 사용할 수 있다
-
-
 
 ### \(3\) componentDidMount\(\)
 
