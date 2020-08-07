@@ -45,9 +45,11 @@
 * [📄 React Context](react/react-context.md)
 * [📄 React Hooks](react/react-hooks.md)
 * [📄 React Router](react/react-router.md)
+* [📄 Redux - redux-counter project](react/redux-using.md)
 
 ## REDUX <a id="redux-1"></a>
 
-* [📄 Redux Introduction and Conceptual theorem](redux-1/redux-introduction-and-conceptual-theorem.md)
-* [📄 Redux Using](redux-1/redux-using.md)
+* [📄 Redux Introduction](redux-1/redux-introduction-and-conceptual-theorem.md)
+* [📄 Redux Actions, Action Creators](redux-1/redux-actions-action-creators.md)
+* [📄 Redux Reducers, Store](redux-1/redux-reducers-store.md)
 
