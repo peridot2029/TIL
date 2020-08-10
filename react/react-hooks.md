@@ -1,54 +1,79 @@
 # 📄 React Hooks
 
+## 
+
 ## 2. useEffect\(\) 정의
 
-functional componet의 Lifecycle, class component의 Lifecycle 와 동일한 의미이다.
+{% hint style="info" %}
+**class component**의 생명주기\(LifeCylcle\)과 같은 동일한 의미이다.
+{% endhint %}
 
-### \(1\) Mount, Unmount 관리
+`useEffect()`는 **functional componet**의 Lifecycle 이다.
 
-\[deps\] 의존 값이 들어이는 배열을 넣는다.
+### \(1\) Component Mount 될 때에만 실행할 경우
 
-두번 째 매개 변수로 \[ \] 배열을 비우게 되면 component가 처음 나타날때만 useEffect\(\)에 등록한 function 를 호출한다.
+`useEffect()` 에서  설정한 함수가 컴포넌트가 화면에 가장 처음 렌더링 될 때만 실행되고, 업데이트 할 경우에는 실행할 필요가 없는 경우엔 함수의 **두 번째 파라미터로 비어 있는 배열을 넣어주면 된다.**
 
-useEffect\(\) 에서 이 함수를 cleanup function 이라고 부른다.
+✍ **Example -Only Run Once, on Mount**
 
-✍ **Example** 
+```jsx
+import React, { useState, useEffect } from 'react';
+
+useEffect(() => {
+    console.log('Run only when component are mount');
+}, []);
+```
+
+### \(2\)  특정 값이 업데이트 될 때에만 실행하고 싶을 경우
+
+`useEffect()` 사용할 때 특정 값이 변경될 때만 호출하고 싶을 경우에 사용한다.
+
+**props** 안에 들어 있는 **value**의 값이 바뀔 때에만 특정 작업을 수행하고 싶을 경우,  `useEffect()` 의  두 번째 매개변수로 전달되는 **배열 안에 검사하고 싶을 값을 넣어주면 된다.**
+
+✍ **Example - Run useEffect on State Change**
 
 ```jsx
 useEffect(() => {
-    console.log("Appears on the component screen.");
-
-    return () => {
-      console.log("Exit the component screen");
-    };
-  }, []);
+    console.log('Outputs only when the value of the name changes.');
+    console.log('name')
+}, [name]);
 ```
 
-### \(2\) \[deps\] 특정 값 삽입
+### \(3\) Component Unmount, Update 되기 직전에 작업을 실행하고 싶을 경우
 
-deps에 특정 값을 넣게 된다면, component가 처음 mount 될 때 호출되고, 지정한 값이 바뀔 때도 호출된다.
+`useEffect()`는 기본적으로 렌더링 되고난 후 직후마다 실행되며, 배열에 무엇을 넣느냐에 따라서 실행 되는 조건이 달라진다.
 
-deps 안에 특정 값이 있다면, unmount 시 호출 되고, 값이 바뀌기 직전에도 호출된다.
+컴포넌트가 **Unmount** 되기 전, 또는 **Update** 되기 전에 어떠한 작업을 수행하고 싶다면 c**leanup function**를 반환 해주어야 한다.
 
-useEffect 안에서 사용하는 상태 또는 prop가 있다면, useEffect에 넣어주는게 규칙이다.
+✍ **Example - Performs the component before it is unmount or update**
 
-만약 useEffect 안에서 상태 또는 prop를 넣지 않게 된다면, useEffect에 등록한 함수가 실행될 때 최신 prop,state를 가르키지 않게 된다.
+```jsx
+useEffect(() => {
+    console.log('Outputs only when the value of the name changes.');
+    console.log('name')
+    
+    return () => {
+        console.log('It is performed immediately before the component is update.');
+        console.log('name');
+    };
+}, [name]);
+```
 
-### \(3\) 매개변수 생략
+### \(4\) useEffct 정리 <a id="reference"></a>
 
-deps를 생략하면, component 리렌더링 될 때 마다 호출된다.
+1.  화면이 처음 떴을 때만 실행
+   * deps\[ \] 빈 배열을 넣을 때, componentDidmount 처럼 실행한다.  
+2.  화면이 사라질 때
+   * componentWillUnmount\(\) 처럼 실행한다.
+3.   deps에 넣은 의존값이 업데이트 되었을 때 실행
 
-참고로 부모 컴포넌트가 리렌더링 되면 자식 컴포넌트 또한 리렌더링 된다.
+   * componentDitUpdate\(\) 처럼 실행한다.
 
-### \(4\) useEffect 축약 정리
+### Reference <a id="reference"></a>
 
-> 1. 화면이 처음 떴을 때 실행.
->    * deps\[ \] 빈 배열을 넣을 때
->    * LifeCycle 중 componentDidmount 처럼 실행
-> 2. 화면이 사라질 때 \(cleup function\)
->    * componentWillUnmount\(\) 처럼 실행
-> 3. deps에 넣은 파라미터값이 업데이트 됬을때 실행
->    * componentDidUpdate 처럼 실행
+ useEffect 완벽가이드\(번역\) [→\(SITE\)﻿](https://www.daleseo.com/react-router-basic/)
+
+
 
 
 
