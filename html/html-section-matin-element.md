@@ -8,11 +8,11 @@
 
 `<body>` 문서 안에서 단 한 번만 사용 가능하다.
 
-## 2.  Section Elements 정의
+## 2.  Section Element 정의
 
 섹션 요소는 일반적인 컨테이너 요소가 아니므로, 문서 개요에 명시적으로 나열되는 경우에만 섹션 요소가 적합다는 규칙이 있다.
 
-### \(1\) Section Elemenets
+### \(1\) Section Elemenet
 
 `<section>` 요소는 문서,  애플리케이션 일반적인 섹션을 의미한다.
 
@@ -46,7 +46,7 @@
 
 사이트의 하단에 위치한 `<footer>`만으로도 링크는 충분하다.
 
-## 3. Inside Sections Elements
+## 3. Inside Sections Element
 
 섹션 내부에 사용되는 요소는 `<header>, <footer>, <main>` 요소들이 있다.
 
