@@ -31,8 +31,10 @@ BEM은 기본적으로 ID를 사용하지 않으면, class 만을 사용한다.
 
 **block**은 독립적인 형태, **element**는 의존적인 형태 이다.
 
-❌ **Exmple - BEM Incorrect Usage**
+✍ **Exmple**
 
+{% tabs %}
+{% tab title=" BEM Incorrect Usage" %}
 ```markup
 <form class="search-form">
   <div class="search-form__content">
@@ -41,9 +43,9 @@ BEM은 기본적으로 ID를 사용하지 않으면, class 만을 사용한다.
   </div>
 </form>
 ```
+{% endtab %}
 
-  ****✍ **Exmple - BEM Correct Usage**
-
+{% tab title="BEM Correct Usage" %}
 ```markup
 <form class="search-form">
   <div class="search-form__content">
@@ -52,12 +54,16 @@ BEM은 기본적으로 ID를 사용하지 않으면, class 만을 사용한다.
   </div>
 </form>
 ```
+{% endtab %}
+{% endtabs %}
 
 ### \(3\) Modifier
 
 block 또는 element의 **모양\(color, size\), 상태\(disabled, checked\)**를 정의한다.
 
 **modifier**를 사용하기 위해서는 **block** 다음에 `--`를 추가하여 작성한다.
+
+
 
 ✍ **Exmple - BEM Correct Usage**
 
