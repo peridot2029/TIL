@@ -4,7 +4,7 @@
 
 `<button>` 요소는 클릭한 버튼을 나태낸다.
 
-### \(1\). `<button>` 요소의 특성\(Attributes\)
+### \(1\). `<button>` 요소의 Attributes\(속성\)
 
 **autofocus**
 

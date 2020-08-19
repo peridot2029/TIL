@@ -6,7 +6,7 @@
 
 `<textarea>` 요소는 멀티라인 일반 텍스트 편집 컨트롤을 나타낸다.
 
-### \(1\). `<textarea>` 요소의 특성\(Attributes\)
+### \(1\). `<textarea>` 요소의 Attributes\(속성\)
 
 **autocapitalize**
 

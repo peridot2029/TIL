@@ -4,7 +4,7 @@
 
 `<form>` 요소는 정보를 제출하기 위한 대화형 컨트롤을 포함하는 문구 구획을 나타낸다.
 
-### \(1\). `<form>` 요소의 특성
+### \(1\). `<form>` 요소의 Attributes\(성\)
 
 **action**
 
@@ -40,8 +40,8 @@
 | `formaction` | image, submit | 양식 제출에 사용할 URL |
 | `formenctype` | image, sumbit | 양식 제출에 사용할 양식 데이터 세트 인코딩 유형 |
 | `formmethod` | image, submit | 양식 제출에 사용할 HTTP 메서드 |
-| `formnovalidate` | image, submit | 양식 제출을위한 양식 컨트롤 유효성 검사 |
-| `formtarget` | image, submit | 양식 제출을위한 찾아보기 컨텍스트 |
+| `formnovalidate` | image, submit | 양식 제출을 위한 양식 컨트롤 유효성 검사 |
+| `formtarget` | image, submit | 양식 제출을 위한 찾아보기 컨텍스트 |
 | `max` | numeric types | 최대값 |
 | `maxlength` | password, search, tel, text, url | 최대 길이\(문자 수\)value |
 | `min` | numeric types | 최소값 |
