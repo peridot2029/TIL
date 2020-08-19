@@ -78,7 +78,7 @@ label 텍스트는 입력과 시각적으로 관련이 있을뿐만 아니라, �
 </label>
 ```
 
-#### Other usage notes
+### Other usage notes
 
 label이 붙여진 양식 컨트롤\(form control\)은 **labeled control** 라고 불린다.
 
