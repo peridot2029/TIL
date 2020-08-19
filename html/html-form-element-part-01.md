@@ -4,7 +4,7 @@
 
 `<form>` 요소는 정보를 제출하기 위한 대화형 컨트롤을 포함하는 문구 구획을 나타낸다.
 
-### \(1\). `<form>` 요소의 Attributes\(속\)
+### \(1\). `<form>`  Element Attributes 
 
 **action**
 
@@ -15,7 +15,7 @@
 * `post` : 양식 데이터를 요청 본문으로 전송 
 * `get`  : `action` URL과 ? 구문자 뒤에 이어 붙여서 전송
 
-## 2. `<input>` 요소
+## 2. `<input>` Element
 
 웹 기반 양식에서 사용자의 데이터를 받을 수 있는 대화형 컨트롤 생성한다.
 
@@ -30,7 +30,7 @@
 | `search` | 검색 문자열 입력하기 위한 텍스트 필드 |
 | `submit` | 양식을 제출하는 버 |
 
-### \(2\). `<input>`  Attributes\(속성\)
+### \(2\). `<input>`  Element Attributes
 
 | 유형 | 유형 또는 유형 | 설명 |
 | :--- | :--- | :--- |
@@ -55,7 +55,7 @@
 | `value` | all | 양식 컨트롤의 현재 ,  name/value 쌍의 일부로 양식과 함께 제출 |
 | `name` | all | 양식 컨트롤의 이름,  name/value로 양식과 함께 제출 |
 
-### 3. `<label>` Elements
+### 3. `<label>` Element
 
 사용자 인터페이스 항목의 설명을 나타낸다.
 

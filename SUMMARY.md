@@ -22,6 +22,7 @@
 
 * [📄CSS Type Selector, Class Selector](css/type-selector-class-selector.md)
 * [📄 CSS Pseudo Class, Pseudo element](css/css-pseudo-class-pseudo-element.md)
+* [📄 CSS Cascade and Inheritance](css/css-cascade-and-inheritance.md)
 * [📄 CSS Flex](css/flex.md)
 * [📄 CSS BEM](css/css-bem.md)
 
