@@ -132,7 +132,7 @@ label의 텍스트를 시각적으로 조정해야하는 경우,  `<label>` 요�
 
 ✍ **Example** - **Good method**
 
-```text
+```markup
 <label class="large-label" for="your-name">
   Your name
   <input id="your-name" name="your-name" type="text">
