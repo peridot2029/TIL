@@ -54,15 +54,23 @@ pragma 지시어\(directive\)로 일반적으로 웹서버가 제공하는 웹�
 
 ✍ **Exmple**
 
+{% tabs %}
+{% tab title="Dafalut" %}
 ```markup
 <!-- Set Default Style -->
 <link href="style.css" rel="stylesheet">
+```
+{% endtab %}
 
+{% tab title="Alternate " %}
+```markup
 <!-- Alternate Style Sheet Settings -->
 <link href="default.css" rel="stylesheet" title="DefaultStyle">
 <link href="fancy.css" rel="alternate stylesheet" title="Fancy">
 <link href="basic.css" rel="alternate stylesheet" title="Basic">
 ```
+{% endtab %}
+{% endtabs %}
 
 ## 5. `<style>` Element
 
@@ -70,12 +78,18 @@ pragma 지시어\(directive\)로 일반적으로 웹서버가 제공하는 웹�
 
 ✍ **Exmple**
 
+{% tabs %}
+{% tab title="Basic " %}
 ```markup
 <!-- basic Style -->
 <style type="text/css">
     body {color: #323232;}
 </style>
+```
+{% endtab %}
 
+{% tab title="Scoped " %}
+```markup
 <!-- scoped elements is no browser that supports it properly. -->
 <section>
     <style scoped>
@@ -84,6 +98,8 @@ pragma 지시어\(directive\)로 일반적으로 웹서버가 제공하는 웹�
     <p> ... </p>
 </section>
 ```
+{% endtab %}
+{% endtabs %}
 
 ## 6. `<Base>` Element
 
