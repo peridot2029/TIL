@@ -6,11 +6,11 @@
 
 ### \(1\). `<form>`  Element Attributes 
 
-**action**
+#### **action**
 
 양식 데이터를 처리할 프로그램의 URL
 
-**method**
+#### **method**
 
 * `post` : 양식 데이터를 요청 본문으로 전송 
 * `get`  : `action` URL과 ? 구문자 뒤에 이어 붙여서 전송
@@ -90,21 +90,23 @@ label이 붙여진 양식 컨트롤\(form control\)은 **labeled control** 라�
 
 ### \(3\). `<label>` 접근성 고려사항
 
-**Interactive content** 
+#### **Interactive content** 
 
 `<label/>` 안에 `<a>` 또는 `<button>`와 같은 인터랙티브 요소를 배치하면, label과 관련된 양식을 입력하기 어렵다.
 
-❌ **Exmple - bad method**
+✍ **Exmple** 
 
+{% tabs %}
+{% tab title=" Bad " %}
 ```markup
 <label for="tac">
   <input id="tac" type="checkbox" name="terms-and-conditions">
   I agree to the <a href="terms-and-conditions.html">Terms and Conditions</a>
 </label>
 ```
+{% endtab %}
 
-✍ **Example** - **Good method**
-
+{% tab title=" Good " %}
 ```markup
 <label for="tac">
   <input id="tac" type="checkbox" name="terms-and-conditions">
@@ -114,30 +116,36 @@ label이 붙여진 양식 컨트롤\(form control\)은 **labeled control** 라�
   <a href="terms-and-conditions.html">Read our Terms and Conditions</a>
 </p>
 ```
+{% endtab %}
+{% endtabs %}
 
-**title\(제목\)**
+
+
+#### **title \(제목\)**
 
 제목은 일반적으로 탐색 목적의 보조 도구로 사용되므로 `<label>` 내에 제목 요소를 배치하면 많은 종류의 보조 기술을 방핸한다.
 
 label의 텍스트를 시각적으로 조정해야하는 경우,  `<label>` 요소에 적용된 CSS 클래스를 사용하는게 옳다.
 
-❌ **Exmple - bad method**
-
+{% tabs %}
+{% tab title="Bad " %}
 ```markup
 <label for="your-name">
   <h3>Your name</h3>
   <input id="your-name" name="your-name" type="text">
 </label>
 ```
+{% endtab %}
 
-✍ **Example** - **Good method**
-
+{% tab title="Good" %}
 ```markup
 <label class="large-label" for="your-name">
   Your name
   <input id="your-name" name="your-name" type="text">
 </label>
 ```
+{% endtab %}
+{% endtabs %}
 
 ### Reference  <a id="reference"></a>
 

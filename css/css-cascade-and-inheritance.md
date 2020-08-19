@@ -104,15 +104,23 @@ li:first-child a {
 
 **중요성 \(Importance\)**
 
+{% hint style="danger" %}
+이때 important가 적용된 속성을 덮어 쓰려면 다시 important를 사용해야 하기에 최대한 절대 사용하지 않도록 노력해야 한다.
+{% endhint %}
+
 **!important** 선언은 다른 선언 보다 우선권을 가진다. ****
 
-✋이때 important가 적용된 속성을 덮어 쓰려면 다시 important를 사용해야 하기에 최대한 절대 사용하지 않도록 노력해야 한다.
+
 
 **우선 순위 \(Specificity\)**
 
+{% hint style="danger" %}
+전체 선택자\(\*\), 결합자\(+, &gt;, ~\) 및 부정  pseudo-class \(`:not`\) 는  우선 순위에 영향을 미치치 않는다.
+{% endhint %}
+
 선택자의 우선권에 대한 척도, 각 척도를 1, 10, 100, 1000 단위로 생각하면 이해하기 쉽다.
 
-✋ 전체 선택자\(\*\), 결합자\(+, &gt;, ~\) 및 부정  pseudo-class \(`:not`\) 는  우선 순위에 영향을 미치치 않는다.
+
 
 {% tabs %}
 {% tab title="CSS 각 척도에 대한 단위" %}
