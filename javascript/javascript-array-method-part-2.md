@@ -58,19 +58,19 @@ reduce 함수의 반환 값은 **누산기\(accumulator\)**에 할당된다.
 array.reduce(callback[, initialValue])
 ```
 
-📄 **accumulator**
+📝 **accumulator**
 
 **누산기**는 **callback**의 반환 값을 누적한다. **콜백 이전 반환 값** 또는 **첫 번째 호출**이면서, `initialValue` 설정된 값
 
-📄 **currentValue**
+📝 **currentValue**
 
 처리할 현재 요소
 
-📄 **array**
+📝 **array**
 
 reduce 호출한 배열
 
-**📄 initialValue**
+📝 **initialValue**
 
 **callback**의 처음 호출에서 첫 번째 인수에 되는 제공 값, 그렇지 않으면 빈 배열\(\[ \]\),
 

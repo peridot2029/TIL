@@ -10,7 +10,7 @@
 
 작업 공간을 Git이 제공하는 자료구조 안에서 압축 시켜 넣은 것
 
-**Local  Repository, Remote  Repository** 두 개의 저장소로 나뉜다.
+**local  repository, remote  repository** 두 개의 저장소로 나뉜다.
 
 ### \(3\). Remote r**epository**
 
@@ -30,7 +30,7 @@
 
 ### \(5\). Stage
 
-작업 공간에서 변경이 발생한 파일을 다음 커밋에 포함되도록 예약하는 것을 추적 \(Stage\)라고 한다.
+작업 공간에서 변경이 발생한 파일을 다음 커밋에 포함되도록 예약하는 것을 추적 \(stage\)라고 한다.
 
 ### \(6\). Branch
 

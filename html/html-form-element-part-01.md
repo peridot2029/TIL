@@ -6,11 +6,11 @@
 
 ### \(1\). `<form>`  Element Attributes 
 
-#### **action**
+#### 📝 **action**
 
 양식 데이터를 처리할 프로그램의 URL
 
-#### **method**
+#### 📝**method**
 
 * `post` : 양식 데이터를 요청 본문으로 전송 
 * `get`  : `action` URL과 ? 구문자 뒤에 이어 붙여서 전송
@@ -21,7 +21,7 @@
 
 ### \(1\). `<input>` Types\(유형\)
 
-| 유형 | 설명 |
+| type | description |
 | :--- | :--- |
 | `button` | 기본 행동을 가지지 않음, **value를 label로 사용**하는 push button |
 | `checkbox` | 단일 값을 선택하거나, 선택 해제할 수 있는 체크박스 |
@@ -31,10 +31,13 @@
 | `submit` | 양식을 제출하는 버 |
 |  `email` | 이메일 주소를 편집할 수 있는 필드, 텍스트 필드 처럼 보이지만 유효성 검증 매개변수가 존재한다. |
 | `file` | 파일을 지정할 수 있는 컨트롤,  `accept`특성을 사용하면 허용하는파일 유형을 지정할 수 있다. |
+| `reset` | 양식의 내용을 기본값으로 재설정 |
+| `text` | 기본값으로 한 줄 텍스트 필드 |
+| `tel` | 전화번호 입력을 위한 컨트롤 |
 
 ### \(2\). `<input>`  Element Attributes
 
-| 유형 | 유형 또는 유형 | 설명 |
+| attribute | type of types | description |
 | :--- | :--- | :--- |
 | `checked` | radio, checkbox | 명령 또는 제어 확인 여부 |
 | `disabled` | all | 양식 컨트롤 비활성화 여부 |
@@ -45,13 +48,13 @@
 | `formnovalidate` | image, submit | 양식 제출을 위한 양식 컨트롤 유효성 검사 |
 | `formtarget` | image, submit | 양식 제출을 위한 찾아보기 컨텍스트 |
 | `max` | numeric types | 최대값 |
-| `maxlength` | password, search, tel, text, url | 최대 길이\(문자 수\)value |
+| `maxlength` | password, search, tel, text, url | 최대 길이\(문자 수\) value |
 | `min` | numeric types | 최소값 |
 | `minlength` | password, search, tel, text, url | 최소 길이\(문자 수\) value |
-| `multiple` | email, file | Boolean, 여러 값 허용 여부 |
+| `multiple` | email, file | boolean, 여러 값 허용 여부 |
 | `placeholder` | password,search,tel,text,url | 값이 설정이 되지 않는 경우 양식 컨트롤에 표시되는 텍스트 |
-| `readonly` | almost all | Boolean, 값은 편집할 수 없다 |
-| `required` | almost all | Boolean, 값이 필요하거나 제출 가능하도록 양식을 확인 |
+| `readonly` | almost all | boolean, 값은 편집할 수 없다 |
+| `required` | almost all | boolean, 값이 필요하거나 제출 가능하도록 양식을 확인 |
 | `size` | email, password, tel, text | 컨트롤의 크기 |
 | `type` | all | 양식의 제어 유형 |
 | `value` | all | 양식 컨트롤의 현재 ,  name/value 쌍의 일부로 양식과 함께 제출 |
@@ -80,7 +83,7 @@ label 텍스트는 입력과 시각적으로 관련이 있을뿐만 아니라, �
 </label>
 ```
 
-### Other usage notes
+#### 📝other usage notes
 
 label이 붙여진 양식 컨트롤\(form control\)은 **labeled control** 라고 불린다.
 
@@ -92,7 +95,7 @@ label이 붙여진 양식 컨트롤\(form control\)은 **labeled control** 라�
 
 ### \(3\). `<label>` 접근성 고려사항
 
-#### **Interactive content** 
+#### 📝**Interactive content** 
 
 `<label/>` 안에 `<a>` 또는 `<button>`와 같은 인터랙티브 요소를 배치하면, label과 관련된 양식을 입력하기 어렵다.
 
@@ -121,9 +124,7 @@ label이 붙여진 양식 컨트롤\(form control\)은 **labeled control** 라�
 {% endtab %}
 {% endtabs %}
 
-
-
-#### **title \(제목\)**
+#### 📝**title \(제목\)**
 
 제목은 일반적으로 탐색 목적의 보조 도구로 사용되므로 `<label>` 내에 제목 요소를 배치하면 많은 종류의 보조 기술을 방핸한다.
 
@@ -151,11 +152,11 @@ label의 텍스트를 시각적으로 조정해야하는 경우,  `<label>` 요�
 
 ### Reference  <a id="reference"></a>
 
-form - 폼 요소 [→\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/form)
+form  element [→\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/form)
 
-input - 인풋 요소 [→\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/input)
+input  element [→\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/input)
 
-label - 레이블 요소 [→\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/label)
+label  element [→\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/label)
 
 Forms [→HTML5.2 표준 기술 사양](https://html.spec.whatwg.org/multipage/forms.html#sec-forms)
 

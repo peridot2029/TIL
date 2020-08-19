@@ -4,13 +4,13 @@
 
 `number, string, boolean, null, undefined, Symbol(es 6+)`
 
-### 2. Symbol의 정의
+### 2. Symbol
 
-**Primitve value** , 유일무이 하고 고유한 존재이다.
+**primitve value** , 유일무이 하고 고유한 존재이다.
 
 `Symbol()`로 부터 반환되는 **모든 심볼 값은 고유**하다
 
-**비공개 멤버 \(Private Member\)**로 열거 대상에서 제외된다.
+**비공개 멤버 \(private member\)**로 열거 대상에서 제외된다.
 
 `Symbol()` 암묵적 형변환이 불가능 하다.
 

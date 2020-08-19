@@ -1,8 +1,8 @@
 # 📄 JavaScript Arrow function expression
 
-### 1. Arrow function expression 정의
+## 1. Arrow function expression 
 
-화살표 함수 표현식\(Arrow Function Expression\)은 function 표현에 비해 구문이 짧다.
+**화살표 함수 표현식\(arrow function expression\)**은 function 표현에 비해 구문이 짧다.
 
 화살표 함수는 항상 **익명** 이다.
 

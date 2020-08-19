@@ -8,43 +8,43 @@
 
 ### \(1\). `<textarea>` 요소의 Attributes\(속성\)
 
-#### **autocapitalize**
+#### 📝**autocapitalize**
 
-IOS의 WebKit에서 지원하는 비표준 속성, 텍스트 값을 입력 또는 편집할 때에 자동으로 대문자 표시할지 여부와 방법을 제어한다.
+ios의 webKit에서 지원하는 비표준 속성, 텍스트 값을 입력 또는 편집할 때에 자동으로 대문자 표시할지 여부와 방법을 제어한다.
 
-#### **cols**
+#### 📝**cols**
 
 평균 문자 너비로 표시되는 텍스트 컨트롤 표시 너비이다. 지정된 경우 양의 정수 여야 한다. 지정되지 않은 경우 기본 값은 `20` 이다.
 
-#### **maxlength**
+#### 📝**maxlength**
 
 사용자가 입력할 수 있는 최대 문자 수, 이 값을 지정하지 않으면 사용자는 무제한의 문자를 입력할 수 있다.
 
-#### **minlength**
+#### 📝**minlength**
 
 사용자가 입력해야 하는 최소 문자 수 이다.
 
-#### **name**
+#### 📝**name**
 
 컨트롤의 이름
 
-#### **placeholder**
+#### 📝**placeholder**
 
 컨트롤 입력 할 수 있는 항목에 표시되는 텍스트
 
-#### **readonly**
+#### 📝**readonly**
 
 Boolean, 사용자가 컨트롤 값을 수정 할 수 없다.
 
-#### **required**
+#### 📝**required**
 
 Boolean, 사용자가 양식을 제출 하기 값을 입력해야 한다.
 
-#### **rows**
+#### 📝**rows**
 
 컨트롤에 표시되는 텍스트 줄 수
 
-#### **wrap**
+#### 📝**wrap**
 
 컨트롤이 텍스트를 래핑하는 방법
 
@@ -54,11 +54,11 @@ Boolean, 사용자가 양식을 제출 하기 값을 입력해야 한다.
 
 다른 양식 요소와 비교하여 상자 모델,font, color 등 일반 CSS를 사용하여 쉽게 조작할 수 있다.
 
-#### **기준 불일치**
+#### 📝**기준 불일치**
 
-기준선을 설정하지 않으면 브라우저 마다 설정하는 기준선이 다르다. 그러므로 기준선은 예측할 수 없기 떄문에 사용하지 않는게 났다.\(`vertical-align: baseline`\)
+기준선을 설정하지 않으면 브라우저 마다 설정하는 기준선이 다르다. 그러므로 기준선은 예측할 수 없기  때문에 사용하지 않는게 났다.\(`vertical-align: baseline`\)
 
-#### **텍스트 영역의 크기 조정 가능 여부 제어**
+#### 📝**텍스트 영역의 크기 조정 가능 여부 제어**
 
 대부분 브라우저에서 `<textarea>`는 크기를 조정할 수 있다.
 
@@ -138,21 +138,21 @@ textarea:valid {
 
 
 
-### Reference  <a id="reference"></a>
+### Reference 
 
-textareay - 텍스트 에어리어 요소[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/textarea)
+textarea element [→\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/textarea)
 
-fieldset - 필드셋 요소[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/fieldset)
+fieldset element [→\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/fieldset)
 
-legend - 레전드 요소[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/legend)
+legend element[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/legend)
 
-datalist - 데이터 리스트 요소[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/datalist)
+datalist element[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/datalist)
 
-progress - 프로그래스 요소[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/progress)
+progress element[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/progress)
 
-output - 아웃풋 요소[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/output)
+output element[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/output)
 
-meter - 미터요소[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/meter)
+meter element[ →\(MDN\)](https://developer.mozilla.org/ko/docs/Web/HTML/Element/meter)
 
 Forms[ →HTML5.2 표준 기술 사양](https://html.spec.whatwg.org/multipage/forms.html#sec-forms)
 

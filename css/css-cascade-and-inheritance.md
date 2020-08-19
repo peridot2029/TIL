@@ -2,7 +2,7 @@
 
 ## 1.Inheritance 
 
-상속\(Inheritance\)은 상위\(부모, 조상\) 요소에 적용된 프로퍼티를  하위\(자식, 자손\) 요소가 물려 받는 것을 의미한다.
+**상속\(Inheritance\)**은 상위\(부모, 조상\) 요소에 적용된 프로퍼티를  하위\(자식, 자손\) 요소가 물려 받는 것을 의미한다.
 
 프로퍼티\(property\) 중에는 상속되는 것과 상속되지 않는 것이 있다.
 
@@ -32,23 +32,25 @@
 
 ### \(1\). Inheritance 제어
 
-CSS는 상속을 제어하기 위한 4가지 특수 범용 속성 값을 제공한다. 모든 CSS 속성은 이러한 값을 허용한다.
+CSS는 상속을 제어하기 위한 **4가지 특수 범용 속성 값**을 제공한다. 모든 CSS 속성은 이러한 값을 허용한다.
 
-#### **\`\`**[**`inherit`**](https://developer.mozilla.org/ko/docs/Web/CSS/inherit)**\`\`**
+#### [**`inherit`**](https://developer.mozilla.org/ko/docs/Web/CSS/inherit)**\`\`**
 
 선택한 요소에 적용된 속성 값을 부모 요소의 속성 값과 동일하게 설정한다. 이것은 **사실상 상속에 영향을 미친다.**
 
-#### **\`\`**[**`intial`**](https://developer.mozilla.org/ko/docs/Web/CSS/initial)**\`\`**
+#### [**`intial`**](https://developer.mozilla.org/ko/docs/Web/CSS/initial)**\`\`**
 
-선택한 요소에 적용된 속성 값을 브라우저의 기본 스타일 시트에서 해당 요소의 해당 속성에 설정된 값과 동일하게 설정한다.  브라우저의 기본 스타일에서 값을 설정하지 않고 속성이 자연스럽게 상속되면 속성 값 대신`inherit`되도록 설정한다. 
+초기값\(기본값\)을 요소에 적용한다. 초기값은 브라우저가 지정한다. 
 
 #### **\`\`**[**`unset`**](https://developer.mozilla.org/ko/docs/Web/CSS/unset)**\`\`**
 
-속성 값을 natural 값으로 재설정 한다. 즉, 속성이 자연적으로 상속되면 `inherit` 된 것 처럼 작동하고 그렇지 않으면 `initial` 처럼 작동한다.
+부모로 부터 상속할 값이 존재하면 상속 값을 그렇지 않다면 초기값을 사용한다.  즉, 전자 일때는 `inherit`
+
+처럼, 후자 일때는 `initial`처럼 작동한다.
 
 #### **\`\`**[**`revert`**](https://developer.mozilla.org/ko/docs/Web/CSS/revert)**\`\`**
 
- `revert` 는 현재 엘리먼트에 선언 된 캐스캐이딩된 속성으로부터  [**style origin**](https://developer.mozilla.org/en-US/docs/Glossary/style_origin) 으로 되돌린다. 부모 속성 또는 user agent에 따라 default로 선언 된 속성으로 되돌리는 것이다.
+ 부모 속성으로 돌아가거나, 부모가 없을 때에는 최초의 상태로 돌아간다.
 
 ✍ **Exmple**
 
@@ -100,11 +102,11 @@ li:first-child a {
 
 요소 하나 이상의 CSS 선언에 영향을 받을 수 있다. 이때 충돌을 피하기 위해  CSS 적용 우선 순위 필요하다. 이를 **캐스케이딩 \(cascading\)** 이라고 한다.
 
-### \(1\). Cascading 3가지 규칙
+### \(1\). cascading 3가지 규칙
 
-**중요성 \(Importance\)**
+📝**중요성 \(importance\)**
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 이때 important가 적용된 속성을 덮어 쓰려면 다시 important를 사용해야 하기에 최대한 절대 사용하지 않도록 노력해야 한다.
 {% endhint %}
 
@@ -112,15 +114,13 @@ li:first-child a {
 
 
 
-**우선 순위 \(Specificity\)**
+📝**우선 순위 \(specificity\)**
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 전체 선택자\(\*\), 결합자\(+, &gt;, ~\) 및 부정  pseudo-class \(`:not`\) 는  우선 순위에 영향을 미치치 않는다.
 {% endhint %}
 
 선택자의 우선권에 대한 척도, 각 척도를 1, 10, 100, 1000 단위로 생각하면 이해하기 쉽다.
-
-
 
 {% tabs %}
 {% tab title="CSS 각 척도에 대한 단위" %}
@@ -146,7 +146,7 @@ style="color:tan"         -- 1000
 {% endtab %}
 {% endtabs %}
 
-#### 소스 순서
+#### 📝소스 순서
 
 **중요성, 우선 순위**가 설정되지 않았거나, 동일한 경우 나중에 나온 소스의 스타일이 우선권을 가진다.
 
@@ -154,7 +154,7 @@ style="color:tan"         -- 1000
 
 ### Reference <a id="reference"></a>
 
-cascade-캐스케이드 [→\(MDN\)﻿](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
+Cascade and inheritance [→\(MDN\)﻿](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
 
 
 

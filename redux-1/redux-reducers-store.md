@@ -2,15 +2,15 @@
 
 ## 1. Reducers 정의
 
-리듀서\(Reducer\)는 변화를 일으키는 함수로 `action, state`  두 개의 매개변수를 받는다.  `dispathch`에서 전달된 action type를 확인하고, 그에 맞는 동작을 한다.
+리듀서 \(reducer\)는 변화를 일으키는 함수로 `action, state` 두 개의 매개변수를 받는다.  `dispathch`에서 전달된 action type를 확인하고, 그에 맞는 동작을 한다.
 
 ### \(1\) Root Reducer 
 
-하나로 합쳐진 reducers를 **Root Reducer** 라고 부른다.
+하나로 합쳐진 reducers를 **root reducer** 라고 부른다.
 
 ### \(2\) Sub Ruducer
 
-여러개 나뉘어진 reducers를 **Sub Reducer** 라고 부른다.
+여러 개 나뉘어진 reducers를 **sub reducer** 라고 부른다.
 
 ✍ **Exmple**
 
@@ -23,9 +23,9 @@ function reducer(state, action){
 
 ## 2. Store
 
-스토어\(Store\)는 한 애플케이션 단 하나의 스토어를 만든다.
+스토어 \(store\)는 한 애플케이션 단 하나의 스토어를 만든다.
 
-Store 안에는 `state`와 `reducer` 가 들어가 있다.
+store 안에는 `state`와 `reducer` 가 들어가 있다.
 
 ### \(1\) Store method - dispatch\(action\)
 

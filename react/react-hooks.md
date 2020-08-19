@@ -2,7 +2,7 @@
 
 ## 
 
-## 2. useEffect\(\) 정의
+## 2. useEffect\(\) 
 
 {% hint style="info" %}
 **class component**의 생명주기\(LifeCylcle\)과 같은 동일한 의미이다.
@@ -43,7 +43,7 @@ useEffect(() => {
 
 `useEffect()`는 기본적으로 렌더링 되고난 후 직후마다 실행되며, 배열에 무엇을 넣느냐에 따라서 실행 되는 조건이 달라진다.
 
-컴포넌트가 **Unmount** 되기 전, 또는 **Update** 되기 전에 어떠한 작업을 수행하고 싶다면 c**leanup function**를 반환 해주어야 한다.
+컴포넌트가 **unmount** 되기 전, 또는 **update** 되기 전에 어떠한 작업을 수행하고 싶다면 **cleanup function**를 반환 해주어야 한다.
 
 ✍ **Example - Performs the component before it is unmount or update**
 

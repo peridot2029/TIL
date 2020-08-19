@@ -2,34 +2,34 @@
 
 ## 1. Flex 
 
-Flex는 요소의 크기가 불분명 하거나 동적인 경우에, 각 요소를 정렬할 수 효율적인 방법을 제공한다.
+fiex는 요소의 크기가 불분명 하거나 동적인 경우에, 각 요소를 정렬할 수 효율적인 방법을 제공한다.
 
-Flex는 `container, item` 두 가지 개념으로 나뉜다. 
+fiex는 `container, item` 두 가지 개념으로 나뉜다. 
 
 ## 2. container 정렬
 
-Container는 Item를 감싸는 부모 역할
+container는 item를 감싸는 부모 역할
 
 `display, flex-direction, justify-content`등의 속성을 사용할 수 있다.
 
 ### \(1\). display
 
-Block 또는 lnline이 아닌  `display: flex`, `display: inline-flex`설정한다.
+block 또는 lnline이 아닌  `display: flex`, `display: inline-flex`설정한다.
 
-| Title | Content |
+| title | content |
 | :--- | :--- |
 | flex | Block 요소 처럼 수직 정렬 |
 | inline-flex | lnline\(Inline block\) 요소 처럼 수평 정렬 |
 
 ### \(2\). flex-flow
 
-Item의 주 축\(main-axis\)을 설정, item의 여러 줄 묶음\(줄 바꿈\)도 설정한다.
+item의 주 축\(main-axis\)을 설정, item의 여러 줄 묶음\(줄 바꿈\)도 설정한다.
 
 ### \(3\). flex-direction 
 
-Item의 주 축\(main-axis\)을 설정한다.
+item의 주 축\(main-axis\)을 설정한다.
 
-| Title | Content |
+| title | content |
 | :--- | :--- |
 | row ****\(**defalut**\) | item를 수평축, 왼쪽에서 오른쪽으로 정렬 |
 | row-reverse | item `row`의 반대축으로 정렬 |
@@ -38,9 +38,9 @@ Item의 주 축\(main-axis\)을 설정한다.
 
 ### \(4\). flex-wrap
 
-Item 여러 줄 묶음, 줄 바꿈 설정한다.
+item 여러 줄 묶음, 줄 바꿈 설정한다.
 
-| Title | Content |
+| title | content |
 | :--- | :--- |
 | nowrap \(**defalut**\) | 모든 item 여러 줄 묶지 않고, 한 줄에 표시 |
 | wrap | item 여러 줄 묶음 |
@@ -50,7 +50,7 @@ Item 여러 줄 묶음, 줄 바꿈 설정한다.
 
 주 축\(main-axis\) 정렬 방법 설정한다.
 
-| Title | Content |
+| title | content |
 | :--- | :--- |
 | flex-start \(**defalut**\) | item를 시작점으로 정렬 |
 | flex-end | item를 끝점으로 정렬 |
@@ -64,7 +64,7 @@ align-content를 사용하기 위해서 `flex-wrap : wrap;` 이어야 한다.
 
 교차죽\(cross-axis\)의 정렬 방법, Item 여러 줄 \(두 줄\) 이상 이고 여백이 있을 경우 사용 가능하다.
 
-| Title | Content |
+| title | content |
 | :--- | :--- |
 | stretch \(**defalut**\) | container의 교차축을 채우기 위해 item 를 늘림 |
 | flex-start | item를 시작점으로 정렬 |
@@ -79,7 +79,7 @@ align-content를 사용하기 위해서 `flex-wrap : wrap;` 이어야 한다.
 
 item이 한 줄이 경우 많이 사용한다.
 
-| Title | Content |
+| title | content |
 | :--- | :--- |
 | stretch \(**defalut**\) | container의 교차축을 채우기 위해 item 를 늘림 |
 | flex-start | item를 시작점으로 정렬 |
@@ -93,17 +93,17 @@ item이 한 줄이 경우 많이 사용한다.
 
 ### \(1\). order
 
-Item 순서를 설정, 숫자를 지정하고 숫자가 클수록 순서가 밀린다.
+item 순서를 설정, 숫자를 지정하고 숫자가 클수록 순서가 밀린다.
 
-| Title | Content |
+| title | content |
 | :--- | :--- |
 | Number | item의 순서 정렬 |
 
 ### \(2\). flex
 
-Item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
+item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
 
-| Title | Content |
+| title | content |
 | :--- | :--- |
 | flex-grow \(**defalut : 0**\) | item의 증가 너비 비율 설정 |
 | flex-shrink \(**defalut : 1**\) | item의 감소 너비 비율 설정 |
@@ -111,9 +111,9 @@ Item의 너비\(증가, 감소, 기본\)를 설정하는 단축 속성이다.
 
 ### \(3\). align-self
 
-교차축\(cross-axis\)에서 개별 Item의 정렬 방법 설정한다.
+교차축\(cross-axis\)에서 개별 item의 정렬 방법 설정한다.
 
-| Title | Content |
+| title | content |
 | :--- | :--- |
 | auto \(**defalut : auto**\) |  container의 `align-item` 속성을 상속 받음 |
 | stretch | container의 교차 축을 채우기 위해 Item을 늘림 |

@@ -1,6 +1,6 @@
 # 📄 JavaScript for~in, for~of, forEach
 
-### 1. for~in 정의
+## 1. for~in 
 
 **객체 모든 열거 가능한 속성\(property\)에 대한 반복,** 즉 모든 객체에 사용 가능하다.
 
@@ -22,7 +22,7 @@ const cafeMenu = {
   console.log(text); // Tropic Revolution Green Grape Slush
 ```
 
-### 2. for~of 정
+## 2. for~of 
 
 `Symbol.iterator`속성을 가지는 컬렉션 전용
 
@@ -50,9 +50,7 @@ for (const value of new Set([1, 2, 3])) {
 }
 ```
 
-
-
-### 3. forEach 정의
+## 3. forEach 
 
 오직 Array 객체에서만 사용 가능한 method, 배열의 요소들을 반복하 작업을 수행할 수 있다.
 

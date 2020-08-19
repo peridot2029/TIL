@@ -1,6 +1,6 @@
 # 📄 JavaScript Iteration protocol
 
-### 1. Iteration protocol 정의
+## 1. Iteration protocol 
 
 {% hint style="info" %}
 **이터레이션 프로토콜**에는 **이터러블 프로토콜\(Iterable protocol\)과 이터레이터 프로토콜\(Iterator protocol\)**이 있다.
@@ -8,15 +8,15 @@
 
 **ES6**에서 도입된 **이터레이션 프로토콜\(Iteration protocol\)**은 데이터 컬렉션을 순회하기 위한 **프로트콜\(미리 약속된 규칙\)**이다. 이터레이션 프로트콜은 준수한 객체는 `for ~ of`문으로 순회가 가능하다.
 
-### 2. It**erable 정의**
+## 2. It**erable** 
 
 **Iterable protocol** 을 준수한 객체를 부르는 명칭이다.
 
-**Symbol.iterator** **method** 구현, **Prototype chain**에 의해 **상속한 객체**를 말한다.
+**Symbol.iterator** **method** 구현, **prototype chain**에 의해 **상속한 객체**를 말한다.
 
 **Symbol.iterator** **method** 는 **Iterator**를 반환한다.
 
-**Array** 는 **Symbol.iterator** **Method**를 소유한다.
+**Array** 는 **Symbol.iterator** **method**를 소유한다.
 
 **Object**\(일반 객체\)는 **Symbol.iterator**  **method 소유하지 않는다.**
 
@@ -46,7 +46,7 @@ for(const item of myObject) {
 }
 ```
 
-### 3. I**terator 정의**
+## 3. I**terator** 
 
 **Iterable protocol** 을 준수한 **Iterable**은 **Symbol.iterator method를 소유한다.**
 
@@ -71,7 +71,7 @@ console.log(iterator.next()); // {value : 3, done : false}
 console.log(iterator.next()); // {value : undefined, done : true}
 ```
 
-### 4 . ES6 에서 제공되는 Bulit in **Iterable**
+## 4 . ES6 에서 제공되는 Bulit in **Iterable**
 
 `Array, String, Map, Set, Arguments`
 
@@ -79,15 +79,15 @@ console.log(iterator.next()); // {value : undefined, done : true}
 
 `TypedArray`
 
-### 5. Iteration Protocol 필요성
+## 5. Iteration Protocol 필요성
 
-**데이터 소비자 \(Data consumer\)**인 `for ~ of`문 , spread 문법 등은 다양한 데이터 소스를 사용한다.
+**데이터 소비자 \(data consumer\)**인 `for ~ of`문 , spread 문법 등은 다양한 데이터 소스를 사용한다.
 
 **Iteration protocol**을 준수하는 **Iterable** 이다.
 
-**Iterable 은 데이터 공급자 \(Data** **provider**\) 역할을 한다.
+**Iterable 은 데이터 공급자 \(data** **provider**\) 역할을 한다.
 
-다양한 데이터 소스가 **Iteration Protocol**을 준수하도록 규정하면 데이터 소비자는 **Iteration protocol** 만을 지원하도록 구현하면 된다.
+다양한 데이터 소스가 **Iteration protocol**을 준수하도록 규정하면 데이터 소비자는 **Iteration protocol** 만을 지원하도록 구현하면 된다.
 
 즉, **Iteration protocol**은 다양한 데이터 소스가 하나의 순회 방식을 갖도록 규정하여 **데이터 소비자가 효율적으로 다양한 데이터 소스를 연결하는 인터페이스 역할을 한다.**
 

@@ -1,12 +1,12 @@
 # 📄 React Router
 
-## 1. React Router  정의
+## 1. React Router 
 
 특정 URL로 사용자가 접근 했을 때, URL를 해석하여 요청한 URL에 알맞는 component를 렌더링 해서 보여주는 역할
 
 즉, 여러 페이지들이 존재하는 서비스를 만들 때 필요하며, URL 또는 상태에 따라서 view를 나누기 위해서 서 사용한다.
 
-Facebook 공식 라이브러리는 아니지만 React Router 라이브러리 중에서 가장 많은 사용자 보유
+facebook 공식 라이브러리는 아니지만 react router 라이브러리 중에서 가장 많은 사용자 보유
 
 react router는 v3과는 다르다고 봐야한다.
 
@@ -64,15 +64,13 @@ HTML `<a/>`tag 와 유사하다. 실제로 동작은 페이지 전체를 리로�
 
 ### \(4\) React Router 적용
 
-React Router는 path prop 경로와 현재 브라우저의 주소창 URL 경로\(location.pathname\)와 비교를 한다.
+react router는 path prop 경로와 현재 브라우저의 주소창 URL 경로\(location.pathname\)와 비교를 한다.
 
 현재 URL 경로 값이`<Route>`의 `path` prop 값과 전체가 아닌 앞부분만 일치해도 매치되는 것으로 간주한다.
 
-`exact`prop이 없으면, 의도치 않게 prop Home 컴포넌트 URL 경로와 상관없이 항상 보여지게 된다.
+`exact`prop이 없으면, 의도치 않게 prop home 컴포넌트 URL 경로와 상관없이 항상 보여지게 된다.
 
 `exact`prop를 사용하면,  붙여주면 URL 경로 값이 `<Route>`의 path 값과 완벽히 전체가 일치해야 매치되는 것을 처리한다.
-
-
 
 ✍ **Example** 
 

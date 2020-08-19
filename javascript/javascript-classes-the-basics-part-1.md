@@ -1,10 +1,10 @@
 # 📄 JavaScript Classes The Basics part 01
 
-### 1. Class 정의
+### 1. Class 
 
-JavaScript **프로토타입 기반 프로그래밍 \(Prototype-Based Programming\)이다.**
+JavaScript **프로토타입 기반 프로그래밍 \(prototype-based programming\)이다.**
 
-**class-free** 객체지향에서는 **Prototype chain, Closure** 등으로 객체 지향 언어의 **상속,  캡슐화\(=정보 은닉\)** 등의 개념을 구현할 수 있다.
+**class-free** 객체지향에서는 **prototype chain, closure** 등으로 객체 지향 언어의 **상속,  캡슐화\(=정보 은닉\)** 등의 개념을 구현할 수 있다.
 
 ES6 class는 `class`키워드를 사용하여 정의한다.
 
@@ -14,7 +14,7 @@ ES6 class는 `class`키워드를 사용하여 정의한다.
 
 생성자 함수와 같이 new 연산자와 함께 클래스명 호출하면 클래스의 **인스턴스**가 생성된다.
 
-### 3. constructor 정의
+### 3. constructor 
 
 **constructor**는 **Instance**를 생성하고 **class field** 를 초기화 하기 위한 특수한 메소드
 

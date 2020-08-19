@@ -1,8 +1,8 @@
 # 📄 JavaScript Destructuring assignment
 
-### 1. Destructuring Assignment 정의
+## 1. Destructuring Assignment 
 
-비구조화 할당 구문은 **배열** 또는 **객체 속성**을 **별개 변수**로 추출할 수 있게 하는 JavaScript **식\(Expression\)** 이다.
+비구조화 할당 구문은 **배열** 또는 **객체 속성**을 **별개 변수**로 추출할 수 있게 하는 JavaScript **식\(expression\)** 이다.
 
 ✍ **Exmple**
 
