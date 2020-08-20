@@ -25,6 +25,7 @@
 * [📄 CSS Pseudo Class, Pseudo Element](css/css-pseudo-class-pseudo-element.md)
 * [📄 CSS Cascade and Inheritance](css/css-cascade-and-inheritance.md)
 * [📄 CSS Flex](css/flex.md)
+* [📄 CSS Flex - flex item](css/css-flex-flex-item.md)
 
 ## JavaScript
 
