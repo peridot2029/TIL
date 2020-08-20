@@ -24,7 +24,6 @@
 * [📄CSS Type Selector, Class Selector](css/type-selector-class-selector.md)
 * [📄 CSS Pseudo Class, Pseudo Element](css/css-pseudo-class-pseudo-element.md)
 * [📄 CSS Cascade and Inheritance](css/css-cascade-and-inheritance.md)
-* [📄 CSS Flex](css/flex.md)
 * [📄 CSS Flex - flex container](css/css-flex-flex-container.md)
 * [📄 CSS Flex - flex item](css/css-flex-flex-item.md)
 

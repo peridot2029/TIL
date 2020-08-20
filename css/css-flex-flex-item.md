@@ -18,59 +18,135 @@
 
 나머지는 기본값인 `flex-shrink : 1` 속성과 `flex-basis : 0` 속성이 적용된다.
 
- 📝**flex  :  1**
+| value | description |
+| :--- | :--- |
+| `1` | `flex : 1` 속성은 `flex : 1 1 0` 속성을 의미한다. |
+| `2, 3` | `flex : 2 1 0`, `flex : 3 1 0`을 나타낸다. |
 
-`flex : 1` 속성은 `flex : 1 1 0` 속성을 의미한다.
-
-📝 **flex : 2  flex : 3** 
-
-`flex : 2 1 0`, `flex : 3 1 0`을 나타낸다.
+ 
 
 ### \(2\). flex-grow
 
 `flex-grow` 속성은 **flex item의 확장에 관련된 속성**이다. 0과 양의 정수를 속성값에 사용한다.
 
-📝 **flex-grow : 0 \(defalut\)**
-
-속성 값이 0 이면 flex container의 크기가 커져도, flex item의 크기가 커지지 않고 원래 크기로 유지된다.
-
-📝 **flex-grow : 1**
-
-속성 값이 1 이상이면 flex container가 커질 때 flex item의 크기도 커지게 하려면 1 이상의 값을 속성 값으로 설정한다.
-
-flex item은 원래 크기와 상관 없이 flex container를 채우도록 flex item의 크기가 커진다.
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">value</th>
+      <th style="text-align:left">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"> <code>0</code> (defalut)</td>
+      <td style="text-align:left">
+        <p>&#xC18D;&#xC131; &#xAC12;&#xC774; 0 &#xC774;&#xBA74; flex container&#xC758;
+          &#xD06C;&#xAE30;&#xAC00; &#xCEE4;&#xC838;&#xB3C4;,</p>
+        <p>flex item&#xC758; &#xD06C;&#xAE30;&#xAC00; &#xCEE4;&#xC9C0;&#xC9C0; &#xC54A;&#xACE0;
+          &#xC6D0;&#xB798; &#xD06C;&#xAE30;&#xB85C; &#xC720;&#xC9C0;&#xB41C;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>1</code>
+      </td>
+      <td style="text-align:left">
+        <p>&#xC18D;&#xC131; &#xAC12;&#xC774; 1 &#xC774;&#xC0C1;&#xC774;&#xBA74; flex
+          container&#xAC00; &#xCEE4;&#xC9C8; &#xB54C;,</p>
+        <p>flex item&#xC758; &#xD06C;&#xAE30;&#xB3C4; &#xCEE4;&#xC9C0;&#xAC8C; &#xD558;&#xB824;&#xBA74;
+          1 &#xC774;&#xC0C1;&#xC758; &#xAC12;&#xC744; &#xC18D;&#xC131; &#xAC12;&#xC73C;&#xB85C;
+          &#xC124;&#xC815;&#xD55C;&#xB2E4;.</p>
+        <p>flex item&#xC740; &#xC6D0;&#xB798; &#xD06C;&#xAE30;&#xC640; &#xC0C1;&#xAD00;
+          &#xC5C6;&#xC774; flex container&#xB97C; &#xCC44;&#xC6B0;&#xB3C4;&#xB85D;
+          flex item&#xC758; &#xD06C;&#xAE30;&#xAC00; &#xCEE4;&#xC9C4;&#xB2E4;.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### \(3\). flex-shrink
 
 `flex-shrink` 속성은 **flex item의 축소에 관련된 속성**이다. 0과 양의 정수를 속성값에 사용한다. 기본값은 1이다.
 
-📝 **flex-shrink : 0**
-
-속성 값이 0 이면 flex container의 크기가 flex item의 크기보다 작아져도 크기가 줄어들지 않고 원래 크기로 유지된다.
-
-📝 **flex-shrink : 1 \(defalut\)**
-
-속성 값이 1 이상 이면 flex container의 크기가 flex item의 크기보다 작아질 때 flex item의 크기가 flex container에게 맞추어 줄어든다.
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"></th>
+      <th style="text-align:left">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>0</code>
+      </td>
+      <td style="text-align:left">
+        <p>&#xC18D;&#xC131; &#xAC12;&#xC774; 0 &#xC774;&#xBA74; flex container&#xC758;
+          &#xD06C;&#xAE30;&#xAC00; flex item&#xC758; &#xD06C;&#xAE30;&#xBCF4;&#xB2E4;
+          &#xC791;&#xC544;&#xC838;&#xB3C4;</p>
+        <p>&#xD06C;&#xAE30;&#xAC00; &#xC904;&#xC5B4;&#xB4E4;&#xC9C0; &#xC54A;&#xACE0;
+          &#xC6D0;&#xB798; &#xD06C;&#xAE30;&#xB85C; &#xC720;&#xC9C0;&#xB41C;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>1</code>(defalut)</td>
+      <td style="text-align:left">
+        <p>&#xC18D;&#xC131; &#xAC12;&#xC774; 1 &#xC774;&#xC0C1; &#xC774;&#xBA74;,
+          flex container&#xC758; &#xD06C;&#xAE30;&#xAC00; flex item&#xC758; &#xD06C;&#xAE30;&#xBCF4;&#xB2E4;
+          &#xC791;&#xC544;&#xC9C8; &#xB54C;</p>
+        <p>flex item&#xC758; &#xD06C;&#xAE30;&#xAC00; flex container&#xC5D0;&#xAC8C;
+          &#xB9DE;&#xCD94;&#xC5B4; &#xC904;&#xC5B4;&#xB4E0;&#xB2E4;.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### \(4\). flex-basis
 
-📝 **flex-basis : px, %, em, rem**
-
-`width` 속성에서 사용하는 모든 단위\(`px, %, em, rem`\)를 속성 값에 사용할 수 있다.
-
-속성 값을 px 또는 %와 같은 단위를 사용해서 설정한다면 flex item의 크기가 고정된다.
-
-📝 **flex-basis : 0**
-
-속성 값을 0으로 설정하면, flex item은 절대적 flex item\(absoulte flex item\)이 되어 flex container 기준으로 크기가 결정된다.
-
 {% hint style="warning" %}
-속성 값을 0 으로 선언할 때에는 `flex-basis: 0px`, `flex-basis: 0%`와 같은 단위도 함께 설정해야 된다.
+속성 값을 0 으로 선언할 때에는 `flex-basis: 0px`, `flex-basis: 0%`와 같은 단위도 함께 
+
+설정해야 된다.
 {% endhint %}
 
-📝 **flex-basis : auto \(defalut\)**
-
-속성 값을 auto로 설정하면 flex item은 상대적 flex item\(relative flex item\)이 되어 콘텐츠의 크기를 기준으로 크기가 결정된다.
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">value</th>
+      <th style="text-align:left">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>px</code>,<code> %</code>, <code>em</code>,<code> rem</code>
+      </td>
+      <td style="text-align:left">
+        <p><code>width</code> &#xC18D;&#xC131;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xB294;
+          &#xBAA8;&#xB4E0; &#xB2E8;&#xC704;(<code>px, %, em, rem</code>)&#xB97C;
+          &#xC18D;&#xC131; &#xAC12;&#xC5D0; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+        <p>&#xC18D;&#xC131; &#xAC12;&#xC744; px &#xB610;&#xB294; %&#xC640; &#xAC19;&#xC740;
+          &#xB2E8;&#xC704;&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC11C; &#xC124;&#xC815;&#xD55C;&#xB2E4;&#xBA74;
+          flex item&#xC758; &#xD06C;&#xAE30;&#xAC00; &#xACE0;&#xC815;&#xB41C;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>0</code>
+      </td>
+      <td style="text-align:left">
+        <p>&#xC18D;&#xC131; &#xAC12;&#xC744; 0&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD558;&#xBA74;,
+          flex item&#xC740; &#xC808;&#xB300;&#xC801; flex item(absoulte flex item)&#xC774;
+          &#xB418;&#xC5B4;</p>
+        <p>flex container &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xD06C;&#xAE30;&#xAC00;
+          &#xACB0;&#xC815;&#xB41C;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>auto</code>(defalut)</td>
+      <td style="text-align:left">&#xC18D;&#xC131; &#xAC12;&#xC744; auto&#xB85C; &#xC124;&#xC815;&#xD558;&#xBA74;
+        flex item&#xC740; &#xC0C1;&#xB300;&#xC801; flex item(relative flex item)&#xC774;
+        &#xB418;&#xC5B4; &#xCF58;&#xD150;&#xCE20;&#xC758; &#xD06C;&#xAE30;&#xB97C;
+        &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xD06C;&#xAE30;&#xAC00; &#xACB0;&#xC815;&#xB41C;&#xB2E4;.</td>
+    </tr>
+  </tbody>
+</table>
 
 ![](../.gitbook/assets/helloworld-201811-flex_10.png)
 
@@ -78,13 +154,157 @@ flex item은 원래 크기와 상관 없이 flex container를 채우도록 flex 
 
 `order` 속성은 flex item의 순서와 관련된 속성이다. 0 부터 값이 클수록 밀리기 때문에 정수와 음수를 속성 값에 사용한다. 기본 값은 0 이다.
 
-📝 **order : -1**
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">value</th>
+      <th style="text-align:left">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>0</code>(defalut)</td>
+      <td style="text-align:left">&#xAE30;&#xBCF8; &#xAC12;&#xC740; 0 &#xC774;&#xACE0; &#xC18D;&#xC131;
+        &#xAC12;&#xC5D0; &#xB530;&#xB77C;&#xC11C; &#xBC30;&#xCE58; &#xC21C;&#xC11C;&#xAC00;
+        &#xACB0;&#xC815;&#xB41C;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>-1</code>
+      </td>
+      <td style="text-align:left">
+        <p>&#xC18D;&#xC131; &#xAC12;&#xC744; -1&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD558;&#xBA74;,
+          order&#xC758; &#xAE30;&#xBCF8;&#xAC12; &#xBCF4;&#xB2E4; &#xC791;&#xC740;
+          &#xC74C;&#xC218; &#xAC12; &#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;</p>
+        <p>&#xAC00;&#xC7A5; &#xBA3C;&#xC800; &#xD45C;&#xC2DC;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>1</code>
+      </td>
+      <td style="text-align:left">
+        <p>&#xB2E4;&#xB978; flex item&#xB4E4;&#xC744; &#xC18D;&#xC131; &#xAC12;&#xC744;
+          &#xAE30;&#xBCF8;&#xAC12;&#xC73C;&#xB85C; 0&#xC73C;&#xB85C; &#xC124;&#xC815;
+          &#xD6C4;,</p>
+        <p>&#xC5B4;&#xB5A4; flex item&#xC758; &#xC18D;&#xC131; &#xAC12;&#xC744; 1&#xB85C;
+          &#xC124;&#xC815;&#xD55C;&#xB2E4;&#xBA74;, &#xAC00;&#xC7A5; &#xB9C8;&#xC9C0;&#xB9C9;&#xC5D0;
+          &#xD45C;&#xC2DC; &#xB41C;&#xB2E4;.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-속성 값을 -1으로 설정하면, order의 기본값 보다 작은 음수 값 이기 떄문에 가장 먼저 표시할 수 있다.
+{% tabs %}
+{% tab title="HTML" %}
+```markup
+<h2>flex item - order</h2>
+<div class="flex-container">
+  <!-- order : 5 -->
+  <div class="item">1</div>
+  <!-- order: 4 -->
+  <div class="item">2</div>
+  <!-- order : 2 -->
+  <div class="item">3</div>
+  <!-- order : 1 -->
+  <div class="item">4</div>
+  <!-- order : 3 -->
+  <div class="item">5</div>
+  <!-- order : 7 -->
+  <div class="item">6</div>
+ <!-- order : 6 -->
+  <div class="item">7</div>
+</div>
+```
+{% endtab %}
 
-📝 **order : 1**
+{% tab title="CSS" %}
+```css
+body {
+	margin: 0 350px;
+}
 
-다른 flex item들을 속성 값을 기본값으로 0으로 설정 후, 어떤 flex item의 속성 값을 1로 설정한다면, 가장 마지막에 표시 된다.
+/* flex container */
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	height: 130px;
+	border: 1px solid transparent;
+	box-shadow: 0 0 0 1px #d9d9d9;
+}
+
+/* flex item */
+.item {
+	flex: 1 0 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1px;
+	line-height: 1;
+	font-size: 2rem;
+	text-align: center;
+	color: #fff;
+}
+
+/* order */
+.item:nth-child(1) {
+	order: 5;
+	background: #d9727b;
+}
+
+.item:nth-child(2) {
+	order: 4;
+	background: #735454;
+}
+
+.item:nth-child(3) {
+	order: 2;
+	background: #342c40;
+}
+
+.item:nth-child(4) {
+	order: 1;
+	background: #f2ad94;
+}
+
+.item:nth-child(5) {
+	order: 3;
+	background: #f2d0c4;
+}
+
+.item:nth-child(6) {
+	order: 7;
+	background: #469aee;
+}
+
+.item:nth-child(7) {
+	order: 6;
+	background: #141cab;
+}
+
+```
+{% endtab %}
+
+{% tab title="RESULT" %}
+![](../.gitbook/assets/.png%20%282%29.png)
+{% endtab %}
+{% endtabs %}
+
+###  Reference <a id="reference"></a>
+
+A Complete Guide to Flexbox [→\(CSS-TRICKS\)](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)​‌
+
+CSS flexible 레이아웃: flex item의 팽창과 수축. [→\(SITE\)](https://naradesign.github.io/article/)​‌
+
+Typical use cases of Flexbox [→\(MDN\)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox)​‌
+
+Flexbox 이해: 당신이 알아야 할 모든 것 \(Understanding Flexbox: Everything you need to know\) [→\(SITE\)](https://www.vobour.com/4-flexbox-%EC%9D%B4%ED%95%B4-%EB%8B%B9%EC%8B%A0%EC%9D%B4-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-%EB%AA%A8%EB%93%A0-%EA%B2%83-understa)​‌
+
+Flex 완벽 가이드 → [\(SITE\)](https://heropy.blog/2018/11/24/css-flexible-box/)​‌
+
+flexbox로 만들 수 있는 10가지 레이아웃 [→ \(NAVER\)](https://d2.naver.com/helloworld/8540176)​‌
+
+플렉스 박스 레이아웃 [→\(SITE\)](https://poiemaweb.com/css3-flexbox)​‌
+
+Flex 지원 범위 [→\(Can I Use\)](https://caniuse.com/#search=flexbox)
 
 
 
