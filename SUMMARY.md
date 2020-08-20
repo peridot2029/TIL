@@ -23,6 +23,7 @@
 * [📄 CSS BEM](css/css-bem.md)
 * [📄CSS Type Selector, Class Selector](css/type-selector-class-selector.md)
 * [📄 CSS Pseudo Class, Pseudo Element](css/css-pseudo-class-pseudo-element.md)
+* [📄 CSS BOX Model](css/css-box-model.md)
 * [📄 CSS Cascade and Inheritance](css/css-cascade-and-inheritance.md)
 * [📄 CSS Flex - flex container](css/css-flex-flex-container.md)
 * [📄 CSS Flex - flex item](css/css-flex-flex-item.md)
