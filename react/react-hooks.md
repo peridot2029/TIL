@@ -1,8 +1,73 @@
 # 📄 React Hooks
 
-## 
+## 1. HOOK 
 
-## 2. useEffect\(\) 
+**HOOK**을 사용하면 functional component에서도 state와 React의 여러 기능을 사용할 수 있다.
+
+**HOOK**를 사용하는 이유는 class component의 코드의 재사용과 코드 구성을 어렵게 만들 뿐만 아니라,   
+React를 배우는데 큰 진입 장벽이라고 판단했기 때문이다.
+
+### \(1\). HOOK 사용 시  규
+
+React functional component 안에서만 사용해야 된다.
+
+ 컴포넌트 안의 반복문, 조건문, 중첩된 함수 안에서는 **HOOK**를 사용할 수 없다.
+
+## 2. useState\(\)
+
+`useState()`를 사용하면 함수형 컴포넌트에서도 상태\(state\)를 설정할 수 있다.
+
+`useState()`는 전달 받는 인자로 state의 초기 값을 설정한다.
+
+초기 값은 함수형 컴포넌트가 첫 렌더링 될 때 딱 한 번만 사용된다.
+
+✍ **Syntax**
+
+```jsx
+const [state, setState] = React.useState(initialValue);
+```
+
+ ✍ **Exmple**
+
+```jsx
+import React, { useState } from 'react';
+
+const Counter = props => {
+  const [count, setCount] = useState(0);
+  return (
+    <div className="counter">
+      <p>{count} click.</p>
+      <button 
+        type="button" 
+        onClick={() => setCount(count + 1)}
+      >
+        click 
+      </button>
+    </div>
+  )
+}
+```
+
+### \(2\). 하나의 이상의 state 설정
+
+필요하다면 functional component 에서 1개 이상의 state를 설정해 사용할 수 있다.
+
+✍ **Exmple**
+
+```jsx
+const Counter = props => {
+  const [count, setCount] = useState(0);
+  const [userInfo, updateUserInfo] = useState(props.userInfo || null);
+  return (...)
+```
+
+### \(3\). this.state와 useState\(\)의 차이
+
+**functional componen**t의 `useState()`는 state의 상태를 변경할 때 마다 `setState()`로 개별적으로 요구된다.
+
+반면, **class component**의 `this.state` 는 `this.setState()`는 상태의 일부 데이터를 변경하고 합친다는 점이 다르다.
+
+## 3. useEffect\(\) 
 
 {% hint style="info" %}
 **class component**의 생명주기\(LifeCylcle\)과 같은 동일한 의미이다.
@@ -68,6 +133,16 @@ useEffect(() => {
 3.   deps에 넣은 의존값이 업데이트 되었을 때 실행
 
    * componentDitUpdate\(\) 처럼 실행한다.
+
+## 4. useRef\(\)
+
+ `useRef()`는 실제 DOM 노드를 참조\(ref\)할 경우 사용하며, 참조 대상의 변경이 필요할 경우 `.current` 속성을 사용한다.
+
+`useRef()`를 사용해 실제 DOM Node를 조작한 경우, 컴포넌트가 다시 그려지지 않으므 주의해야된다. \(state, props가 변경되어야 업데이트 된다.\)
+
+
+
+##  
 
 ### Reference <a id="reference"></a>
 
