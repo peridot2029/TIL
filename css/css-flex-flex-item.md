@@ -290,7 +290,24 @@ body {
 {% endtab %}
 {% endtabs %}
 
-###  <a id="reference"></a>
+### \(6\). align-self
+
+`align-self` 속성은 flex item 교차 축\(cross axis\)에 정렬 관련된 속성이다.
+
+flex container 내에 있는 모든 flex item의 정렬하는 방법은 `align-items` 속성을 사용해서 정렬한다. 
+
+필요에 의해서 일부 flex item만 정렬 방법을 변경할 경우에 `align-self` 를 사용한다.
+
+| value | description |
+| :--- | :--- |
+| `auto`\(defalut\) | 기본 값은 `auto`로 flex container의 `align-items` 속성을 상속 받는다. |
+| `stretch` | flex container의 교차축을 채우기 위해 flex item을 늘린다. |
+| `flex-start` | flex item 각 줄의 시작점 \(flex-start\)으로 정렬한다. |
+| `flex-end` | flex item 각 줄의 끝점 \(flex-end\)으로 정렬한다. |
+| `center` | flex item 가운데\(center\)로 정렬한다. |
+| `baseline` | flex item을 문자 기준선에 정렬한다. |
+
+![](../.gitbook/assets/flex-align-self.webp)
 
 ###  Reference <a id="reference"></a>
 
