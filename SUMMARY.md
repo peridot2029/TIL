@@ -52,6 +52,7 @@
 * [📄 React Component and Props](react/react-component-and-props.md)
 * [📄 React State and Lifecycle part 01](react/react-state-and-lifecycle-part-01.md)
 * [📄 React State and Lifecycle part 02](react/react-state-and-lifecycle-part02.md)
+* [📄 React v16.3 LifeCycle](react/react-v16.3-lifecycle.md)
 * [📄 React Context](react/react-context.md)
 * [📄 React Controlled Component](react/react-component.md)
 * [📄 React List and Key](react/react-list-and-key.md)

@@ -40,23 +40,31 @@ react는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 `componentDidMount()`를 제외한 나머지는 **Virital DOM**을 조작한다.
 {% endhint %}
 
-**component**가 새롭게 생성되는 시점
+**component**가 새롭게 생성되는 시점, 
 
 결과물로 나온 elements가 **Virital DOM**에 삽입되고 실제 DOM 업데이트 하기 과정.
 
-### \(1\) constructor\(\)
+### \(1\). constructor\(\)
 
-최초에 component가 mount 되기 전에 실행, 주된 역할은 state 값을 선언 및 초기화
+생성자 메서드로 컴포넌트가 생성 될 때 단 한 번만 실행한다.
 
-각종 event binding 처리
+주된 역할은 state를 선언 및 초기화 그리고 각 종 이벤트를 바인딩\(bing\) 처리한다.
 
-### \(2\) render\(\)
+### \(2\). componentWillMount\(\)
+
+{% hint style="warning" %}
+React v16.3 이후 부터는 `UNSAFE_componentWillMount()`라는 이름으로 사용된다.
+{% endhint %}
+
+React Element를 실제 DOM Node에 추가하기 직전에 호출되는 메서드
+
+### \(2\). render\(\)
 
 {% hint style="warning" %}
 render method 안에서 setState\(\)를 작업해서는 안된다.
 {% endhint %}
 
-최종적으로 component에서 작업한 결과물 return method
+최종적으로 컴포넌에서 작업한 결과물을 반환하는 메서
 
 결과물로 나온 elements를 **Virital DOM**에 mount 되고 실제 DOM 업데이트 된다
 
