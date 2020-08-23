@@ -7,7 +7,7 @@
 **HOOK**를 사용하는 이유는 class component의 코드의 재사용과 코드 구성을 어렵게 만들 뿐만 아니라,   
 React를 배우는데 큰 진입 장벽이라고 판단했기 때문이다.
 
-### \(1\). HOOK 사용 시  규
+### \(1\). HOOK 사용 시  규칙
 
 React functional component 안에서만 사용해야 된다.
 
