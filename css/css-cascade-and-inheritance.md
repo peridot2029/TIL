@@ -2,33 +2,33 @@
 
 ## 1.Inheritance 
 
-**상속\(Inheritance\)**은 상위\(부모, 조상\) 요소에 적용된 프로퍼티를  하위\(자식, 자손\) 요소가 물려 받는 것을 의미한다.
+**상속 \(Inheritance\)**은 상위\(부모, 조상\) 요소에 적용된 프로퍼티를  하위\(자식, 자손\) 요소가 물려 받는 것을 의미한다.
 
-프로퍼티\(property\) 중에는 상속되는 것과 상속되지 않는 것이 있다.
+프로퍼티 \(property\) 중에는 상속되는 것과 상속되지 않는 것이 있다.
 
 | property | Inherit |
 | :--- | :--- |
-| width/height | no |
-| margin | no |
-| padding | no |
-| border | no |
-| box-sizing | no |
-| display | no |
-| visibility | yes |
-| opacity | yes |
-| background | no |
-| font | yes |
-| color | yes |
-| line-height | yes |
-| text-align | yes |
-| vertical-align | no |
-| text-decoration | no |
-| white-space | yes |
-| position | no |
-| top/right/bottom/left | no |
-| z-index | no |
-| overflow | no |
-| float | no |
+| `width/height` | no |
+| `margin` | no |
+| `padding` | no |
+| `border` | no |
+| `box-sizing` | no |
+| `display` | no |
+| `visibility` | yes |
+| `opacity` | yes |
+| `background` | no |
+| `font` | yes |
+| `color` | yes |
+| `line-height` | yes |
+| `text-align` | yes |
+| `vertical-align` | no |
+| `text-decoration` | no |
+| `white-space` | yes |
+| `position` | no |
+| `top/right/bottom/left` | no |
+| `z-index` | no |
+| `overflow` | no |
+| `float` | no |
 
 ### \(1\). Inheritance 제어
 

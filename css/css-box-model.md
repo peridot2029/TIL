@@ -8,7 +8,7 @@
 
 ## 2. inline box
 
-**inline box**는 다른 인라인 박스에 포함되거나, 포함할 수 있지만, **블록 요소는 포함할 수 없다.**
+인라인 박스 \(inline box\)는 다른 인라인 박스에 포함되거나, 포함할 수 있지만, **블록 요소는 포함할 수 없다.**
 
 `width`,`height` **속성 설정이 가능하지 않다. 내부에 포함한 콘텐츠 만큼 높이와 너비를 가지게 된다.**
 
@@ -24,9 +24,7 @@
 
 ![](../.gitbook/assets/box.jpg)
 
-{% hint style="info" %}
-`marigin`과 `padding`은 속기형\(단일\) 속성으로 **top → right → bottom → left** 4개를 선택적으로 사용할 수 있다.
-{% endhint %}
+✋`marigion` 과 `padding` 은 속기형 \(단일\) 속성으로 **top → right → bottom → left** 4개를 선택적 또는 일괄 사용할 수 있다.
 
 | property | description |
 | :--- | :--- |
