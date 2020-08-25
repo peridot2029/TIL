@@ -22,7 +22,7 @@ React v16.3 이후 부터는`UNSAFE_componentWillReceiveProps()`라는 이름으
 이 기능은 상황에 따라서 새로운 API [`getDerivedStateFromProps()`](https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops)로 대체 될 수도 있다.
 {% endhint %}
 
-**컴포넌트 생성 후에** 첫 렌더링을 마친 후 호출되는 메서드로 컴포넌트가 처음 마운트 되는 시점에서는 호출 되지 않는다.
+**컴포넌트 생성 후에** 첫 렌더링을 마친 후 호출되는 API로 컴포넌트가 **처음마운트 되는 시점**에서는 호출 되지 않는다.
 
 ✍ **Syntax**
 
@@ -62,7 +62,9 @@ React v16.3 이후 부터는 상황에 따라서 새로운  API [`getSnapshotBef
 
 새로운 `prop`또는 `state`가 반영되기 직전 새로운 값들을 받는다.
 
-`this.setState()`를 사용하면 무한 루프가 일어나게 되므로 사용하면 안된다.
+
+
+✋ `this.setState()`를 사용하면 무한 루프가 일어나게 되므로 사용하면 안된다.
 
 ✍ **Syntax**
 
