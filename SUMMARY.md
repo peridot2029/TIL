@@ -50,12 +50,13 @@
 ## React
 
 * [📄 React Component and Props](react/react-component-and-props.md)
-* [📄 React State and Life Cycle part 01](react/react-state-and-lifecycle-part-01.md)
-* [📄 React State and Life Cycle part 02](react/react-state-and-lifecycle-part02.md)
+* [📄 React State and Life Cycle - state, setState, Mounting](react/react-state-and-lifecycle-part-01.md)
+* [📄 React State and Life Cycle - Updating, Unmouting](react/react-state-and-lifecycle-part02.md)
 * [📄 React Context](react/react-context.md)
 * [📄 React Controlled Component](react/react-component.md)
 * [📄 React List and Key](react/react-list-and-key.md)
-* [📄 React Hooks](react/react-hooks.md)
+* [📄 React Hooks - useState,useEffect,useRef](react/react-hooks.md)
+* [📄 React Hooks - useMemo, useCallback](react/react-hooks-usememo-usecallback.md)
 * [📄 React Router](react/react-router.md)
 
 ## REDUX

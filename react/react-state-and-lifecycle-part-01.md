@@ -1,4 +1,4 @@
-# 📄 React State and Life Cycle part 01
+# 📄 React State and Life Cycle - state, setState, Mounting
 
 ## 1. state 
 

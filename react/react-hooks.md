@@ -1,4 +1,4 @@
-# 📄 React Hooks
+# 📄 React Hooks - useState,useEffect,useRef
 
 ## 1. HOOK 
 
@@ -104,7 +104,7 @@ useEffect(() => {
 }, [name]);
 ```
 
-### \(3\) Component Unmount, Update 되기 직전에 작업을 실행하고 싶을 경우
+### \(3\). Component Unmount, Update 되기 직전에 작업을 실행하고 싶을 경우
 
 `useEffect()`는 기본적으로 렌더링 되고난 후 직후마다 실행되며, 배열에 무엇을 넣느냐에 따라서 실행 되는 조건이 달라진다.
 
