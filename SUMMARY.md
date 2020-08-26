@@ -65,3 +65,9 @@
 * [📄 Redux Actions, Action Creators](redux/redux-actions-action-creators.md)
 * [📄 Redux Reducers, Store](redux/redux-reducers-store.md)
 
+## TypeScript
+
+* [📄 TypeScript Introduction](typescript/typescript-introduction.md)
+* [📄 TypeScript Basic Types](typescript/typescript-basic-types.md)
+* [📄 TypeScript Interface](typescript/typescript-interface.md)
+
