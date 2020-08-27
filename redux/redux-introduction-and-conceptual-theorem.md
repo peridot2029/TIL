@@ -1,4 +1,4 @@
-# 📄 Redux Introduction
+# 📄 Redux - Introduction
 
 ## 1. Redux 
 

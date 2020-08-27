@@ -1,4 +1,4 @@
-# 📄 TypeScript Introduction
+# 📄 TypeScript - Introduction
 
 ## 1. TypeScript 
 

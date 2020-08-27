@@ -1,4 +1,4 @@
-# 📄 TypeScript Basic Types
+# 📄 TypeScript - Basic Types
 
 ## 1. TypeScript 기본 타입
 
@@ -40,7 +40,7 @@ const numbers: number[] = [1, 2, 3];
 const messages: string[] = ['hello', 'world'];
 ```
 
-### \(5\). Tuple
+### \(5\). 튜플 \(Tuple\)
 
 요소의 타입과 개수가 고정된 배열을 표현을 할 수 있다. 단 요소들의 타입이 모두 같을 필요는 없다.
 
@@ -69,7 +69,7 @@ enum Info { age = 20, name }
 let userAge: string = Info[0];
 ```
 
-### \(7\). Any
+### \(7\). 애니 \(Any\)
 
 `any`는 모든 값을 집어 넣을 수 있는 타입이다. 라이브러리를 넣어할 경우 어떤 값이 들어갈지 모르기 때문에 사용가능 하다.
 
@@ -117,7 +117,6 @@ let nullableNumber: number | null = null;
 ✍ **Exmple**
 
 ```typescript
-// never를 반환하는 함수는 함수의 마지막에 도달할 수 없다.
 function error(message: string): never {
     throw new Error(message);
 }

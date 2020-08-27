@@ -1,4 +1,4 @@
-# 📄 Redux Actions, Action Creators
+# 📄 Redux - Actions, Action Creators
 
 ## 1. Actions 
 
