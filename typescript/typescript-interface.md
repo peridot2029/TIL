@@ -31,7 +31,49 @@ addTodo(newTodo);
 console.log(todos)
 ```
 
-### \(2\). Optional Properties
+### \(2\). Variable and Function Interface
+
+✍ **Exmple**
+
+{% tabs %}
+{% tab title="variable interface" %}
+```typescript
+interface Todo {
+  id: number;
+  content: string;
+  completed: boolean;
+}
+
+let todos: Todo[] = [];
+
+
+function addTodo(todo: Todo) {
+  todos = [...todos, todo];
+}
+
+const newTodo: Todo = { id: 1, content: 'typescript', completed: false };
+addTodo(newTodo);
+console.log(todos)
+```
+{% endtab %}
+
+{% tab title="function interface" %}
+```typescript
+interface SquareFunc {
+  (num: number): number;
+}
+
+
+const squareFunc: SquareFunc = function (num: number) {
+  return num * num;
+}
+
+console.log(squareFunc(10));
+```
+{% endtab %}
+{% endtabs %}
+
+### \(**3**\). Optional Properties
 
 인터페이스의 프로퍼티는 반드시 구현되어야 하는데, 프로퍼티가 선택적으로 필요한 경우에 **선택적 프로퍼티\(Optional Properties\)**를 사용할 수 있다. 이는  프로퍼티명 뒤에 ? 를 붙이며, 생략해도 에러가 발생하지  않는다.
 
@@ -46,16 +88,60 @@ interface UserInfo {
 }
 
 const userInfo: UserInfo = {
-  username: 'perdiot2029@gmail.com',
+  username: 'peridot2029@gmail.com',
   password: '123456'
 }
 
 console.log(userInfo);
 ```
 
-### **\(3\). Interpace E**xtends
+### **\(4\). Interpace E**xtends
 
+인터페이스는 `extends`  키워드를 사용하여 인터페이스 또는 클래스를 상속 받을 수 있다.
 
+✍ **Exmple**
+
+{% tabs %}
+{% tab title="Single Iterface" %}
+```typescript
+interface Person {
+  name: string;
+  age?: number;
+}
+
+interface Student extends Person {
+  grade: number;
+}
+
+const student: Student =  {
+  name: 'Lee',
+  age: 20,
+  grade: 3
+}
+```
+{% endtab %}
+
+{% tab title="Plural Interface" %}
+```typescript
+interface Person {
+  name: string;
+  age?: number;
+}
+
+interface Developer {
+  skills: string[];
+}
+
+interface WebDeveloper extends Person, Developer {}
+
+const webDeveloper: WebDeveloper =  {
+  name: 'Lee',
+  age: 20,
+  skills: ['HTML', 'CSS', 'JavaScript']
+}
+```
+{% endtab %}
+{% endtabs %}
 
 
 
