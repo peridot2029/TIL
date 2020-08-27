@@ -2,7 +2,7 @@
 
 ## 1. TypeScript 기본 타입
 
-TypeScript는 JavaScript와 거의 동일한 데이터 타입을 지원하며, 열거 타입을 사용하여 더 편리하게 사용할 수 있다.
+TypeScript는 JavaScript와 거의 **동일한 데이터 타입을 지원**하며, 열거 타입을 사용하여 더 편리하게 사용할 수 있다.
 
 ### \(1\).  Number
 
@@ -146,6 +146,74 @@ let strLength: number = (<string>someValue).length;
 let someValueOne: any = 'this is a string';
 let strLengthOne: number = (someValue as string).length;
 ```
+
+### \(12\). **Type Alias**  <a id="reference"></a>
+
+ 🤚 **인터페이스**는 `extends` 또는 `implements` 될 수 있지만 **타입 앨리어스**는  `extends` 또는 `implements`를 할 수 없다.
+
+타입 앨리어스\(type alias\)는 새로운 타입을 정의할 때 사용한다. `type`으로 사용할 수 있다는 점에서 타입 앨리어스는 인터페이스와 유사하다. 
+
+✍ **Exmple**
+
+{% tabs %}
+{% tab title="interface" %}
+```typescript
+// iterface
+interface Person {
+  name: string,
+  age?: number
+}
+
+
+const person = {} as Person;
+person.name = 'Lee';
+person.age = 20;
+// person.address = 'Seoul';
+
+```
+{% endtab %}
+
+{% tab title="type alias" %}
+```typescript
+type Person = {
+  name: string,
+  age?: number
+}
+
+
+const person = {} as Person;
+person.name = 'Lee';
+person.age = 20;
+// person.address = 'Seoul';
+```
+{% endtab %}
+{% endtabs %}
+
+또한 타입 앨리어스는 `원시값`, `union type`, `tuple type`  등의 타입으로도 지정할 수 있다.
+
+✍ **Exmple**
+
+```typescript
+type Str = 'strimg';
+
+type Union = string | null;
+
+type Name = 'Lee' | 'Kim';
+
+
+type Num = 1 | 2 | 3 | 4 | 5;
+
+
+type Obj = {a: 1} | {b: 2};
+
+
+type Func = (() => string) | (() => void);
+
+
+type Shape = Square | Rectangle | Circle;
+```
+
+
 
 ### Reference <a id="reference"></a>
 
