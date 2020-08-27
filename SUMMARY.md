@@ -70,4 +70,5 @@
 * [📄 TypeScript - Introduction](typescript/typescript-introduction.md)
 * [📄 TypeScript - Basic Types](typescript/typescript-basic-types.md)
 * [📄 TypeScript - Interface, function](typescript/typescript-interface.md)
+* [📄 TypeScript - Generics](typescript/typescript-generics.md)
 
