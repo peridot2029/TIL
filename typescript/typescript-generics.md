@@ -93,61 +93,43 @@ console.log(myQueue.pop()); // { name: 'Kim', age: 20 }
 
 
 
-### \(2\). 함수에서 Generics
+### \(2\). **Function →** Generics
 
-제네릭을 사용할 때에는 &lt;T&gt; 처럼 꺽쇠 안에 타입의 이름을 넣어서 사용한다. 이렇게 설정하면 제네릭은 해당 하는 타입이 뭐든지 들어올 수 있게 되면서, 사용할 때 타입이 깨지지 않는다.
+또한 함수에서도 제네릭을 사용할 수 있다. 제네릭을 사용하면 다양한 타입의 매개변수와 리턴 값을 사용할 수 있다.
+
+`reverse` 함수는 다양한 타입의 요소로 구성된 배열을 인자로 전달 받는다.  예를 들면 `number` 타입의 요소를 갖는 배열을 전달 받으면 타입 매개변수는 `number`가 된다.
 
 ✍ **Exmple**
 
-{% tabs %}
-{% tab title="JavaScript" %}
 ```typescript
-function getItemArray(arr, index) {
-  return arr[index];
+function reverse<T>(items: T[]): T[] {
+  return items.reverse();
 }
 
-function pushItemArray(arr, item) {
-  arr.push(item)
-}
+const arg = [1, 2, 3, 4, 5];
+// 인수에 의해 타입 매개변수가 결정
+const reversed = reverse(arg);
+console.log(reversed); // [ 5, 4, 3, 2, 1 ]
 ```
-{% endtab %}
 
-{% tab title="TypeScript" %}
+만약에 `{name:string}` 타입의 요소를 갖는 배열을 전달 받으면 타입 매개변수는 `{name:string}`이 된다.
+
+✍ **Exmple**
+
 ```typescript
-function getItemArray(arr:any[], index:number):any {
-  return arr[index];
+function reverse<T>(items: T[]): T[] {
+  return items.reverse();
 }
 
-function pushItemArray(arr:any[], item:any):void {
-  arr.push(item);
-}
+const arg = [{ name: 'Lee' }, { name: 'Kim' }];
+// 인수에 의해 타입 매개변수가 결정된다.
+const reversed = reverse(arg);
+console.log(reversed); // [ { name: 'Kim' }, { name: 'Lee' } ]
 ```
-{% endtab %}
-
-{% tab title="Generics" %}
-```typescript
-function getItemArray<T>(arr:T[], index:number):T {
-  return arr[index];
-}
-
-function pushItemArray<T>(arr:T[], item:T):void {
-  arr.push(item);
-}
-
-
-const potatoChip_materials = ['어니언'];
-
-getItemArray(potatoChip_materials, 0);
-pushItemArray<string>(potatoChip_materials, '사워크림');
-
-
-```
-{% endtab %}
-{% endtabs %}
 
 
 
-### \(2\). Interface에서 Generics
+### \(2\). Interface → Generics
 
 ✍ **Exmple**
 
@@ -162,7 +144,7 @@ const items: Items<string> = {
 
 ```
 
-### \(3\). Type align 에 Generics
+### \(3\). Type align → Generics
 
 ✍ **Exmple**
 
