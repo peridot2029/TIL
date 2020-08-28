@@ -8,8 +8,6 @@ TypeScript는 JavaScript와 거의 **동일한 데이터 타입을 지원**하�
 
 JavaScript 처럼, TypeScript의 모든 숫자는 부동 소수 값이다. 부동 소수에는 `number` 라는 타입이 붙여진다. 이는 16진수, 10진수, 8진수, 2진수 리터럴도 지원한다.
 
-✍ **Exmple**
-
 ```typescript
 let num: number = 1;
 num += 1;
@@ -17,23 +15,17 @@ num += 1;
 
 ### \(2\).  Boolean
 
-✍ **Exmple**
-
 ```typescript
 const done: boolean = true;
 ```
 
 ### \(3\). String
 
-✍ **Exmple**
-
 ```typescript
 const message: string = 'hello world';
 ```
 
 ### \(4\). Array
-
-✍ **Exmple**
 
 ```typescript
 const numbers: number[] = [1, 2, 3];
@@ -43,8 +35,6 @@ const messages: string[] = ['hello', 'world'];
 ### \(5\). 튜플 \(Tuple\)
 
 요소의 타입과 개수가 고정된 배열을 표현을 할 수 있다. 단 요소들의 타입이 모두 같을 필요는 없다.
-
-✍ **Exmple**
 
 ```typescript
 let list: [string, number];
@@ -59,8 +49,6 @@ C\# 과 같은 언어처럼, `enum`은 값의 집합에 더 나은 이름을 붙
 
 기본적으로 `enum`은 0 부터 시작하여 멤버들의 번호를 매긴다. 멤버 중 하나의 값 또는 모든 값을 수동으로 설정하여 바꿀 수 있다.
 
-✍ **Exmple**
-
 ```typescript
 enum Color { Red, Green, Blue }
 let blueColor: Color = Color.Blue;
@@ -72,8 +60,6 @@ let userAge: string = Info[0];
 ### \(7\). 애니 \(Any\)
 
 `any`는 모든 값을 집어 넣을 수 있는 타입이다. 라이브러리를 넣어할 경우 어떤 값이 들어갈지 모르기 때문에 사용가능 하다.
-
-✍ **Exmple**
 
 ```typescript
 let notSure: any = 4;
@@ -114,8 +100,6 @@ let nullableNumber: number | null = null;
 
 어떤 다른 타입도 `never`에 사용 불가능하며 오로지 exception과 같이 `throw`되는 함수에 주로 사용한다.
 
-✍ **Exmple**
-
 ```typescript
 function error(message: string): never {
     throw new Error(message);
@@ -137,8 +121,6 @@ function infiniteLoop(): never {
 
 **타입 단언 \(type assertions\)**은 다른 언어의 타입 변환 \(형 변환\)과 유사하지만, 다른 특별한 검사하거나 재구성 하지는 않는다.
 
-✍ **Exmple**
-
 ```typescript
 let someValue: any = 'this is a string';
 let strLength: number = (<string>someValue).length;
@@ -153,12 +135,8 @@ let strLengthOne: number = (someValue as string).length;
 
 타입 앨리어스\(type alias\)는 새로운 타입을 정의할 때 사용한다. `type`으로 사용할 수 있다는 점에서 타입 앨리어스는 인터페이스와 유사하다. 
 
-✍ **Exmple**
-
-{% tabs %}
-{% tab title="interface" %}
+{% code title="interface" %}
 ```typescript
-// iterface
 interface Person {
   name: string,
   age?: number
@@ -169,11 +147,10 @@ const person = {} as Person;
 person.name = 'Lee';
 person.age = 20;
 // person.address = 'Seoul';
-
 ```
-{% endtab %}
+{% endcode %}
 
-{% tab title="type alias" %}
+{% code title="type alias" %}
 ```typescript
 type Person = {
   name: string,
@@ -186,12 +163,9 @@ person.name = 'Lee';
 person.age = 20;
 // person.address = 'Seoul';
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 또한 타입 앨리어스는 `원시값`, `union type`, `tuple type`  등의 타입으로도 지정할 수 있다.
-
-✍ **Exmple**
 
 ```typescript
 type Str = 'strimg';

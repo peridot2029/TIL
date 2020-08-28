@@ -1,4 +1,4 @@
-# 📄 React Context
+# 📄 React - Context
 
 ## 1. Props 전달의 문제점
 

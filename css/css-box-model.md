@@ -1,4 +1,4 @@
-# 📄 CSS BOX Model
+# 📄 CSS - BOX Model
 
 ## 1. block box
 

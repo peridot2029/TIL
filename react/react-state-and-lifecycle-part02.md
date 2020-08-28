@@ -1,4 +1,4 @@
-# 📄 React State and Life Cycle - Updating, Unmouting
+# 📄 React - Life Cycle \(Updating, Unmouting\)
 
 ## 1. Life Cycle API 
 

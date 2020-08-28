@@ -1,4 +1,4 @@
-# 📄 CSS Cascade and Inheritance
+# 📄 CSS - Cascade and Inheritance
 
 ## 1.Inheritance 
 

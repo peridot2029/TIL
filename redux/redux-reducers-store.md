@@ -1,4 +1,4 @@
-# 📄 Redux Reducers, Store
+# 📄 Redux - Reducers, Store
 
 ## 1. Reducers 정의
 
@@ -11,8 +11,6 @@
 ### \(2\) Sub Ruducer
 
 여러 개 나뉘어진 reducers를 **sub reducer** 라고 부른다.
-
-✍ **Exmple**
 
 ```jsx
 function reducer(state, action){
@@ -33,11 +31,11 @@ store 안에는 `state`와 `reducer` 가 들어가 있다.
 
 action creater로 return 해준 action 객체를 매개변수로 받아와서 store의 reducer에게 넘겨주는 역할이다.
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```jsx
 dispatch(action)
 ```
+{% endcode %}
 
 ### \(2\) Store method - subscribe\(listener\)
 

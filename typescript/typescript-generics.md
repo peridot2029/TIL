@@ -4,7 +4,7 @@
 
 ### \(1\). Generics 정의
 
-Java, C\# 같은 정적 타입의 언어의 경우, function 또는 class 정의 하는 시점에 매개변수나 반환 값의 타입을 선언해야 한다. TypeScript 또한 정적 타입의 언어 이기 때문에 fuction 또는 class 정의 하는 시점에 반환 값을 타입을 선언해야 한다.
+Java, C\# 같은 정적 타입의 언어의 경우, `function` 또는 `class` 정의 하는 시점에 매개변수나 반환 값의 타입을 선언해야 한다. TypeScript 또한 정적 타입의 언어 이기 때문에 `fuction` 또는 `class`정의 하는 시점에 반환 값을 타입을 선언해야 한다.
 
 ✍ **Exmple**
 
@@ -42,7 +42,7 @@ console.log(queue.pop().toFixed()); // 0
 console.log(queue.pop().toFixed()); // 1
 ```
 
-위의 예제와 같이 `number` 타입 전용으로 `NumberQueue` 클래스를 정의하면 `number` 타입  이외에 다른 요소를 추가 할 때, 런타임 이전에 에러를 사전 감지 할 수 있다. 
+위의 예제와 같이 `number` 타입 전용으로 `NumberQueue`클래스를 정의하면 `number` 타입  이외에 다른 요소를 추가 할 때, 런타임 이전에 에러를 사전 감지 할 수 있다. 
 
 하지만 다양한 타입을 지원해야 한다면 타입 별로 클래스를 상속 받아 추가해야 하므로 좋은 방법은 아니다. 이 경우에 제네릭을 사용하면 한 번의 선언으로 다양한 타입에 재사용 가능하다.
 
@@ -126,8 +126,6 @@ const arg = [{ name: 'Lee' }, { name: 'Kim' }];
 const reversed = reverse(arg);
 console.log(reversed); // [ { name: 'Kim' }, { name: 'Lee' } ]
 ```
-
-
 
 ### \(2\). Interface → Generics
 

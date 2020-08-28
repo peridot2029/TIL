@@ -12,10 +12,7 @@
 
 ### \(2\). Variable, Function → Interface
 
-✍ **Exmple**
-
-{% tabs %}
-{% tab title="variable interface" %}
+{% code title="variable interface" %}
 ```typescript
 interface Todo {
   id: number;
@@ -34,9 +31,9 @@ const newTodo: Todo = { id: 1, content: 'typescript', completed: false };
 addTodo(newTodo);
 console.log(todos)
 ```
-{% endtab %}
+{% endcode %}
 
-{% tab title="function interface" %}
+{% code title="function interface" %}
 ```typescript
 interface SquareFunc {
   (num: number): number;
@@ -49,15 +46,13 @@ const squareFunc: SquareFunc = function (num: number) {
 
 console.log(squareFunc(10));
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
-### \(**3**\). 선택적 프로퍼티 \(Optional Properties\)
+### \(**3**\). 선택적 프로퍼티 \(Optional Properties\) → Interface
 
 인터페이스의 프로퍼티는 반드시 구현되어야 하는데, 프로퍼티가 선택적으로 필요한 경우에 **선택적 프로퍼티\(Optional Properties\)**를 사용할 수 있다. 이는  프로퍼티명 뒤에 ? 를 붙이며, 생략해도 에러가 발생하지  않는다.
 
-✍ **Exmple**
-
+{% code title="Optional Properties" %}
 ```typescript
 interface UserInfo {
   username: string;
@@ -73,17 +68,14 @@ const userInfo: UserInfo = {
 
 console.log(userInfo);
 ```
+{% endcode %}
 
-### **\(4\). 인터페이스의 상속 \(Interpace E**xtends\)
+### **\(4\). Extends →** Interface
 
 인터페이스는 `extends`  키워드를 사용하여 인터페이스 또는 클래스를 상속 받을 수 있다.
 
-✍ **Exmple**
-
-{% tabs %}
-{% tab title="single Iterface" %}
+{% code title="single Iterface" %}
 ```typescript
-interface Person {
   name: string;
   age?: number;
 }
@@ -98,9 +90,9 @@ const student: Student =  {
   grade: 3
 }
 ```
-{% endtab %}
+{% endcode %}
 
-{% tab title="plural Interface" %}
+{% code title="plural Interface" %}
 ```typescript
 interface Person {
   name: string;
@@ -119,8 +111,7 @@ const webDeveloper: WebDeveloper =  {
   skills: ['HTML', 'CSS', 'JavaScript']
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ## 2. Function
 
@@ -131,8 +122,6 @@ TypeScript는 JavaScript와 마찬가지로 **기명 함수 \(named function\)**
 ### \(2\). 함수의 타이핑 \(Typing the function\)
 
 각각 매개변수와 반한 될 타입을 지정해서 명시한다. 이때 반환될 타입을 우측에 명시하면 된다.
-
-✍ **Exmple**
 
 ```typescript
 // named function
@@ -151,8 +140,6 @@ let sumAdd = function (x: number, y: number): number {
 
 함수에 타입을 붙힌 뒤, 타입들을 살펴보고 함수 전체의 타입을 작성한다.
 
-✍ **Exmple**
-
 ```typescript
 let totalAdd: (value: number, incerment: number) => number = function (
   x: number, y: number) {
@@ -163,8 +150,6 @@ let totalAdd: (value: number, incerment: number) => number = function (
 ### \(4\). 타입의 추론 \(Inferring the types\)
 
 TypeScript는 컴파일러가 한쪽에만 타입을 명시해도 알아낼 수 있다.
-
-✍ **Exmple**
 
 ```typescript
 let rectangle: (width: number, height: number) => number = function (x, y) {
@@ -177,8 +162,6 @@ let rectangle: (width: number, height: number) => number = function (x, y) {
 Typescript 에서 모든 매개변수가 함수에 필요하다고 가정 한다. 이것은 `null` 또는 `undefined`를 의미하는 것은 아니다. 
 
 컴파일러는 각 매개변수에 대해 사용자가 값을 제공했는지 검사한다. 또한 컴파일러는 매개변수들이 함수로 전달된 유일한 매개변수 라고 가정한다.  **즉, 함수에 주어진 인자의 수는 함수가 기대하는 매개변수와 일치해야 한다.**
-
-✍ **Exmple**
 
 ```typescript
 function buildName(firstName: string, lastName?: string) {
@@ -197,8 +180,6 @@ let resultTwo = buildName('lee', 'song');
 ### **\(6\). 나머지 매개 변수 \(Rest** Parameters\)
 
 때로는 다른 매개 변수를 그룹 지어 작업하기 원하거나, 함수가 최종적으로 얼마나 많은 매개변수를 취할지 모를 때 사용한다.
-
-✍ **Exmple**
 
 ```typescript
 function buildFullName(firstName: string, ...restOfName: string[]) {

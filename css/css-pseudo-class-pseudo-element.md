@@ -1,4 +1,4 @@
-# 📄 CSS Pseudo Class, Pseudo Element
+# 📄 CSS - Pseudo Class, Pseudo Element
 
 ## 1. Peseudo Class
 

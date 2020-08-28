@@ -1,4 +1,4 @@
-# 📄CSS Type Selector, Class Selector
+# 📄CSS - Type Selector, Class Selector
 
 ### 1. X
 

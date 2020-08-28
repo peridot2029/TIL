@@ -20,11 +20,11 @@
 
 ## CSS
 
-* [📄 CSS BEM](css/css-bem.md)
-* [📄CSS Type Selector, Class Selector](css/type-selector-class-selector.md)
-* [📄 CSS Pseudo Class, Pseudo Element](css/css-pseudo-class-pseudo-element.md)
-* [📄 CSS BOX Model](css/css-box-model.md)
-* [📄 CSS Cascade and Inheritance](css/css-cascade-and-inheritance.md)
+* [📄 CSS - BEM](css/css-bem.md)
+* [📄CSS - Type Selector, Class Selector](css/type-selector-class-selector.md)
+* [📄 CSS - Pseudo Class, Pseudo Element](css/css-pseudo-class-pseudo-element.md)
+* [📄 CSS - BOX Model](css/css-box-model.md)
+* [📄 CSS - Cascade and Inheritance](css/css-cascade-and-inheritance.md)
 * [📄 CSS Flex - flex container](css/css-flex-flex-container.md)
 * [📄 CSS Flex - flex item](css/css-flex-flex-item.md)
 
@@ -49,12 +49,13 @@
 
 ## React
 
-* [📄 React Component and Props](react/react-component-and-props.md)
-* [📄 React State and Life Cycle - state, setState, Mounting](react/react-state-and-lifecycle-part-01.md)
-* [📄 React State and Life Cycle - Updating, Unmouting](react/react-state-and-lifecycle-part02.md)
-* [📄 React Context](react/react-context.md)
-* [📄 React Controlled Component](react/react-component.md)
-* [📄 React List and Key](react/react-list-and-key.md)
+* [📄 React - Component and Props](react/react-component-and-props.md)
+* [📄 React - state, setState,Life Cycle \(Mounting\)](react/react-state-and-lifecycle-part-01.md)
+* [📄 React - Life Cycle \(Updating, Unmouting\)](react/react-state-and-lifecycle-part02.md)
+* [📄 React - Context](react/react-context.md)
+* [📄 React - Controlled Component](react/react-component.md)
+* [📄 React - List and Key](react/react-list-and-key.md)
+* [Untitled](react/untitled.md)
 * [📄 React Hooks - useState,useEffect,useRef](react/react-hooks.md)
 * [📄 React Hooks - useMemo, useCallback](react/react-hooks-usememo-usecallback.md)
 * [📄 React Router](react/react-router.md)
@@ -63,7 +64,7 @@
 
 * [📄 Redux - Introduction](redux/redux-introduction-and-conceptual-theorem.md)
 * [📄 Redux - Actions, Action Creators](redux/redux-actions-action-creators.md)
-* [📄 Redux Reducers, Store](redux/redux-reducers-store.md)
+* [📄 Redux - Reducers, Store](redux/redux-reducers-store.md)
 
 ## TypeScript
 
@@ -71,4 +72,5 @@
 * [📄 TypeScript - Basic Types](typescript/typescript-basic-types.md)
 * [📄 TypeScript - Interface, function](typescript/typescript-interface.md)
 * [📄 TypeScript - Generics](typescript/typescript-generics.md)
+* [📄 TypeScript - Defining Props in React Function Component with Typescript](typescript/typescript-defining-props-in-react-function-component-with-typescript.md)
 

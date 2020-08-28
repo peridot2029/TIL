@@ -1,4 +1,4 @@
-# 📄 React Component and Props
+# 📄 React - Component and Props
 
 ## 1. Component
 
@@ -12,9 +12,7 @@ React를 사용할 때에는 컴포넌트를 `class component` 또는 `functiona
 
 React  컴포넌트를 class를 정의 하려면 `React.Component`를 상속 받아야 한다.
 
-`render()`는 `React.Component`의 하위 class 에서 반드시 정의해야 하는 메서드 이다. 
-
-**✍ Example** 
+`render()`는 `React.Component`의 하위 class 에서 반드시 정의해야 하는 API 이다. 
 
 ```jsx
 import React, { Component } from 'react';
@@ -35,8 +33,6 @@ export default App;
 ### \(2\). Functional Component
 
 JavaScript 함수와 유사하다. 컴포넌트 외부로부터 props을 전달 받아 어떻게 UI를 구성해야 할지 설정하여 React 요소\(JSX를 Babel이 변환 처리\)로 반환한다.
-
-**✍ Example** 
 
 ```jsx
 import React from 'react';
@@ -73,8 +69,4 @@ React의 세계관에서 함수형 컴포넌트와 클래스형 컴포넌트는 
 ### Reference
 
 컴포넌트 제대로 만들기 [→\(SITE\)﻿](https://hyunseob.github.io/2019/06/02/react-component-the-right-way/)
-
-
-
-
 
