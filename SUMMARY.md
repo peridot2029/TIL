@@ -55,7 +55,6 @@
 * [📄 React - Context](react/react-context.md)
 * [📄 React - Controlled Component](react/react-component.md)
 * [📄 React - List and Key](react/react-list-and-key.md)
-* [Untitled](react/untitled.md)
 * [📄 React Hooks - useState,useEffect,useRef](react/react-hooks.md)
 * [📄 React Hooks - useMemo, useCallback](react/react-hooks-usememo-usecallback.md)
 * [📄 React Router](react/react-router.md)
