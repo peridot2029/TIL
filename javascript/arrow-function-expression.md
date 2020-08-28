@@ -1,4 +1,4 @@
-# 📄 JavaScript Arrow function expression
+# 📄 JavaScript - Arrow function expression
 
 ## 1. Arrow function expression 
 

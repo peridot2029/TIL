@@ -1,4 +1,4 @@
-# 📄 JavaScript Destructuring assignment
+# 📄 JavaScript - Destructuring assignment
 
 ## 1. Destructuring Assignment 
 

@@ -1,4 +1,4 @@
-# 📄 JavaScript Function - call, apply, bind
+# 📄 JavaScript - Function call, apply, bind
 
 ## 1. call 
 

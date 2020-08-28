@@ -30,14 +30,14 @@
 
 ## JavaScript
 
-* [📄 JavaScript Function Expression](javascript/javascript-function-expression.md)
-* [📄 JavaScript Closure, Hoisting](javascript/closure-hoisting.md)
-* [📄 JavaScript Function - call, apply, bind](javascript/javascript-function-call-apply-bind.md)
-* [📄 JavaScript Arrow function expression](javascript/arrow-function-expression.md)
-* [📄 JavaScript Destructuring assignment](javascript/destructuring-assignment.md)
-* [📄 JavaScript Iteration protocol](javascript/iteration-protocol-part-1.md)
-* [📄 JavaScript for~in, for~of, forEach](javascript/for-of-foreach.md)
-* [📄 JavaScript Array method part 01](javascript/array-method-part-1.md)
+* [📄 JavaScript - Function Expression](javascript/javascript-function-expression.md)
+* [📄 JavaScript - Closure, Hoisting](javascript/closure-hoisting.md)
+* [📄 JavaScript - Function call, apply, bind](javascript/javascript-function-call-apply-bind.md)
+* [📄 JavaScript - Arrow function expression](javascript/arrow-function-expression.md)
+* [📄 JavaScript - Destructuring assignment](javascript/destructuring-assignment.md)
+* [📄 JavaScript - Iteration protocol](javascript/iteration-protocol-part-1.md)
+* [📄 JavaScript - for~in, for~of, forEach](javascript/for-of-foreach.md)
+* [📄 JavaScript - Array method part 01](javascript/array-method-part-1.md)
 * [📄 JavaScript Array method part 02](javascript/javascript-array-method-part-2.md)
 * [📄 JavaScript Array method part 03](javascript/javascript-array-method-part-3.md)
 * [📄 JavaScript Primitive Value - Symbol](javascript/javascript-primitive-value-symbol.md)
@@ -50,8 +50,8 @@
 ## React
 
 * [📄 React - Component and Props](react/react-component-and-props.md)
-* [📄 React - state, setState,Life Cycle \(Mounting\)](react/react-state-and-lifecycle-part-01.md)
-* [📄 React - Life Cycle \(Updating, Unmouting\)](react/react-state-and-lifecycle-part02.md)
+* [📄 React - state, setState, Life Cycle - Mounting](react/react-state-and-lifecycle-part-01.md)
+* [📄 React Life Cycle - Updating, Unmouting](react/react-state-and-lifecycle-part02.md)
 * [📄 React - Context](react/react-context.md)
 * [📄 React - Controlled Component](react/react-component.md)
 * [📄 React - List and Key](react/react-list-and-key.md)

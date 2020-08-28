@@ -1,4 +1,4 @@
-# 📄 JavaScript Function Expression
+# 📄 JavaScript - Function Expression
 
 ## 1.  **anonymous function** 
 

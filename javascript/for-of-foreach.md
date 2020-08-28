@@ -1,4 +1,4 @@
-# 📄 JavaScript for~in, for~of, forEach
+# 📄 JavaScript - for~in, for~of, forEach
 
 ## 1. for~in 
 

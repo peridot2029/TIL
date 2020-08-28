@@ -1,4 +1,8 @@
-# 📄 JavaScript Array method part 01
+---
+description: 'Array method (from, concat, copyWithin, slice, splice, fill)'
+---
+
+# 📄 JavaScript - Array method part 01
 
 ### 1. Array.from\(\)
 

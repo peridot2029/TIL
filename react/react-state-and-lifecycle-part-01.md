@@ -1,4 +1,4 @@
-# 📄 React - state, setState,Life Cycle \(Mounting\)
+# 📄 React - state, setState, Life Cycle - Mounting
 
 ## 1. state 
 

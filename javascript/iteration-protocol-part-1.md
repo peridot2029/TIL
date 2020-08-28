@@ -1,4 +1,4 @@
-# 📄 JavaScript Iteration protocol
+# 📄 JavaScript - Iteration protocol
 
 ## 1. Iteration protocol 
 
