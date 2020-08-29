@@ -112,7 +112,7 @@ export default Greetings;
 {% code title="src/App.tsx" %}
 ```typescript
 import React from 'react';
-import Greetings from './Greetings';
+import Greetings from './compontents/Greetings';
 
 const App: React.FC = () => {
   return <Greetings name="Hello" />;
@@ -165,7 +165,7 @@ export default Greetings;
 {% code title="src/App.tsx" %}
 ```typescript
 import React from 'react';
-import Greetings from './Greetings';
+import Greetings from './components/Greetings';
 
 const App: React.FC = () => {
   const onClick = (name: string) => {
