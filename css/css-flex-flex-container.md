@@ -1,4 +1,4 @@
-# 📄 CSS Flex - flex container
+# 📄 CSS - Flex Container
 
 ## 1. flex
 

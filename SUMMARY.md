@@ -25,8 +25,9 @@
 * [📄 CSS - Pseudo Class, Pseudo Element](css/css-pseudo-class-pseudo-element.md)
 * [📄 CSS - BOX Model](css/css-box-model.md)
 * [📄 CSS - Cascade and Inheritance](css/css-cascade-and-inheritance.md)
-* [📄 CSS Flex - flex container](css/css-flex-flex-container.md)
-* [📄 CSS Flex - flex item](css/css-flex-flex-item.md)
+* [📄 CSS - Flex Container](css/css-flex-flex-container.md)
+* [📄 CSS -Flex Item](css/css-flex-flex-item.md)
+* [📄 CSS -Gird Term](css/css-gird-term.md)
 
 ## JavaScript
 
