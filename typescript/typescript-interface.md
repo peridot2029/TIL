@@ -27,7 +27,7 @@ function addTodo(todo: Todo) {
 
 const newTodo: Todo = { id: 1, content: 'typescript', completed: false };
 addTodo(newTodo);
-console.log(todos)
+console.log(todos);
 ```
 {% endcode %}
 

@@ -99,23 +99,22 @@ console.log(myQueue.pop()); // { name: 'Kim', age: 20 }
 
 `reverse` 함수는 다양한 타입의 요소로 구성된 배열을 인자로 전달 받는다.  예를 들면 `number` 타입의 요소를 갖는 배열을 전달 받으면 타입 매개변수는 `number`가 된다.
 
-✍ **Exmple**
-
+{% code title="Example: Generic function " %}
 ```typescript
 function reverse<T>(items: T[]): T[] {
   return items.reverse();
 }
 
 const arg = [1, 2, 3, 4, 5];
-// 인수에 의해 타입 매개변수가 결정-
+// 인수에 의해 타입 매개변수가 결정
 const reversed = reverse(arg);
 console.log(reversed); // [ 5, 4, 3, 2, 1 ]
 ```
+{% endcode %}
 
 만약에 `{name:string}` 타입의 요소를 갖는 배열을 전달 받으면 타입 매개변수는 `{name:string}`이 된다.
 
-✍ **Exmple**
-
+{% code title="Example: Generic function " %}
 ```typescript
 function reverse<T>(items: T[]): T[] {
   return items.reverse();
@@ -126,21 +125,43 @@ const arg = [{ name: 'Lee' }, { name: 'Kim' }];
 const reversed = reverse(arg);
 console.log(reversed); // [ { name: 'Kim' }, { name: 'Lee' } ]
 ```
+{% endcode %}
 
 ### \(2\). Interface → Generics
 
-✍ **Exmple**
-
+{% code title="Example: Generic Interface as Type" %}
 ```typescript
-interface Items<T> {
-  list: T[];
+interface KeyPair<T, U> {
+    key: T;
+    value: U;
 }
-
-const items: Items<string> = {
-  list: ['a', 'b', 'c'],
-};
+let kvOne: KeyPair<number, string> = { key:1, value:"String" };
+let kvTwo: KeyPair<number, number> = { key:1, value:12345 };
+console.log(kvOne); // Object {key: 1, value: "String"}
+console.log(kvTwo); // Object {key: 1, value: 12345}
 
 ```
+{% endcode %}
+
+{% code title="Example: Generic Interface as Function Type" %}
+```typescript
+interface KeyValueProcessor<T, U> {
+  (key: T, val: U): void;
+}
+function processNumKeyPairs(key: number, value: number): void {
+  console.log("processStringKeyPairs: key = " + key + ", value = " + value);
+}
+let strKVProcessor: KeyValueProcessor<number, number> = processNumKeyPairs;
+strKVProcessor(1, 12345); // processStringKeyPairs: key = 1, value = 12345
+
+function processKeyPairs<T, U>(key: T, value: U): void {
+  console.log(`processKeyPairs key = ${key}, value = ${value}`);
+}
+
+let numKVProcessor: KeyValueProcessor<number, number> = processKeyPairs;
+numKVProcessor(1, 12345); // processKeyPairs key = 1, value = 12345
+```
+{% endcode %}
 
 ### \(3\). Type align → Generics
 
