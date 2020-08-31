@@ -1,16 +1,16 @@
 # 📄 CSS -Flex Item
 
-## 1. flex
+## 1. Flexbox  정의
 
 **flexbox**는 뷰포트나 요소의 크기가 불명확하거나 동적으로 변할 때에도 효율적으로 요소를 배치, 정렬, 분산할 수 있는 방법을 제공하는 CSS3의 **새로운 레이아웃 방식**이다.
 
-## 2. flex item
+## 2. Flexbox  → flex item
 
 전체적인 정렬이나 흐름에 관련된 속성은 **flex container**에 정의하고, 자식 요소의 크기나 순서에 관련된 속성은 **flex item**에 정의한다.
 
 ![](../.gitbook/assets/flex-base.webp)
 
-### \(1\). flex
+### \(1\). flex item → flex
 
 `flex-grow`, `flex-shrink`, `flex-basis` 속성을 축약해서 `flex` 속성으로 표현한다. 
 
@@ -25,7 +25,7 @@
 
  
 
-### \(2\). flex-grow
+### \(2\). flex item → flex-grow
 
 `flex-grow` 속성은 **flex item의 확장에 관련된 속성**이다. 0과 양의 정수를 속성값에 사용한다.
 
@@ -63,7 +63,7 @@
   </tbody>
 </table>
 
-### \(3\). flex-shrink
+### \(3\). flex item → flex-shrink
 
 `flex-shrink` 속성은 **flex item의 축소에 관련된 속성**이다. 0과 양의 정수를 속성값에 사용한다. 기본값은 1이다.
 
@@ -99,7 +99,7 @@
   </tbody>
 </table>
 
-### \(4\). flex-basis
+### \(4\). flex item → flex-basis
 
 {% hint style="warning" %}
 속성 값을 0 으로 선언할 때에는 `flex-basis: 0px`, `flex-basis: 0%`와 같은 단위도 함께 
@@ -150,7 +150,7 @@
 
 ![](../.gitbook/assets/helloworld-201811-flex_10.png)
 
-### \(5\). order
+### \(5\). flex item → order
 
 `order` 속성은 flex item의 순서와 관련된 속성이다. 0 부터 값이 클수록 밀리기 때문에 정수와 음수를 속성 값에 사용한다. 기본 값은 0 이다.
 
@@ -290,7 +290,7 @@ body {
 {% endtab %}
 {% endtabs %}
 
-### \(6\). align-self
+### \(6\). flex item → align-self
 
 `align-self` 속성은 flex item 교차 축\(cross axis\)에 정렬 관련된 속성이다.
 
