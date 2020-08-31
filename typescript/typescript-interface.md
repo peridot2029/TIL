@@ -10,7 +10,7 @@
 
 ### \(2\). Variable, Function → Interface
 
-{% code title="variable interface" %}
+{% code title="Example : variable, function interface" %}
 ```typescript
 interface Todo {
   id: number;
@@ -31,7 +31,7 @@ console.log(todos);
 ```
 {% endcode %}
 
-{% code title="function interface" %}
+{% code title="Example : function interface" %}
 ```typescript
 interface SquareFunc {
   (num: number): number;
@@ -50,7 +50,7 @@ console.log(squareFunc(10));
 
 인터페이스의 프로퍼티는 반드시 구현되어야 하는데, 프로퍼티가 선택적으로 필요한 경우에 **선택적 프로퍼티\(Optional Properties\)**를 사용할 수 있다. 이는  프로퍼티명 뒤에 ? 를 붙이며, 생략해도 에러가 발생하지  않는다.
 
-{% code title="Optional Properties" %}
+{% code title="Example : Optional Properties" %}
 ```typescript
 interface UserInfo {
   username: string;
@@ -70,10 +70,11 @@ console.log(userInfo);
 
 ### **\(4\). Extends →** Interface
 
-인터페이스는 `extends`  키워드를 사용하여 인터페이스 또는 클래스를 상속 받을 수 있다.
+인터페이스는 `extends`  키워드를 사용하여 인터페이스 또는 클래스를 **상속** 받을 수 있다.
 
-{% code title="single Iterface" %}
+{% code title="Example : Single interfeace extends" %}
 ```typescript
+ interface Person {
   name: string;
   age?: number;
 }
@@ -90,7 +91,7 @@ const student: Student =  {
 ```
 {% endcode %}
 
-{% code title="plural Interface" %}
+{% code title="Example : plural Interface extends" %}
 ```typescript
 interface Person {
   name: string;
@@ -111,9 +112,37 @@ const webDeveloper: WebDeveloper =  {
 ```
 {% endcode %}
 
-## 2. Function
+### **\(4\). Class→** Interface
 
-### \(1\).  Function 정의
+ 클래스 선언문의 implemenets 뒤에 인터페이스를 선언하면 해당 클래스는 지정된 인터페이스를 반드시 구현 해야한다. 
+
+즉, 인터페이스를 구현하는 클래스는 인터페이스 정의 프로퍼티와 추상 메서드를 반드시 구현해야한다.
+
+{% code title="Example : Ineterface class" %}
+```typescript
+interface IPerson {
+  name: string;
+  sayHello(): void;
+}
+
+
+class Person implements IPerson {
+  constructor(public name: string) {}
+  sayHello() {
+    console.log(`Hello ${this.name}`);
+  }
+}
+
+function greeter(person: IPerson): void {
+  person.sayHello();
+}
+
+const me = new Person('Lee');
+greeter(me); // Hello Lee
+```
+{% endcode %}
+
+## 2. Function 정의
 
 TypeScript는 JavaScript와 마찬가지로 **기명 함수 \(named function\)**와 **익명 함수 \(anonymous function\)**으로 만들 수 있다. 
 
@@ -121,39 +150,43 @@ TypeScript는 JavaScript와 마찬가지로 **기명 함수 \(named function\)**
 
 각각 매개변수와 반한 될 타입을 지정해서 명시한다. 이때 반환될 타입을 우측에 명시하면 된다.
 
+{% code title="Example : Named function, Anonymonus function" %}
 ```typescript
-// named function
 function sum(x: number, y: number): number {
   return x + y;
 }
 sum(1, 2);
 
-// anonymonus function
 let sumAdd = function (x: number, y: number): number {
   return x + y;
 };
 ```
+{% endcode %}
 
 ### \(3\). 함수의 타입 작성 \(Writing the function type\)
 
 함수에 타입을 붙힌 뒤, 타입들을 살펴보고 함수 전체의 타입을 작성한다.
 
+{% code title="Example : Writing the function type" %}
 ```typescript
 let totalAdd: (value: number, incerment: number) => number = function (
   x: number, y: number) {
   return x + y;
 }
 ```
+{% endcode %}
 
 ### \(4\). 타입의 추론 \(Inferring the types\)
 
 TypeScript는 컴파일러가 한쪽에만 타입을 명시해도 알아낼 수 있다.
 
+{% code title="Example : Inferring the types" %}
 ```typescript
 let rectangle: (width: number, height: number) => number = function (x, y) {
   return x * y;
 };
 ```
+{% endcode %}
 
 ### \(5\). 선택적 매개변수와 기본 매개변수 \(Optional and Defalut Parameter\)
 
@@ -161,6 +194,7 @@ Typescript 에서 모든 매개변수가 함수에 필요하다고 가정 한다
 
 컴파일러는 각 매개변수에 대해 사용자가 값을 제공했는지 검사한다. 또한 컴파일러는 매개변수들이 함수로 전달된 유일한 매개변수 라고 가정한다.  **즉, 함수에 주어진 인자의 수는 함수가 기대하는 매개변수와 일치해야 한다.**
 
+{% code title="Example :Optional and Defalut Parameter" %}
 ```typescript
 function buildName(firstName: string, lastName?: string) {
   if (lastName) {
@@ -174,11 +208,13 @@ let resultOne = buildName('lee');
 let resultTwo = buildName('lee', 'song');
 // let resultThree = buildName('lee', 'sone', '~');
 ```
+{% endcode %}
 
 ### **\(6\). 나머지 매개 변수 \(Rest** Parameters\)
 
 때로는 다른 매개 변수를 그룹 지어 작업하기 원하거나, 함수가 최종적으로 얼마나 많은 매개변수를 취할지 모를 때 사용한다.
 
+{% code title="Example : Rest parameters" %}
 ```typescript
 function buildFullName(firstName: string, ...restOfName: string[]) {
   return firstName + '' + restOfName.join('');
@@ -188,6 +224,9 @@ let employName = buildFullName('song', 'kim', 'lee', 'jun');
 
 let buildNameFun: (fname: string, ...rest: string[]) => string = buildFullName;
 ```
+{% endcode %}
 
+### Result  <a id="reference"></a>
 
+TypeScript Example [ →\(CodeSanedox\)](https://codesandbox.io/s/basic-typescript-zn937?file=/src/App.tsx)
 

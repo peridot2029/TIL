@@ -9,7 +9,7 @@ Java, C\# 같은 정적 타입의 언어의 경우, `function` 또는 `class`정
 ✍ **Exmple**
 
 ```typescript
-class Queue {
+class Queue { 
   protected data = [];
 
   push(item) {
@@ -99,7 +99,7 @@ console.log(myQueue.pop()); // { name: 'Kim', age: 20 }
 
 `reverse` 함수는 다양한 타입의 요소로 구성된 배열을 인자로 전달 받는다.  예를 들면 `number` 타입의 요소를 갖는 배열을 전달 받으면 타입 매개변수는 `number`가 된다.
 
-{% code title="Example: Generic function " %}
+{% code title="Example : Generic function " %}
 ```typescript
 function reverse<T>(items: T[]): T[] {
   return items.reverse();
@@ -114,7 +114,7 @@ console.log(reversed); // [ 5, 4, 3, 2, 1 ]
 
 만약에 `{name:string}` 타입의 요소를 갖는 배열을 전달 받으면 타입 매개변수는 `{name:string}`이 된다.
 
-{% code title="Example: Generic function " %}
+{% code title="Example : Generic function " %}
 ```typescript
 function reverse<T>(items: T[]): T[] {
   return items.reverse();
@@ -129,7 +129,7 @@ console.log(reversed); // [ { name: 'Kim' }, { name: 'Lee' } ]
 
 ### \(2\). Interface → Generics
 
-{% code title="Example: Generic Interface as Type" %}
+{% code title="Example : Generic Interface as Type" %}
 ```typescript
 interface KeyPair<T, U> {
     key: T;
@@ -143,7 +143,7 @@ console.log(kvTwo); // Object {key: 1, value: 12345}
 ```
 {% endcode %}
 
-{% code title="Example: Generic Interface as Function Type" %}
+{% code title="Example : Generic Interface as Function Type" %}
 ```typescript
 interface KeyValueProcessor<T, U> {
   (key: T, val: U): void;
