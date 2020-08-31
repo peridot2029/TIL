@@ -1,8 +1,6 @@
 # 📄 TypeScript - Interface, function
 
-## 1. Interface
-
-### \(1\).  Interface 정의
+## 1. Interface 정의
 
 🤚 [`interface`](https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4_%28%EC%BB%B4%ED%93%A8%ED%8C%85%29)는 간단하게 어떠한 시스템 두 개의 시스템 사이에 상호작용 할 수 있게 해주는 조건, 규약 
 
