@@ -1,10 +1,10 @@
 # 📄 TypeScript - Basic Types
 
-## 1. TypeScript 기본 타입
+## 1. TypeScript 기본 타입 정의
 
 TypeScript는 JavaScript와 거의 **동일한 데이터 타입을 지원**하며, 열거 타입을 사용하여 더 편리하게 사용할 수 있다.
 
-### \(1\).  Number
+### \(1\).  Number 
 
 JavaScript 처럼, TypeScript의 모든 숫자는 부동 소수 값이다. 부동 소수에는 `number` 라는 타입이 붙여진다. 이는 16진수, 10진수, 8진수, 2진수 리터럴도 지원한다.
 
@@ -19,13 +19,13 @@ num += 1;
 const done: boolean = true;
 ```
 
-### \(3\). String
+### \(3\). String Type
 
 ```typescript
 const message: string = 'hello world';
 ```
 
-### \(4\). Array
+### \(4\). Array Type 
 
 ```typescript
 const numbers: number[] = [1, 2, 3];
@@ -43,7 +43,7 @@ list = ['str', 1];
 // list = [1, 'str'];
 ```
 
-### \(6\).  Enum
+### \(6\).  Enum 
 
 C\# 과 같은 언어처럼, `enum`은 값의 집합에 더 나은 이름을 붙여줄 수 있다.
 
@@ -74,19 +74,15 @@ notSure.toFixed();
 
 아무런 타입을 가지지 않아야 할 경우 지정해야 될 타입으로 함수에 변수를 선언할 때 유용하다. 그 이유는 `void`를 사용할 경우 `undefined`  와 `null`를 모두 사용할 수 있기 때문이다.
 
-✍ **Exmple**
-
 ```typescript
 function warnUse(): void {
   console.log('This is my warning message');
 }
 ```
 
-### \(9\). Null and Undefined
+### \(9\). Null and Undefined 
 
  TypeScript에서 `nudfiend`와 `null`는 둘 다 각 각 자신의 타입으로 사용한다.
-
-✍ **Exmple**
 
 ```typescript
 let u: undefined = undefined;
@@ -96,7 +92,7 @@ let mightBeUndefined: string | undefined = undefined;
 let nullableNumber: number | null = null;
 ```
 
-### \(10\).  Never
+### \(10\).  Never 
 
 어떤 다른 타입도 `never`에 사용 불가능하며 오로지 exception과 같이 `throw`되는 함수에 주로 사용한다.
 
@@ -117,7 +113,7 @@ function infiniteLoop(): never {
 }
 ```
 
-### \(11\). Type Assertions
+### \(11\). Type Assertions 
 
 **타입 단언 \(type assertions\)**은 다른 언어의 타입 변환 \(형 변환\)과 유사하지만, 다른 특별한 검사하거나 재구성 하지는 않는다.
 

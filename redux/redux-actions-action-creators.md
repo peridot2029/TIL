@@ -1,6 +1,6 @@
 # 📄 Redux - Actions, Action Creators
 
-## 1. Actions 
+## 1. Actions 정의
 
 상태에 어떠한 변화가 필요하게 될 땐, 액션을 발생시킨다. 이는 객체로 표현된다.
 
@@ -18,7 +18,7 @@
 }
 ```
 
-## 2. Action Creators
+## 2. Action Creators 정의
 
 **action creators는 redux의 기능은 아니고, 액션을 만드는 순수 함수 이다.** 
 

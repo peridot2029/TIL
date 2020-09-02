@@ -10,11 +10,11 @@
 
 하위 컴포넌트는 `props`로 전달 받은 `A` 와 `B` 중에서 하나라도 변경될 때 마다 리렌더링 된다. 만약에 전달 받은 `A`의 값만 변경되고 `B`의 경우는 이전값과 동일한 경우, 다시 함수를 호출하는 대신 기존에 메모제이션 기법을 사용해서 로직을 구현할 수 있다.  즉, **특정 결과 값을 재사용하고 싶을 때 `useMemo()`를 사용한다.**
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```jsx
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 ```
+{% endcode %}
 
 ## 2. React.useCallback\(\)
 
