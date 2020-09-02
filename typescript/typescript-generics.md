@@ -159,8 +159,6 @@ numKVProcessor(1, 12345); // processKeyPairs key = 1, value = 12345
 
 ### \(3\). Type align → Generics
 
-✍ **Exmple**
-
 ```typescript
 type ItemOne<T> = {
   list: T[];

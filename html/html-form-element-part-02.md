@@ -70,8 +70,7 @@
 
 아이콘 버튼에 접근 가능한 이름을 부여하려면 `<button>` 요소의 **기능을 간략히 묘사하는 텍스트**를 안에 포함 시켜야 한다.
 
-✍ **Exmple - icon button**
-
+{% code title="Exmple : icon button" %}
 ```markup
 <button name="favorite" type="button">
   <svg aria-hidden="true" viewBox="0 0 10 10">
@@ -79,6 +78,7 @@
   Add to favorites
 </button>
 ```
+{% endcode %}
 
 #### 📝**크기**
 
@@ -108,7 +108,7 @@
 
 `<option>` 요소를 `<optiongroup>` 요소 안에 배치하면 드롭 다운 내에서 옵션 그룹으로 나눌 수 있다.
 
-✍ **Exmple**
+
 
 ```markup
 <label for="coffe-select">Click Coffee Menu :</label>

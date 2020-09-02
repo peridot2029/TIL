@@ -36,8 +36,6 @@
 
 예를 들면, `class`가 `container`인 `div`의 직계 자손 `ul`만을 대상으로 삼는다.
 
-✍ **Exmple**
-
 ```markup
 <div class="container">
     <ul>
@@ -53,7 +51,7 @@
 
 `ul`안에 모든 `p`요소를 대상으로 삼는다.
 
-✍ **Exmple**
+
 
 ```css
 ul ~ p {
@@ -64,8 +62,6 @@ ul ~ p {
 ### 9. .X .Y
 
 멀티 클래스 선택자 \(mutil class selector\), 점\(.\)을 사용해서 두 개 요소를 연결하여 대상으로 삼는다.
-
-✍ **Exmple**
 
 ```css
 // When one element has two elements

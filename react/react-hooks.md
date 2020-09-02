@@ -1,6 +1,6 @@
 # 📄 React Hooks - useState,useEffect,useRef
 
-## 1. HOOK 정
+## 1. HOOK 정의
 
 **HOOK**을 사용하면 functional component에서도 state와 React의 여러 기능을 사용할 수 있다.
 
@@ -27,7 +27,6 @@ const [state, setState] = React.useState(initialValue);
 ```
 {% endcode %}
 
-{% code title="Example " %}
 ```jsx
 import React, { useState } from 'react';
 
@@ -46,13 +45,11 @@ const Counter = props => {
   )
 }
 ```
-{% endcode %}
 
 ### \(2\). 하나의 이상의 state 설정
 
 필요하다면 functional component 에서 1개 이상의 state를 설정해 사용할 수 있다.
 
-{% code title="Example" %}
 ```jsx
 const Counter = props => {
   const [count, setCount] = useState(0);
@@ -60,7 +57,6 @@ const Counter = props => {
   return (...)
 }
 ```
-{% endcode %}
 
 ### \(3\). this.state와 useState\(\)의 차이
 
@@ -142,7 +138,6 @@ useEffect(() => {
  `useRef()`를 사용해 실제 DOM Node를 조작한 경우, 컴포넌트가 다시 그려지지 않으므 주의해야된다. \(state, props가 변경되어야 업데이트 된다.\)  
 
 
-{% code title="Example" %}
 ```jsx
 import React, { useRef } from 'react';
 
@@ -170,7 +165,6 @@ function FileInput(props) {
   );
 }
 ```
-{% endcode %}
 
 
 

@@ -66,8 +66,6 @@ Boolean, 사용자가 양식을 제출 하기 값을 입력해야 한다.
 
 이는 `resize` CSS 속성에 의해 제어된다. 기본적으로 활성화 되어 있지만, 명시적으로 비활성화 할 수 있다.\(`none`\)
 
-✍ **Example**
-
 ```css
 textarea {
   resize: none;
@@ -79,8 +77,6 @@ textarea {
 `<textarea>` 요소, 예를 들면 그와 설정 경계 여부 `minlength`, `maxlength` 또는 `required`를 사용하여 강조할 수 있다.
 
 `:valid` 및 `:invalid` 가상 클래스, 예를 들면 텍스트 영역이 유효한지 또는 유효하지 않은 지 따라 테두리 값을 지정할 수 있다.
-
-✍ **Example**
 
 ```css
 textarea:invalid {
@@ -103,8 +99,6 @@ textarea:valid {
 `<fieldset>`은 기본 스타일로 콘텐츠를 감싸는 `2px` 너비의 groove 테두리, 작은 양의 내부 여백, 그리고 `min-inline-size: min-content`를 갖는다.
 
 `<legend>` 요소는 `<fieldset>`의 블록 시작 방향\(대개 위쪽\) 테두리 위를 가로지르는 위치에 놓인다.
-
-✍ **Example**
 
 ```markup
 <form action="#">

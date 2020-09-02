@@ -22,11 +22,9 @@
 
 `<figure>` 요소에 `aria-labelledby`속성을 사용해 제목\(caption\)을 연결한다.
 
-✍ **Example**
-
 ```markup
 <p id="compare-shoes-table">성인 남성 운동화 사이즈 비교 표로 4행 12열로 구성되.</p>
-<!-- table에 대한 자세한 내용을 기술할 때 aria-describedby 사용해서 단락의 ID 값을 연결한다. -->
+<!-- table의자세한 내용 기술 방법은 aria-describedby 속성을 사용해 단락의 ID에 연결 -->
     <table border="1" aria-describedby="compare-shoes-table">
         <caption>성인 남성 운동화 사이즈표</caption>
     </table>

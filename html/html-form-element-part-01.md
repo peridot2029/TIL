@@ -74,14 +74,14 @@ label 텍스트는 입력과 시각적으로 관련이 있을뿐만 아니라, �
 
 `<label>`를 `<input>` 요소와 연결 시키려면, `<input>`에 id 속성을 넣어야 한다. 그런 다음에 `<label>` 에 **id**와 같은 값의 **for** 속성을 넣어야 한다.
 
-✍ **Exmple - 암시적 연결**
-
+{% code title=" Exmple : label - input 암시적 연결" %}
 ```markup
 <!-- label 안에 input 중첩 시킬 경우, for 및 id 속성은 필요 없다. -->
 <label>Do you like peas?
   <input type="checkbox" name="peas">
 </label>
 ```
+{% endcode %}
 
 #### 📝other usage notes
 
@@ -99,19 +99,16 @@ label이 붙여진 양식 컨트롤\(form control\)은 **labeled control** 라�
 
 `<label/>` 안에 `<a>` 또는 `<button>`와 같은 인터랙티브 요소를 배치하면, label과 관련된 양식을 입력하기 어렵다.
 
-✍ **Exmple** 
-
-{% tabs %}
-{% tab title=" Bad " %}
+{% code title="Example : Bad" %}
 ```markup
 <label for="tac">
   <input id="tac" type="checkbox" name="terms-and-conditions">
   I agree to the <a href="terms-and-conditions.html">Terms and Conditions</a>
 </label>
 ```
-{% endtab %}
+{% endcode %}
 
-{% tab title=" Good " %}
+{% code title="Example : Good" %}
 ```markup
 <label for="tac">
   <input id="tac" type="checkbox" name="terms-and-conditions">
@@ -121,8 +118,7 @@ label이 붙여진 양식 컨트롤\(form control\)은 **labeled control** 라�
   <a href="terms-and-conditions.html">Read our Terms and Conditions</a>
 </p>
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### 📝**title \(제목\)**
 
@@ -130,25 +126,23 @@ label이 붙여진 양식 컨트롤\(form control\)은 **labeled control** 라�
 
 label의 텍스트를 시각적으로 조정해야하는 경우,  `<label>` 요소에 적용된 CSS 클래스를 사용하는게 옳다.
 
-{% tabs %}
-{% tab title="Bad " %}
+{% code title="Example : Bad" %}
 ```markup
 <label for="your-name">
   <h3>Your name</h3>
   <input id="your-name" name="your-name" type="text">
 </label>
 ```
-{% endtab %}
+{% endcode %}
 
-{% tab title="Good" %}
+{% code title="Example : Good" %}
 ```markup
 <label class="large-label" for="your-name">
   Your name
   <input id="your-name" name="your-name" type="text">
 </label>
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### Reference  <a id="reference"></a>
 

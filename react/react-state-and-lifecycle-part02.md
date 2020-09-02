@@ -24,11 +24,11 @@ React v16.3 이후 부터는`UNSAFE_componentWillReceiveProps()`라는 이름으
 
 **컴포넌트 생성 후에** 첫 렌더링을 마친 후 호출되는 API로 컴포넌트가 **처음마운트 되는 시점**에서는 호출 되지 않는다.
 
-✍ **Syntax**
-
+{% code title=" Syntax" %}
 ```jsx
 componentWillReceiveProps(nextProps)
 ```
+{% endcode %}
 
 ### \(1-1\). \[NEW\] [static getDerivedStateFromProps\(\)](https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops)
 
@@ -36,21 +36,21 @@ componentWillReceiveProps(nextProps)
 
 이 API는 prop로 받아온 값을 state로 동기화 작업을 해줘야 하는 경우에 사용된다.
 
-✍ **Syntax**
-
+{% code title=" Syntax" %}
 ```jsx
 static getDerivedStateFromProps(nextProps, prevState)
 ```
+{% endcode %}
 
 ### \(2\). shouldComponentUpdate\(\)
 
 컴포넌트가 **업데이트 직전**에 호출되는 API, `prop`또는 `state`를 변경되었을 때 , 재렌더링을 여부를 `return`값으로 결정한다.
 
-✍ **Syntax**
-
+{% code title=" Syntax" %}
 ```jsx
 shouldComponentUpdate(nextProps, nextState)
 ```
+{% endcode %}
 
 ###  \(**3**\). componentWillUpdate\(\)
 
@@ -66,17 +66,15 @@ React v16.3 이후 부터는 상황에 따라서 새로운  API [`getSnapshotBef
 
 ✋ `this.setState()`를 사용하면 무한 루프가 일어나게 되므로 사용하면 안된다.
 
-✍ **Syntax**
-
+{% code title=" Syntax" %}
 ```jsx
 componentWillUpdate(nextProps, nextState)
 ```
+{% endcode %}
 
 ### \(**3-1**\). \[NEW\] [getSnapshotBeforeUpdate\(\)](https://reactjs.org/docs/react-component.html#getsnapshotbeforeupdate)
 
  `getSnapshotBeforeUpdate()`API를 통해서 **변화가 일어나기 직전**의 DOM 상태를 가져오고, 여기서 `return` 값은 `componentDidUpdate()`의 세 번째 매개변수로 받아올 수 있게 된다.
-
-✍ **Exmple**
 
 ```javascript
  getSnapshotBeforeUpdate(prevProps, prevState) {
@@ -114,9 +112,11 @@ componentWillUpdate(nextProps, nextState)
 
 `componentDidUpdate()`를 사용할 때, `setState()`를 주의해야 한다. 그렇지 않으면 무한루프에 빠질수 있다.
 
+{% code title=" Syntax" %}
 ```javascript
 componentDidUpdate(prevProps, prevState, snapshot)
 ```
+{% endcode %}
 
 📝 **prevProps**
 
