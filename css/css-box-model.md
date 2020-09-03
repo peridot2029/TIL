@@ -60,7 +60,7 @@
 | `width` | `width`**+** `padding-left` **+** `padding-right` **+** `border-left` **+** `border-right` |
 | `height` | `height`**+** `padding-top` **+** `padding-bottom` **+** `border-top` **+** `border-bottom` |
 
-### \(2\) conent-box/ border-box
+### \(2\). conent-box/ border-box
 
 <table>
   <thead>
@@ -127,13 +127,74 @@ div{
 {% endtab %}
 {% endtabs %}
 
+### \(3\). content-box 에서 `width:100%` 일 경우 문제 <a id="reference"></a>
+
+`content-box`일 때 `width:100%;`이어서 `padding` 또는 `border`속성을 주게 될 경우 부모의 영역을 초과해서 너비가 넘치는 문제가 생길 수 있다. 
+
+이 문제점을 해결 하기 위해서는 `box-sizing`을 `border-box`로 하거나 `width`를 `auto`로 설정해야 한다.
+
+{% tabs %}
+{% tab title="HTML" %}
+```markup
+<div class="container1">
+	<div class="child1">width:100%</div>
+	<div class="child2">해결방법1</div>
+	<div class="child3">해결방법2</div>
+	<div class="child4">해결방법3</div>
+</div>
+```
+{% endtab %}
+
+{% tab title="CSS" %}
+```css
+/* border-box:100% */
+.container1 {
+	width: 300px;
+	border: 5px solid black;
+	background: white;
+}
+
+.container1 > div {
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 3px solid #2e88b5;
+	background: #ddd;
+}
+
+.container1 .child1 {
+	width: 100%; /* 문제 */
+}
+
+.container1 .child2 {
+	width: 100%;
+	box-sizing: border-box;
+	background: yellow;
+}
+
+.container1 .child3 {
+	width: auto;
+	background: green;
+}
+
+.container1 .child4 {
+	/* 	width의 기본값: auto */
+	background: pink;
+}
+```
+{% endtab %}
+
+{% tab title="RESULT" %}
+![](../.gitbook/assets/.png%20%284%29.png)
+{% endtab %}
+{% endtabs %}
+
 ### Reference <a id="reference"></a>
 
 The box model [→\(MDN\)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
 
 Box Sizing [→\(CSS-TRICKS\)](https://css-tricks.com/box-sizing/)
 
- CSS 레이아웃을 배웁시다 [→\(SITE\)](http://ko.learnlayout.com/box-model.html)
+CSS 레이아웃을 배웁시다 [→\(SITE\)](http://ko.learnlayout.com/box-model.html)
 
 
 
