@@ -20,7 +20,7 @@
 
 웹 사이트의 섹션은 소개\(introduction\), 뉴스 항목\(news item\), 연락처 정보\(contact information\)를 위한 섹션으로 나눌 수 있다.
 
-콘텐츠가 사이트에 포함된 독립적인 섹션 성향이 크다면, section element 대신`<artcle>`element를 사용하는 것을 권장한다.
+콘텐츠가 사이트에 포함된 독립적인 섹션 성향이 크다면,`<section>` element 대신`<artcle>`element를 사용하는 것을 권장한다.
 
 ### \(2\) .`<article>` Element
 
@@ -30,7 +30,7 @@
 
 `<article>`내부에 `<section>` element를 포함할 수 있고, 반대로 `<section>` 내부에 `<article>`를 포함할 수도 있다.
 
-웹 접근성이 측면에서 반드시 제목 \(h1 ~ h6\)를 포함 시켜 식별해야 한다.
+웹 접근성이 측면에서 반드시 **제목 \(h1 ~ h6\)를 포함** 시켜 식별해야 한다.
 
 ### \(3\) .`<aside>` Element
 

@@ -6,13 +6,11 @@
 
 빈 배열\(\[ \]\) 호출하면 무조건 `true`를 반환한다.
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```javascript
 array.every(callback[, thisArg])
 ```
-
-✍ **Exmple**
+{% endcode %}
 
 ```javascript
 const arr = [1,2,3,4,5];
@@ -25,13 +23,11 @@ const product = arr.every((x,y) => x < 10); // true, All values less than 10
 
 빈 배열 \(\[ \]\) 호출하면 무조건 `false`를 반환한다.
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```javascript
 array.some(callback[, thisArg])
 ```
-
-✍ **Exmple**
+{% endcode %}
 
 ```javascript
 const arr = [1,2,3,4,5];
@@ -42,13 +38,11 @@ const product = arr.some((x) => x % 2 === 0); // true, There is an even number i
 
 배열이 특정 요소를 포함하고 있는지 판별한다.
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```javascript
 array.includes(valueToFind[, fromIndex])
 ```
-
-✍ **Exmple**
+{% endcode %}
 
 ```javascript
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -64,13 +58,11 @@ const isApple = fruits.includes("Apple", 0); // false
 
 만약 존재하지 않으면 -1를 반환한다.
 
-✍ **Syntax**
-
+{% code title=" Syntax" %}
 ```javascript
 array.indexOf(searchElement[, fromIndex])
 ```
-
-✍ **Exmple**
+{% endcode %}
 
 ```javascript
 const dataType =["NaN", "String", "Number", "Boolean", "String"];
@@ -86,11 +78,11 @@ console.log(dataType.indexOf("Boolean", 3)); // 3, start from index 3
 
 만약 존재하지 않으면 -1를 반환한다.
 
-✍ **Syntax**
-
+{% code title=" Syntax" %}
 ```javascript
 array.lastIndexOf(searchElement[, fromIndex])
 ```
+{% endcode %}
 
 ### 5. array.findIndex\(\)
 
@@ -98,9 +90,9 @@ array.lastIndexOf(searchElement[, fromIndex])
 
 만약 존재하지 않으면 -1를 반환한다.
 
-✍ **Syntax**
-
+{% code title=" Syntax" %}
 ```javascript
 array.findIndex(callback(element[, index[, array]])[, thisArg])
 ```
+{% endcode %}
 

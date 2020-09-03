@@ -1,6 +1,6 @@
 # 📄 HTML Metadata Element
 
-## 1. `<head>` Element
+## 1. `<head>` Element 
 
  문서의 제목과 스타일시트, 스크립트 링크 또는 선언은 포함하는 문서의 일반적인 정보 \(메타데이터\)를 제공한다. 대부분 브라우저는 마크업에서 `<head>` 요소가 생략될 경우, 자동으로 `<head>` 요소를 생성하지만 일부는 그렇지 않다.
 
@@ -10,11 +10,11 @@ Android \(1.6\), iPhone \(3.1.3\), iOpera \(9.27\), Safari \(3.2.1\), Nokia \(90
 {% endtab %}
 {% endtabs %}
 
-## 2. `<title>` Element
+## 2. `<title>` Element 
 
-브라우저의 타이틀 바 \(title bar\)나 페이지 탭에 보여지는 문서의 제목을 정의한다.텍스트만 포함할 수 있으며 포함된 태그들은 해석되지 않는다.
+브라우저의 타이틀 바 \(title bar\)나 페이지 탭에 보여지는 문서의 제목을 정의한다. 텍스트만 포함할 수 있으며 포함된 태그들은 해석되지 않는다.
 
-## 3. `<meta>` Element
+## 3. `<meta>` Element 
 
  다른 메타 요소들 `<title>, <base>, <link>, <style>`로 나타낼 수 없는 메타데이터를 정의할 때 사용한다.
 
@@ -38,8 +38,6 @@ pragma 지시어 \(directive\)로 일반적으로 웹서버가 제공하는 웹�
 {% endtab %}
 {% endtabs %}
 
-✍ **Exmple**
-
 ```markup
 <!-- HTML 5 is no longer recommended for use as follows. -->
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -48,11 +46,9 @@ pragma 지시어 \(directive\)로 일반적으로 웹서버가 제공하는 웹�
 <meta http-equiv="refresh" content="3;url=https://google.com">
 ```
 
-## 4. `<link>` Element
+## 4. `<link>` Element 
 
-현재 문서와 외부 리소스와의 관계 \(relation\)를 명시한다.이 요소는 스타일시트를 링크 하는데 가장 많이 사용된다.
-
-✍ **Exmple**
+현재 문서와 외부 리소스와의 관계 \(relation\)를 명시한다. 이 요소는 스타일시트를 링크 하는데 가장 많이 사용된다.
 
 {% tabs %}
 {% tab title="Dafalut" %}
@@ -72,11 +68,9 @@ pragma 지시어 \(directive\)로 일반적으로 웹서버가 제공하는 웹�
 {% endtab %}
 {% endtabs %}
 
-## 5. `<style>` Element
+## 5. `<style>` Element 
 
 문서 또는 문서 일부에 대한 정보를 포함한다. 기본적으로 CSS 언어가 사용된다.
-
-✍ **Exmple**
 
 {% tabs %}
 {% tab title="Basic " %}
@@ -103,9 +97,7 @@ pragma 지시어 \(directive\)로 일반적으로 웹서버가 제공하는 웹�
 
 ## 6. `<Base>` Element
 
- 문서에 포함된 모든 상대 URL들의 기준 URL을 나타낸다. 한 문서에 하나의 `<base>` 요소만 존재해야 한다.
-
-✍ **Exmple**
+ 문서에 포함된 모든 상대 URL들의 기준 URL을 나타낸다. 한 문서에 하나의 `<base>` 요소만 존재해야 한다
 
 ```markup
 <base target="_blank" href="http://www.example.com/">

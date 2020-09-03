@@ -10,8 +10,6 @@
 
 클로저는 **외부 함수에서 생성된 변수들에 접근할 수 있는 권한**을 가지고 있다.
 
-✍ **Exmple**
-
 ```javascript
 const base = "hello";
 
@@ -34,8 +32,6 @@ hello(); // hello song
 `var`변수의 선언만 호이스팅이 일어난다.
 
 `let, const` 변수 선언과 함수 표현식에서는 호이스팅이 일어나지 않는다.
-
-✍ **Exmple**
 
 ```javascript
 firstfun();

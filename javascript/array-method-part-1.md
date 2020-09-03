@@ -6,13 +6,13 @@ description: 'Array method (from, concat, copyWithin, slice, splice, fill)'
 
 ### 1. Array.from\(\)
 
-**유사 배열 객체 \(array-like object\)** 또는 **반복 가능한 객체**를 얕게 복사해 새로운 배열 객체를 만든다.
+**유사 배열 객체 \(array-like object\)** 또는 **반복 가능한 객체**를 얕게 복사해 **새로운 배열 객체**를 만든다.
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```javascript
 Array.from(arrayLike[, mapFn[, thisArg]])
 ```
+{% endcode %}
 
 ### 2. array.concat\(\)
 
@@ -30,13 +30,11 @@ Array.from(arrayLike[, mapFn[, thisArg]])
 
 대신 주어진 배열을 합친 뒤, 그 얕은 복사본을 반환한다.
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```javascript
 array.concat([value1[, value2[, ...[, valueN]]]])
 ```
-
-✍ **Exmple** 
+{% endcode %}
 
 ```javascript
 const alpha = ['a', 'b', 'c'];
@@ -48,15 +46,15 @@ const result2 = numeric.concat(2, [44, 55]); // [1, 2, 3, 2, 44, 55]
 
 ### 3. array.copyWithin\(\)
 
-배열의 일부를 얕게 복사한 뒤, 동일한 배열의 다른 위치에 덮어쓰고 , 그 배열을 반환한다.
+배열의 일부를 얕게 복사한 뒤, 동일한 배열의 다른 위치에 덮어쓰고 , **그 배열을 반환**한다.
 
 이 때 배열의 크기\(배열의 길이\)를 수정하지 않고 반환한다.
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```javascript
 array.copyWithin(target[, start[, end]])
 ```
+{% endcode %}
 
 📝 **target**
 
@@ -82,11 +80,11 @@ array.copyWithin(target[, start[, end]])
 
 원본 배열을 바뀌지 않는다.
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```javascript
 array.slice([begin[, end]])
 ```
+{% endcode %}
 
 📝 **begin \(Optional\)**
 
@@ -102,11 +100,11 @@ array.slice([begin[, end]])
 
 배열의 기존 요소를 **삭제** 또는 **교체**하거나 새 요소를 **추가**하여, **배열의 내용**을 변경한다.
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```javascript
 array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
 ```
+{% endcode %}
 
 📝 **start**
 
@@ -119,8 +117,6 @@ array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
 📝**item1, item2**
 
 배열에 추가할 요소, 아무 요소도 지정하지 않으면 `splice()`는 요소를 제거하기만 한다
-
-✍ **Exmple**
 
 ```javascript
 const arr =[1,2,3,4,5];
@@ -144,13 +140,11 @@ const product = arr.reduce((x,y) => {
 
 **start**, **end** 옵션으로써 기본 값으로 `0` 과, `this` 객체 `length`를 가진다.
 
-✍ **Syntax**
-
+{% code title="Syntax" %}
 ```javascript
 arr.fill(value[, start[, end]])
 ```
-
-✍ **Exmple**
+{% endcode %}
 
 ```javascript
 let list = ["css", "html", "react"];
@@ -163,8 +157,6 @@ arr.fill("change");
 // List after result 
 console.log(list); // ["change", "change", "change"];
 ```
-
-✍ **Exmple**
 
 ```javascript
 let list = ["css", "html", "react"];
