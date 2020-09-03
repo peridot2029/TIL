@@ -24,7 +24,7 @@
 
 ![](../.gitbook/assets/box.jpg)
 
-✋`marigion` 과 `padding` 은 속기형 \(단일\) 속성으로 **top → right → bottom → left** 4개를 선택적 또는 일괄 사용할 수 있다.
+✋`marigion` 과 `padding`은 속기형 \(단일\) 속성으로 **top → right → bottom → left** 4개를 선택적 또는 일괄 사용할 수 있다.
 
 | property | description |
 | :--- | :--- |
@@ -33,11 +33,11 @@
 | `border` | 내용, 패딩 주변은 감싸는 테두 |
 | `marigin` | 테두리 외부의 요소 주위에 공간을 만드데 사용  |
 
-## 5. height / width values
+## 5. height / width 
 
  `height`및 `width`속성은 요소의 높이와 폭을 설정하는데 사용한다.
 
-| value | description |
+| property | description |
 | :--- | :--- |
 | `auto`\(defalut\) | 기본값으로 브라우저 width, height에 따라 자동으로 설정한다. |
 | `length` | `px` , `em`, `rem` 등의 단위를 사용하여 직접 지정한다. |
@@ -65,7 +65,7 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">value</th>
+      <th style="text-align:left">property</th>
       <th style="text-align:left">description</th>
     </tr>
   </thead>
@@ -73,7 +73,7 @@
     <tr>
       <td style="text-align:left"><code>content-box</code>(defalut)</td>
       <td style="text-align:left">
-        <p>&#xAE30;&#xBCF8;&#xAC12;&#xC73C;&#xB85C; <code>width</code> ,<code>height </code>&#xC18D;&#xC131;&#xC774;
+        <p>&#xAE30;&#xBCF8;&#xAC12;&#xC73C;&#xB85C; <code>width</code> ,<code>height</code>&#xC18D;&#xC131;&#xC774;
           &#xCF58;&#xD150;&#xCE20; &#xC601;&#xC5ED;&#xB9CC; &#xD3EC;&#xD568;&#xD55C;&#xB2E4;.</p>
         <p>(&#xC704;&#xC758; &#xACF5;&#xC2DD;&#xC774; &#xC801;&#xC6A9;)</p>
       </td>
@@ -86,8 +86,6 @@
     </tr>
   </tbody>
 </table>
-
-✍ **Exmple**
 
 {% tabs %}
 {% tab title="HTML" %}
