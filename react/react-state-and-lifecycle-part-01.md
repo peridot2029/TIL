@@ -8,8 +8,6 @@
 
 `state`는 **sub component**에 `props`로 전달할 수 있다.
 
-
-
  ✋ class component `state`는 class 안에서만 접근 가능하다.
 
 ## 2. setState\(\) 
@@ -18,11 +16,7 @@
 
 React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
-
-
- ✋setState\(\)는 compoent를 갱신하는 데 있어서 즉각적인 명령이 아니라 요청을 보낸다.
-
-즉, 컴포넌트 항상 즉각적으로 업데이트 되지 않는다.
+ ✋setState\(\)는 compoent를 갱신하는 데 있어서 즉각적인 명령이 아니라 요청을 보낸다. 즉, 컴포넌트는 항상 즉각적으로 업데이트 되지 않는다.
 
 ## 3. Life Cycle API
 
@@ -34,52 +28,41 @@ React는 `state` 변화가 즉시 적용되는 것을 보장하지 않는다.
 
 ## 4. Mounting 
 
-컴포넌트가 새롭게 생성되는 시점,  결과물로 나온 요가 **Virital DOM**에 삽입되고 실제 DOM 업데이트 하기 과정.
+리액트 컴포넌트가 인스턴스 \(Instance\)로 생성되어 DOM tree 에 삽입되어 브라우저에 나타나는 것을 마운트 \(mount\)라고 한다.
 
 ### \(1\). constructor\(\)
 
-생성자 메서드로 컴포넌트가 생성 될 때 단 한 번만 실행한다.
+컴포넌트가 새로 생성 될 때 한 번만 실행하는 생성자 메서, `constructor`는 `this.state`의 초기값 적용, 인스턴스에 이벤트 처리 메서드를 바인딩 하기 위해 사용한다.
 
-주된 역할은 `state`를 선언 및 초기화 그리고 각 종 이벤트를 바인딩\(bing\) 처리한다.
+### \(2\).[ static getDerivedStateFromProps\(\)](https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromprops)
 
-### \(2\). componentWillMount\(\)
+`getDerivedStateFromProps()`는 React v16.3 이후에 만들어진 라이프 사이클 메서드 이다.
 
-{% hint style="warning" %}
-React v16.3 이후 부터는 `UNSAFE_componentWillMount()`라는 이름으로 사용된다.
+**최초 마운트** 시와 **갱신** 시 모두에서 `render()` 메서드를 호출 하기 직전에 호출된다. state 갱신하기 위한 객체를 반환하거나, null 반환하여 아무것도 갱신하지 않을 수 있다.
+
+🤚 이 메서드는  컴포넌트 인스턴스에 접근 할 수 없다. 또한 이 메서드는 부모 컴포넌트가 다시 렌더링을 발생 시켰을 때 실행되고, 해당 컴포넌트 내에서 지역전인 `setState()`가 발생한 경우는 실행 되지 않는다.
+
+```jsx
+static getDerivedStateFromProps(props, state)
+```
+
+### \(3\). render\(\)
+
+클래스 컴포넌트에서  반드시 구현하는 메서드로 최종적으로 컴포넌트에서 작업한 결과물 **UI**를 렌더링 하는 메서드 이다.
+
+### \(4\). componentDidMount\(\)
+
+컴포넌트가 마운트된 직후, 즉 DOM  tree 삽입된 직 후 호출된다.
+
+외부에서 데이터를 불러와야 할 때 사용하기 적절하다.
+
+ ✋DOM Node가 있어야 하는 초기화 작업 componentDidMount\(\)에서 이루어지면 안된다.
+
+{% hint style="danger" %}
+기존에 사용 되었던 메서드 이지만 이제는 사용하면 안되는 메서드
+
+[`UNSAFE_componentWillMount()`](https://ko.reactjs.org/docs/react-component.html#unsafe_componentwillmount)
 {% endhint %}
-
-React element를 실제 DOM Node에 추가하기 직전에 호출되는 API
-
-### \(2\). render\(\)
-
-최종적으로 컴포넌트에서 작업한 결과물을 반환하는 API
-
-결과물로 나온 요소들은 **Virital DOM**에 마운트 되고, 실제 DOM 업데이트 된다
-
-배열 또는 여러개의 요소를 반환 하고 싶을 때는, **fragments**를 사용할 수 있다.
-
-
-
- ✋ `render()`API 안에서는 `setState()`를 작업해서는 안된다.
-
-### \(3\). componentDidMount\(\)
-
-컴포넌트 결과물이 실제 DOM 에 마운트 된 후 직후, 실행되는 API
-
-외부 라이브러리를 연동하거나, 해당 컴포넌트에서 필요로 하는 데이터 요청을 하기 위해
-
-axios, fetch 등을 통하여 ajax 요청을 하거나, DOM의 속성을 읽거나 직접 변경하는 작업을 진행한다.
-
-
-
- ✋`componentDidMount()` 에서 바로 `setState()`를 실행할 경우, 렌더링이 완료되고 다시 업데이트 하여 또 다시 렌더링 하게 된다. 이 경우에는 사용자는 2번 실행되는 렌더링 과정을 볼 수 없다. 
-
- 그 이유는 브라우저에 화면을 갱신하기 전 실행되기 때문이다.  
-
-2번 렌더링 되는 과정은 성능상 문제를 일으킬 수 있으므로 주의해야 된다.  
-
-
-
 
 
 

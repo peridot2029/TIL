@@ -4,7 +4,7 @@
 
  **컴포넌트**는 UI를 구성하는 조각\(piece\)에 해당되며, 독립적으로 분리되어 **재사용을 됨을 목적으로 사용**된다. React App에서 컴포넌트는 **개별적인 파일로 분리되어 관리**한다.
 
-## 2. Class Component and FunctionalComponent
+## 2. Class Component and Functional Component
 
 React를 사용할 때에는 컴포넌트를 `class component` 또는 `functional component` 두 가지로 나눌 수 있다.
 
@@ -48,11 +48,11 @@ function App() {
 export default App;
 ```
 
-### \(3\). Class Componenet VS Functional Componet
+### \(3\). Class ComponentVS Functional Component
 
 React의 세계관에서 함수형 컴포넌트와 클래스형 컴포넌트는 유사하다. 하지만 함수형 컴포넌트에 없는 기능을 추가적으로 클래스형에서 컴포넌트에서 사용할 수 있다.
 
-간단히 정리하면 this, state, LifeCycle hoop를 클래스형 컴포넌트에서 사용할 수 있다.
+간단히 정리하면 this, state, LifeCycle Hoop를 클래스형 컴포넌트에서 사용할 수 있다.
 
 ## 2. props
 
