@@ -8,47 +8,25 @@
 
 ![](../.gitbook/assets/screenshot-from-2016-12-10-00-21-26-1%20%281%29.png)
 
-## 2. Update 
+## 2. Updateing 
 
-컴포넌트의 state, props가 변경되면 업데이트 진행된다. 상위 컴포넌트가 렌더링 되면 하위 컴포넌트도 
+props 또는 state가 변경되면 갱신이 발생한다. 즉, 부모 컴포넌트가 렌더링 되면 자식 컴포넌트도 다시 렌더링 된다. 아래의 메서드들은 다시 렌더링 될때 순서대로 호출한다.
 
-다시 렌더링 된다.
+### \(1\).[ static getDerivedStateFromProps](https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromprops)
 
-### \(1\).[ static getDerivedStateFromProps\(\)](https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromprops)
+### \(2\). shouldComponentUpdate
 
-### \(2\). shouldComponentUpdate\(\)
-
- 컴포넌트가 다시 렌더링을 해야 할지 말아야 할지 결정하는 메서드 이다. 
-
-컴포넌트가 **업데이트 직전**에 호출되는 API, `prop`또는 `state`를 변경되었을 때 , 재렌더링을 여부를 `return`값으로 결정한다.
+ 컴포넌트가 다시 렌더링을 해야 할지 말아야 할지 결정하는 메서드 이다.  초기 렌더링 또는 forceUpdate\(\) 호출 시에 이 메서드는 호출되지 않는다. 이 메서드는 렌더링을 방지하여 성능을 최적화 하는 목적으로 사용된다.
 
 ```jsx
 shouldComponentUpdate(nextProps, nextState)
 ```
 
-###  \(**3**\). componentWillUpdate\(\)
+### \(3\). render
 
-{% hint style="warning" %}
-React v16.3 이후 부터는 상황에 따라서 새로운  API [`getSnapshotBeforeUpdate()`](https://reactjs.org/docs/react-component.html#getsnapshotbeforeupdate)로 대체 될 수 있다.
-{% endhint %}
+### \(4\). [getSnapshotBeforeUpdate](https://reactjs.org/docs/react-component.html#getsnapshotbeforeupdate)
 
-`shouldComponentUpdate()`가 호출되고 난 후에,  **컴포넌트 업데이트 직전**에 호출 되는  API
-
-새로운 `prop`또는 `state`가 반영되기 직전 새로운 값들을 받는다.
-
-
-
-✋ `this.setState()`를 사용하면 무한 루프가 일어나게 되므로 사용하면 안된다.
-
-{% code title=" Syntax" %}
-```jsx
-componentWillUpdate(nextProps, nextState)
-```
-{% endcode %}
-
-### \(**3-1**\). \[NEW\] [getSnapshotBeforeUpdate\(\)](https://reactjs.org/docs/react-component.html#getsnapshotbeforeupdate)
-
- `getSnapshotBeforeUpdate()`API를 통해서 **변화가 일어나기 직전**의 DOM 상태를 가져오고, 여기서 `return` 값은 `componentDidUpdate()`의 세 번째 매개변수로 받아올 수 있게 된다.
+`render()`메서드는 호출 후 DOM 변화를 반영하기 직전에 호출되는 메서드 이다. 이 메서드에서 `return` 하는 값을 `componentDidUpdate()의` 세 번째 매개변수 받아올 수 있다.
 
 ```javascript
  getSnapshotBeforeUpdate(prevProps, prevState) {
@@ -80,17 +58,13 @@ componentWillUpdate(nextProps, nextState)
   }
 ```
 
-### \(4\). componentDidUpdate\(\)
+### \(5\). componentDidUpdate
 
- ✋ **업데이트**가 이루어지고 render\(\)가 완료된 후, 실행되는 API
+ 리렌더링을 완료한 후 실행되는 메서드이다. 최초 렌더링에서는 호출되지 않는다. 컴포넌트가 업데이트 되었을 시에 DOM을 조작하기 위해 사용한다.
 
-`componentDidUpdate()`를 사용할 때, `setState()`를 주의해야 한다. 그렇지 않으면 무한루프에 빠질수 있다.
-
-{% code title=" Syntax" %}
 ```javascript
 componentDidUpdate(prevProps, prevState, snapshot)
 ```
-{% endcode %}
 
 📝 **prevProps**
 
@@ -104,27 +78,53 @@ componentDidUpdate(prevProps, prevState, snapshot)
 
 `getSnapshotBeforeUpdate()` 구현시, 세번째 인자로 받을 수 있다
 
-## 3. Umount 
+{% hint style="danger" %}
+아래의 메서드는 기존에 사용되었지만 이제는 사용해서는 안된다.
 
-해당 되는 컴포넌트의 DOM 상에서 제거될 때 실행되는 API
+[`UNSAFE_componentWillUpdate()`](https://ko.reactjs.org/docs/react-component.html#unsafe_componentwillupdate)
 
-### \(1\) componentWillUnmount\(\)
+[`UNSAFE_componentWillReceiveProps()`](https://ko.reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops)
+{% endhint %}
 
-최종적으로 **제거**될 때, 실행된다. 컴포넌트 내에서 이루어지는 네트워크 요청, 타이머 이벤트 등 지속적으로 이루어지는 이벤트를 해제하는데 유용하다.
+## 3. Umounting
+
+해당 되는 컴포넌트의 DOM 상에서 제거될 때 호출한다.
+
+### \(1\) componentWillUnmount
+
+컴포넌트가 DOM에서 제거되기 직전에 호출되는 메서드 이다. 타이머 제거하거나 데이터 구독 해제 등의 목적으로 사용한다.
+
+🤚 `componentWillUnmout()`가 호출된 컴포넌트는 다시 렌더링 하지 않으므로 `setState()`를 호출 하면 안된다.
 
 ## 4. Error 
 
-### \(1\) componentDidCatch\(\)
+아래의 메서드들은 자식 컴포넌트를 렌더링 하거나, 자식 컴포넌트 생명주기 메서드를 호출하거나, 또는 자식 컴포넌트 생성자 메서드를 호출하는 과정에서 오류가 발생했을 때 호출된다.
 
-{% hint style="warning" %}
-React v16.3 이후 부터는 상황에 따라서 에러 발생시 state를 변경하고, render\(\) 에서 해당 처리를 구현하면 된다.
-{% endhint %}
+### \(1\).[ static getDrivedStateFromError](https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromerror)
 
-render\(\) 함수에서 **오류**가 났을 때 실행할 수 있다.
+하위의 자 컴포넌트에서 오류가 발생했을 때 호출되는 메서드 이다. 이 메서드는 매개변수로 오류를 전달 받고, 갱신된 `state`값을 반드시 반환해야 한다.
 
-오류가 발생하면 `componentDidCatch()`실행되게 하고, `state.error()`를 `true`로 설정하게 한다.
+```javascript
+static getDerivedStateFromError(error)
+```
 
-render\(\) 에서 `state.error()`의 따라서 오류를 띄어주면 된다.
+### \(2\).componentDidCatch
 
-컴포넌트는 자신의 함수 안에서 오류가 발생하면 잡을 수 없지만, 그 대신에 자식 컴포넌트 내부에서 발생하는 오류들을 잡을 수 있다.
+자손 컴포넌트에서 오류가 발생했을 때 호출되면, 두 개를 매개변수를 전달 받는다.
+
+```jsx
+componentDidCatch(error, info)
+```
+
+📝 **Error**
+
+ ****발생한 오류
+
+📝**Info**
+
+어떤 컴포넌트가 오류가 발생시켰는지 정보를 포함한 componentStack 키를 갖고 있는 객체
+
+### Reference <a id="reference"></a>
+
+React.Component [→\(SITE\)](https://ko.reactjs.org/docs/react-component.html)
 
