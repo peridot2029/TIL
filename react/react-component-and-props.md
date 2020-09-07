@@ -12,7 +12,7 @@ React를 사용할 때에는 컴포넌트를 `class component` 또는 `functiona
 
 React  컴포넌트를 class를 정의 하려면 `React.Component`를 상속 받아야 한다.
 
-`render()`는 `React.Component`의 하위 class 에서 반드시 정의해야 하는 API 이다. 
+`render()`는 `React.Component`의 하위 class 에서 반드시 정의해야 하는 메서드 이다. 
 
 ```jsx
 import React, { Component } from 'react';
@@ -48,23 +48,27 @@ function App() {
 export default App;
 ```
 
-### \(3\). Class ComponentVS Functional Component
+### \(3\). Class Component VS Functional Component
 
 React의 세계관에서 함수형 컴포넌트와 클래스형 컴포넌트는 유사하다. 하지만 함수형 컴포넌트에 없는 기능을 추가적으로 클래스형에서 컴포넌트에서 사용할 수 있다.
 
-간단히 정리하면 this, state, LifeCycle Hoop를 클래스형 컴포넌트에서 사용할 수 있다.
+간단히 정리하면 `this`, `state`, `LifeCycle Hoop`를 클래스형 컴포넌트에서 사용할 수 있다.
 
 ## 2. props
 
-컴포넌트에 설정된 임의의 JSX 속성\(type, children 등\)은 React에 의해 컴포넌트에 속성\(props\) 객체로 전달한다.
+컴포넌트에 설정된 임의의 JSX 속성\(`type`, `children`등\)은 React에 의해 컴포넌트에 속성\(props\) 객체로 전달한다.
 
-전달된 전달된 값은 props 객체의 각 **속성**으로 설정된다.
+전달된 전달된 값은 `props`객체의 각 **속성**으로 설정된다.
 
-전달된 컴포넌트 속성 객체 props는 컴포넌트 내부에서 컴파일에 활용된다.
+전달된 컴포넌트 속성 객체 `props`는 컴포넌트 내부에서 컴파일에 활용된다.
 
 ### \(1\). props는 읽기 전용 속성이다.
 
 컴포넌트에 전달된 속성\(props\) 객체는 **읽기 전용\(readonly\)**이다. 다시 말해 전달 받은 속성 값을 수정하면 안된다는 말이다. 전달 받은 속성 값을 수정하는 대신 컴포넌트 상태\(state\)를 활용해야 한다.
+
+
+
+
 
 ### Reference
 
