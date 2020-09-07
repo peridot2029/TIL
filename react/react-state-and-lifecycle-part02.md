@@ -1,8 +1,8 @@
-# 📄 React Life Cycle - Updating, Unmouting
+# 📄 React Lifecycle - Updating, Unmouting
 
-## 1. Life Cycle API 
+## 1. Lifecycle API 
 
-컴포넌트는 프로세스의 특정 시간에 코드를 실행하는 다양한 Life Cycle API를 제공한다.
+컴포넌트는 프로세스의 특정 시간에 코드를 실행하는 다양한 Lifecycle API를 제공한다.
 
 **생성 \(Mounting\) →  업데이트 \(Updating\)  → 제거 \(Unmouting\)**  3단계로 분류한다.
 
@@ -12,9 +12,9 @@
 
 props 또는 state가 변경되면 갱신이 발생한다. 즉, 부모 컴포넌트가 렌더링 되면 자식 컴포넌트도 다시 렌더링 된다. 아래의 메서드들은 다시 렌더링 될때 순서대로 호출한다.
 
-### \(1\).[ static getDerivedStateFromProps](https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromprops)
+### \(1\).[ static getDerivedStateFromProps\(\)](https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromprops)
 
-### \(2\). shouldComponentUpdate
+### \(2\). shouldComponentUpdate\(\)
 
  컴포넌트가 다시 렌더링을 해야 할지 말아야 할지 결정하는 메서드 이다.  초기 렌더링 또는 forceUpdate\(\) 호출 시에 이 메서드는 호출되지 않는다. 이 메서드는 렌더링을 방지하여 성능을 최적화 하는 목적으로 사용된다.
 

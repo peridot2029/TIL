@@ -51,8 +51,9 @@
 ## React
 
 * [📄 React - Component and Props](react/react-component-and-props.md)
-* [📄 React - state, setState, Life Cycle - Mounting](react/react-state-and-lifecycle-part-01.md)
-* [📄 React Life Cycle - Updating, Unmouting](react/react-state-and-lifecycle-part02.md)
+* [📄 React - state, setState, Lifecycle - Mounting](react/react-state-and-lifecycle-part-01.md)
+* [📄 React Lifecycle - Updating, Unmouting](react/react-state-and-lifecycle-part02.md)
+* [📄 React Legacy Lifecycle](react/react-legacy-lifecycle.md)
 * [📄 React - Context](react/react-context.md)
 * [📄 React - Controlled Component](react/react-component.md)
 * [📄 React - List and Key](react/react-list-and-key.md)
