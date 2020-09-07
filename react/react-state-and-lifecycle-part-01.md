@@ -12,7 +12,7 @@ state는 **불변 객체\(lmmutable object\)**이며, 컴포넌트의 데이터�
 
 ### \(2\). this.state와 useState의 차이점
 
-함수형 컴포넌트에서 `state`의 상태를 변경할 때에는 `setState()`로 개별적으로 요구된다. 반면에 클래스 컴포넌트에서 사용하는 `this.state`는`this.setState()`를 사용함으로써 상태의 일부 데이터를 변경하고 합친다 점이 다르다.
+함수형 컴포넌트에서 `state`의 상태를 변경할 때에는 `setState()`로 개별적으로 요구된다. 반면에 클래스 컴포넌트에서 사용하는`this.state`는`this.setState()`를 사용함으로써 상태의 일부 데이터를 변경하고 합친다 점이 다르다.
 
 ## 2.[ setState\(\)](https://ko.reactjs.org/docs/react-component.html#setstate)
 
