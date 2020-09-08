@@ -22,7 +22,7 @@ UNSAFE_componentWillMount()
 
 `UNSAFE_componentWillReceiveProps()` 는 마운트된 컴포넌트에 새로운 `props`를 전달 받기 전에 호출된다.  
 
-React는 마운팅 할 때에는 `UNSAFE_componentWillReceiveProps()`를 호출하지 않으며, 초기 `props`를 가지지 않는다. 이 메서드가 호출되는 경우는 컴포넌트의 `props`가 변화했을 때 이다.
+React는 마운팅 할 때에는`UNSAFE_componentWillReceiveProps()`를 호출하지 않으며, 초기 `props`를 가지지 않는다. 이 메서드가 호출되는 경우는 컴포넌트의 `props`가 변화했을 때 이다.
 
 ```jsx
 UNSAFE_componentWillReceiveProps(nextProps)
