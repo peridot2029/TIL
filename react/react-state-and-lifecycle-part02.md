@@ -22,9 +22,9 @@ props 또는 state가 변경되면 갱신이 발생한다. 즉, 부모 컴포넌
 shouldComponentUpdate(nextProps, nextState)
 ```
 
-### \(3\). render
+### \(3\). render\(\)
 
-### \(4\). [getSnapshotBeforeUpdate](https://reactjs.org/docs/react-component.html#getsnapshotbeforeupdate)
+### \(4\). [getSnapshotBeforeUpdate\(\)](https://reactjs.org/docs/react-component.html#getsnapshotbeforeupdate)
 
 `render()`메서드는 호출 후 DOM 변화를 반영하기 직전에 호출되는 메서드 이다. 이 메서드에서 `return` 하는 값을 `componentDidUpdate()의` 세 번째 매개변수 받아올 수 있다.
 
@@ -58,7 +58,7 @@ shouldComponentUpdate(nextProps, nextState)
   }
 ```
 
-### \(5\). componentDidUpdate
+### \(5\). componentDidUpdate\(\)
 
  리렌더링을 완료한 후 실행되는 메서드이다. 최초 렌더링에서는 호출되지 않는다. 컴포넌트가 업데이트 되었을 시에 DOM을 조작하기 위해 사용한다.
 
@@ -90,7 +90,7 @@ componentDidUpdate(prevProps, prevState, snapshot)
 
 해당 되는 컴포넌트의 DOM 상에서 제거될 때 호출한다.
 
-### \(1\) componentWillUnmount
+### \(1\) componentWillUnmount\(\)
 
 컴포넌트가 DOM에서 제거되기 직전에 호출되는 메서드 이다. 타이머 제거하거나 데이터 구독 해제 등의 목적으로 사용한다.
 
@@ -100,7 +100,7 @@ componentDidUpdate(prevProps, prevState, snapshot)
 
 아래의 메서드들은 자식 컴포넌트를 렌더링 하거나, 자식 컴포넌트 생명주기 메서드를 호출하거나, 또는 자식 컴포넌트 생성자 메서드를 호출하는 과정에서 오류가 발생했을 때 호출된다.
 
-### \(1\).[ static getDrivedStateFromError](https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromerror)
+### \(1\).[ static getDrivedStateFromError\(\)](https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromerror)
 
 하위의 자 컴포넌트에서 오류가 발생했을 때 호출되는 메서드 이다. 이 메서드는 매개변수로 오류를 전달 받고, 갱신된 `state`값을 반드시 반환해야 한다.
 
@@ -108,7 +108,7 @@ componentDidUpdate(prevProps, prevState, snapshot)
 static getDerivedStateFromError(error)
 ```
 
-### \(2\).componentDidCatch
+### \(2\).componentDidCatch\(\)
 
 자손 컴포넌트에서 오류가 발생했을 때 호출되면, 두 개를 매개변수를 전달 받는다.
 
@@ -127,4 +127,12 @@ componentDidCatch(error, info)
 ### Reference <a id="reference"></a>
 
 React.Component [→\(SITE\)](https://ko.reactjs.org/docs/react-component.html)
+
+### Result Code 
+
+React Lifecyle [→\(CodeSandbox\)](https://codesandbox.io/s/react-lifecycle-o8ezm?file=/src/components/Counter.jsx)
+
+
+
+
 
