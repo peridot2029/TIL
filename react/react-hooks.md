@@ -133,7 +133,7 @@ useEffect(() => {
 
 ## 4. useRef\(\)
 
- `useRef()`는 실제 DOM 노드를 참조\(ref\)할 경우 사용하며, 참조 대상의 변경이 필요할 경우 `.current` 속성을 사용한다.
+ `useRef()`는 실제 DOM Node를 **참조\(ref**\)할 경우 사용하며, 참조 대상의 변경이 필요할 경우 `.current` 속성을 사용한다.
 
  `useRef()`를 사용해 실제 DOM Node를 조작한 경우, 컴포넌트가 다시 그려지지 않으므 주의해야된다. \(state, props가 변경되어야 업데이트 된다.\)  
 
@@ -166,6 +166,8 @@ function FileInput(props) {
 }
 ```
 
+## 5. forwardRef\(\)
+
 
 
 ##  
@@ -173,6 +175,8 @@ function FileInput(props) {
 ### Reference <a id="reference"></a>
 
  useEffect 완벽가이드\(번역\) [→\(SITE\)﻿](https://www.daleseo.com/react-router-basic/)
+
+useRef 알아보기 [→\(SITE\)](https://velog.io/@public_danuel/trendy-react-useref)
 
 
 
