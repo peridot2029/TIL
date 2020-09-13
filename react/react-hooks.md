@@ -19,13 +19,11 @@ React functional component 안에서만 사용해야 된다.
 
 `useState()`는 전달 받는 인자로 state의 초기 값을 설정한다.
 
-초기 값은 함수형 컴포넌트가 첫 렌더링 될 때 딱 한 번만 사용된다
+초기 값은 함수형 컴포넌트가 첫 렌더링 될 때 딱 한 번만 사용된다.
 
-{% code title="Syntax" %}
 ```jsx
 const [state, setState] = React.useState(initialValue);
 ```
-{% endcode %}
 
 ```jsx
 import React, { useState } from 'react';
@@ -121,6 +119,8 @@ useEffect(() => {
 ```
 {% endcode %}
 
+### \(4\) useEffct\(\) 정리 <a id="reference"></a>
+
 ### \(4\) .useEffct\(\) 정리 <a id="reference"></a>
 
 1.  화면이 처음 떴을 때만 실행
@@ -141,6 +141,8 @@ useEffect(() => {
 
 
 ## 5. forwardRef\(\)
+
+React.forwardRef\(\)는 전달 받은 ref 속성을 
 
 
 

@@ -55,7 +55,7 @@
 * [📄 React Lifecycle - Updating, Unmouting](react/react-state-and-lifecycle-part02.md)
 * [📄 React Legacy Lifecycle](react/react-legacy-lifecycle.md)
 * [📄 React - Context](react/react-context.md)
-* [📄 React - Controlled Component](react/react-component.md)
+* [📄 React - Controlled Component, Ref](react/react-component.md)
 * [📄 React - List and Key](react/react-list-and-key.md)
 * [📄 React Hooks - useState,useEffect,useRef](react/react-hooks.md)
 * [📄 React Hooks - useMemo, useCallback](react/react-hooks-usememo-usecallback.md)
