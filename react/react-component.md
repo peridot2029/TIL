@@ -250,6 +250,8 @@ class App extends Component {
 
 React Controlled Component [→\(CodeSandbox\)](https://codesandbox.io/s/react-lifecycle-o8ezm?file=/src/components/Counter.jsx)
 
+React Class Component - todoList [→\(CodeSandbox\)](https://codesandbox.io/s/class-component-todolist-kk10m?file=/src/components/TodoList.jsx)
+
 
 
 
