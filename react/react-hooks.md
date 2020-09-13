@@ -121,7 +121,7 @@ useEffect(() => {
 ```
 {% endcode %}
 
-### \(4\) useEffct 정리 <a id="reference"></a>
+### \(4\) .useEffct\(\) 정리 <a id="reference"></a>
 
 1.  화면이 처음 떴을 때만 실행
    * deps\[ \] 빈 배열을 넣을 때, componentDidmount 처럼 실행한다.  
@@ -135,36 +135,10 @@ useEffect(() => {
 
  `useRef()`는 실제 DOM Node를 **참조\(ref**\)할 경우 사용하며, 참조 대상의 변경이 필요할 경우 `.current` 속성을 사용한다.
 
- `useRef()`를 사용해 실제 DOM Node를 조작한 경우, 컴포넌트가 다시 그려지지 않으므 주의해야된다. \(state, props가 변경되어야 업데이트 된다.\)  
+🤚 `useRef()`를 사용해 실제 DOM Node를 조작한 경우, 컴포넌트가 다시 그려지지 않으므 주의해야된다. \(state, props가 변경되어야 업데이트 된다.\)
 
+  
 
-```jsx
-import React, { useRef } from 'react';
-
-function FileInput(props) {
-  // 실제 DOM NODE 참조(Ref)
-  const domFileInputEl = useRef(null);
-  const domButtonEl = useRef(null);
-  // event listener
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log(`선택된 파일: ${domFileInputEl.current.files[0].name}`);
-    domButtonEl.current.setAttribute('disabled', 'disabled');
-    domButtonEl.current.innerText = '전송 됨';
-  }
-  // render
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        업로드:
-        <input type="file" ref={domFileInputEl} />
-      </label>
-      <br />
-      <button type="submit" ref={domButtonEl}>전송</button>
-    </form>
-  );
-}
-```
 
 ## 5. forwardRef\(\)
 
@@ -177,6 +151,10 @@ function FileInput(props) {
  useEffect 완벽가이드\(번역\) [→\(SITE\)﻿](https://www.daleseo.com/react-router-basic/)
 
 useRef 알아보기 [→\(SITE\)](https://velog.io/@public_danuel/trendy-react-useref)
+
+### Result Code
+
+React Class Component, Functional Component ref →\(CodeSandbox\)
 
 
 
