@@ -58,7 +58,7 @@ Git이 추적하고 있는 수정된 파일이 **working directory**에서 **sta
 # working directory에 f1.txt 파일 생성 및 작업
 $ vi f1.txt
 
-# 작업한 f1.txt 파일 내용 출
+# 작업한 f1.txt 파일 내용 출력
 $ cat f1.txt
 source : 1
 
@@ -129,7 +129,7 @@ Date:   Thu Sep 17 15:33:45 2020 +0900
 # working directory에 f2.txt 파일 생성 및 작업
 $ vi f2.txt
 
-# 작업한 f2.txt 파일 내용 출
+# 작업한 f2.txt 파일 내용 출력
 $ cat f2.txt
 source : 2
 
