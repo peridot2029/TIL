@@ -7,8 +7,8 @@
 * [📄 Git - Introduction](git/git-term.md)
 * [📄 Git - init, add, commit, status, log](git/git-init-add-commit-status-log.md)
 * [📄Git - reset, revert](git/git-reset-revert.md)
-* [📄 Git -](git/git-branch.md)
-* [📄Git Merge](git/git-merge.md)
+* [📄 Gistory -  Introduction, git add](git/git-branch.md)
+* [📄 Gistory - objects filename](git/gistory-objects-filename.md)
 
 ## HTML
 

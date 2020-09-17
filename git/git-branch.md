@@ -1,47 +1,79 @@
-# 📄 Git -
+# 📄 Gistory -  Introduction, git add
 
-## 1. Branch 생성 및 조회
+## 1. Gistory -  Introduction and install
 
-`$ git branch <branchname>` : git branch 생성
+* **Gistory는 Git**에 대한 **내부적인 원리를 분석하기 위한 도구**이다.
+* 명령을 내렸을 때, git 내부에서 어떤 일이 일어나는 가를 분석하면서 git이 어떻게 동작하는가를 스스로 공부하는데 도움주기 위해 고안된 툴이다.
 
-`$ git branch`:  옵션 지정하지 않고, branch 명령어를 실행하면 브랜치 목록 전체를 확인 가능하다.
+```bash
+# window, gistory 설치
 
-```text
-$ git branch issue1
+# python 설치 후, cmd 에서 버전 확인
+$ python -V
+Python 3.8.5
 
-$ git branch
+# git bash 관리자 권한으로 실행
+$ pip install gistory
 
-lesson-01
-* master
+# .git 폴더가 있는 저장소로 이동
+$ cd Desktop/gitfth/
+
+# .git 폴더로 이동
+$ cd .git/
+
+# gistory 실행, port 8805
+$ gitsory
 ```
 
-## 2.  Branch 전환
+### \(1\).  git add에 대한 원리
 
-`$ git checkout <branch>`: lesson-01 브랜치 사용하여 작업을 수행하기 위해서, 명시적으로 지정
+먼저 `git add` 에 대한 원리를 알기 전에 새로운 **gitfth2** 폴더를 만든 다음에 Git이 버전 관리하도록 하고 새로운 파일에 대해서 추가를 한다.  **gistory**는 새로운 파일에 대한 생성은 아무런 감지도 않는다.
 
-`$ git checkout -b <branch>`: checkout 명령에 옵션 -b를 넣으면 브랜치 작성 및 체크아웃 한번에 실
+```bash
+$ mkdir gitfth2
 
-```text
-$ git checkout issue1
+$ cd gitfth2/
+
+$ gin init
+
+# 새로운 f1.txt 파일을 생성해도 gistory에는 아무런 변화가 감지되지 않는다.
+$ vi f1.txt
+
+$ cat f1.txt
+a
+
+$ git add f1.txt
 ```
 
-## 3. Branch 병합
+`git add` 명령어를 실행한 결과 **gistory**는 상단에 **./index,** .**/objects** 2개가 상단으로 올라와있다. 
 
-`$ git merge <commit>` : 브랜치 병합은 merge 명령어로 실행, 병합할 커밋 이름을 넣어 실행하면 지정한 커밋 내용이 "HEAD"가 가리키고 있는 브랜치에 넣어진다.
+* **./objects** 
+  *  방금 **add** 한 **f1.txt** 파일과 **내용**이 일치한다.
+* **./index** 
+  *  ./objects 폴더 안에 있는 디렉토리와 그 안의 **파일 이름**과 동일하다.
 
-## 4. Branch 삭제
+![](../.gitbook/assets/.png%20%285%29.png)
 
-`$ git branch -d <branchname>` : 브랜치를 삭제하면 branch 명령에 -d 옵션을 지정하여 실
+새로운 또 다른 파일을 만들고 `git add`를 하면 **gistory** **./index**에서 각각 파일명과 그 파일에 해당하는 내용을 볼 수 있다.
 
-```text
-$ git branch -d issue1
+🤚 여기서 주의할 점은 **f3.txt** 파일은 **f1.txt** 파일의 내용을 복사해서 만들었기 때문에 내용을 같다. 요약하자면 **Git은 파일이 이름이 달라도 내용이 같으면 같은 객체를 가리킨다.**
 
-$ git branch
+```bash
+# 새로운 또 다른 파일 f2.txt 파일을 만들고 add 명령어 실행, gistory 확
+$ vi f2.txt
 
-* master
+$ cat f2.txt
+z
+
+$ git add f2.txt
+
+# f1.txt 파일을 f3.txt로 복
+$ cp f1.txt f3.txt
+
+$ git add f3.txt
 ```
 
-### 
+![](../.gitbook/assets/.png%20%287%29.png)
 
 
 
