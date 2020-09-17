@@ -206,6 +206,27 @@ index 0000000..e2eaf76
 {+source : 1+}
 ```
 
+```bash
+# 버전 관리하는 파일을 수정 후, add 하지 않고도 commit 명령어 옵션에 -am를
+# 사용해서 add와 동시에 커밋 메세지를 남길 수 있다.
+
+# f1.txt 파일 내용을 임의로 수정 후, -am 옵션을 사용해서 커밋 기록 남기
+$ vi f1.txt 
+
+$ cat f1.txt
+source : 3
+4
+
+$ git commit -am"4"
+
+$ git log --oneline
+4a154f6 (HEAD -> master) 4
+8dee3bf Revert "2"
+083f79d 3
+7e7d2cb 2
+9297e6f 1
+```
+
 ### \(4\). git status
 
 Git에 의해 관리되는 파일들의 상태\(status\)이다.

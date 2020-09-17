@@ -7,7 +7,7 @@
 * [📄 Git - Introduction](git/git-term.md)
 * [📄 Git - init, add, commit, status, log](git/git-init-add-commit-status-log.md)
 * [📄Git - reset, revert](git/git-reset-revert.md)
-* [📄 Git Branch](git/git-branch.md)
+* [📄 Git -](git/git-branch.md)
 * [📄Git Merge](git/git-merge.md)
 
 ## HTML
