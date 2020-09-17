@@ -11,7 +11,7 @@
 
 🤚**내 버전을 공유한 이후**에는 즉, 프로젝트에 협업하여 작업할 때,  `git reset`은 함부로 해서는 안된다. 
 
-🤚`git reset`  **공유하기 이전에 내 PC에 있는 버전들만** `git  reset` **할 수 있다.**
+🤚`git reset`  **공유하기 이전에 내 PC에 있는 버전들만** `git  reset`**할 수 있다.**
 
 ```bash
 # 기 f1.txt 파일 내용 출력
@@ -64,7 +64,7 @@ fe872b3 first commit
 $ git reset --hard fe872b3
 HEAD is now at fe872b3 first commit
 
-# git rest --hard 명령을 실행한 후, log  확인
+# git rest --hard 명령을 실행한 후, log 확인
 $ git log --oneline
 fe872b3 (HEAD -> master) first commit
 
@@ -76,20 +76,76 @@ drwxr-xr-x 1 user 197609  0  9월 17 15:12 ../
 drwxr-xr-x 1 user 197609  0  9월 17 17:58 .git/
 -rw-r--r-- 1 user 197609 12  9월 17 17:58 f1.txt
 
-# fe872b3 first commit 버전일 때 f1.txt 소스 코드 출
+# fe872b3 first commit 버전일 때 f1.txt 소스 코드 출력
 $ cat f1.txt
 source : 1
 
-# 내 버전을 다른 사람들과 공유한 이 후에는 git reset 할 수 없다.
-# git reset은 내 PC에 버전이 공유하기 이전에 할 수 있다.
+# fe872b3 first commit 버전명 변경
+$ git commit --amend -m"1"
+[master 9297e6f] 1
+ Date: Thu Sep 17 15:33:45 2020 +0900
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f1.txt
 
 
+# f2.txt 파일 생성 후 작업, add, commit 명령 까지 실행
+$ vi f2.txt
 
+$ cat f2.txt
+source : 2
+
+$ git add f2.txt
+
+$ git commit -m"2"
+
+# f1.txt 파일 내용 수정, add, commit 까지 실행
+$ vi f1.txt
+
+$ cat f1.txt
+source : 3
+
+$ git add f1.txt
+
+$ git commit -m"3"
+
+$ git log --oneline
+083f79d (HEAD -> master) 3
+7e7d2cb 2
+9297e6f 1
 ```
 
 ### \(2\). git revert
 
-`git revert`는 **reset**처럼 특정 버전으로 되돌아갈 수 있지만, 되돌린 버전 이후의 버전들의 **이력 남아 있다**는 점에서 차이가 있다. 
+**reset**은 버전은 되돌리면서, 버전 이후의 히스토리를 모두 삭제하는 반면에 **revert는 버전은 되돌리지만, 이력을 남기면서 모든 히스토리를 유지한다.**
+
+🤚 **revert**는 **reset**과 반대로 좀 더 안전한 방법으로 **롤백\(rollback\)**이력을 남긴다.
+
+```bash
+# reset은 버전은 되돌리면서, 버전 이후의 히스토리를 모두 삭제하는 반면에
+# revert는 버전은 되돌리지만 모든 히스토리를 유지한다.
+
+# revert 커밋 메세지는 어떤 커밋으로 되돌린건지 알 수 있도록, 자동으로
+# 커밋 메세지를 채워준다.
+$ git revert 7e7d2cb
+Removing f2.txt
+[master 8dee3bf] Revert "2"
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 f2.txt
+
+# revert 작업, log 조
+$ git log --oneline
+8dee3bf (HEAD -> master) Revert "2"
+083f79d 3
+7e7d2cb 2
+9297e6f 1
+
+$ ls -al
+total 21
+drwxr-xr-x 1 user 197609  0  9월 17 18:37 ./
+drwxr-xr-x 1 user 197609  0  9월 17 15:12 ../
+drwxr-xr-x 1 user 197609  0  9월 17 18:37 .git/
+-rw-r--r-- 1 user 197609 12  9월 17 18:26 f1.txt
+```
 
 
 

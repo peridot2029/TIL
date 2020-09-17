@@ -1,4 +1,4 @@
-# 📄 HTML Table Element
+# 📄 HTML - Table Element
 
 ## 1. `<table>` Element
 

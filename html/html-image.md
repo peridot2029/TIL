@@ -1,4 +1,4 @@
-# 📄 HTML Image
+# 📄 HTML - Image
 
 ## 1. HTML Image
 

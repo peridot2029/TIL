@@ -1,4 +1,4 @@
-# 📄 HTML Metadata Element
+# 📄 HTML - Metadata Element
 
 ## 1. `<head>` Element 
 
