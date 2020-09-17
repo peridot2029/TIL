@@ -5,6 +5,8 @@
 ## Git
 
 * [📄 Git Term](git/git-term.md)
+* [📄 Git - init, add, commit, status, log](git/git-init-add-commit-status-log.md)
+* [📄Git - reset, revert](git/git-reset-revert.md)
 * [📄 Git Branch](git/git-branch.md)
 * [📄Git Merge](git/git-merge.md)
 
@@ -74,8 +76,4 @@
 * [📄 TypeScript - Interface, function](typescript/typescript-interface.md)
 * [📄 TypeScript - Generics](typescript/typescript-generics.md)
 * [📄 TypeScript - Defining Props in React Function Component with Typescript](typescript/typescript-defining-props-in-react-function-component-with-typescript.md)
-
----
-
-* [📄Linux  - vi, vim](linux-vi-vim.md)
 
