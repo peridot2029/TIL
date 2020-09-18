@@ -10,8 +10,6 @@ objects 파일명의 원리는 내용을 기반으로 파일 이름이 결정되
 * `hi` 라는 내용을 쳐서 **hash** 버튼을 누르게 되면 밑에 입력된 어떠한 숫자들이 나오는데 , 그 원리는 입력된 문자는 **hash** 라는 메커니즘을 통과하면 **어떤 숫자들이 생성**된다.
 * 즉, **Git**은 **sha1** 이라는 **hash** 알고리즘을 통과해서 그 파일의 이름을 도출한 다음\(임의의 hash 값들\), 앞의 **두 글자를 따서 디렉토리**를 만들고, **나머지 hash 코드에 해당하는 파일에 저장** 되게 한다.
 
-
-
 ### \(2\).  git commit의 원리
 
 [Gistory - Introduction, git add](https://app.gitbook.com/@peridot2029/s/til/~/drafts/-MHVQf9-8KYC2UpVXy4t/git/git-branch) 글에서   `git add`까지 했었다. 
