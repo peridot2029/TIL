@@ -55,7 +55,7 @@ $ git add f1.txt
 
 새로운 또 다른 파일을 만들고 `git add`를 하면 **gistory** **./index**에서 각각 파일명과 그 파일에 해당하는 내용을 볼 수 있다.
 
-🤚 여기서 주의할 점은 **f3.txt** 파일은 **f1.txt** 파일의 **내용을 복사**해서 만들었기 때문에 내용 같다. 요약하자면 **Git은 파일이 이름이 달라도 내용이 같으면 같은 객체를\(  bject\)를  가리킨다.**
+🤚 여기서 주의할 점은 **f3.txt** 파일은 **f1.txt** 파일의 **내용을 복사**해서 만들었기 때문에 내용 같다. 요약하자면 **Git은 파일이 이름이 달라도 내용이 같으면 같은 객체 \(object\)를  가리킨다.**
 
 ```bash
 # 새로운 또 다른 파일 f2.txt 파일을 만들고 add 명령어 실행, gistory 확
@@ -66,13 +66,13 @@ z
 
 $ git add f2.txt
 
-# f1.txt 파일을 f3.txt로 복
+# f1.txt 파일을 f3.txt로 복사
 $ cp f1.txt f3.txt
 
 $ git add f3.txt
 ```
 
-![](../.gitbook/assets/.png%20%287%29.png)
+![](../.gitbook/assets/.png%20%288%29.png)
 
 
 
