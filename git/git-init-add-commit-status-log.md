@@ -76,10 +76,9 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 # git add 명령어를 실해서 git 추적할 수 있도록 한다.
-$ git add f1.txtgit
+$ git add f1.txt
 warning: LF will be replaced by CRLF in f1.txt.
 The file will have its original line endings in your working directory
-
 
 # git add 명령을 실행 후에 상태를 확인하면, 아까와는 다르게 초록색 문장으로
 # new file: f1.txt로 새로운 파일 추가되어 추적을 시작했다는 것을 확인할 수 있다.
