@@ -83,17 +83,41 @@ $ git commit -m"2"
 $ git log --oneline
 7a61f7a (HEAD -> master) 2
 b049908 1
-
-
-
-
 ```
 
 ![f2.txt &#xD30C;&#xC77C; &#xB0B4;&#xC6A9;&#xC744; &#xBC14;&#xAFBC; &#xD6C4;&#xC5D0; commit&#xB97C; &#xD558;&#xBA74; &#xC544;&#xAE4C;&#xC640;&#xB294; &#xC5C6;&#xB358; parent &#xB098;&#xD0C0;&#xB09C;&#xB2E4;.](../.gitbook/assets/2020-09-18-213502.png)
 
 * 커밋에는 두 가지 중요한 정보가 있다.
+
   * 이전 커밋이 누구인지\(**parent** 값이 존재\)
   * 그 커밋이 일어난 시점에 작업이 디렉토리 파일의 이름과 이름이 담고 있는 내용 사이의 정보가 **tree**에 담긴다.
+
+* 현재 디렉토리에서 새로운 폴더를 만들고, 현재 디렉토리에 있는 파일 복사한다.
+* 그런 다음에 새로운 폴더에 있는 파일을 `git add` 를 한 다음에 **gistory**를 확인하면 **./index** 안에 **d1/f1.txt 가** 생성된 것을 확인 할 수 있다.
+* `git commit`를 하고, **gistory**를 확인하면 **parent** 정보가 확인 가능하다.
+* 각 **parent**에는 **tree**를 갖고 있어서 해당 시점의 정보가 담겨 있는 걸 확인 할 수 있다.
+
+```bash
+# 현재 디렉토리에 d1 폴더 생성
+$ mkdir d1
+
+# d1 폴더에 현재 디렉토리에 있는 f1.txt 파일을 복사
+$ cp f1.txt d1/f1.txt
+
+# 상태 조회
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        d1/
+
+# d1 디렉토리에 있는 f1.txt 파일 add
+$ git add d1/f1.txt
+
+$ git commit -m"3"
+```
+
+![ &#xAC01;&#xAC01; commit&#xB4E4;&#xC740; tree&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xB2E4;.](../.gitbook/assets/2020-09-18-225024.png)
 
 ### \(3\). objects 파일 영역
 
