@@ -51,7 +51,7 @@ $ git add f1.txt
 * **./index** 
   *  **./objects** 폴더 안에 있는 디렉토리와 그 안의 **파일 이름**과 동일하다.
 
-![](../.gitbook/assets/.png%20%285%29.png)
+![add &#xD55C; &#xB2E4;&#xC74C;&#xC5D0; gistory &#xD655;&#xC778;&#xD558;&#xBA74; ./index, ./objects 2&#xAC1C;&#xAC00; &#xC0C1;&#xB2E8;&#xC5D0; &#xC788;&#xB2E4;.](../.gitbook/assets/.png%20%285%29.png)
 
 새로운 또 다른 파일을 만들고 `git add`를 하면 **gistory** **./index**에서 각각 파일명과 그 파일에 해당하는 내용을 볼 수 있다.
 
@@ -72,7 +72,7 @@ $ cp f1.txt f3.txt
 $ git add f3.txt
 ```
 
-![](../.gitbook/assets/.png%20%288%29.png)
+![git &#xB0B4;&#xC6A9;&#xC774; &#xAC19;&#xC73C;&#xBA74; &#xAC19;&#xC740; &#xAC1D;&#xCCB4;&#xB97C; &#xAC00;&#xB9AC;&#xD0A8;&#xB2E4;.](../.gitbook/assets/.png%20%288%29.png)
 
 
 
