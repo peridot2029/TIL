@@ -4,7 +4,7 @@
 
 Git은 **버전관리를 위한 프로그램 \(Version Control System\)** 이다.
 
-## 2. Git  영역
+## 2. Git  영역 및 파일 상
 
 Git를 사용하기 위해서는 어떻게 구성되어있는지 영역에 대해서 이해를 해야 한다.
 
@@ -18,8 +18,19 @@ Git를 사용하기 위해서는 어떻게 구성되어있는지 영역에 대�
 
 ### \(2\). R**epository**
 
-* **Local repository** - 저장소를 의미 한다.  내 PC에 존재하는 저장소 
-* **Remote repository - Github, Gitlab** 같은 원격 저장소 - **remo**
+* **Local repository** 
+  * 저장소를 의미 한다.  내 PC에 존재하는 저장소 
+* **Remote repository** 
+  * **Github, Gitlab** 같은 원격 저장소 
+
+### **\(3\). Git이 관리하는 파일들에 대한 상태**
+
+*  **Committed**
+  * 데이터가 안전하게 커밋 되었다는 상
+*  **Modified**
+  * 수정한 파일을 아직 커밋 하지 않은 상태 
+*  **Staged**
+  * 헌재 수정한 파일을 곧 커밋할 것이라는 표시한 상태
 
 ## 3. Git Flow
 

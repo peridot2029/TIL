@@ -9,6 +9,7 @@
 * [📄Git - reset, revert](git/git-reset-revert.md)
 * [📄 Gistory -  Introduction, git add](git/git-branch.md)
 * [📄 Gistory - objects filename, commit](git/gistory-objects-filename.md)
+* [📄 Gistory - git status](git/gistory-git-status.md)
 
 ## HTML
 

@@ -58,7 +58,7 @@ $ git add f1.txt
 🤚 여기서 주의할 점은 **f3.txt** 파일은 **f1.txt** 파일의 **내용을 복사**해서 만들었기 때문에 내용 같다. 요약하자면 **Git은 파일이 이름이 달라도 내용이 같으면 같은 객체 \(object\)를  가리킨다.**
 
 ```bash
-# 새로운 또 다른 파일 f2.txt 파일을 만들고 add 명령어 실행, gistory 확
+# 새로운 또 다른 파일 f2.txt 파일을 만들고 add 명령어 실행, gistory 확인
 $ vi f2.txt
 
 $ cat f2.txt
