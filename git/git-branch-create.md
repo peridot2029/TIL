@@ -59,7 +59,7 @@ $ git branch
 # master 브랜치에서 exp 브랜치로 이동
 $ git checkout exp
 
-# 현재 exp 브랜치를 사용하고 있다고 확
+# 현재 exp 브랜치를 사용하고 있다고 확인
 $ git branch
 * exp
   master
