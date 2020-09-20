@@ -45,6 +45,8 @@
   * **develop 브랜치**에서 문제가 되는 부분을 수정하여 배포 가능한 버전을 만들기에는 시간이 너무 많이 소요 되고, 안정성을 보장하기도 어려우므로 **바로 배포 가능한 master 브랜치에서 직접 브랜치를 만들어서 필요한 부분만을 수정한 후 다시  master 브랜치에 병합하여 이를 배포**해야 한다.
   * **이때 hoxfit 브랜치만 master 에서 바로 딸 수 있다.**
 
+\*\*\*\*
+
 ### Reference <a id="reference"></a>
 
 Git Branching Workflows [→\(SITE\)](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
