@@ -12,9 +12,12 @@ objects 파일명의 원리는 내용을 기반으로 파일 이름이 결정되
 
 ### \(2\).  git commit의 원리
 
-[Gistory - Introduction, git add](https://app.gitbook.com/@peridot2029/s/til/~/drafts/-MHVQf9-8KYC2UpVXy4t/git/git-branch) 글에서   `git add`까지 했었다. 
+🔎 [Gistory - Introduction, git add](https://app.gitbook.com/@peridot2029/s/til/~/drafts/-MHVQf9-8KYC2UpVXy4t/git/git-branch) 한 파일들을 `git commit` 를 실행 → 커에 대한 정보 및 버전은 object 디렉토리 저장된다.
 
-이제 `git commit`을 하고, 커밋 메세지를 작성 후 **gistory** 에 흐름을 확인. 
+* Git은`git commit`명령을 하게 되면 **그 커밋에 대한 정보 및 버전이 objects 파일로 만들어져서 디렉토리에 저장**이 된다
+* 즉, 이를 통해서 알게 된 것은 **commit**도 내부적으로 **객체\(object\)**이다.
+* 생성된 **objects** 에는 **그 커밋에 대한 정보, tree** 가 있다.
+  * **tree**에는 **현재 커밋한 파일명** 그리고 **그 파일에 대한 링크가** 연결되어 있다.
 
 ```bash
 # git status를 하면 생성한 f1.txt, f2.txt, f3.txt 파일 나온다.
@@ -42,15 +45,12 @@ $ git log --oneline
 b049908 (HEAD -> master) 1
 ```
 
-* `git commit`를 하게되면 그 커밋에 대한 정보 및 버전은 **objects** 디렉토리로 저장이 된다.
-* 생성된 **./objects** 에는 **커밋에 대한 정보,  tree**가 있다. 
-* **tree**는 **현재 커밋한 파일명**과 **그 파일들에 대한 링크**가 있다.
-* 🤚 **commit**도 **내부적으로 객체**이다. 
+![git add &#x2192; git commit&#xC744; &#xD558;&#xBA74; &#xADF8; &#xCEE4;&#xBC0B;&#xC5D0; &#xB300;&#xD55C; &#xC815;&#xBCF4;&#xAC00; object &#xD30C;&#xC77C;&#xB85C; &#xC0DD;&#xC131;  ](../.gitbook/assets/2020-09-18-212741.png)
 
-![add &#x2192; commit&#xC744; &#xD558;&#xBA74; &#xADF8; &#xCEE4;&#xBC0B;&#xC5D0; &#xB300;&#xD55C; &#xC815;&#xBCF4;&#xAC00; object&#xB85C; &#xC800;&#xC7A5;&#xB41C;&#xB2E4;.  ](../.gitbook/assets/2020-09-18-212741.png)
+🔎 **f2.txt** 파일 내용 변경 후 `git add` 를 실행 →  index 에서  변경된 f2.txt 내용이 확인 가능하다.
 
-*  **f2.txt** 파일 내용을 바꾼 후,`git add` 하고, **gistory**를 확인하면 **./index** 파일에 .**/object** 에서 변경된 **f2.txt** 내용이 확인 가능하다.
-* `git commit`한 후에 **gistory**를 확인해보면 **커밋이 담겨 있는 객체 생성된 것을 확인** 할 수 있다.
+🔎 `add`한 **f2.txt**  파일을 `git commit` 를 실행 →  커밋이 담겨 있는 객체가 생성된 것을 확인 가능하다.
+
 * 위에서 사진을 보면 아까와 없던 `parent`가 생성되고, 누르면 **해당 커밋의 이전 내용을 확인** 할 수 있다.
 * **tree**는 2개의 내용이 존재한다. **현재와 이전 커밋의 tree 값**이 서로 다르다.
   * 각각의 버전마다 **서로 다른 tree** 가리킨다. 해당 **tree**에는 파일의 이름과 내용이 각각 링크 되어있다.
@@ -58,7 +58,7 @@ b049908 (HEAD -> master) 1
   * **parent**
     *  이전 커밋이 누구인지, **parent** 값이 존재한다.
   * **tree** 
-    * 그 커밋이 일어난 시점에 작업 디렉토리 파일의 이름과 이름이 담고 있는 내용 사이의 정보가 **tree**에 담긴다.
+    * 그 커밋이 일어난 시점에 작업 디렉토리 파일의 이름과 이름이 담고 있는 내용 사이의 정보가 **tree**에 담긴다
 
 ```bash
 # f2.txt 파일 내용 변경
@@ -83,12 +83,13 @@ $ git log --oneline
 b049908 1
 ```
 
-![f2.txt &#xD30C;&#xC77C; &#xB0B4;&#xC6A9;&#xC744; &#xBC14;&#xAFBC; &#xD6C4;&#xC5D0; commit&#xB97C; &#xD558;&#xBA74; &#xC544;&#xAE4C;&#xC640;&#xB294; &#xC5C6;&#xB358; parent &#xB098;&#xD0C0;&#xB09C;&#xB2E4;.](../.gitbook/assets/2020-09-18-213502.png)
+![f2.txt &#xD30C;&#xC77C; &#xB0B4;&#xC6A9; &#xC218;&#xC815; &#xD6C4;&#xC5D0; add &#x2192; git commit &#xBA85;&#xB839;&#xC744; &#xC2E4;&#xD589; ](../.gitbook/assets/2020-09-18-213502.png)
 
-* 현재 디렉토리에서 새로운 폴더를 만들고, 현재 디렉토리에 있는 파일 복사한다.
-* 그런 다음에 새로운 폴더에 있는 파일을 `git add`를 한 다음에 **gistory**를 확인하면 **./index** 안에 **d1/f1.txt** 가 생성된 것을 확인 할 수 있다.
-* `git commit`를 하고, **gistory**를 확인하면 **parent** 정보가 확인 가능하다.
-* 각 **parent**에는 **tree**를 갖고 있어서 해당 시점의 정보가 담겨 있는 걸 확인 할 수 있다.
+🔎 현재 **gitfth2** 폴더 내에서 새로운 하위 폴더 **d1** 만든 다음 → 현재 **gitfth2** 폴더에 있는 **f1.txt** 파일을 **d1** 폴더 안에 복사한다.
+
+* **d1/f1.txt** 파일을 `git add`를 한 다음에 **index**를 확인하면 생성된 **d1/f1.txt**를 확인 할 수 있다.
+* `git commit`를 하고 commit에 대한 정보를 확인하면 **이전 커밋\(parent\)** 정보를 확인 할 수 있다.
+* 각각의 **이전 커밋**에는 **tree**를 갖고 있어서 해당 시점의 정보가 담겨 있는 걸 확인 할 수 있다.
 
 ```bash
 # 현재 디렉토리에 d1 폴더 생성
@@ -110,7 +111,7 @@ $ git add d1/f1.txt
 $ git commit -m"3"
 ```
 
-![ &#xAC01;&#xAC01; commit&#xB4E4;&#xC740; tree&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xB2E4;.](../.gitbook/assets/2020-09-18-225024.png)
+![git commit &#x2192; &#xAC01;&#xAC01;&#xC758; commit&#xC740; tree&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xB2E4;.](../.gitbook/assets/2020-09-18-225024.png)
 
 ### \(3\). objects 파일 영역
 
