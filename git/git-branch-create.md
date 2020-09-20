@@ -27,7 +27,7 @@ $ git add f1.txt
 # commit 메세지 남기
 $ git commit -m"1"
 
-# f1.txt 파일 내용 변
+# f1.txt 파일 내용 변경
 $ vi f1.txt
 a
 b
@@ -36,7 +36,7 @@ b
 # git은 한 번도 add 하지 않은 파일은 -am 옵션을 사용할 수 없다.
 $ git commit -am"2"
 
-# log 확
+# log 확인
 $ git log --oneline
 6191eef (HEAD -> exp, master) 2
 3950edc 1
