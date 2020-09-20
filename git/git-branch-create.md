@@ -4,6 +4,8 @@
 
 ### \(1\). Git - Branch 생성
 
+🔎 새로운 **gitfth** 폴더를 생성 후에 작업
+
 ```bash
 # 새로운 gitfth - working directory 생성
 $ mkdir gitfth
@@ -45,7 +47,7 @@ $ git log --oneline
 $ git branch
 * master
 
-# exp 이름을 가진 branch 생성
+# exp(experiment) 이름을 가진 branch 생성
 $ git branch exp
 
 # exp, master 브랜치 두 개 존재, 현재 사용하는 브랜치에 * 표시 된다.
@@ -99,15 +101,43 @@ $ git log --oneline
 6191eef (HEAD -> master) 2
 3950edc 1
 
+# 즉, f1.txt 파일은 현재 어떤 브랜치의 속해 있는지 따라서 파일의 내용이 달라진다. 
+$ cat f1.txt
+a
+b
 
+# master 브랜치에서 exp로 이동
+$ git checkout exp
 
+# 새로운 f2.txt 파일을 생성 한 다음에 add, commit 까지 실
+$ vi f2.txt
 
+$ cat f2.txt
+a
 
+$ git add f2.txt
 
+$ git commit -m"4"
 
-
-
-
-
+# exp 브랜치에서 다시 master 브랜치로 이동
+# exp 브랜치에서 새롭게 생성한 f2.txt 파일은 사라진다.
+$ git checkout master
 ```
+
+### \(2\). Git - Branch 명령어 정리
+
+* **git branch**
+  * 브랜치의 목록을 볼 때 사용한다. 현재 사용하고 있는 브랜치는 앞에 \* 표시가 되어 있다.
+* **git branch &lt;name&gt;**
+  * 새로운 브랜치 생성
+  * 새로운 브랜치를 생성하면 생성한 브랜치는 현재 속해 있는 브랜치의 상태를 그대로 복사한다.
+* **git branch -d**
+  * 브랜치를 삭제 할 때 사용한다.
+* **git branch -D**
+  * 병합 \(merge\)하지 않은 브랜치를 강제 삭제할 때 사용한다.
+* **git checkout &lt;name&gt;**
+  * 현재 브랜치에서 다른 브랜치로 이동 할 때 사용한다.
+* **git checkout -b &lt;name&gt;**
+
+  * 새로운 브랜치를 생성하고, 이동까지 할 때 사용한다.
 
