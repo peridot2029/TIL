@@ -41,8 +41,6 @@ $ git log --oneline
 6191eef (HEAD -> exp, master) 2
 3950edc 1
 
-
-
 # 현재 branch에 대한 정보를 보여준다.
 $ git branch
 * master
@@ -54,7 +52,6 @@ $ git branch exp
 $ git branch
   exp
 * master
-
 
 # master 브랜치에서 exp 브랜치로 이동
 $ git checkout exp
@@ -72,7 +69,7 @@ drwxr-xr-x 1 user 197609 0  9월 20 19:29 ../
 drwxr-xr-x 1 user 197609 0  9월 20 20:33 .git/
 -rw-r--r-- 1 user 197609 4  9월 20 19:48 f1.txt
 
-# log 확인, master 브랜치와 exp 브랜치는 같은 상태임을 확
+# log 확인, master 브랜치와 exp 브랜치는 같은 상태임을 확인
 # 즉, 브랜치를 생성하면 생성한 브랜치는 현재 속해 있는 브랜치의 상태를 그대로 복사한다.
 $ git log --oneline
 6191eef (HEAD -> exp, master) 2
@@ -127,17 +124,16 @@ $ git checkout master
 ### \(2\). Git - Branch 명령어 정리
 
 * **git branch**
-  * 브랜치의 목록을 볼 때 사용한다. 현재 사용하고 있는 브랜치는 앞에 \* 표시가 되어 있다.
+  * **브랜치의 목록**을 볼 때 사용한다. 현재 사용하고 있는 브랜치는 앞에 \* 표시가 되어 있다.
 * **git branch &lt;name&gt;**
-  * 새로운 브랜치 생성
+  * **새로운 브랜치 생성**
   * 새로운 브랜치를 생성하면 생성한 브랜치는 현재 속해 있는 브랜치의 상태를 그대로 복사한다.
 * **git branch -d**
-  * 브랜치를 삭제 할 때 사용한다.
+  * **브랜치를 삭제** 할 때 사용한다.
 * **git branch -D**
-  * 병합 \(merge\)하지 않은 브랜치를 강제 삭제할 때 사용한다.
+  * **병합 \(merge\)하지 않은 브랜치를 강제 삭제**할 때 사용한다.
 * **git checkout &lt;name&gt;**
-  * 현재 브랜치에서 다른 브랜치로 이동 할 때 사용한다.
+  * **현재 브랜치에서 다른 브랜치로 이동** 할 때 사용한다.
 * **git checkout -b &lt;name&gt;**
-
-  * 새로운 브랜치를 생성하고, 이동까지 할 때 사용한다.
+  * **새로운 브랜치를 생성하고, 이동**까지 할 때 사용한다.
 
