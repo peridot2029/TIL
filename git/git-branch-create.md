@@ -90,7 +90,7 @@ edd1c65 (HEAD -> exp) 3
 6191eef (master) 2
 3950edc 1
 
-# exp 브랜치에서 master 브랜치로 이
+# exp 브랜치에서 master 브랜치로 이동
 $ git checkout master
 
 # master 브랜치의 log 확
@@ -106,7 +106,7 @@ b
 # master 브랜치에서 exp로 이동
 $ git checkout exp
 
-# 새로운 f2.txt 파일을 생성 한 다음에 add, commit 까지 실
+# 새로운 f2.txt 파일을 생성 한 다음에 add, commit 까지 실행
 $ vi f2.txt
 
 $ cat f2.txt
@@ -117,8 +117,15 @@ $ git add f2.txt
 $ git commit -m"4"
 
 # exp 브랜치에서 다시 master 브랜치로 이동
-# exp 브랜치에서 새롭게 생성한 f2.txt 파일은 사라진다.
 $ git checkout master
+
+# exp 브랜치에 새롭게 생성한 f2.txt 파일은 사라진 것을 확인할 수 있다.
+$ ls -al
+total 21
+drwxr-xr-x 1 user 197609 0  9월 22 16:46 ./
+drwxr-xr-x 1 user 197609 0  9월 22 14:24 ../
+drwxr-xr-x 1 user 197609 0  9월 22 16:46 .git/
+-rw-r--r-- 1 user 197609 6  9월 22 16:46 f1.txt
 ```
 
 ### \(2\). Git - Branch 명령어 정리
