@@ -61,7 +61,7 @@ $ git branch
 * exp
   master
 
-# 현재 디렉토리에 있는 파일들 출
+# 현재 디렉토리에 있는 파일들 출력
 $ ls -al
 total 21
 drwxr-xr-x 1 user 197609 0  9월 20 19:48 ./
@@ -84,7 +84,7 @@ c
 
 $ git commit -am"3"
 
-# exp 브랜치에서 f1.txt 파일 변경 하고, 커밋한 다음에 log 확
+# exp 브랜치에서 f1.txt 파일 변경 하고, 커밋한 다음에 log 확인
 $ git log --oneline
 edd1c65 (HEAD -> exp) 3
 6191eef (master) 2
