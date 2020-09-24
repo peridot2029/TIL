@@ -237,6 +237,7 @@ $ git log --branches --decorate --graph
   Date:   Sun Sep 20 19:48:04 2020 +0900
 
       1
+      
 $ git log --branches --decorate --graph
 * commit 7843a376ce9e814bbace31dd841c529551514e8b (HEAD -> master)
 | Author: peridot2029 <peridot2029@gmail.com>
@@ -287,7 +288,8 @@ commit edd1c655c05acefa19306e70e2fa4129e4f191c3
 Author: peridot2029 <peridot2029@gmail.com>
 Date:   Sun Sep 20 20:45:07 2020 +0900
 
-    3      
+    3
+          
 ```
 
 ### \(2\). Git - Branch 명령어 정리
