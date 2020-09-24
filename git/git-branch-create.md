@@ -32,7 +32,7 @@ $ vi f1.txt
 a
 b
 
-# 변경된 f1.txt 파일 add, commit 메세지 동시에 하기 위한 -am 옵
+# 변경된 f1.txt 파일 add, commit 메세지 동시에 하기 위한 -am 옵션
 # git은 한 번도 add 하지 않은 파일은 -am 옵션을 사용할 수 없다.
 $ git commit -am"2"
 
