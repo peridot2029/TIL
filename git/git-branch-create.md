@@ -132,15 +132,15 @@ drwxr-xr-x 1 user 197609 0  9월 22 16:46 .git/
 
 * exp 브랜치에 git log 명령을 하면 현재 속해 있는 exp 브랜치의 정보만 확인 할 수 있다.
   * git log
-    * 현재 브랜치에 로그 커밋만 확인 할수 있다.
+    * **현재 브랜치에 로그 커밋만** 확인 할수 있다.
   * git log --branches
-    * 모든 브랜치들의 커밋 정보를 확인 할 수 있다.
+    * **모든 브랜치들의 커밋 정보**를 확인 할 수 있다.
   * git log --branches --decorate
-    * 모든 브랜치의 브랜치명을 확인 할 수 있다.
+    * **모든 브랜치의 브랜치명**을 확인 할 수 있다.
   * git log --branches --decorate --graph
-    * 로그의 왼쪽에 그래프가 출력되는 걸 확인 할 수 있다.
+    * **로그의 왼쪽에 그래프가 출력**되는 걸 확인 할 수 있다.
   * git log --branches --decorate --graph --oneline
-    * 로그의 왼쪽 그래프가 한 줄로 간결하게 출력되는 걸 확인 할 수 있다.
+    * **로그의 왼쪽 그래프가 한 줄로 간결하게 출력**되는 걸 확인 할 수 있다.
   * git log branch1..branch2
     * branch1 - 현재 브랜치, branch2 - 비교할 다른 브랜치 
     * 즉, **현재 브랜치는 없고 비교할 브랜치에 있는 것들을 보여**준다.
@@ -195,7 +195,6 @@ $ git log --branches --decorate --graph
 * commit 3950edcd94c1a436cb70cff689ee3306e3bc9293
   Author: peridot2029 <peridot2029@gmail.com>
   Date:   Sun Sep 20 19:48:04 2020 +0900
-
 
 $ git checkout master
 
@@ -288,9 +287,7 @@ commit edd1c655c05acefa19306e70e2fa4129e4f191c3
 Author: peridot2029 <peridot2029@gmail.com>
 Date:   Sun Sep 20 20:45:07 2020 +0900
 
-    3
-      
-
+    3      
 ```
 
 ### \(2\). Git - Branch 명령어 정리
