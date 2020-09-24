@@ -12,7 +12,7 @@ $ mkdir gitfth
 
 $ cd gitfth/
 
-# git 버전 관리를 하기 위한 초기
+# git 버전 관리를 하기 위한 초기화
 $ git init
 
 # f1.txt 파일 생
@@ -143,7 +143,7 @@ drwxr-xr-x 1 user 197609 0  9월 22 16:46 .git/
     * 로그의 왼쪽 그래프가 한 줄로 간결하게 출력되는 걸 확인 할 수 있다.
   * git log branch1..branch2
     * branch1 - 현재 브랜치, branch2 - 비교할 다른 브랜치 
-    * 즉, 현재 브랜치는 없고 비교할 브랜치에 있는 것들을 보여준다.
+    * 즉, **현재 브랜치는 없고 비교할 브랜치에 있는 것들을 보여**준다.
 
 ```bash
 # exp 브랜치에서 모든 브랜치의 커밋 정보를 확
@@ -172,7 +172,7 @@ Date:   Sun Sep 20 19:48:04 2020 +0900
 
     1
     
-# git 로그 그래   
+# git 로그 그래프
 $ git log --branches --decorate --graph
 * commit 12afe1df595090637a83590d295b0866cf035add (HEAD -> exp)
 | Author: peridot2029 <peridot2029@gmail.com>
