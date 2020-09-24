@@ -146,7 +146,7 @@ drwxr-xr-x 1 user 197609 0  9월 22 16:46 .git/
     * 즉, **현재 브랜치는 없고 비교할 브랜치에 있는 것들을 보여**준다.
 
 ```bash
-# exp 브랜치에서 모든 브랜치의 커밋 정보를 확
+# exp 브랜치에서 모든 브랜치의 커밋 정보를 확인
 $ git log --branches --decorate
 commit 12afe1df595090637a83590d295b0866cf035add (HEAD -> exp)
 Author: peridot2029 <peridot2029@gmail.com>
