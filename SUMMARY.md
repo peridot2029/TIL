@@ -12,6 +12,7 @@
 * [📄 Gistory - git status](git/gistory-git-status.md)
 * [📄 Git - Branch Introduction](git/git-branch-introduction.md)
 * [📄 Git - Branch Create](git/git-branch-create.md)
+* [📄 Git - Branch Merge](git/git-branch-merge.md)
 
 ## HTML
 

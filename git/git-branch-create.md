@@ -159,6 +159,10 @@ drwxr-xr-x 1 user 197609 0  9월 22 16:46 .git/
 * git log branch1..branch2
   * branch1 - 현재 브랜치, branch2 - 비교할 다른 브랜치 
   * 즉, **현재 브랜치는 없고, 비교할 브랜치에 있는 것들을 보여**준다.
+* git log -p branch1..branch2
+  * **커밋 로그 단위로 무엇이 바뀌었는지** 보여준다.
+* git diff branch1..branch2
+  * **branch1과branch2의 차이**를 보여준다.
 
 ```bash
 # exp 브랜치에서 모든 브랜치의 커밋 정보를 확인
@@ -280,18 +284,43 @@ Date:   Sun Sep 20 20:45:07 2020 +0900
 
     3
 
-# 반대로 exp 브랜치에는 없, master 브랜치에 있는 걸 확
+# 반대로 exp 브랜치에는 없, master 브랜치에 있는 걸 확인
 $ git log exp..master
 commit 7843a376ce9e814bbace31dd841c529551514e8b (HEAD -> master)
 Author: peridot2029 <peridot2029@gmail.com>
 Date:   Tue Sep 22 18:05:54 2020 +0900
 
     5
-
-        
-
-
     
-    
+# 각각의 버전별로 소스 코드 확인    
+$ git log -p exp..master
+commit 7843a376ce9e814bbace31dd841c529551514e8b (HEAD -> master)
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Tue Sep 22 18:05:54 2020 +0900
+
+    5
+
+diff --git a/f3.txt b/f3.txt
+new file mode 100644
+index 0000000..7898192
+--- /dev/null
++++ b/f3.txt
+@@ -0,0 +1 @@
++a
+
+# 각각의 브랜치들의 현재 상태를 비교, master 브랜치와 exp 브랜치 비교
+$ git diff master..exp
+diff --git a/f1.txt b/f1.txt
+index 422c2b7..de98044 100644
+--- a/f1.txt
++++ b/f1.txt
+@@ -1,2 +1,3 @@
+ a
+ b
++c
+diff --git a/f3.txt b/f2.txt
+similarity index 100%
+rename from f3.txt
+rename to f2.txt                    
 ```
 
