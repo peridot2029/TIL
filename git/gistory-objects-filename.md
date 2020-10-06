@@ -12,7 +12,7 @@ objects 파일명의 원리는 내용을 기반으로 파일 이름이 결정되
 
 ### \(2\).  git commit의 원리
 
-🔎 [Gistory - Introduction, git add](https://app.gitbook.com/@peridot2029/s/til/~/drafts/-MHVQf9-8KYC2UpVXy4t/git/git-branch) 한 파일들을 `git commit` 를 실행 → 커에 대한 정보 및 버전은 object 디렉토리 저장된다.
+🔎 [Gistory - Introduction, git add](https://app.gitbook.com/@peridot2029/s/til/~/drafts/-MHVQf9-8KYC2UpVXy4t/git/git-branch) 한 파일들을 `git commit` 를 실행 → 커밋에 대한 정보 및 버전은 object 디렉토리 저장된다.
 
 * Git은`git commit`명령을 하게 되면 **그 커밋에 대한 정보 및 버전이 objects 파일로 만들어져서 디렉토리에 저장**이 된다
 * 즉, 이를 통해서 알게 된 것은 **commit**도 내부적으로 **객체\(object\)**이다.
