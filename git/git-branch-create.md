@@ -284,6 +284,157 @@ Date:   Sun Sep 20 20:45:07 2020 +0900
 
     3
 
+# 반대로 exp 브랜치에는 없, master 브랜치에 있는 걸 확
+$ git log exp..master
+commit 7843a376ce9e814bbace31dd841c529551514e8b (HEAD -> master)
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Tue Sep 22 18:05:54 2020 +0900
+
+    5
+    
+# 소스 코드 까지 확인    
+$ git log -p exp..master
+commit 7843a376ce9e814bbace31dd841c529551514e8b (HEAD -> master)
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Tue Sep 22 18:05:54 2020 +0900
+
+    5
+
+diff --git a/f3.txt b/f3.txt
+new file mode 100644
+index 0000000..7898192
+--- /dev/null
++++ b/f3.txt
+@@ -0,0 +1 @@
++a
+
+        
+
+
+    
+    
+```
+
+```bash
+# exp 브랜치에서 모든 브랜치의 커밋 정보를 확인
+$ git log --branches --decorate
+commit 12afe1df595090637a83590d295b0866cf035add (HEAD -> exp)
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Tue Sep 22 16:46:15 2020 +0900
+
+    4
+
+commit edd1c655c05acefa19306e70e2fa4129e4f191c3
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Sun Sep 20 20:45:07 2020 +0900
+
+    3
+
+commit 6191eef14f561e9bc10cbeb9d3fb4d52cd82310b (master)
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Sun Sep 20 19:48:41 2020 +0900
+
+    2
+
+commit 3950edcd94c1a436cb70cff689ee3306e3bc9293
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Sun Sep 20 19:48:04 2020 +0900
+
+    1
+    
+# git 로그 그래프
+$ git log --branches --decorate --graph
+* commit 12afe1df595090637a83590d295b0866cf035add (HEAD -> exp)
+| Author: peridot2029 <peridot2029@gmail.com>
+| Date:   Tue Sep 22 16:46:15 2020 +0900
+|
+|     4
+|
+* commit edd1c655c05acefa19306e70e2fa4129e4f191c3
+| Author: peridot2029 <peridot2029@gmail.com>
+| Date:   Sun Sep 20 20:45:07 2020 +0900
+|
+|     3
+|
+* commit 6191eef14f561e9bc10cbeb9d3fb4d52cd82310b (master)
+| Author: peridot2029 <peridot2029@gmail.com>
+| Date:   Sun Sep 20 19:48:41 2020 +0900
+|
+|     2
+|
+* commit 3950edcd94c1a436cb70cff689ee3306e3bc9293
+  Author: peridot2029 <peridot2029@gmail.com>
+  Date:   Sun Sep 20 19:48:04 2020 +0900
+  
+# master 브랜치 이동
+$ git checkout master
+
+$ vi f3.txt
+
+$ cat f3.txt
+a
+
+$ git add f3.txt
+
+# f3.txt 파일 생성 후 작업, 커밋하기
+$ git commit -m"5"
+
+# git 로그 그래프 확
+$ git log --branches --decorate --graph
+* commit 7843a376ce9e814bbace31dd841c529551514e8b (HEAD -> master)
+| Author: peridot2029 <peridot2029@gmail.com>
+| Date:   Tue Sep 22 18:05:54 2020 +0900
+|
+|     5
+|
+| * commit 12afe1df595090637a83590d295b0866cf035add (exp)
+| | Author: peridot2029 <peridot2029@gmail.com>
+| | Date:   Tue Sep 22 16:46:15 2020 +0900
+| |
+| |     4
+| |
+| * commit edd1c655c05acefa19306e70e2fa4129e4f191c3
+|/  Author: peridot2029 <peridot2029@gmail.com>
+|   Date:   Sun Sep 20 20:45:07 2020 +0900
+|
+|       3
+|
+* commit 6191eef14f561e9bc10cbeb9d3fb4d52cd82310b
+| Author: peridot2029 <peridot2029@gmail.com>
+| Date:   Sun Sep 20 19:48:41 2020 +0900
+|
+|     2
+|
+* commit 3950edcd94c1a436cb70cff689ee3306e3bc9293
+  Author: peridot2029 <peridot2029@gmail.com>
+  Date:   Sun Sep 20 19:48:04 2020 +0900
+
+      1
+            
+# git 로그 그래프 한 줄로 간결하게 확인      
+$ git log --branches --decorate --graph --oneline
+* 7843a37 (HEAD -> master) 5
+| * 12afe1d (exp) 4
+| * edd1c65 3
+|/
+* 6191eef 2
+* 3950edc 1
+
+# 현재 master 브랜치와 exp 브랜치의 차이를 비교하기
+# 즉, master에는 없고 exp에 있는 것들을 확인
+$ git log master..exp
+commit 12afe1df595090637a83590d295b0866cf035add (exp)
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Tue Sep 22 16:46:15 2020 +0900
+
+    4
+
+commit edd1c655c05acefa19306e70e2fa4129e4f191c3
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Sun Sep 20 20:45:07 2020 +0900
+
+    3
+
 # 반대로 exp 브랜치에는 없, master 브랜치에 있는 걸 확인
 $ git log exp..master
 commit 7843a376ce9e814bbace31dd841c529551514e8b (HEAD -> master)
