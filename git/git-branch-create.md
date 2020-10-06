@@ -156,7 +156,7 @@ drwxr-xr-x 1 user 197609 0  9월 22 16:46 .git/
   * **로그의 왼쪽에 그래프가 출력**되는 걸 확인 할 수 있다.
 * git log --branches --decorate --graph --oneline
   * **로그의 왼쪽 그래프가 한 줄로 간결하게 출력**되는 걸 확인 할 수 있다.
-* git log branch1...branch2
+* git log branch1..branch2
   * branch1 - 현재 브랜치, branch2 - 비교할 다른 브랜치 
   * 즉, **현재 브랜치는 없고, 비교할 브랜치에 있는 것들을 보여**준다.
 
@@ -211,7 +211,7 @@ $ git log --branches --decorate --graph
   Author: peridot2029 <peridot2029@gmail.com>
   Date:   Sun Sep 20 19:48:04 2020 +0900
   
-# master 브랜치 이
+# master 브랜치 이동
 $ git checkout master
 
 $ vi f3.txt
@@ -266,13 +266,8 @@ $ git log --branches --decorate --graph --oneline
 * 3950edc 1
 
 # 현재 master 브랜치와 exp 브랜치의 차이를 비교하기
-$ git log master...exp
-commit 7843a376ce9e814bbace31dd841c529551514e8b (HEAD -> master)
-Author: peridot2029 <peridot2029@gmail.com>
-Date:   Tue Sep 22 18:05:54 2020 +0900
-
-    5
-
+# 즉, master에는 없고 exp에 있는 것들을 확인
+$ git log master..exp
 commit 12afe1df595090637a83590d295b0866cf035add (exp)
 Author: peridot2029 <peridot2029@gmail.com>
 Date:   Tue Sep 22 16:46:15 2020 +0900
@@ -284,6 +279,16 @@ Author: peridot2029 <peridot2029@gmail.com>
 Date:   Sun Sep 20 20:45:07 2020 +0900
 
     3
+
+# 반대로 exp 브랜치에는 없, master 브랜치에 있는 걸 확
+$ git log exp..master
+commit 7843a376ce9e814bbace31dd841c529551514e8b (HEAD -> master)
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Tue Sep 22 18:05:54 2020 +0900
+
+    5
+
+        
 
 
     
