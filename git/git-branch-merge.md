@@ -60,7 +60,7 @@ drwxr-xr-x 1 user 197609 0 10월  6 21:11 .git/
 # exp 브랜치 이동
 $ git checkout exp
 
-# exp 브랜치에서 master 브랜치를 병
+# exp 브랜치에서 master 브랜치를 병합
 $ git merge master
 Updating 12afe1d..b6e1bef
 Fast-forward
