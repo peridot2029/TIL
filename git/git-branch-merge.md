@@ -28,7 +28,7 @@ $ git log --branches --decorate --graph --oneline
 * 6191eef 2
 * 3950edc 1
 
-# exp 브랜치에서 작업한 3, 4번 커밋을 master로 옮기
+# exp 브랜치에서 작업한 3, 4번 커밋을 master로 옮기기
 $ git merge exp
 Merge made by the 'recursive' strategy.
  f1.txt | 1 +
@@ -47,7 +47,7 @@ $ git log --branches --decorate --graph --oneline
 * 6191eef 2
 * 3950edc 1
 
-# 파일 목록 확
+# 파일 목록 확인
 $ ls -al
 total 23
 drwxr-xr-x 1 user 197609 0 10월  6 21:10 ./
