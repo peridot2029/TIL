@@ -27,7 +27,7 @@ Merge made by the 'recursive' strategy.
  2 files changed, 2 insertions(+)
  create mode 100644 f2.txt
  
-# master 브랜치에서 exp 브랜치를 병합한 후 로그 그래프 확
+# master 브랜치에서 exp 브랜치를 병합한 후 로그 그래프 확인
 $ git log --branches --decorate --graph --oneline
 *   b6e1bef (HEAD -> master) Merge branch 'exp' into master
 |\
