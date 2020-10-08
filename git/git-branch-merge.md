@@ -57,7 +57,7 @@ drwxr-xr-x 1 user 197609 0 10월  6 21:11 .git/
 -rw-r--r-- 1 user 197609 3 10월  6 21:10 f2.txt
 -rw-r--r-- 1 user 197609 3 10월  6 20:56 f3.txt
 
-# exp 브랜치 이
+# exp 브랜치 이동
 $ git checkout exp
 
 # exp 브랜치에서 master 브랜치를 병
