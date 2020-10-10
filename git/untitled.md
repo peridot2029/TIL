@@ -55,8 +55,8 @@ $ git checkout master
 Switched to branch 'master'
 M       f1.txt
 
-# master 브랜치에서 상태를 확인하면, exp 브랜치에 작업한 내용이 master 브랜치에게
-# 까지 영향을 미치게 된다.
+# master 브랜치에서 상태를 확인하면, exp 브랜치에 작업한 내용
+# master 브랜치에게 까지 영향을 미치게 된다.
 $ git status
 On branch master
 Changes not staged for commit:
@@ -66,7 +66,8 @@ Changes not staged for commit:
 
 $ git checkout exp
 
-# stash save를 하면 스택에 새로운 stash가 만들어지면서, 워킹 디렉토리는 깨끗해진다.
+# stash save를 하면 스택에 새로운 stash가 만들어지면서
+# 워킹 디렉토리는 깨끗해진다.
 $ git stash save
 warning: LF will be replaced by CRLF in f1.txt.
 The file will have its original line endings in your working directory
@@ -76,7 +77,7 @@ $ git status
 On branch exp
 nothing to commit, working tree clean
 
-# stash 목록 확
+# stash 목록 확인
 $ git stash list
 stash@{0}: WIP on exp: 192353a 1
 
