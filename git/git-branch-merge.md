@@ -298,7 +298,7 @@ function a(){
 
 $ git add common.txt
 
-# exp 브랜치에서 common.txt 파일 작업 후 커
+# exp 브랜치에서 common.txt 파일 작업 후 커밋
 $ git commit -m"8"
 [exp 3a27e5d] 8
  1 file changed, 1 insertion(+)
