@@ -462,7 +462,7 @@ function a(exp){
 function c(){
 }
 
-# 병합에 실패하므로 직접 파일의 내용을 수
+# 병합에 실패하므로 직접 파일의 내용을 수정
 $ vi common.txt
 
 $ cat common.txt
