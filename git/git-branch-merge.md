@@ -118,6 +118,251 @@ $ git log --branches --graph --decorate --oneline
   * 그 다음에 **'3-way Merge'**라는 방법으로 합친다.
   * **합쳐진 결과는 새로운 커밋**을 만든다.
 
+### \(3\).  Git - Branch 병합 시 충돌 해결
+
+🔎 기존에 있던 exp 브랜치를 지우고 다시 만들어서 작업하기
+
+
+
+```bash
+# 기존에 있던 exp 브랜치 삭
+$ git branch -d exp
+Deleted branch exp (was b5a96a4).
+
+# exp 브랜치 다시 생
+$ git branch exp
+
+$ vi master.txt
+
+$ cat master.txt
+a
+
+$ git add master.txt
+
+# master 브랜치에서 master.txt 파일 작업 후 커밋
+$ git commit -m"6"
+
+# exp 브랜치 이
+$ git checkout exp
+Switched to branch 'exp'
+
+$ vi exp.txt
+
+$ cat exp.txt
+a
+
+$ git add exp.txt
+
+# exp 브랜치에서 exp.txt 파일 작업 후 커
+$ git commit -m"7"
+
+
+$ git checkout master
+Switched to branch 'master'
+
+$ git log --branches --decorate --graph
+* commit 5855d6d041881f10b1c41ae1cd4ab3109ff7333f (exp)
+| Author: peridot2029 <peridot2029@gmail.com>
+| Date:   Sat Oct 10 21:07:38 2020 +0900
+|
+|     7
+|
+| * commit 36088cd8f3194a7fd42e4bae1a28d72672018035 (HEAD -> master)
+|/  Author: peridot2029 <peridot2029@gmail.com>
+|   Date:   Sat Oct 10 21:07:07 2020 +0900
+|
+|       6
+|
+*   commit b5a96a4eaf1ac9c23ad78a87d1cdf705a7142587
+|\  Merge: 8317d2e eb5ac0a
+| | Author: peridot2029 <peridot2029@gmail.com>
+| | Date:   Sat Oct 10 21:04:26 2020 +0900
+| |
+| |     Merge branch 'exp' into master
+| |
+| * commit eb5ac0a17c7b697aa596f2db1ca0b999dae2a6a7
+| | Author: peridot2029 <peridot2029@gmail.com>
+| | Date:   Sat Oct 10 21:02:29 2020 +0900
+| |
+| |     4
+| |
+| * commit dae1297f38ae68aef6757f2ff49f01067edc0ae0
+| | Author: peridot2029 <peridot2029@gmail.com>
+| | Date:   Sat Oct 10 21:01:11 2020 +0900
+| |
+| |     3
+| |
+* | commit 8317d2e0b15b48356e62f3a3dc68a38c61f2a410
+|/  Author: peridot2029 <peridot2029@gmail.com>
+|   Date:   Sat Oct 10 21:03:21 2020 +0900
+|
+|       5
+|
+* commit a7e31e113348fcc6b1123a2f4200e4cedaf8a3b3
+| Author: peridot2029 <peridot2029@gmail.com>
+| Date:   Sat Oct 10 21:00:08 2020 +0900
+|
+|     2
+|
+* commit 9e142a13378697555c6fab98b40347431060e63a
+  Author: peridot2029 <peridot2029@gmail.com>
+  Date:   Sat Oct 10 20:59:48 2020 +0900
+
+      1
+      
+# exp 브랜치 병합
+$ git merge exp
+Merge made by the 'recursive' strategy.
+ exp.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 exp.txt
+
+$ git log --branches --decorate --graph
+*   commit e71ce76cb0c0d561973a3ce0cad9ca7ca61a1237 (HEAD -> master)
+|\  Merge: 36088cd 5855d6d
+| | Author: peridot2029 <peridot2029@gmail.com>
+| | Date:   Sat Oct 10 21:08:54 2020 +0900
+| |
+| |     Merge branch 'exp' into master
+| |
+| * commit 5855d6d041881f10b1c41ae1cd4ab3109ff7333f (exp)
+| | Author: peridot2029 <peridot2029@gmail.com>
+| | Date:   Sat Oct 10 21:07:38 2020 +0900
+| |
+| |     7
+| |
+* | commit 36088cd8f3194a7fd42e4bae1a28d72672018035
+|/  Author: peridot2029 <peridot2029@gmail.com>
+|   Date:   Sat Oct 10 21:07:07 2020 +0900
+|
+|       6
+|
+*   commit b5a96a4eaf1ac9c23ad78a87d1cdf705a7142587
+|\  Merge: 8317d2e eb5ac0a
+| | Author: peridot2029 <peridot2029@gmail.com>
+| | Date:   Sat Oct 10 21:04:26 2020 +0900
+| |
+| |     Merge branch 'exp' into master
+| |
+| * commit eb5ac0a17c7b697aa596f2db1ca0b999dae2a6a7
+| | Author: peridot2029 <peridot2029@gmail.com>
+| | Date:   Sat Oct 10 21:02:29 2020 +0900
+| |
+| |     4
+| |
+| * commit dae1297f38ae68aef6757f2ff49f01067edc0ae0
+| | Author: peridot2029 <peridot2029@gmail.com>
+| | Date:   Sat Oct 10 21:01:11 2020 +0900
+| |
+| |     3
+| |
+* | commit 8317d2e0b15b48356e62f3a3dc68a38c61f2a410
+|/  Author: peridot2029 <peridot2029@gmail.com>
+|   Date:   Sat Oct 10 21:03:21 2020 +0900
+|
+|       5
+|
+* commit a7e31e113348fcc6b1123a2f4200e4cedaf8a3b3
+| Author: peridot2029 <peridot2029@gmail.com>
+| Date:   Sat Oct 10 21:00:08 2020 +0900
+|
+|     2
+|
+* commit 9e142a13378697555c6fab98b40347431060e63a
+  Author: peridot2029 <peridot2029@gmail.com>
+  Date:   Sat Oct 10 20:59:48 2020 +0900
+
+      1
+
+# exp 브랜치를 병합하면 master 브랜치에도 exp.txt 파일을 가진다.
+$ ls -al
+total 25
+drwxr-xr-x 1 user 197609 0 10월 10 21:08 ./
+drwxr-xr-x 1 user 197609 0 10월  8 21:41 ../
+drwxr-xr-x 1 user 197609 0 10월 10 21:08 .git/
+-rw-r--r-- 1 user 197609 3 10월 10 21:08 exp.txt
+-rw-r--r-- 1 user 197609 9 10월 10 21:04 f1.txt
+-rw-r--r-- 1 user 197609 3 10월 10 21:04 f2.txt
+-rw-r--r-- 1 user 197609 3 10월 10 21:05 f3.txt
+-rw-r--r-- 1 user 197609 3 10월 10 21:07 master.txt
+
+# exp 브랜치 이
+$ git checkout exp
+Switched to branch 'exp'
+
+$ vi common.txt
+
+$ cat common.txt
+a
+
+$ git add common.txt
+
+# exp 브랜치에서 common.txt 파일 작업 후 커
+$ git commit -m"8"
+[exp 3a27e5d] 8
+ 1 file changed, 1 insertion(+)
+ create mode 100644 common.txt
+
+# master 브랜치 이
+$ git checkout master
+Switched to branch 'master'
+
+# exp 브랜치 병
+$ git merge exp
+Merge made by the 'recursive' strategy.
+ common.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 common.txt
+
+# master, exp 2개의 브랜치가 공통으로 common.txt 파일을 가지고 있다.
+$ ls -al
+total 26
+drwxr-xr-x 1 user 197609 0 10월 10 21:22 ./
+drwxr-xr-x 1 user 197609 0 10월  8 21:41 ../
+drwxr-xr-x 1 user 197609 0 10월 10 21:22 .git/
+-rw-r--r-- 1 user 197609 3 10월 10 21:22 common.txt
+-rw-r--r-- 1 user 197609 3 10월 10 21:08 exp.txt
+-rw-r--r-- 1 user 197609 9 10월 10 21:04 f1.txt
+-rw-r--r-- 1 user 197609 3 10월 10 21:04 f2.txt
+-rw-r--r-- 1 user 197609 3 10월 10 21:05 f3.txt
+-rw-r--r-- 1 user 197609 3 10월 10 21:22 master.txt
+
+$ vi common.txt
+
+$ cat common.txt
+function master
+
+$ git commit -am"9"
+[master 0264498] 9
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git checkout exp
+Switched to branch 'exp'
+
+$ vi common.txt
+
+$ cat common.txt
+function a(){
+}
+
+$ git commit -am"10"
+[exp 62aeeae] 10
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+$ git checkout master
+Switched to branch 'master'
+
+$ git merge exp
+
+
+
+
+```
+
+
+
+
+
 ### Reference <a id="reference"></a>
 
 Git Branching - Basic Branching and Merging [→ \(SITE\)](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
