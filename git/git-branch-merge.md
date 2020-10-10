@@ -129,7 +129,7 @@ $ git log --branches --graph --decorate --oneline
 $ git branch -d exp
 Deleted branch exp (was b5a96a4).
 
-# exp 브랜치 다시 생
+# exp 브랜치 다시 생성
 $ git branch exp
 
 $ vi master.txt
@@ -449,7 +449,7 @@ Unmerged paths:
         both modified:   common.txt
 
 # <<< HEAD ~ ==== - 현재 체크아웃한 브랜치의 수정사항
-# >>> exp - exp 브랜치의 내
+# >>> exp - exp 브랜치의 내용
 $ cat common.txt
 function b(){
 }
