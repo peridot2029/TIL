@@ -153,7 +153,7 @@ a
 
 $ git add exp.txt
 
-# exp 브랜치에서 exp.txt 파일 작업 후 커
+# exp 브랜치에서 exp.txt 파일 작업 후 커밋
 $ git commit -m"7"
 
 
@@ -293,7 +293,8 @@ Switched to branch 'exp'
 $ vi common.txt
 
 $ cat common.txt
-a
+function a(){
+}
 
 $ git add common.txt
 
@@ -303,7 +304,7 @@ $ git commit -m"8"
  1 file changed, 1 insertion(+)
  create mode 100644 common.txt
 
-# master 브랜치 이
+# master 브랜치 이동
 $ git checkout master
 Switched to branch 'master'
 
@@ -330,7 +331,10 @@ drwxr-xr-x 1 user 197609 0 10월 10 21:22 .git/
 $ vi common.txt
 
 $ cat common.txt
-function master
+function a(){
+}
+function b(){
+}
 
 $ git commit -am"9"
 [master 0264498] 9
@@ -344,6 +348,8 @@ $ vi common.txt
 $ cat common.txt
 function a(){
 }
+function c(){
+}
 
 $ git commit -am"10"
 [exp 62aeeae] 10
@@ -352,7 +358,155 @@ $ git commit -am"10"
 $ git checkout master
 Switched to branch 'master'
 
+# 브랜치를 병합할 때, 같은 파일이여도 수정하는 위치가 다르면 자동으로 병합한다. 
 $ git merge exp
+Auto-merging common.txt
+Merge made by the 'recursive' strategy.
+ common.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+$ cat common.txt
+function b(){
+}
+function a(){
+}
+function c(){
+}
+
+$ git checkout exp
+Switched to branch 'exp'
+
+$ cat common.txt
+function a(){
+}
+function c(){
+}
+
+$ git merge master
+Updating a6f3888..ec1c56f
+Fast-forward
+ common.txt | 2 ++
+ exp.txt    | 1 +
+ master.txt | 1 +
+ 3 files changed, 4 insertions(+)
+ create mode 100644 exp.txt
+ create mode 100644 master.txt
+
+$ cat common.txt
+function b(){
+}
+function a(){
+}
+function c(){
+}
+
+$ git checkout master
+Switched to branch 'master'
+
+$ cat common.txt
+function b(){
+}
+function a(master){
+}
+function c(){
+}
+
+$ git commit -am"11"
+[master b0184f2] 11
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+$ git checkout exp
+Switched to branch 'exp'
+
+$ cat common.txt
+function b(){
+}
+function a(exp){
+}
+function c(){
+}
+
+$ git commit -am"12"
+[exp d7ef5cf] 12
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+$ git checkout master
+Switched to branch 'master'
+
+$ git merge exp
+Auto-merging common.txt
+CONFLICT (content): Merge conflict in common.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   common.txt
+
+# <<< HEAD ~ ==== - 현재 체크아웃한 브랜치의 수정사
+# >>> exp - exp 브랜치의 내
+$ cat common.txt
+function b(){
+}
+<<<<<<< HEAD
+function a(master){
+=======
+function a(exp){
+>>>>>>> exp
+}
+function c(){
+}
+
+# 병합에 실패하므로 직접 파일의 내용을 수
+$ vi common.txt
+
+$ cat common.txt
+function b(){
+}
+function a(master,exp){
+}
+function c(){
+}
+
+$ git add common.txt
+
+$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   common.txt
+
+$ git commit
+
+$ git log --oneline
+74a3d0c (HEAD -> master) Merge branch 'exp' into master
+d7ef5cf (exp) 12
+b0184f2 11
+ec1c56f Merge branch 'exp' into master
+a6f3888 10
+a14dab1 9
+7b38c1b Merge branch 'exp' into master
+9b5cc0c 8
+97c472a Merge branch 'exp' into master
+edd9bcd 7
+6315ec3 6
+2ae1b16 Merge branch 'exp' into master
+eb66d36 5
+173651b 4
+9cc0572 3
+97017c5 2
+6168b10 1
+
+
+
+
 
 
 
