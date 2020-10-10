@@ -195,7 +195,7 @@ $ git status
 On branch exp
 nothing to commit, working tree clean
 
-# stash의 apply + drop의 동시 실행 명령어
+# stash의 apply + drop의 동시 실행 
 $ git stash pop
 On branch exp
 Changes not staged for commit:
