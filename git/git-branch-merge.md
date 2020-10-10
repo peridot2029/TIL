@@ -125,7 +125,7 @@ $ git log --branches --graph --decorate --oneline
 
 
 ```bash
-# 기존에 있던 exp 브랜치 삭
+# 기존에 있던 exp 브랜치 삭제
 $ git branch -d exp
 Deleted branch exp (was b5a96a4).
 
@@ -286,7 +286,7 @@ drwxr-xr-x 1 user 197609 0 10월 10 21:08 .git/
 -rw-r--r-- 1 user 197609 3 10월 10 21:05 f3.txt
 -rw-r--r-- 1 user 197609 3 10월 10 21:07 master.txt
 
-# exp 브랜치 이
+# exp 브랜치 이동
 $ git checkout exp
 Switched to branch 'exp'
 
@@ -308,7 +308,7 @@ $ git commit -m"8"
 $ git checkout master
 Switched to branch 'master'
 
-# exp 브랜치 병
+# exp 브랜치 병합
 $ git merge exp
 Merge made by the 'recursive' strategy.
  common.txt | 1 +
@@ -448,7 +448,7 @@ Unmerged paths:
   (use "git add <file>..." to mark resolution)
         both modified:   common.txt
 
-# <<< HEAD ~ ==== - 현재 체크아웃한 브랜치의 수정사
+# <<< HEAD ~ ==== - 현재 체크아웃한 브랜치의 수정사항
 # >>> exp - exp 브랜치의 내
 $ cat common.txt
 function b(){
