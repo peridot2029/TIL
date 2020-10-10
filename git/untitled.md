@@ -50,7 +50,7 @@ $ cat f1.txt
 a
 b
 
-# exp 브랜치에서 작업하는 중간에 다시 master 브랜치로 돌아갈 경
+# exp 브랜치에서 작업하는 중간에 다시 master 브랜치로 돌아갈 경우
 $ git checkout master
 Switched to branch 'master'
 M       f1.txt
@@ -76,7 +76,7 @@ $ git status
 On branch exp
 nothing to commit, working tree clean
 
-# stash 목록 확
+# stash 목록 확인
 $ git stash list
 stash@{0}: WIP on exp: 192353a 1
 
@@ -161,7 +161,7 @@ Dropped refs/stash@{0} (16b66fd6d85464ff3aad913bcca4244591c44357)
 $ git stash list
 stash@{0}: WIP on exp: 192353a 1
 
-# apply, drop 명령을 동시에 실
+# apply, drop 명령을 동시에 실행
 $ git stash apply; git stash drop
 
 $ git status
@@ -195,7 +195,7 @@ $ git status
 On branch exp
 nothing to commit, working tree clean
 
-# stash의 apply + drop의 형
+# stash의 apply + drop의 동시 실행 명령어
 $ git stash pop
 On branch exp
 Changes not staged for commit:
