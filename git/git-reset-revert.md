@@ -190,6 +190,7 @@ $ vi f1.txt
 $ cat f1.txt
 working directory
 
+# working directory - working directory, index - index, repository - repository
 $ git log
 commit 7f3eef43cffc95455a6c5194a5e13a3de514d811 (HEAD -> master)
 Author: peridot2029 <peridot2029@gmail.com>
@@ -203,10 +204,11 @@ Date:   Wed Oct 14 16:03:00 2020 +0900
 
     1
     
-# soft 옵션으로 repository만 reset을 적
+# soft 옵션으로 repository만 reset 적
 $ git reset --soft 614517c82b3664192efce34051ab893b3a000eac
 
-# repository 조
+
+# 각 커밋에 내용을 조회하면 repository - init으로 변경된 걸 확
 $ git log -p
 commit 614517c82b3664192efce34051ab893b3a000eac (HEAD -> master)
 Author: peridot2029 <peridot2029@gmail.com>
@@ -222,7 +224,7 @@ index 0000000..b1b7161
 @@ -0,0 +1 @@
 +init
 
-# working directory 와 index를 비교
+# working directory, index 비교하여 조회할 수 있다.
 $ git diff
 
 diff --git a/f1.txt b/f1.txt
@@ -233,14 +235,15 @@ index 9015a7a..1116dba 100644
 -index
 +working directory
 
+# reset 전의 커밋은 ORIG_HEAD 라는 이름으로 참조할 수 있다.
 $ git reset --soft ORIG_HEAD 
 
-# repository, index 
+# mixed 옵션으로 index, repository 2개에 reset 적
 $ git reset --mixed 614517c82b3664192efce34051ab893b3a000eac
 Unstaged changes after reset:
 M       f1.txt
 
-
+# index - init, working directory - working directory
 $ git diff
 
 diff --git a/f1.txt b/f1.txt
@@ -251,6 +254,42 @@ index b1b7161..1116dba 100644
 -init
 +working directory
 
+# repository - init
+$ git log -p
+commit 614517c82b3664192efce34051ab893b3a000eac (HEAD -> master)
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Wed Oct 14 16:03:00 2020 +0900
+
+    1
+
+diff --git a/f1.txt b/f1.txt
+new file mode 100644
+index 0000000..b1b7161
+--- /dev/null
++++ b/f1.txt
+@@ -0,0 +1
++init
+
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+# working directory, index, repository 3개 전부 reset 적
+$ git reset --hard
+HEAD is now at 614517c 1
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+$ cat f1.txt
+init
 ```
 
 
