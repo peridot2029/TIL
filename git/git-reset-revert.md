@@ -132,7 +132,7 @@ Removing f2.txt
  1 file changed, 1 deletion(-)
  delete mode 100644 f2.txt
 
-# revert 작업, log 조
+# revert 작업, log 조회
 $ git log --oneline
 8dee3bf (HEAD -> master) Revert "2"
 083f79d 3
@@ -145,6 +145,112 @@ drwxr-xr-x 1 user 197609  0  9월 17 18:37 ./
 drwxr-xr-x 1 user 197609  0  9월 17 15:12 ../
 drwxr-xr-x 1 user 197609  0  9월 17 18:37 .git/
 -rw-r--r-- 1 user 197609 12  9월 17 18:26 f1.txt
+```
+
+## 2. Git - Reset three options
+
+### \(1\). git reset 옵션
+
+* --hard
+  * working directory, index, repository 3가지 모두 유지하지 않고, 이전 커밋으로 HEAD를 되돌린다.
+  * hard는 조심해서 사용해야 하며, 작업하던 내용을 의도적으로 모두 정리 할 때 사용해야 한다.
+* --mixed
+  * 3가지의 옵션 중 가장 기본이 되는 옵션으로 옵션을 아무것도 주지 않으면 기본적으로 적용된다.
+  * mixed는 working directory는 유지하면서 index와 repository 를 함께 되돌린다.
+* --soft
+  * 현재 working directory 내용은 그대로 보존하면서 커밋만 취소할 경우 사용한다.
+
+```bash
+# working directory 초기화
+$ git init
+
+$ vi f1.txt
+
+$ cat f1.txt
+init
+
+$ git add f1.txt
+
+$ git commit -m"1"
+[master (root-commit) 614517c] 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f1.txt
+
+$ vi f1.txt
+
+$ cat f1.txt
+repository 
+
+$ git commit -am"2"
+[master 7f3eef4] 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ vi f1.txt
+
+$ cat f1.txt
+working directory
+
+$ git log
+commit 7f3eef43cffc95455a6c5194a5e13a3de514d811 (HEAD -> master)
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Wed Oct 14 16:03:28 2020 +0900
+
+    2
+
+commit 614517c82b3664192efce34051ab893b3a000eac
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Wed Oct 14 16:03:00 2020 +0900
+
+    1
+    
+# soft 옵션으로 repository만 reset을 적
+$ git reset --soft 614517c82b3664192efce34051ab893b3a000eac
+
+# repository 조
+$ git log -p
+commit 614517c82b3664192efce34051ab893b3a000eac (HEAD -> master)
+Author: peridot2029 <peridot2029@gmail.com>
+Date:   Wed Oct 14 16:03:00 2020 +0900
+
+    1
+
+diff --git a/f1.txt b/f1.txt
+new file mode 100644
+index 0000000..b1b7161
+--- /dev/null
++++ b/f1.txt
+@@ -0,0 +1 @@
++init
+
+# working directory 와 index를 비교
+$ git diff
+
+diff --git a/f1.txt b/f1.txt
+index 9015a7a..1116dba 100644
+--- a/f1.txt
++++ b/f1.txt
+@@ -1 +1 @@
+-index
++working directory
+
+$ git reset --soft ORIG_HEAD 
+
+# repository, index 
+$ git reset --mixed 614517c82b3664192efce34051ab893b3a000eac
+Unstaged changes after reset:
+M       f1.txt
+
+
+$ git diff
+
+diff --git a/f1.txt b/f1.txt
+index b1b7161..1116dba 100644
+--- a/f1.txt
++++ b/f1.txt
+@@ -1 +1 @@
+-init
++working directory
+
 ```
 
 
