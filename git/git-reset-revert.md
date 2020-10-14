@@ -279,7 +279,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-# working directory, index, repository 3개 전부 reset 적
+# working directory, index, repository 3개 전부 reset 적용
 $ git reset --hard
 HEAD is now at 614517c 1
 
