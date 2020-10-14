@@ -504,10 +504,6 @@ eb66d36 5
 6168b10 1
 ```
 
-
-
-
-
 ### Reference <a id="reference"></a>
 
 Git Branching - Basic Branching and Merging [→ \(SITE\)](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
