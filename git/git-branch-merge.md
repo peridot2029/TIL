@@ -156,7 +156,6 @@ $ git add exp.txt
 # exp 브랜치에서 exp.txt 파일 작업 후 커밋
 $ git commit -m"7"
 
-
 $ git checkout master
 Switched to branch 'master'
 
