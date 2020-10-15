@@ -7,21 +7,21 @@
 🔎Github에서 gitfth  라는 이름으로 새로운 원격 저장소를 생성한다.
 
 * git remote add origin https://github.com/peridot2029/gitfth.git
-  * 현재 로컬 저장소\(Local Repository\) 에 원격 저장소 \(Remote Repository\)를 연결시킨다.
+  * 현재 **로컬 저장소\(Local Repository\)** 에 **원격 저장소 \(Remote Repository\)**를 연결시킨다.
   * 메인 되면서 주로 동기화 하는 원격 저장소는 origin 이라는 별칭을 많이 사용한다.
-  * 원격 저장소 URL - https://github.com/peridot2029/gitfth.git
-  * 원격 저장소 별 - origin
+  * **원격 저장소 URL** - https://github.com/peridot2029/gitfth.git
+  * **원격 저장소 별 -** origin
 * git push - u origin master
-  * 로컬 저장소에서 원격 저장소에 작업한 내용을 보내는 것을 push 라고 한다.
-  * 로컬 저장소 작업 내용을 origin 원격 저장소의 master 브랜치로 보낸다는 의미이다.
-  * -u 는 한 번만 쓰면 다음부터는 git push로 쉽게 업로드 할 수 있게  해주는 역할
+  * **로컬 저장소**에서 **원격 저장소**에 작업한 내용을 보내는 것을 **push** 라고 한다.
+  * **로컬 저장소** 작업 내용을 **origin** 원격 저장소의 **master** 브랜치로 보낸다는 의미이다.
+  * **-u** 는 한 번만 쓰면 다음부터는`git push`로 쉽게 업로드 할 수 있게  해주는 역할
 * git clone remote add https://github.com/peridot2029/gitfth.git
 
 ```bash
 # gifth 작업 폴더 생성
 $ mkdir gitfth
 
-# git 버전 관리 시
+# .git 폴더 생
 $ git init
 
 $ vi f1.txt
