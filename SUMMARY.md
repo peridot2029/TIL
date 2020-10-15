@@ -14,6 +14,7 @@
 * [📄 Git - Branch Create](git/git-branch-create.md)
 * [📄 Git - Branch Merge](git/git-branch-merge.md)
 * [📄 Git - Stash](git/untitled.md)
+* [📄 Git - Repository Introduction](git/git-repository-introduction.md)
 
 ## HTML
 
