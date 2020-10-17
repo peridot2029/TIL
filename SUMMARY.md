@@ -16,6 +16,7 @@
 * [📄 Git - Stash](git/untitled.md)
 * [📄 Git - Repository Introduction](git/git-repository-introduction.md)
 * [📄 Git - Remote Repository Create](git/git-remote-repository-create.md)
+* [📄 Git - Syncing](git/git-syncing.md)
 
 ## HTML
 
