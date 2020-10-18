@@ -26,7 +26,7 @@
   * 현재 **로컬 저장소\(Local Repository\)** 에 **원격 저장소 \(Remote Repository\)**를 연결시킨다.
   * 메인 되면서 주로 동기화 하는 원격 저장소는 origin 이라는 별칭을 많이 사용한다.
   * **원격 저장소 URL** - https://github.com/peridot2029/gitfth.git
-  * **원격 저장소 별 -** origin
+  * **원격 저장소 별칭 -** origin
 * git push - u origin master
   * **로컬 저장소**에서 **원격 저장소**에 작업한 내용을 보내는 것을 **push** 라고 한다.
   * **로컬 저장소** 작업 내용을 **origin** 원격 저장소의 **master** 브랜치로 보낸다는 의미이다.
