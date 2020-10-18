@@ -4,8 +4,14 @@
 
 ### \(1\).  원격 저장소와 지역 저장소의 동기화
 
+🔎Desktop 에서 git\_home 
+
 * 하나의 원격 저장소를 중심으로 해서 두 개의 지역 저장소가 하나의 원격 저장소를 중심으로 작업을 동기화 하는 방법
 * 협업이 가능하게 하며, 작업 환경이 바뀔 때 마다 그에 대한 대비가 가능하다.
+* git clone &lt;Remote Repository URL&gt;
+  * 원격 저장소를 복제하여 다른 곳에서 작업을 할 수 있는 명령어 이다.
+
+
 
 ```bash
 $ git clone https://github.com/peridot2029/gitfth.git git_home
@@ -16,13 +22,6 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
 Unpacking objects: 100% (6/6), 377 bytes | 17.00 KiB/s, done.
 
-$ git clone https://github.com/peridot2029/gitfth.git git_office
-Cloning into 'git_office'...
-remote: Enumerating objects: 6, done.
-remote: Counting objects: 100% (6/6), done.
-remote: Compressing objects: 100% (2/2), done.
-remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
-Unpacking objects: 100% (6/6), 377 bytes | 14.00 KiB/s, done.
 
 $ cd git_home/
 
@@ -67,7 +66,10 @@ Fast-forward
  1 file changed, 1 insertion(+)
 ```
 
+🔎Desktop 에서 git\_office
+
 ```bash
+
 $ git clone https://github.com/peridot2029/gitfth.git git_office
 Cloning into 'git_office'...
 remote: Enumerating objects: 6, done.
