@@ -93,7 +93,7 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/peridot2029/gitfth
    db8dc37..1fa844a  master -> master
    
-# Desktop 이동
+# Desktop 이동해서 gitfth2 폴더 생
 $ cd ..
 
 $ mkdir gitfth2
@@ -140,7 +140,6 @@ remote: Counting objects: 100% (6/6), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
 Unpacking objects: 100% (6/6), 377 bytes | 17.00 KiB/s, done.
-
 
 $ cd git_home/
 
@@ -212,7 +211,7 @@ Fast-forward
  f1.txt | 1 +
  1 file changed, 1 insertion(+)
  
- $ git log --oneline
+$ git log --oneline
 1c6f93c (HEAD -> master, origin/master, origin/HEAD) 3
 1fa844a 2
 db8dc37 1
