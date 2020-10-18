@@ -32,8 +32,7 @@
   * **로컬 저장소** 작업 내용을 **origin** 원격 저장소의 **master** 브랜치로 보낸다는 의미이다.
   * **-u** 는 한 번만 쓰면 다음부터는`git push`로 쉽게 업로드 할 수 있게  해주는 역할
 * git clone remote add https://github.com/peridot2029/gitfth.git
-
-
+  * 이미 존재하는 원격 저장소를 나의 로컬 저장소로 복제한다.
 
 ```bash
 # gifth 작업 폴더 생성
@@ -100,6 +99,7 @@ $ mkdir gitfth2
 
 $ cd gitfth2
 
+# 원격 저장소 gitfth 내용을 현재 로컬 저장소 gitfth2 로 복제한다.
 $ git clone https://github.com/peridot2029/gitfth.git .
 Cloning into '.'...
 remote: Enumerating objects: 6, done.
