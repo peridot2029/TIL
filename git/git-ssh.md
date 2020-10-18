@@ -23,7 +23,7 @@
   * 원격 저장소의 연결된 **URL**를 **SSH**로 변경한다.
 
 ```bash
-# ssh key 만들
+# ssh key 생성
 $ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/user/.ssh/id_rsa):
