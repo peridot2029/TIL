@@ -1,7 +1,5 @@
 # 📄 HTML - Form Element part 03
 
-## 📄 HTML Form Element part 03
-
 ## 1. `<textarea>` Element
 
 `<textarea>` 요소는 멀티라인 일반 텍스트 편집 컨트롤을 나타낸다.
