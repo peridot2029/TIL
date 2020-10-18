@@ -4,7 +4,7 @@
 
 ### \(1\). Git 원격 저장소 생성
 
-🔎Github에서 gitfth  라는 이름으로 새로운 원격 저장소를 생성한다.
+🔎**Github**에서 **gitfth**  라는 이름으로 새로운 원격 저장소를 생성한다.
 
 * git remote add origin https://github.com/peridot2029/gitfth.git
   * 현재 **로컬 저장소\(Local Repository\)** 에 **원격 저장소 \(Remote Repository\)**를 연결시킨다.
