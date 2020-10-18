@@ -130,7 +130,7 @@ origin  https://github.com/peridot2029/gitfth.git (push)
 * 협업이 가능하게 하며, 작업 환경이 바뀔 때 마다 그에 대한 대비가 가능하다.
 
 ```bash
-# Desktop 에서 git_home 로컬 저장소 생성 - 
+# Desktop 에서 git_home 로컬 저장소 생성 - 재택용
 $ git clone https://github.com/peridot2029/gitfth.git git_home
 Cloning into 'git_home'...
 remote: Enumerating objects: 6, done.
@@ -196,7 +196,7 @@ Unpacking objects: 100% (6/6), 377 bytes | 14.00 KiB/s, done.
 
 $ cd git_office/
 
-# 원격 저장소에 있는 내용을 그대로 현재 로컬 저장소에 가져온다.
+# 작업을 시작 하기 전에, 현재 원격 저장소에 있는 내용을 그대로 로컬 저장소에 가져온다.
 $ git pull
 remote: Enumerating objects: 5, done.
 remote: Counting objects: 100% (5/5), done.
@@ -226,6 +226,7 @@ $ git commit -am"4"
 [master e48878c] 4
  1 file changed, 1 insertion(+)
 
+# 작업이 끝나면 현재 로컬 저장소의 내용을 원격 저장소에 업로드 한다.
 $ git push
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
