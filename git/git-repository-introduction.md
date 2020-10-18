@@ -39,7 +39,7 @@
 # gifth 작업 폴더 생성
 $ mkdir gitfth
 
-# .git 폴더 생
+# .git 폴더 생성
 $ git init
 
 $ vi f1.txt
@@ -132,6 +132,7 @@ origin  https://github.com/peridot2029/gitfth.git (push)
   * 원격 저장소를 복제하여 다른 곳에서 작업을 할 수 있는 명령어 이다.
 
 ```bash
+# git_home
 $ git clone https://github.com/peridot2029/gitfth.git git_home
 Cloning into 'git_home'...
 remote: Enumerating objects: 6, done.
@@ -187,6 +188,7 @@ Fast-forward
 🔎Desktop 에서 git\_office
 
 ```bash
+# git_office
 $ git clone https://github.com/peridot2029/gitfth.git git_office
 Cloning into 'git_office'...
 remote: Enumerating objects: 6, done.
