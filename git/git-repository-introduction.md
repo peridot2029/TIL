@@ -92,7 +92,7 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/peridot2029/gitfth
    db8dc37..1fa844a  master -> master
    
-# Desktop 이동해서 gitfth2 폴더 생
+# Desktop 이동해서 gitfth2 폴더 생성
 $ cd ..
 
 $ mkdir gitfth2
@@ -108,7 +108,7 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
 Unpacking objects: 100% (6/6), 377 bytes | 15.00 KiB/s, done.
 
-# 원격 저장소가 로컬 저장소로 동기화 된 것을 확
+# 원격 저장소가 로컬 저장소로 동기화 된 것을 확인
 $ ls -al
 total 17
 drwxr-xr-x 1 user 197609 0 10월 15 23:15 ./
@@ -124,15 +124,13 @@ origin  https://github.com/peridot2029/gitfth.git (push)
 
 ### \(5\).  Synchronize remote repository and local repository
 
-🔎Desktop 에서 git\_home 
+🔎**Desktop** 에서 **git\_home** 로컬 저장소 생성해서 작업 하기
 
 * 하나의 원격 저장소를 중심으로 해서 두 개의 지역 저장소가 하나의 원격 저장소를 중심으로 작업을 동기화 하는 방법
 * 협업이 가능하게 하며, 작업 환경이 바뀔 때 마다 그에 대한 대비가 가능하다.
-* git clone &lt;Remote Repository URL&gt;
-  * 원격 저장소를 복제하여 다른 곳에서 작업을 할 수 있는 명령어 이다.
 
 ```bash
-# git_home
+# Desktop 에서 git_home 로컬 저장소 생성 - 
 $ git clone https://github.com/peridot2029/gitfth.git git_home
 Cloning into 'git_home'...
 remote: Enumerating objects: 6, done.
@@ -184,10 +182,10 @@ Fast-forward
  1 file changed, 1 insertion(+)
 ```
 
-🔎Desktop 에서 git\_office
+🔎Desktop 에서 git\_office 로컬 저장소 생성해서 작업 하기
 
 ```bash
-# git_office
+# Desktop 에서 git_office 로컬 저장소 생성 - 업
 $ git clone https://github.com/peridot2029/gitfth.git git_office
 Cloning into 'git_office'...
 remote: Enumerating objects: 6, done.
