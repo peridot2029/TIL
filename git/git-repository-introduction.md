@@ -182,10 +182,10 @@ Fast-forward
  1 file changed, 1 insertion(+)
 ```
 
-🔎Desktop 에서 git\_office 로컬 저장소 생성해서 작업 하기
+🔎**Desktop** 에서 **git\_office** 로컬 저장소 생성해서 작업 하기
 
 ```bash
-# Desktop 에서 git_office 로컬 저장소 생성 - 업
+# Desktop 에서 git_office 로컬 저장소 생성 - 업무용
 $ git clone https://github.com/peridot2029/gitfth.git git_office
 Cloning into 'git_office'...
 remote: Enumerating objects: 6, done.
