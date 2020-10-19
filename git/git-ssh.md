@@ -106,7 +106,7 @@ $ git commit -am"5"
 [master da626a0] 5
  1 file changed, 1 insertion(+)
 
-# push 가 잘되면 ssh가 잘 작동되어서 자동으로 업로드를 한다는 의
+# push 가 잘되면 ssh가 잘 작동되어서 자동으로 업로드를 한다는 의미
 $ git push
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
