@@ -8,15 +8,69 @@
 
 ### \(1\). `<form>`  Element Attributes 
 
-| attribute | description |
-| :--- | :--- |
-|  `accept-charset` | 폼 데이터가 서버로 제출될때 사용되는 문자 인코딩 방식을 명시한다 |
-| `action` | 폼 데이터가 서버로 제출될 때 해당 데이터가 도착할 URL을 명시한다. |
-| `autocomplete` | `<form>` 요소의 자동 완성 기능을 사용하지 여부를 명시한다. |
-| `enctype` | 폼 데이터가 서버로 제출될 때 해당 데이터가 인코딩 되는 방법을 명시한다. \(단, `<form>`요소의 method 속성값이 POST인 경우에만 사용할 수 있다.\) |
-| `method` | 폼 데이터가 서버로 제출될 때 사용되는 HTTP method를 명시한다. |
-| `novaildate` | 폼 데이터가 서버로 제출될 때 해당 데이터의 유효성을 검사하지 않음을 명시한다. |
-| `target` | 폼 데이터를 서버로 제출한 후 받는 응답이 열릴 위치를 명시한다. |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">attribute</th>
+      <th style="text-align:left">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"> <code>accept-charset</code>
+      </td>
+      <td style="text-align:left">&#xD3FC; &#xB370;&#xC774;&#xD130;&#xAC00; &#xC11C;&#xBC84;&#xB85C; &#xC81C;&#xCD9C;&#xB420;&#xB54C;
+        &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xBB38;&#xC790; &#xC778;&#xCF54;&#xB529;
+        &#xBC29;&#xC2DD;&#xC744; &#xBA85;&#xC2DC;&#xD55C;&#xB2E4;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>action</code>
+      </td>
+      <td style="text-align:left">&#xD3FC; &#xB370;&#xC774;&#xD130;&#xAC00; &#xC11C;&#xBC84;&#xB85C; &#xC81C;&#xCD9C;&#xB420;
+        &#xB54C; &#xD574;&#xB2F9; &#xB370;&#xC774;&#xD130;&#xAC00; &#xB3C4;&#xCC29;&#xD560;
+        URL&#xC744; &#xBA85;&#xC2DC;&#xD55C;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>autocomplete</code>
+      </td>
+      <td style="text-align:left"><code>&lt;form&gt;</code> &#xC694;&#xC18C;&#xC758; &#xC790;&#xB3D9; &#xC644;&#xC131;
+        &#xAE30;&#xB2A5;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0; &#xC5EC;&#xBD80;&#xB97C;
+        &#xBA85;&#xC2DC;&#xD55C;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>enctype</code>
+      </td>
+      <td style="text-align:left">
+        <p>&#xD3FC; &#xB370;&#xC774;&#xD130;&#xAC00; &#xC11C;&#xBC84;&#xB85C; &#xC81C;&#xCD9C;&#xB420;
+          &#xB54C; &#xD574;&#xB2F9; &#xB370;&#xC774;&#xD130;&#xAC00; &#xC778;&#xCF54;&#xB529;
+          &#xB418;&#xB294; &#xBC29;&#xBC95;&#xC744;&#xBA85;&#xC2DC;&#xD55C;&#xB2E4;.</p>
+        <p>(&#xB2E8;, <code>&lt;form&gt;</code>&#xC694;&#xC18C;&#xC758; method &#xC18D;&#xC131;&#xAC12;&#xC774;
+          post &#xC778; &#xACBD;&#xC6B0;&#xC5D0;&#xB9CC; &#xC0AC;&#xC6A9;&#xD560;
+          &#xC218; &#xC788;&#xB2E4;.)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>method</code>
+      </td>
+      <td style="text-align:left">&#xD3FC; &#xB370;&#xC774;&#xD130;&#xAC00; &#xC11C;&#xBC84;&#xB85C; &#xC81C;&#xCD9C;&#xB420;
+        &#xB54C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; HTTP method&#xB97C; &#xBA85;&#xC2DC;&#xD55C;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>novaildate</code>
+      </td>
+      <td style="text-align:left">&#xD3FC; &#xB370;&#xC774;&#xD130;&#xAC00; &#xC11C;&#xBC84;&#xB85C; &#xC81C;&#xCD9C;&#xB420;
+        &#xB54C; &#xD574;&#xB2F9; &#xB370;&#xC774;&#xD130;&#xC758; &#xC720;&#xD6A8;&#xC131;&#xC744;
+        &#xAC80;&#xC0AC;&#xD558;&#xC9C0; &#xC54A;&#xC74C;&#xC744; &#xBA85;&#xC2DC;&#xD55C;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>target</code>
+      </td>
+      <td style="text-align:left">&#xD3FC; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC11C;&#xBC84;&#xB85C; &#xC81C;&#xCD9C;&#xD55C;
+        &#xD6C4; &#xBC1B;&#xB294; &#xC751;&#xB2F5;&#xC774; &#xC5F4;&#xB9B4; &#xC704;&#xCE58;&#xB97C;
+        &#xBA85;&#xC2DC;&#xD55C;&#xB2E4;.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## 2. `<input>` Element
 
