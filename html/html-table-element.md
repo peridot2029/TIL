@@ -18,7 +18,7 @@
 
 `<th>`요소는 제목의 정보를 저장하는 **헤더 셀\(header cell\)**을 정의할 때 사용한다.
 
-### \(1\). `<th>`Attributes
+### \(1\). `<th>` Element Attribute
 
 | attribute | description |
 | :--- | :--- |
@@ -33,7 +33,7 @@
 
 `<td>` 요소는 테이블에서 **하나의 데이터 셀\(data cell\)**을 정의할 때 사용한다.
 
-### \(1\). **`<td>`** Attributes
+### \(1\). **`<td>`** Element Attribute
 
 | attribute | description |
 | :--- | :--- |
@@ -61,7 +61,7 @@
 
 `<col>` 요소는 `<colgroup>` 요소에 속하는 열을 하나 이상 묶고자 할 때 사용한다.
 
-### \(1\).  `<col>`, `<colgroup>` Attribute
+### \(1\).  `<col>`, `<colgroup>` Element Attribute
 
 `<col>`, `<colgroup>` 요소에서 합쳐질 열\(column\)의 개수를 `span` 속성으로 명시한다.
 
