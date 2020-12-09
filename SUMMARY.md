@@ -29,6 +29,7 @@
 
 ## CSS
 
+* [📄 CSS - Basics](css/css-basics.md)
 * [📄 CSS - BEM](css/css-bem.md)
 * [📄CSS - Type Selector, Class Selector](css/type-selector-class-selector.md)
 * [📄 CSS - Pseudo Class, Pseudo Element](css/css-pseudo-class-pseudo-element.md)
