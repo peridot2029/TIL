@@ -38,9 +38,13 @@ CSS는 웹 페이지의  스타일을 별도 파일을 저장할 수 있게 해�
 
 ## 3. CSS Styling
 
+HTML 문서에 CSS 스타일을 적용할 때에는 아래와 같은 세 가지 방법을 사용할 수 있다.
+
 ### \(1\). Inline Style
 
 인라인 스타일\(Inline style\)은 HTML 요소 내부에 style 속성을 사용하여 CSS 스타일을 적용하는 방법이다.
+
+인라인 스타일은 해당 요소에만 스타일을 적용할 수 있다.
 
 ```markup
 <body>
@@ -51,6 +55,8 @@ CSS는 웹 페이지의  스타일을 별도 파일을 저장할 수 있게 해�
 ### \(2\). Internal Style Sheet
 
 내부 스타일 시트\(Internal style sheet\)는 HTML 문서 내의 &lt;head&gt; 요소 내에 &lt;style&gt; 요소를 사용하여 CSS 스타일을 적용하는 방법이다.
+
+내부 스타일 시트는 해당 HTML 문서에만 스타일을 적용할 수 있다.
 
 ```markup
 <head>
@@ -64,13 +70,30 @@ CSS는 웹 페이지의  스타일을 별도 파일을 저장할 수 있게 해�
 
 외부 스타일 시트\(External style sheet\)는 스타일을 적용할 웹 페이지의 &lt;head&gt; 요소에 &lt;link&gt; 요소를 사용하여 외부 스타일 시트를 포함해야만 스타일이 적용된다. 
 
+외부에 작성된 스타일 시트 파일은 .css 파일 확장자를 사용하여 저장한다.
+
 ```markup
 <head>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 ```
 
+### \(4\). 스타일 적용의 우선 순위
 
+위에서 설명한 스타일 적용 방법들이 혼합되어 사용될 경우 최종적으로는 스타일은 아래와 같은 순서에 따라 결정된다.
+
+1. 인라인 스타일 
+2. 내부 또는 외부 스타일 시트
+3. 웹 브라우저의 기본 스타일
+
+🔎 인라인 스타일이 적용된 요소에는 외부 스타일 시트와 상관없이 무조건 인라인 스타일이 적용된다.
+
+```markup
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+...
+<h1>External Style Sheet</h2>
+<h1 style="color:red;">Inline style</h2>
+```
 
 
 
