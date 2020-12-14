@@ -6,13 +6,51 @@
 
 ### 2. X\[ \]
 
-속성 선택자 \(attribute selector\), 괄호를 사용해서 ~ 라면 뜻으로 속성이 있는 태그만 대상으로 삼는다.
+속성 선택자 \(attribute selector\), 괄호\(\[ \]\)를 사용해서 ~ 라면 뜻으로 속성이 있는 요만 대상으로 삼는다.
 
-속성 뒤에 눈웃음\(^\) 기호를 사용한다면 속성값이 모두 일치하는 것을 대상으로 삼는다.
+{% tabs %}
+{% tab title="HTML" %}
+```markup
+<ul>
+		<li><a href="#internal">Internal link</a></li>
+		<li><a href="http://example.com">Example link</a></li>
+		<li><a href="#InSensitive">InSensitive internal link</a></li>
+		<li><a href="http://example.org">Example org link</a></li>
+		<li><a href="https://example.org">Example https org link</a></li>
+</ul>
 
-속성 뒤에 캐럿\($\) 기호를 사용한다면 끝에 확장자가 끝나는 일치 하는 단어를 모두 대상으로 삼는다.
+```
+{% endtab %}
 
-속성 뒤에 별표\(\*\) 기호를 사용한다면 포함된 단어를 모두 대상으로 삼는다.
+{% tab title="CSS" %}
+```css
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/* 속성의 값이 value로 시작하는 요소를 선택 */
+a[href^="#"]{
+	color: orange;
+}
+
+/* 속성의 값이 value를 포함한 요소를 선택 */
+a[href*="example"]{
+	color: pink;
+}
+
+/*  속성의 값이 value로 끝나는 요소를 선택 */
+a[href$=".org"]{
+	color: red;
+}
+
+/*  속성의 값이 value로 시작하면서 value로 끝나는 요소 선택 */
+a[href^="https"][href$=".org"]{
+	color: green;
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ### 3. X, Y
 
@@ -28,7 +66,7 @@
 
 ### 6. X + Y
 
-인접 선택자, 특정 요소의 바로 뒤에 있는 요소만 선택 대상으로 삼는다.
+인접 형제 선택자 \(adjacent sibling selector\), 특정 요소의 바로 뒤에 있는 요소만 선택 대상으로 삼는다.
 
 ### 7. X &gt; Y
 
@@ -47,11 +85,9 @@
 
 ### 8. X ~ Y
 
-일반 형제 선택자\(general sibling selector\) ****, **인접 선택자**와 유사 하지만 인접 선택자 보다 덜 엄격하다. 
+일반 형제 선택자\(general sibling selector\) ****, **인접 형 선택자**와 유사 하지만 인접 선택자 보다 덜 엄격하다. 
 
 `ul`안에 모든 `p`요소를 대상으로 삼는다.
-
-
 
 ```css
 ul ~ p {
