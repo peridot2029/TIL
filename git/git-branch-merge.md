@@ -1,4 +1,4 @@
-# 📄 Git - Branch Merge
+# 📄 Branch Merge
 
 ## 1. Git - Branch Merge
 

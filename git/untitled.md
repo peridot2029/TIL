@@ -1,4 +1,4 @@
-# 📄 Git - Stash
+# 📄 Stash
 
 ## 1. Git - Stash
 

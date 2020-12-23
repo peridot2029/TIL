@@ -1,4 +1,4 @@
-# 📄 Git - SSH
+# 📄 SSH
 
 ## 1. Git -SSH
 

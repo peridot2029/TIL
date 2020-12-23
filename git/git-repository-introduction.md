@@ -1,4 +1,4 @@
-# 📄 Git - Repository Introduction
+# 📄 Repository Introduction
 
 ## 1. Git - Repository Introduction
 

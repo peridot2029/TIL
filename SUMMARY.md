@@ -10,12 +10,12 @@
 * [📄 Gistory -  Introduction, git add](git/git-branch.md)
 * [📄 Gistory - objects filename, commit](git/gistory-objects-filename.md)
 * [📄 Gistory - git status](git/gistory-git-status.md)
-* [📄 Git - Branch Introduction](git/git-branch-introduction.md)
-* [📄 Git - Branch Create](git/git-branch-create.md)
-* [📄 Git - Branch Merge](git/git-branch-merge.md)
-* [📄 Git - Stash](git/untitled.md)
-* [📄 Git - Repository Introduction](git/git-repository-introduction.md)
-* [📄 Git - SSH](git/git-ssh.md)
+* [📄 Branch Introduction](git/git-branch-introduction.md)
+* [📄 Branch Create](git/git-branch-create.md)
+* [📄 Branch Merge](git/git-branch-merge.md)
+* [📄 Stash](git/untitled.md)
+* [📄 Repository Introduction](git/git-repository-introduction.md)
+* [📄 SSH](git/git-ssh.md)
 
 ## HTML
 
@@ -36,6 +36,7 @@
 * [📄 BOX Model](css/css-box-model.md)
 * [📄 Typograpy](css/typograpy.md)
 * [📄 Gradient](css/css-gradient.md)
+* [📄 border-image](css/border-image.md)
 * [📄 Flex Container](css/css-flex-flex-container.md)
 * [📄 Flex Item](css/css-flex-flex-item.md)
 * [📄 Gird Term](css/css-gird-term.md)
