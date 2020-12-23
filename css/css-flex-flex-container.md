@@ -1,4 +1,4 @@
-# 📄 CSS - Flex Container
+# 📄 Flex Container
 
 ## 1. Flexbox 정의
 

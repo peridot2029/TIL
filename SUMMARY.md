@@ -19,7 +19,7 @@
 
 ## HTML
 
-* [📄 HTML - Image](html/html-image.md)
+* [📄 Image](html/html-image.md)
 * [📄 HTML - Metadata Element](html/html-metadata-element.md)
 * [📄 HTML - Section, Matin Element](html/html-section-matin-element.md)
 * [📄 HTML - Form Element part 01](html/html-form-element-part-01.md)
@@ -36,9 +36,9 @@
 * [📄 BOX Model](css/css-box-model.md)
 * [📄 Typograpy](css/typograpy.md)
 * [📄 Gradient](css/css-gradient.md)
-* [📄 CSS - Flex Container](css/css-flex-flex-container.md)
-* [📄 CSS -Flex Item](css/css-flex-flex-item.md)
-* [📄 CSS -Gird Term](css/css-gird-term.md)
+* [📄 Flex Container](css/css-flex-flex-container.md)
+* [📄 Flex Item](css/css-flex-flex-item.md)
+* [📄 Gird Term](css/css-gird-term.md)
 
 ## JavaScript
 

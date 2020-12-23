@@ -1,4 +1,4 @@
-# 📄 CSS -Flex Item
+# 📄 Flex Item
 
 ## 1. Flexbox  정의
 

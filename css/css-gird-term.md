@@ -1,4 +1,4 @@
-# 📄 CSS -Gird Term
+# 📄 Gird Term
 
 ## 1. Grid Layout 정의 
 
