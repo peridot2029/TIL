@@ -11,7 +11,7 @@
 * 선형 그래디언트를 만들기 위해서는 최소한 두 개 이상의 색상 지정점이 필요하다.
 
 ```css
-background: liner-gradinet(진행방향, 색상지정점1, 색상지정점2, ...);
+linear-gradient( direction, color1, color2, …, color3 )
 ```
 
 * 색상 지정점은 그래디언트 효과로 그 사이의 색상 표현을 부드럽게 전환해주고 싶은 색상을 명시한다.
