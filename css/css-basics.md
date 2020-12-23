@@ -1,4 +1,4 @@
-# 📄 CSS - Introduction
+# 📄 Introduction
 
 ## 1. CSS 란?
 

@@ -1,6 +1,6 @@
-# 📄 CSS - Cascade and Inheritance
+# 📄Cascade and Inheritance
 
-## 1.Inheritance 정의
+### 1.Inheritance 정의
 
 **상속 \(Inheritance\)**은 상위\(부모, 조상\) 요소에 적용된 프로퍼티를  하위\(자식, 자손\) 요소가 물려 받는 것을 의미한다.
 
@@ -30,7 +30,7 @@
 | `overflow` | no |
 | `float` | no |
 
-### \(1\). Inheritance 제어
+#### 1\) Inheritance 제어
 
 CSS는 상속을 제어하기 위한 **4가지 특수 범용 속성 값**을 제공한다. 모든 CSS 속성은 이러한 값을 허용한다.
 
@@ -51,8 +51,6 @@ CSS는 상속을 제어하기 위한 **4가지 특수 범용 속성 값**을 제
 #### **\`\`**[**`revert`**](https://developer.mozilla.org/ko/docs/Web/CSS/revert)**\`\`**
 
  부모 속성으로 돌아가거나, 부모가 없을 때에는 최초의 상태로 돌아간다.
-
-✍ **Exmple**
 
 {% tabs %}
 {% tab title="HTML" %}
@@ -98,11 +96,11 @@ li:first-child a {
 
 
 
-## 2. Cascading 정의
+### 2. Cascading 정의
 
 요소 하나 이상의 CSS 선언에 영향을 받을 수 있다. 이때 충돌을 피하기 위해  CSS 적용 우선 순위 필요하다. 이를 **캐스케이딩 \(cascading\)** 이라고 한다.
 
-### \(1\). cascading 3가지 규칙
+#### 1\) cascading 3가지 규칙
 
 📝**중요성 \(importance\)**
 

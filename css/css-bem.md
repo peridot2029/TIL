@@ -1,6 +1,6 @@
-# 📄 CSS - BEM
+# 📄 BEM
 
-## 1. BEM 기본 구조
+### 1. BEM 기본 구조
 
 BEM은 **block, element, modifer** 세 가지를 뜻한다. 그리고 각각 `--` 와 `__`로 구분한다.
 
@@ -17,13 +17,13 @@ BEM은 기본적으로 **ID**를 사용하지 않으면, **class** 를 사용한
 }
 ```
 
-## 2. Block / Element / Modifier
+### 2. Block / Element / Modifier
 
-### \(1\) Block
+#### 1\) Block
 
 재사용 가능한 기능적인 독립적인 페이지 컴포넌트를 **block** 이라고 부른다.
 
-### \(2\) Element
+#### 2\) Element
 
 **element**는 **block**를 구성하는 단위이다. **element**는 자신 속한 블럭 내에서만 의미를 가진다. 그러므로 블럭 안에서 떼어다가 다른 데서 사용할 수 없다.
 
@@ -53,7 +53,7 @@ BEM은 기본적으로 **ID**를 사용하지 않으면, **class** 를 사용한
 {% endtab %}
 {% endtabs %}
 
-### \(3\) Modifier
+#### 3\) Modifier
 
 block 또는 element의 **모양\(color, size\), 상태\(disabled, checked\)**를 정의한다.
 

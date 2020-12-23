@@ -29,12 +29,12 @@
 
 ## CSS
 
-* [📄 CSS - Introduction](css/css-basics.md)
-* [📄 CSS - BEM](css/css-bem.md)
-* [📄CSS - Type Selector, Class Selector](css/type-selector-class-selector.md)
-* [📄 CSS - Pseudo Class, Pseudo Element](css/css-pseudo-class-pseudo-element.md)
-* [📄 CSS - BOX Model](css/css-box-model.md)
-* [📄 CSS - Cascade and Inheritance](css/css-cascade-and-inheritance.md)
+* [📄 Introduction](css/css-basics.md)
+* [📄 BEM](css/css-bem.md)
+* [📄 Selectors](css/type-selector-class-selector.md)
+* [📄Cascade and Inheritance](css/css-cascade-and-inheritance.md)
+* [📄 BOX Model](css/css-box-model.md)
+* [Gradient](css/css-gradient.md)
 * [📄 CSS - Flex Container](css/css-flex-flex-container.md)
 * [📄 CSS -Flex Item](css/css-flex-flex-item.md)
 * [📄 CSS -Gird Term](css/css-gird-term.md)
