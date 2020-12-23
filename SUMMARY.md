@@ -34,6 +34,7 @@
 * [📄 Selectors](css/type-selector-class-selector.md)
 * [📄Cascade and Inheritance](css/css-cascade-and-inheritance.md)
 * [📄 BOX Model](css/css-box-model.md)
+* [📄 Typograpy](css/typograpy.md)
 * [📄 Gradient](css/css-gradient.md)
 * [📄 CSS - Flex Container](css/css-flex-flex-container.md)
 * [📄 CSS -Flex Item](css/css-flex-flex-item.md)
