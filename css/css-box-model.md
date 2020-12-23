@@ -192,7 +192,7 @@ div{
 
 The box model [→\(MDN\)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
 
-Box Sizing [→\(CSS-TRICKS\)](https://css-tricks.com/box-sizing/)
+box-sizing [→\(CSS-TRICKS\)](https://css-tricks.com/box-sizing/)
 
 CSS 레이아웃을 배웁시다 [→\(SITE\)](http://ko.learnlayout.com/box-model.html)
 

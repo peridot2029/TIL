@@ -170,9 +170,9 @@ li a {
 
 ### Reference <a id="reference"></a>
 
-css 선택자 [→\(MDN\)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals)
+css selector [→\(MDN\)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals)
 
 반드시 기억해야 하는 CSS 선택자 30개 [→\(SITE\)﻿](https://code.tutsplus.com/ko/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 
-가상 선택자 정리 및 비 [→\(SITE\)﻿](https://lalacode.tistory.com/6)
+가상 선택자 정리 및 비교 [→\(SITE\)﻿](https://lalacode.tistory.com/6)
 
