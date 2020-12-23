@@ -4,7 +4,7 @@
 
 `<textarea>` 요소는 멀티라인 일반 텍스트 편집 컨트롤을 나타낸다.
 
-#### \(1\). `<textarea>` 요소의 Attribute
+#### 1\) `<textarea>` 요소의 Attribute
 
 #### 📝**autocapitalize**
 
@@ -46,7 +46,7 @@ Boolean, 사용자가 양식을 제출 하기 값을 입력해야 한다.
 
 컨트롤이 텍스트를 래핑하는 방법
 
-#### \(2\). `<textarea>` CSS Styling
+#### 2\) `<textarea>` CSS Styling
 
 `<textarea>`는 기본적 으로 `display` 값은 block 이다.
 

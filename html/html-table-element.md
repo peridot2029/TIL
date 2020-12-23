@@ -1,6 +1,6 @@
 # 📄 HTML - Table Element
 
-## 1. `<table>` Element
+### 1. `<table>` Element
 
 `<table>` 요소는 데이터를 포함하는 셀\(cell\)들의 **행\(row\)**과 **열\(colum\)**로 구성된 **2차원 테이블**을 정의할때 사용한다. 
 
@@ -8,17 +8,17 @@
 
 `<table>` 요소는 **레이아웃 목적이 아닌 도표의 의미가 필요할 때 사용한다.**
 
-## **2. `<tr>`Element**
+### **2. `<tr>`Element**
 
 테이블에서 셀들로 이루어진 하나의 **행\(row\)**을 정의할 때 사용한다.
 
 `<tr>`요소는 하나 이상의`<td>`, `<th>` 요소를 포함할 수 있다.
 
-## 3. `<th>` Element
+### 3. `<th>` Element
 
 `<th>`요소는 제목의 정보를 저장하는 **헤더 셀\(header cell\)**을 정의할 때 사용한다.
 
-### \(1\). `<th>` Element Attribute
+#### 1\) `<th>` Element Attribute
 
 | attribute | description |
 | :--- | :--- |
@@ -27,13 +27,13 @@
 | `colspan` | 세로로 열들을 병합 할 때 사용한다. |
 | `rowspan` | 가로로 행들을 병합 할 때 사용한다. |
 
-## 4. `<td>` Element
+### 4. `<td>` Element
 
 테이블을 구성하는 셀\(cell\)은 `<th>`,`<td>` 요소로 두 가지로 구분된다.
 
 `<td>` 요소는 테이블에서 **하나의 데이터 셀\(data cell\)**을 정의할 때 사용한다.
 
-### \(1\). **`<td>`** Element Attribute
+#### 1\) **`<td>`** Element Attribute
 
 | attribute | description |
 | :--- | :--- |
@@ -41,7 +41,7 @@
 | `colspan` | 세로로 열들을 병합 할 때 사용한다. |
 | `rowspan` | 가로로 행들을 병합 할 때 사용한다. |
 
-## 5. `<caption>` Element
+### 5. `<caption>` Element
 
 `<caption>` 요소는 표의 제목을 나타날 때 사용한다.
 
