@@ -93,7 +93,7 @@ Changes to be committed:
         new file:   f1.txt
 ```
 
-### \(3\). git commit
+#### 3\) git commit
 
 * **commit**은 작업을 마무리 했다는 의미로 버전을 등록한다. 
 * 즉, **staing area**에 저장되었던 파일이 **local repository**로 확정된다.
@@ -226,11 +226,11 @@ $ git log --oneline
 9297e6f 1
 ```
 
-### \(4\). git status
+#### 4\) git status
 
 Git에 의해 관리되는 파일들의 상태\(status\)이다.
 
-### \(5\). git log
+#### 5\) git log
 
 지금 까지의 commit 된 기록들이 출력되며, 가장 위에 나오는 내역이 가장 최근 내역임을 알 수 있다.
 
