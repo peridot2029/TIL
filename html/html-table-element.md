@@ -57,7 +57,7 @@
 
 `<colgroup>` 요소는 `<caption>` 요소 다음에 위치해야 되며 선택적으 사용한다.
 
-## 7. `<col>`Element
+### 7. `<col>`Element
 
 `<col>` 요소는 `<colgroup>` 요소에 속하는 열을 하나 이상 묶고자 할 때 사용한다.
 
