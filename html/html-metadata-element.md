@@ -1,6 +1,6 @@
-# 📄 HTML - Metadata Element
+# 📄 Metadata Element
 
-## 1. `<head>` Element 
+### 1. `<head>` Element 
 
  `<head>` 요소는 해당 문서에 대한 정보인 메타 데이터\(meta data\)의 집합을 정의할 때 사용한다.
 
@@ -9,7 +9,7 @@
 * `<title>`, `<style>`,`<base>`,`<link>`, `<meta>`, `<script>`, `<noscript>`
 * `<script>`,`<noscript>` 요소는 `<head>` 뿐만 아니라 `<body>` 요소에 포함 시킬 수 있다.
 
-## 2. `<title>` Element 
+### 2. `<title>` Element 
 
 `<title>` 요소는 해당 문서의 제목\(title\)을 정의할 때 사용한다.
 
@@ -21,7 +21,7 @@
 
 만약 `<title>` 요소가 존재하지 않으면, 해당 문서는 HTML 유효성 검사를 통과하지 못한다.
 
-## 3. `<style>` Element 
+### 3. `<style>` Element 
 
 이 요소는 HTML 문서의 스타일 정보를 정의 할 때 사용한다.
 
@@ -31,7 +31,7 @@ HTML 문서는 여러 개의 `<style>` 요소를 사용할 수 있다.
 
 별도의 파일로 지정된 외부 스타일 시트는 `<link>` 요소를 사용하여 참조한다.
 
-## 4. `<base>` Element
+### 4. `<base>` Element
 
  `<base>` 요소는 문서의 모든 상대 주소\(relative URL\)에 대한 기본 URL\(base URL\)과 `target` 속성 값을 정의할 때 사용한다.
 
@@ -51,7 +51,7 @@ HTML 문서는 여러 개의 `<style>` 요소를 사용할 수 있다.
 </body>
 ```
 
-## 5. `<link>` Element 
+### 5. `<link>` Element 
 
 이 요소는 해당 문서와 외부 소스\(external resource\) 사이의 관계를 정의할 때 사용한다.
 
@@ -61,7 +61,7 @@ HTML 문서는 여러 개의 `<style>` 요소를 사용할 수 있다.
 
 주로 외부 스타일 시트\(external style sheet\)를 연결할 때 사용한다.
 
-### \(1\). `<link>` Attribute
+#### 1\)  `<link>` Attribute
 
 | attribute | description |
 | :--- | :--- |
@@ -72,7 +72,7 @@ HTML 문서는 여러 개의 `<style>` 요소를 사용할 수 있다.
 | `sizes` | 시각적 미디어에서 리소스 포함된 아이콘의 크기를 명시   단, `<link>` 요소의 `rel` 속성 값이 **icon**인 경우에만 사용 가능 |
 | `type` | 링크된 외부 리소스의 미디어 타입을 명시 |
 
-### \(2\). `<link>` rel Attribute
+#### 2\) `<link>` rel Attribute
 
 `<link>` 요소에서 `rel` 속성은 현재 문서와 외부 리소스 사이의 관계를 명시한다.
 
@@ -95,7 +95,7 @@ HTML 문서는 여러 개의 `<style>` 요소를 사용할 수 있다.
 | `search` | 현재 문서 및 관련된 페이지를 검색 하는데 사용할 리소스에 대한 링크 제공 |
 | `stylesheet` | 스타일 시트로 사용할 외부 리소스를 불러온다. |
 
-## 3. `<meta>` Element 
+### 3. `<meta>` Element 
 
  이 요소는 해당 문서에 대한 정보인 메타데이터\(meta data\)를 정의할 때 사용한다.
 
@@ -124,11 +124,11 @@ HTML 문서는 여러 개의 `<style>` 요소를 사용할 수 있다.
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-## 7. `<script>` Element
+### 7. `<script>` Element
 
 이 요소는 자바스크립트와 같은 클라이언트 사이드 스크립트\(client side scripts\)를 정의할 때 사용한다.
 
-## 8. `<noscript>` Element
+### 8. `<noscript>` Element
 
 이 요소는 클라이언트 사이드 스크립트\(client-side scripts\)를 사용하지 않도록 설정했거나, 스크립트를 지원하지 않는 브라우저를 위한 별도의 콘텐츠를 정의할 때 사용한다.
 
