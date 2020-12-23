@@ -1,4 +1,4 @@
-# Gradient
+# 📄 Gradient
 
 ### 1. Gradient ?
 
