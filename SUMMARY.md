@@ -4,8 +4,8 @@
 
 ## Git
 
-* [📄 Git - Introduction](git/git-term.md)
-* [📄 Git - init, add, commit, status, log](git/git-init-add-commit-status-log.md)
+* [📄 Introduction](git/git-term.md)
+* [📄 init, add, commit, status, log](git/git-init-add-commit-status-log.md)
 * [📄Git - reset, revert](git/git-reset-revert.md)
 * [📄 Gistory -  Introduction, git add](git/git-branch.md)
 * [📄 Gistory - objects filename, commit](git/gistory-objects-filename.md)

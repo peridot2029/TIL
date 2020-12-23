@@ -1,8 +1,8 @@
-# 📄 Git - init, add, commit, status, log
+# 📄 init, add, commit, status, log
 
-## 1. Git - init, add, commit , status, log
+### 1. Git - init, add, commit , status, log
 
-### \(1\). git init
+#### 1\) git init
 
 여러 파일을 추적하는 **.git** 폴더가 생긴다. 
 
@@ -50,7 +50,7 @@ nothing to commit (create/copy files and use "git add" to track)
 
 ```
 
-### \(2\). git add
+#### 2\) git add
 
 Git이 추적하고 있는 수정된 파일이 **working directory**에서 **staging area**에 저장된다.
 
