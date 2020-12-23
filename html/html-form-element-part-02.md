@@ -1,10 +1,10 @@
-# 📄 HTML - Form Element part 02
+# 📄 Form Element part 02
 
-## 1. `<button>` Element
+### 1. `<button>` Element
 
 `<button>` 요소는 클릭한 버튼을 나태낸다.
 
-### \(1\). `<button>` Element Attributes
+#### 1\) `<button>` Element Attributes
 
 #### 📝**autofocus**
 
@@ -62,7 +62,7 @@
 
 서버에 제출할 버튼이 아니라면, `type` 특성을 `button`으로 반드시 지정해야 한다.
 
-### \(1\). `<button>` 접근성 고려사항
+#### 1\) `<button>` 접근성 고려사항
 
 #### 📝**icon button**
 
@@ -94,7 +94,7 @@
 
 간격은 `margin`과 같은 CSS 속성으로 설정할 수 있다.
 
-## 2. `<select>` Element
+### 2. `<select>` Element
 
 `<select>` element는 옵션 메뉴를 제공하는 컨트롤을 나타낸다.
 
@@ -107,8 +107,6 @@
 `<selected>` 특성을 지정하면 해당 옵션을 선택한 상태로 페이지를 불러온다.
 
 `<option>` 요소를 `<optiongroup>` 요소 안에 배치하면 드롭 다운 내에서 옵션 그룹으로 나눌 수 있다.
-
-
 
 ```markup
 <label for="coffe-select">Click Coffee Menu :</label>

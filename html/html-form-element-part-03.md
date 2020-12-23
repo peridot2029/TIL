@@ -1,10 +1,10 @@
-# 📄 HTML - Form Element part 03
+# 📄 Form Element part 03
 
-## 1. `<textarea>` Element
+### 1. `<textarea>` Element
 
 `<textarea>` 요소는 멀티라인 일반 텍스트 편집 컨트롤을 나타낸다.
 
-### \(1\). `<textarea>` 요소의 Attribute
+#### \(1\). `<textarea>` 요소의 Attribute
 
 #### 📝**autocapitalize**
 
@@ -46,7 +46,7 @@ Boolean, 사용자가 양식을 제출 하기 값을 입력해야 한다.
 
 컨트롤이 텍스트를 래핑하는 방법
 
-### \(2\). `<textarea>` CSS Styling
+#### \(2\). `<textarea>` CSS Styling
 
 `<textarea>`는 기본적 으로 `display` 값은 block 이다.
 
@@ -86,11 +86,11 @@ textarea:valid {
 }
 ```
 
-## 2. `<fieldset>` Element
+### 2. `<fieldset>` Element
 
 `<fieldset>` 요소는 웹 양식의 컨트롤과 `<label>`을 묶을 때 사용한다.
 
-### \(1\). `<fieldset>` CSS Styling
+#### 1\)  `<fieldset>` CSS Styling
 
 `<fieldset>`는 기본적 으로 `display` 값은 block 이다.
 
@@ -108,27 +108,25 @@ textarea:valid {
 </form>
 ```
 
-## 3. `<legend>` Element
+### 3. `<legend>` Element
 
 `<legend>` 요소는 부모 `<fieldset>` 콘텐츠의 설명을 나타낸다.
 
-## 4. `<datalist>` Element
+### 4. `<datalist>` Element
 
 `<datalist>` 요소는 다른 컨트롤에서 고를 수 있는 가능한, 혹은 추천하는 선택지를 나타내는 `<option>` 요소 여럿을 담는다.
 
-## 5. `<progress>` Element
+### 5. `<progress>` Element
 
 `<progress>` 요소는 어느 작업의 완료 정도를 나타내며, 주로 진행 표시줄의 형태로 띈다.
 
-## 6. `<output>` Element
+### 6. `<output>` Element
 
 `<output>` 요소는 웹 사이트나 앱에서 계산이나 사용자 행동의 결과를 삽입할 수 있는 컨트롤 데이터 요소 이다.
 
-## 7. `<meter>` Element
+### 7. `<meter>` Element
 
 `<meter>` 요소는 특정 범위 내에서 스칼라 값, 또는 백분율 값을 나타낸다.
-
-
 
 ### Reference 
 
