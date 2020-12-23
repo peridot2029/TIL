@@ -61,7 +61,7 @@
 
 `<col>` 요소는 `<colgroup>` 요소에 속하는 열을 하나 이상 묶고자 할 때 사용한다.
 
-### \(1\).  `<col>`, `<colgroup>` Element Attribute
+#### 1\)  `<col>`, `<colgroup>` Element Attribute
 
 `<col>`, `<colgroup>` 요소에서 합쳐질 열\(column\)의 개수를 `span` 속성으로 명시한다.
 
