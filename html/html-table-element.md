@@ -49,7 +49,7 @@
 
 테이블이 레이아웃 용도가 아니라면 `<caption>`요소는 필수로 사용 되어야 한다.
 
-## 6. `<colgroup>`Element
+### 6. `<colgroup>`Element
 
 테이블에서 열\(colum\)을 그룹을 만들고자 할 때 사용한다.
 
