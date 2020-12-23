@@ -1,18 +1,18 @@
-# 📄 HTML - Section, Matin Element
+# 📄 Section, Matin Element
 
 ## 
 
 ![](../.gitbook/assets/htmlsection.png)
 
-## 1. Root Setion Element 
+### 1. Root Setion Element 
 
 `<body>` 문서 안에서 단 한 번만 사용 가능하다.
 
-## 2.  `<section>` Element 
+### 2.  `<section>` Element 
 
 섹션 요소는 일반적인 컨테이너 요소가 아니므로, 문서 개요에 명시적으로 나열되는 경우에만 섹션 요소가 적합다는 규칙이 있다.
 
-### \(1\). `<section>` Elemenet
+#### 1\) `<section>` Elemenet
 
 `<section>`요소는 문서,  애플리케이션 일반적인 섹션을 의미한다.
 
@@ -22,7 +22,7 @@
 
 콘텐츠가 사이트에 포함된 독립적인 섹션 성향이 크다면,`<section>` element 대신`<artcle>`element를 사용하는 것을 권장한다.
 
-### \(2\) .`<article>` Element
+#### 2\) `<article>` Element
 
 `<article>` element는 문서 페이지, 애플리케이션, 사이트 등에 포함된 독립적인 섹션을 의미한다.
 
@@ -32,11 +32,11 @@
 
 웹 접근성이 측면에서 반드시 **제목 \(h1 ~ h6\)를 포함** 시켜 식별해야 한다.
 
-### \(3\) .`<aside>` Element
+#### 3\) `<aside>` Element
 
 `<aside>` element는 웹 사이트 사이드바에 해당 되는 부 콘텐츠\(메인 콘텐츠와 분리된\) 섹션을 말한다.
 
-### \(4\). `<nav>` Element
+#### 4\)  `<nav>` Element
 
 다른 페이지로 이동하는 링크 또는 사이트 내 탐색 링크를 포함하는 섹션 요소이다.
 
@@ -46,7 +46,7 @@
 
 사이트의 하단에 위치한 `<footer>`만으로도 링크는 충분하다.
 
-## 3. Inside Sections Element
+### 3. Inside Sections Element
 
 섹션 내부에 사용되는 요소는 `<header>, <footer>, <main>` 요소들이 있다.
 
@@ -54,15 +54,15 @@
 
 즉, 섹션 요소 내부에 넣어도 되고 넣어지 않아도 된다. 묶어서 분리해야 할때 넣으면 된다.
 
-### \(1\) .`<header>`Element
+#### 1\) `<header>`Element
 
 `<header>` element는 일반적으로 섹션의 제목, 목차, 검색, 로고를 포함하는데 사용한다.
 
-### \(2\) .`<footer>`Element
+#### 2\) `<footer>`Element
 
 `<footer>` element는 일반적으로 섹션의 저자, 링크, 저작권 정보 등을 포함하는 데 사용한다.
 
-### \(3\) .`<main>` Element
+#### 3\) `<main>` Element
 
 문서 또는 애플리케이션 `<body>` element 안에서 메인 콘텐츠에 해당 된다. 
 
