@@ -29,20 +29,15 @@
 
 속성 선택자\(Attribute selector\)는 특정 속성\(attribute\)를 갖고 있거나, 특정 속성이 특정 값 등을 갖고 있는 요소를 선택한다.
 
-* `[attributename]`
-  * attribute name 속성을 가진 요소를 선택한다.
-* `[attributename="value"]`
-  * arribute name 속성의 값이 value인 요소를 선택한다.
-* `[attributename~="value"]`
-  * attribute name 속성의 값이 value를 포함한 요소를 선택한다.
-* `[attributename|="value"]`
-  * attribute name 속성의 값이 value이거나 value~로 시작하는 요소를 선택한다.
-* `[attributename^="value"]`
-  * attribute name 속성의 값이 value로 시작하는 요소를 선택한다.
-* `[attributename$="value"]`
-  * attribute name 속성의 값이 value로 끝나는 요소를 선택한다.
-* `[attributename*="value"]`
-  * attribute name 속성의 값이 value를 포함한 요소를 선택한다
+| selector | description |
+| :--- | :--- |
+| `[attributename]` | attribute name 속성을 가진 요소를 선택한다. |
+| `[attributename="value"]` | attribute name 속성의 값이 value인 요소를 선택한다. |
+| `[attributename~="value"]` | attribute name 속성의 값이 value를 포함한 요소를 선택한다. |
+| `[attributename|="value"]` | attribute name 속성의 값이 value이거나 value~로 시작하는 요소를 선택한다. |
+| `[attributename^="value"]` | attribute name 속성의 값이 value로 시작하는 요소를 선택한다. |
+| `[attributename$="value"]` | attribute name 속성의 값이 value로 끝나는 요소를 선택한다. |
+| `[attributename*="value"]` | attribute name 속성의 값이 value를 포함한 요소를 선택한다 |
 
 ### 2. Grouping Selector
 
@@ -148,16 +143,12 @@ li a {
 
 가상 요소\(Pseudo element\)는선택한 요소의 일부분에만 스타일을 적용한다.
 
-
-
-* `::first-letter`
-  * 첫 번째 줄의 첫 글자를 선택
-* `::first-line`
-  * 첫 번째 줄을 선택
-* `::before`
-  * 요소의 앞을 선택
-* `::after`
-  * 요소의 뒤를 선택
+| selector | description |
+| :--- | :--- |
+| `::first-letter` | 첫 번째 줄의 첫 글자를 선택 |
+| `::first-line` | 첫 번째 줄을 선택 |
+| `::before` | 요소의 앞을 선택 |
+| `::after` | 요소의 뒤를 선택 |
 
 ### Reference <a id="reference"></a>
 
