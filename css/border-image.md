@@ -71,14 +71,13 @@ border-image-source: none | <image>
 
 #### 5\) border-image-width
 
-border-image-width 속성은 테두리 이미지 너비\(width\)를 설정한다.
+`border-image-width`속성은 테두리 이미지 너비\(width\)를 설정한다.
 
 | property value | description |
 | :--- | :--- |
-| `length` |  |
-| `number` |  |
-| `%` |  |
-| `auto` |  |
+| `length` | 픽셀로 너비를 지 |
+| `number` | 테두리의 너비로 `border-width`의 배수 사 |
+| `auto` | `border-image-slice`가 가진 원래 너비 또는 높이 사 |
 
 
 
