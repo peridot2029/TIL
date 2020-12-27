@@ -26,7 +26,7 @@
 * [📄 Form Element part 02](html/html-form-element-part-02.md)
 * [📄 Form Element part 03](html/html-form-element-part-03.md)
 * [📄 Table Element](html/html-table-element.md)
-* [All HTML Elements](html/all-html-elements.md)
+* [📄 All HTML Elements](html/all-html-elements.md)
 
 ## CSS
 
