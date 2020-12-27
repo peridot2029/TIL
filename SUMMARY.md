@@ -8,7 +8,7 @@
 * [📄 init, add, commit, status, log](git/git-init-add-commit-status-log.md)
 * [📄reset, revert](git/git-reset-revert.md)
 * [📄 Gistory -  Introduction, git add](git/git-branch.md)
-* [📄 Gistory - objects filename, commit](git/gistory-objects-filename.md)
+* [�� Gistory - objects filename, commit](git/gistory-objects-filename.md)
 * [📄 Gistory - git status](git/gistory-git-status.md)
 * [📄 Branch Introduction](git/git-branch-introduction.md)
 * [📄 Branch Create](git/git-branch-create.md)
@@ -26,6 +26,7 @@
 * [📄 Form Element part 02](html/html-form-element-part-02.md)
 * [📄 Form Element part 03](html/html-form-element-part-03.md)
 * [📄 Table Element](html/html-table-element.md)
+* [All HTML Elements](html/all-html-elements.md)
 
 ## CSS
 
