@@ -88,3 +88,7 @@
 * [📄 TypeScript - Generics](typescript/typescript-generics.md)
 * [📄 TypeScript - Defining Props in React Function Component with Typescript](typescript/typescript-defining-props-in-react-function-component-with-typescript.md)
 
+## INTERNET
+
+* [How does the Internet work?](internet/how-does-the-internet-work.md)
+
