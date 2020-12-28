@@ -74,7 +74,7 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 | :--- | :--- | :--- |
 | rel | \(필수\)현재 문서와 리소스의 관 |  `stylesheet`, `icon` |
 | href | 외부 리소스 URL | URL |
-| type | 외부 리소스 MIME  타 | `text/css`, `images/x-icon` |
+| type | 외부 리소스 MIME  타입 | `text/css`, `images/x-icon` |
 
 #### &lt;meta/&gt;
 
@@ -382,7 +382,7 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 
 | attribute | description | value |
 | :--- | :--- | :--- |
-| datetime | 유효한 날짜 문 | date |
+| datetime | 유효한 날짜 문자 | date |
 
 #### &lt;br/&gt;
 
@@ -397,7 +397,7 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 | attribute | description | value |
 | :--- | :--- | :--- |
 | cite | 변경을 설명하는 리소스의 URI | URI |
-| datetime | 변경이 일어난 [유요한 날짜 문자](https://www.w3.org/TR/html51/infrastructure.html#dates-and-times) | date |
+| datetime | 변경이 일어난 유요한 날짜 문자 | date |
 
 #### &lt;ins&gt;
 
@@ -406,7 +406,7 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 | attribute | description | value |
 | :--- | :--- | :--- |
 | cite | 변경을 설명하는 리소스의 URI | URI |
-| datetime | 변경이 일어난 [유요한 날짜 문자](https://www.w3.org/TR/html51/infrastructure.html#dates-and-times) | date |
+| datetime | 변경이 일어난 유요한 날짜 문자 | date |
 
 ### 멀티미디어
 
@@ -420,7 +420,7 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 | alt | \(필수\)이미지의 대체텍스트 |  |
 |  width | 이미지의 가로 너비 |  |
 | height | 이미지의 세로 너비 |  |
-| srcset | 브라우저에게 제시할 이미지 URL과 원본 크기의 목록을 정 |  `w`, `x` |
+| srcset | 브라우저에게 제시할 이미지 URL과 원본 크기의 목록을 정의 |  `w`, `x` |
 
 #### &lt;audio&gt; 
 
@@ -536,7 +536,7 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 | attribute | description |
 | :--- | :--- |
 | widhth | 캔버스의 가로 너비 |
-| height | 캔버스의 세로 너 |
+| height | 캔버스의 세로 너비 |
 
 ### 스크립트
 
@@ -557,7 +557,7 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
       <td style="text-align:left">async</td>
       <td style="text-align:left">
         <p>&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; &#xBE44;&#xB3D9;&#xAE30;&#xC801;(Asynchronously)
-          &#xC2E4;&#xD589; &#xC5EC;&#xBD80;</p>
+          &#xC2E4;&#xD589; &#xC5EC;&#xBD80;,</p>
         <p><code>src</code> &#xC18D;&#xC131; &#xD544;&#xC218;</p>
       </td>
       <td style="text-align:left">boolean</td>
@@ -566,7 +566,7 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
       <td style="text-align:left">defer</td>
       <td style="text-align:left">
         <p>&#xBB38;&#xC11C; &#xD30C;&#xC2F1;(&#xAD6C;&#xBB38; &#xBD84;&#xC11D;)&#xD6C4;
-          &#xC791;&#xB3D9; &#xC5EC;&#xBD80;</p>
+          &#xC791;&#xB3D9; &#xC5EC;&#xBD80; ,</p>
         <p><code>src</code> &#xC18D;&#xC131; &#xD544;&#xC218;</p>
       </td>
       <td style="text-align:left">boolean</td>
@@ -575,7 +575,7 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
       <td style="text-align:left">src</td>
       <td style="text-align:left">
         <p>&#xCC38;&#xC870;&#xD560; &#xC678;&#xBD80; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;
-          URL</p>
+          URL ,</p>
         <p>&#xD3EC;&#xD568;&#xB41C; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xCF54;&#xB4DC;&#xB294;
           &#xBB34;&#xC2DC;&#xB41C;&#xB2E4;.</p>
       </td>
@@ -678,17 +678,147 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 * 라벨 가능 요소
   *  `<button>`, `<input>`, `<progress>`, `<select>`, `<textarea>`
 
+| attribute | description |
+| :--- | :--- |
+| for | 참조할 라벨 가능 요소의 `id` 속성 값 |
+
 #### &lt;button&gt;
 
 선택 가능한 버튼을 지정.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">attribute</th>
+      <th style="text-align:left">description</th>
+      <th style="text-align:left">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">autofocus</td>
+      <td style="text-align:left">
+        <p>&#xD398;&#xC774;&#xC9C0;&#xAC00; &#xB85C;&#xB4DC;&#xB420; &#xB54C; &#xC790;&#xB3D9;&#xC73C;&#xB85C;
+          &#xD3EC;&#xCEE4;&#xC2A4;,</p>
+        <p>&#xBB38;&#xC11C; &#xB0B4; &#xACE0;&#xC720;&#xD574;&#xC57C; &#xD55C;&#xB2E4;.</p>
+      </td>
+      <td style="text-align:left">boolean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">disabled</td>
+      <td style="text-align:left">&#xBC84;&#xD2BC;&#xC744; &#xBE44;&#xD65C;&#xC131;&#xD654;</td>
+      <td style="text-align:left">boolean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">form</td>
+      <td style="text-align:left">
+        <p><code>&lt;form&gt;</code>&#xC758; <code>id</code> &#xC18D;&#xC131; &#xAC12;,</p>
+        <p>&#xD574;&#xB2F9; &lt;form&gt; &#xD6C4;&#xC190;&#xC774; &#xC544;&#xB2D0;
+          &#xACBD;&#xC6B0;</p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">name</td>
+      <td style="text-align:left">&#xD3FC; &#xB370;&#xC774;&#xD130;&#xC640; &#xD568;&#xAED8; &#xC804;&#xC1A1;&#xB418;&#xB294;
+        &#xBC84;&#xD2BC;&#xC758; &#xC774;&#xB984;</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">type</td>
+      <td style="text-align:left">&#xBC84;&#xD2BC;&#xC758; &#xD0C0;&#xC785;</td>
+      <td style="text-align:left"><code>button</code>, <code>reset</code>, <code>submit</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### &lt;textare&gt;
 
 여러 줄의 일반 텍스트 양식.
 
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">attribute</th>
+      <th style="text-align:left">description</th>
+      <th style="text-align:left">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">autocomplete</td>
+      <td style="text-align:left">
+        <p>&#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC774;&#xC804;&#xC5D0; &#xC785;&#xB825;&#xD55C;
+          &#xAC12;&#xC73C;&#xB85C; &#xC790;&#xB3D9; &#xC644;&#xC131; &#xAE30;&#xB2A5;&#xC744;
+          &#xC0AC;&#xC6A9;&#xD560; &#xAC83;&#xC778;&#xC9C0; &#xC5EC;&#xBD80;,</p>
+        <p>&#xBB38;&#xC11C; &#xB0B4; &#xACE0;&#xC720;&#xD574;&#xC57C; &#xD55C;&#xB2E4;.</p>
+      </td>
+      <td style="text-align:left"><code>on(default)</code>, <code>off</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">autofocus</td>
+      <td style="text-align:left">&#xD398;&#xC774;&#xC9C0;&#xAC00; &#xB85C;&#xB4DC;&#xB420; &#xB54C; &#xC790;&#xB3D9;&#xC73C;&#xB85C;
+        &#xD3EC;&#xCEE4;&#xC2A4;</td>
+      <td style="text-align:left">boolean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">disabled</td>
+      <td style="text-align:left">&#xC591;&#xC2DD;&#xC744; &#xBE44;&#xD65C;&#xC131;&#xD654;</td>
+      <td style="text-align:left">boolean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">form</td>
+      <td style="text-align:left">
+        <p><code>&lt;form&gt;</code>&#xC758; <code>id</code> &#xC18D;&#xC131; &#xAC12;,</p>
+        <p>&#xD574;&#xB2F9; &lt;form&gt; &#xD6C4;&#xC190;&#xC774; &#xC544;&#xB2D0;
+          &#xACBD;&#xC6B0;</p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">maxlength</td>
+      <td style="text-align:left">&#xC785;&#xB825; &#xAC00;&#xB2A5;&#xD55C; &#xCD5C;&#xB300; &#xBB38;&#xC790;
+        &#xC218;</td>
+      <td style="text-align:left">number</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">name</td>
+      <td style="text-align:left">&#xC591;&#xC2DD;&#xC758; &#xC774;&#xB984;</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">placeholder</td>
+      <td style="text-align:left">&#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC785;&#xB825;&#xD560; &#xAC12;&#xC758;
+        &#xD78C;&#xD2B8;</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">readonly</td>
+      <td style="text-align:left">&#xC218;&#xC815; &#xBD88;&#xAC00;&#xD55C; &#xC77D;&#xAE30; &#xC804;&#xC6A9;</td>
+      <td
+      style="text-align:left">boolean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">rows</td>
+      <td style="text-align:left">&#xC591;&#xC2DD;&#xC758; &#xC904; &#xC218;</td>
+      <td style="text-align:left"><code>2(default),</code>number</td>
+    </tr>
+  </tbody>
+</table>
+
 #### &lt;fieldset&gt;, &lt;legend&gt;
 
 같은 목적의 양식을 그룹화 `<fieldset>` 하여 제목`<legend>`을 지정.
+
+| attribute | description | value |
+| :--- | :--- | :--- |
+| disabled | 그룹 내 모든 양식 요소를 비활성화 | boolean |
+| form | 그룹이 속할 하나 이상의 `<form>`의 `id` 속성 값 |  |
+| name | 그룹의 이름 |  |
 
 #### &lt;fieldset&gt;
 
@@ -702,6 +832,15 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 
 옵션을 선택하는 메뉴.
 
+| attribute | description |  |
+| :--- | :--- | :--- |
+| autocomplete | 사용자가 이전에 입력한 값으로 자동 완성 기능을 사용할 것인지 여부 | `on(default)`, `off` |
+| disabled | 선택 메뉴를 비활성화 | boolean |
+| form | 선택 메뉴가 속할 하나 이상의 `<form>`의 `id` 속성 값 |  |
+| multiple | 다중 선택 여부 | boolean |
+| name | 선택 메뉴의 이름 |  |
+| size | 한 번에 볼 수 있는 행의 개수 | 0\(1과 같다\), number |
+
 #### &lt;datalist&gt;
 
 `<input>`에 미리 정의된 옵션을 지정하여 자동완성\(autocomplete\) 기능을 제공하는 데 사용.
@@ -711,13 +850,89 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 
 #### &lt;optgroup&gt;
 
+`<option>`을 그룹화.
+
+| attribute | description | value |
+| :--- | :--- | :--- |
+| label | \(필수\)옵션 그룹의 이름 |  |
+| disabled | 옵션 그룹을 비활성화 | boolean |
+
+#### &lt;option&gt;
+
 선택 메뉴`<select>` 또는 자동완성`<datalist>`에서 사용될 옵션.
 
 * 선택적 빈\(empty\) 요로 사용 가능.
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">attribute</th>
+      <th style="text-align:left">description</th>
+      <th style="text-align:left">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">disabled</td>
+      <td style="text-align:left">&#xC635;&#xC158;&#xC744; &#xBE44;&#xD65C;&#xC131;&#xD654;</td>
+      <td style="text-align:left">boolean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">label</td>
+      <td style="text-align:left">
+        <p>&#xD45C;&#xC2DC;&#xB420; &#xC635;&#xC158;&#xC758; &#xC81C;&#xBAA9;,</p>
+        <p>&#xC0DD;&#xB7B5;&#xB418;&#xBA74; &#xD3EC;&#xD568;&#xB41C; &#xD14D;&#xC2A4;&#xD2B8;&#xB97C;
+          &#xD45C;&#xC2DC;</p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">selected</td>
+      <td style="text-align:left">&#xC635;&#xC158;&#xC774; &#xC120;&#xD0DD;&#xB418;&#xC5C8;&#xC74C;&#xC744;
+        &#xD45C;&#xC2DC;</td>
+      <td style="text-align:left">boolean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">value</td>
+      <td style="text-align:left">
+        <p>&#xC591;&#xC2DD;&#xC73C;&#xB85C; &#xC81C;&#xCD9C;&#xB420; &#xAC12;,</p>
+        <p>&#xC0DD;&#xB7B5;&#xB418;&#xBA74; &#xD3EC;&#xD568;&#xB41C; &#xD14D;&#xC2A4;&#xD2B8;&#xAC12;&#xC73C;&#xB85C;
+          &#xC0AC;&#xC6A9;</p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+  </tbody>
+</table>
+
 #### &lt;progress&gt;
 
 작업의 완료 진행률을 표시.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">attribute</th>
+      <th style="text-align:left">description</th>
+      <th style="text-align:left">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">max</td>
+      <td style="text-align:left">&#xC791;&#xC5C5;&#xC758; &#xCD1D;&#xB7C9;</td>
+      <td style="text-align:left">number</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">value</td>
+      <td style="text-align:left">
+        <p>&#xC791;&#xC5C5;&#xC758; &#xC9C4;&#xD589;&#xB7C9;,</p>
+        <p><code>max</code> &#xC18D;&#xC131;&#xC744; &#xC0DD;&#xB7B5;&#xD560; &#xACBD;&#xC6B0; <code>0</code>~<code>1</code> &#xC0AC;&#xC774;&#xC758;
+          &#xC22B;&#xC790;&#xC5EC;&#xC57C; &#xD55C;&#xB2E4;.</p>
+      </td>
+      <td style="text-align:left">number</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 전역 속성 \(global attributes\)
 
@@ -751,7 +966,7 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 
  요소가 [Drag and Drop API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)를 사용 가능한지 여부를 지정.
 
-### hidden
+#### hidden
 
 요소를 숨김.
 
