@@ -231,6 +231,10 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 
 일반적인 인용문을 설정.
 
+| attribute | description | value |
+| :--- | :--- | :--- |
+| cite | 인용된 정보의 URL | URL |
+
 ### 인라인 텍스트
 
 #### &lt;a&gt;
@@ -399,11 +403,24 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 
 새로 추가된\(변경된\) 텍스트의 범위를 지정.
 
+| attribute | description | value |
+| :--- | :--- | :--- |
+| cite | 변경을 설명하는 리소스의 URI | URI |
+| datetime | 변경이 일어난 [유요한 날짜 문자](https://www.w3.org/TR/html51/infrastructure.html#dates-and-times) | date |
+
 ### 멀티미디어
 
 ####  &lt;img&gt;
 
 이미지를 삽입.
+
+| attribute | description | value |
+| :--- | :--- | :--- |
+| src | \(필수\)이미지 URL | URL |
+| alt | \(필수\)이미지의 대체텍스트 |  |
+|  width | 이미지의 가로 너비 |  |
+| height | 이미지의 세로 너비 |  |
+| srcset | 브라우저에게 제시할 이미지 URL과 원본 크기의 목록을 정 |  `w`, `x` |
 
 #### &lt;audio&gt; 
 
@@ -411,11 +428,32 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 
 * `autoplay`가 지정된 경우, `preload`는 무시된다.
 
+| attribute | description | value |
+| :--- | :--- | :--- |
+| autoplay | 준비되면 바로 재생 | boolean |
+| controls | 제어 메뉴를 표시 | boolean |
+| loop | 재생이 끝나면 다시 처음부터 재생 | boolean |
+| preload | 페이지가 로드될 때 파일을 로드할지의 지정\(힌트 제공\) | `none` - 로드하지 않는, `metadata(default)`-  메타데이터만 로드,`auto -`전체 파일 로드 |
+| src | 콘텐츠 URL | URL |
+| muted | 음소거 여부 | boolean |
+
 #### &lt;video&gt;
 
 동영상 콘텐츠\(mp4\)를 삽입.
 
 * `autoplay`가 지정된 경우, `preload`는 무시된다.
+
+| attribute | description | value |
+| :--- | :--- | :--- |
+| autoplay | 준비되면 바로 재생 | boolean |
+| controls | 제어 메뉴를 표시 | boolean |
+| loop | 재생이 끝나면 다시 처음부터 재생 | boolean |
+| muted | 음소거 여부 | boolean |
+| poster | 동영상 썸네일 이미지 URL | URL |
+| preload | 페이지가 로드될 때 파일을 로드할지의 지정\(힌트 제공\) | `none` - 로드하지 않는, `metadata(default)`- 메타데이터만 로드,`auto` - 전체 파일 로드 |
+| src | 콘텐츠 URL | URL |
+| width | 동영상 가로 너비 |  |
+| height | 동영상 세로 너비 |  |
 
 #### &lt;figure&gt;, &lt;figcaption&gt;
 
@@ -429,15 +467,128 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 
 다른 HTML 페이지를 현재 페이지에 삽입. \(중첩된 브라우저 컨텍스트\(프레임\)을 표시\)
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">attribute</th>
+      <th style="text-align:left">description</th>
+      <th style="text-align:left">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">name</td>
+      <td style="text-align:left">&#xD504;&#xB808;&#xC784;&#xC758; &#xC774;&#xB984;</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">src</td>
+      <td style="text-align:left">&#xD3EC;&#xD568;&#xD560; &#xBB38;&#xC11C;&#xC758; URL</td>
+      <td style="text-align:left">URL</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">width</td>
+      <td style="text-align:left">&#xD504;&#xB808;&#xC784;&#xC758; &#xAC00;&#xB85C; &#xB108;&#xBE44;</td>
+      <td
+      style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">height</td>
+      <td style="text-align:left">&#xD504;&#xB808;&#xC784;&#xC758; &#xC138;&#xB85C; &#xB108;&#xBE44;</td>
+      <td
+      style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">allowfullscreen</td>
+      <td style="text-align:left">&#xC804;&#xCCB4; &#xD654;&#xBA74; &#xBAA8;&#xB4DC; &#xC0AC;&#xC6A9; &#xC5EC;&#xBD80;</td>
+      <td
+      style="text-align:left">boolean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">frameborder</td>
+      <td style="text-align:left">&#xD504;&#xB808;&#xC784; &#xD14C;&#xB450;&#xB9AC; &#xC0AC;&#xC6A9; &#xC5EC;&#xBD80;</td>
+      <td
+      style="text-align:left"><code>0</code>, <code>1(default)</code>
+        </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">sandbox</td>
+      <td style="text-align:left">&#xBCF4;&#xC548;&#xC744; &#xC704;&#xD55C; &#xC77D;&#xAE30; &#xC804;&#xC6A9;&#xC73C;&#xB85C;
+        &#xC0BD;&#xC785;</td>
+      <td style="text-align:left">
+        <p>boolean or
+          <br /><code>allow-form</code>- &#xC591;&#xC2DD; &#xC81C;&#xCD9C; &#xAC00;&#xB2A5;,
+          <br
+          /><code>allow-scripts</code>- &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC2E4;&#xD589;
+          &#xAC00;&#xB2A5; ,
+          <br /><code>allow-same-origin</code>- &#xAC19;&#xC740; &#xCD9C;&#xCC98;(&#xB3C4;&#xBA54;&#xC778;)&#xC758;
+          &#xB9AC;&#xC18C;&#xC2A4;</p>
+        <p>&#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 #### &lt;canvas&gt;
 
  [Canvas API](https://developer.mozilla.org/ko/docs/Web/HTML/Canvas)이나 [WebGL API](https://developer.mozilla.org/ko/docs/Web/API/WebGL_API)를 사용하여 그래픽이나 애니메이션을 랜더링.
+
+| attribute | description |
+| :--- | :--- |
+| widhth | 캔버스의 가로 너비 |
+| height | 캔버스의 세로 너 |
 
 ### 스크립트
 
 #### &lt;script&gt;
 
-스크립트 코드를 문서에 포함하거나 참조.\(외부 스크립트\)
+스크립트 코드를 문서에 포함하거나 참조.\(외부 스크립트\)  
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">attribute</th>
+      <th style="text-align:left">description</th>
+      <th style="text-align:left">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">async</td>
+      <td style="text-align:left">
+        <p>&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; &#xBE44;&#xB3D9;&#xAE30;&#xC801;(Asynchronously)
+          &#xC2E4;&#xD589; &#xC5EC;&#xBD80;</p>
+        <p><code>src</code> &#xC18D;&#xC131; &#xD544;&#xC218;</p>
+      </td>
+      <td style="text-align:left">boolean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">defer</td>
+      <td style="text-align:left">
+        <p>&#xBB38;&#xC11C; &#xD30C;&#xC2F1;(&#xAD6C;&#xBB38; &#xBD84;&#xC11D;)&#xD6C4;
+          &#xC791;&#xB3D9; &#xC5EC;&#xBD80;</p>
+        <p><code>src</code> &#xC18D;&#xC131; &#xD544;&#xC218;</p>
+      </td>
+      <td style="text-align:left">boolean</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">src</td>
+      <td style="text-align:left">
+        <p>&#xCC38;&#xC870;&#xD560; &#xC678;&#xBD80; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;
+          URL</p>
+        <p>&#xD3EC;&#xD568;&#xB41C; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xCF54;&#xB4DC;&#xB294;
+          &#xBB34;&#xC2DC;&#xB41C;&#xB2E4;.</p>
+      </td>
+      <td style="text-align:left">URL</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">type</td>
+      <td style="text-align:left">MIME &#xD0C0;&#xC785;</td>
+      <td style="text-align:left"> <code>text/javascript(default)</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### &lt;noscript&gt;
 
@@ -453,9 +604,23 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 
 '머리글 칸'을 지정.
 
+| attribute | description | value |
+| :--- | :--- | :--- |
+| abbr | 열에 대한 간단한 설명 |  |
+| headers | 관련된 하나 이상의 다른 머리글 칸 `id` 속성 값 |  |
+| colspan | 확장하려는\(병합\) 열의 수 | `1(default)` |
+| rowspan | 확장하려는\(병합\) 행의 수 | `1(default)` |
+| scope | 자신이 누구의 ‘머리글 칸’인지 명시 | `col` - 자신의 열 `colgroup` - 모든 열 `row` - 자신의 행 `rowgroup`- 모든 행 `auto(default)` |
+
 #### &lt;td&gt;
 
 '일반 칸'을 지정.
+
+| attribute | description | value |
+| :--- | :--- | :--- |
+| headers | 관련된 하나 이상의 다른 머리글 칸 `id` 속성 값 |  |
+| colspan | 확장하려는\(병합\) 열의 수 | `1(default)` |
+| rowspan | 확장하려는\(병합\) 행의 수 | `1(default)` |
 
 #### &lt;caption&gt;
 
@@ -467,6 +632,10 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 #### &lt;colgroup&gt;, &lt;col/&gt;
 
 표의 열들을 공통적으로 정의하는 컬럼 `<col>` 과 그의 집합 `<colgroup>`
+
+| attribute | description | value |
+| :--- | :--- | :--- |
+| span | 연속되는 열 수 | `1(default)` |
 
 #### &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;
 
@@ -481,6 +650,17 @@ HTML 문서에 포함된 모든 상대 URL들의 기준 URL를 설정.
 웹 서버에 정보를 제출하기 위한 양식 범위를 정의.
 
 * `<form>`이 다른 `<form>`을 자식 요소로 포함할 수 없다.
+
+
+
+| attribute | description | value |
+| :--- | :--- | :--- |
+| action | 전송한 정보를 처리할 웹페이지의 URL | URL |
+| autocomplete | 사용자가 이전에 입력한 값으로 자동 완성 기능을 사용할 것인지 여부 | `on(default)`, `off` |
+| method | 서버로 전송할 HTTP 방식 | `GET(default)`, `POST` |
+| name | 고유한 양식의 이름 |  |
+| novalidate | 서버로 전송시 양식 데이터의 유효성을 검사하지 않도록 지정 |  |
+| target | 서버로 전송 후 응답받을 방식을 지정 | `_self(default)`,`_blank` |
 
 #### &lt;input/&gt;
 
